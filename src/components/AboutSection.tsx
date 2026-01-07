@@ -2,7 +2,7 @@ import { Leaf, Heart, Sun } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section className="py-24 md:py-32 section-gradient">
+    <section id="about" className="py-24 md:py-32 section-gradient scroll-mt-20">
       <div className="container max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-20">

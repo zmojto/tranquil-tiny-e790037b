@@ -37,7 +37,7 @@ const GallerySection = () => {
   };
 
   return (
-    <section className="py-24 px-6 bg-secondary/30">
+    <section id="gallery" className="py-24 px-6 bg-secondary/30 scroll-mt-20">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-primary font-medium tracking-widest uppercase text-sm">
