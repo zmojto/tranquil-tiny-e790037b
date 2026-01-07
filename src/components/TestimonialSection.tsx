@@ -2,7 +2,7 @@ import { Quote } from "lucide-react";
 
 const TestimonialSection = () => {
   return (
-    <section className="py-24 md:py-32 section-gradient">
+    <section id="testimonials" className="py-24 md:py-32 section-gradient scroll-mt-20">
       <div className="container max-w-4xl mx-auto px-6 text-center">
         <Quote className="w-12 h-12 text-primary/30 mx-auto mb-8" />
         

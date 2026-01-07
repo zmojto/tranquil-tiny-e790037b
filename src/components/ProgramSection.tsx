@@ -14,7 +14,7 @@ const ProgramSection = () => {
   ];
 
   return (
-    <section className="py-24 md:py-32 bg-card">
+    <section id="program" className="py-24 md:py-32 bg-card scroll-mt-20">
       <div className="container max-w-6xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
