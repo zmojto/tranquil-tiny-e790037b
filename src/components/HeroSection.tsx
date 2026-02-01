@@ -34,7 +34,7 @@ const HeroSection = () => {
           className="text-primary-foreground/90 text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-fade-up font-light leading-relaxed"
           style={{ animationDelay: "0.4s" }}
         >
-          A transformative 7-day yoga retreat nestled in the heart of nature. 
+          Transformative 7-day yoga retreats in the world's most inspiring destinations.
           Reconnect with yourself through daily practice, meditation, and mindful living.
         </p>
         
@@ -42,10 +42,17 @@ const HeroSection = () => {
           className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up"
           style={{ animationDelay: "0.6s" }}
         >
-          <Button variant="hero">
-            Reserve Your Spot
+          <Button 
+            variant="hero"
+            onClick={() => document.getElementById('retreats')?.scrollIntoView({ behavior: 'smooth' })}
+          >
+            View Retreats
           </Button>
-          <Button variant="heroOutline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+          <Button 
+            variant="heroOutline" 
+            className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+            onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Learn More
           </Button>
         </div>
@@ -54,7 +61,7 @@ const HeroSection = () => {
           className="text-primary-foreground/60 text-sm mt-8 animate-fade-up"
           style={{ animationDelay: "0.8s" }}
         >
-          March 15-22, 2026 • Bali, Indonesia
+          3 Transformative Retreats • 2026
         </p>
       </div>
       

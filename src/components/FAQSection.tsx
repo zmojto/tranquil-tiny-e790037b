@@ -7,8 +7,12 @@ import {
 
 const faqs = [
   {
+    question: "What's different between each retreat?",
+    answer: "While all retreats include the same core experience (7 nights, daily yoga, meditation, organic meals), each destination offers unique cultural experiences. Bali features traditional ceremonies and rice terrace views, Costa Rica offers beachfront practice and jungle adventures, and Portugal includes historic palace visits and wine country tours.",
+  },
+  {
     question: "What is included in the retreat package?",
-    answer: "Our retreat includes luxury eco-lodge accommodation, three organic meals daily, twice-daily yoga sessions, guided meditation, nature excursions, and access to all wellness facilities including the spa and infinity pool.",
+    answer: "Every retreat includes luxury eco-lodge accommodation, three organic meals daily, twice-daily yoga sessions, guided meditation, spa treatments, nature excursions, and airport transfers. Each location also features unique local experiences.",
   },
   {
     question: "Do I need prior yoga experience?",
@@ -20,11 +24,11 @@ const faqs = [
   },
   {
     question: "How do I get to the retreat location?",
-    answer: "We provide airport transfers from the nearest international airport. Detailed travel instructions and pickup arrangements will be sent upon booking confirmation.",
+    answer: "We provide airport transfers from the nearest international airport for each destination. Detailed travel instructions and pickup arrangements will be sent upon booking confirmation.",
   },
   {
     question: "What is your cancellation policy?",
-    answer: "Full refunds are available up to 30 days before the retreat start date. Cancellations within 30 days receive a 50% refund or full credit toward a future retreat.",
+    answer: "Full refunds are available up to 30 days before the retreat start date. Cancellations within 30 days receive a 50% refund or full credit toward any future retreat.",
   },
 ];
 

@@ -3,14 +3,14 @@ import { Button } from "@/components/ui/button";
 
 const ProgramSection = () => {
   const inclusions = [
-    "7 nights luxury eco-villa accommodation",
+    "7 nights luxury eco-lodge accommodation",
     "Daily sunrise & sunset yoga sessions",
     "Guided meditation & breathwork",
     "Three organic plant-based meals daily",
-    "Spa treatment & Balinese massage",
+    "Spa treatment or wellness massage",
     "Sound healing ceremony",
-    "Nature walk & waterfall excursion",
-    "Airport transfers & welcome blessing"
+    "Curated nature excursion",
+    "Airport transfers & welcome ritual"
   ];
 
   return (
@@ -26,8 +26,8 @@ const ProgramSection = () => {
               Everything You Need to Unwind
             </h2>
             <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
-              We've thoughtfully curated every detail so you can fully surrender to 
-              the experience. From the moment you arrive, simply be present.
+              Every retreat includes the same thoughtfully curated experience. 
+              From the moment you arrive, simply be present.
             </p>
             
             <ul className="space-y-4 mb-10">
@@ -49,19 +49,23 @@ const ProgramSection = () => {
                 Investment
               </p>
               <div className="mb-6">
-                <span className="font-serif text-6xl md:text-7xl text-foreground">$2,800</span>
-                <span className="text-muted-foreground text-lg ml-2">per person</span>
+                <span className="font-serif text-5xl md:text-6xl text-foreground">$2,600 – $3,200</span>
+                <span className="text-muted-foreground text-lg ml-2 block mt-2">per person</span>
               </div>
               <p className="text-muted-foreground mb-8">
-                Shared accommodation • Single rooms available +$600
+                Pricing varies by destination • Single rooms available
               </p>
               
-              <Button variant="hero" className="w-full mb-4">
-                Reserve Your Spot
+              <Button 
+                variant="hero" 
+                className="w-full mb-4"
+                onClick={() => document.getElementById('retreats')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                Choose Your Retreat
               </Button>
               
               <p className="text-muted-foreground text-sm">
-                Limited to 12 guests • $500 deposit to secure
+                Limited to 12 guests per retreat • $500 deposit to secure
               </p>
             </div>
           </div>
