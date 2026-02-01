@@ -1,117 +1,134 @@
 
 
-# Connect Booking Form to Backend
+# Blog & Articles Section for SEO
 
 ## Overview
-Connect the booking form to save reservation requests to the database and send you email notifications when someone submits a booking. This requires creating a database table, an edge function for sending emails, and updating the booking modal to submit data.
+Add a fully-featured blog system to publish wellness articles, yoga tips, and retreat stories. This will significantly boost SEO by creating keyword-rich, shareable content that drives organic traffic to your retreat bookings.
 
-## What You'll Need to Provide
-Before I can implement this, you'll need to provide a **Resend API key** for sending emails. Resend is a simple email service that will notify you when bookings come in.
+## What You'll Get
 
-1. Go to [resend.com](https://resend.com) and create a free account
-2. Verify your email domain at [resend.com/domains](https://resend.com/domains) (or use their test email for development)
-3. Create an API key at [resend.com/api-keys](https://resend.com/api-keys)
-4. I'll prompt you to enter this key when implementing
+### Blog Features
+- **Blog listing page** at `/blog` showing all published articles
+- **Individual article pages** at `/blog/[slug]` with SEO-optimized URLs
+- **Rich text content** with headings, images, and formatted text
+- **Article categories** (Yoga, Wellness, Travel, Meditation, Nutrition)
+- **Author attribution** and publish dates
+- **Featured articles** section on homepage
+- **Related articles** suggestions
 
-You'll also need to tell me which email address should receive booking notifications.
+### SEO Benefits
+- Keyword-targeted URLs (e.g., `/blog/best-yoga-poses-for-beginners`)
+- Meta descriptions and Open Graph tags per article
+- Structured data for search engines
+- Internal linking to retreat pages
+- Fresh content signals for Google
 
-## Implementation Steps
-
-### 1. Create Database Table
-Create a `booking_requests` table to store all reservation submissions:
+## Database Structure
 
 | Column | Type | Description |
 |--------|------|-------------|
 | id | UUID | Primary key |
-| retreat_id | TEXT | Which retreat (bali-bliss, costa-rica, etc.) |
-| retreat_name | TEXT | Human-readable name |
-| retreat_location | TEXT | Location details |
-| retreat_dates | TEXT | Date range |
-| retreat_price | INTEGER | Price per person |
-| guest_name | TEXT | Guest's full name |
-| guest_email | TEXT | Guest's email |
-| guest_phone | TEXT | Guest's phone number |
-| message | TEXT | Special requests (optional) |
-| status | TEXT | pending, confirmed, cancelled |
-| created_at | TIMESTAMP | When submitted |
+| slug | TEXT | URL-friendly identifier |
+| title | TEXT | Article headline |
+| excerpt | TEXT | Short preview (for listings & SEO) |
+| content | TEXT | Full article body (Markdown) |
+| cover_image_url | TEXT | Featured image |
+| category | TEXT | Article category |
+| author_name | TEXT | Writer's name |
+| published | BOOLEAN | Draft vs. published |
+| published_at | TIMESTAMP | Publish date |
+| created_at | TIMESTAMP | Creation date |
 
-RLS Policy: Public insert (anyone can submit a booking), but only authenticated admins can view/manage bookings.
+## New Pages & Components
 
-### 2. Create Email Notification Edge Function
-Create `supabase/functions/send-booking-notification/index.ts`:
-- Receives booking data from the frontend
-- Saves the booking to the database
-- Sends an email notification to your specified address using Resend
-- Returns success/error response
+### Pages
+| Route | Purpose |
+|-------|---------|
+| `/blog` | Blog listing with all articles |
+| `/blog/:slug` | Individual article page |
 
-### 3. Update Booking Modal
-Modify `src/components/BookingModal.tsx`:
-- Replace simulated submission with actual API call
-- Call the edge function with form data + retreat info
-- Handle success/error states appropriately
-- Show appropriate feedback to users
+### Components
+| Component | Description |
+|-----------|-------------|
+| `BlogPreviewSection.tsx` | Homepage section showing 3 latest articles |
+| `ArticleCard.tsx` | Reusable card for article previews |
+| `ArticlePage.tsx` | Full article layout with content |
+| `BlogListPage.tsx` | Grid of all articles with category filter |
 
-## Architecture
+## Site Integration
+
+### Navigation Updates
+Add "Blog" link to navigation between "FAQ" and "Contact"
+
+### Homepage Addition
+Add a "Latest from the Journal" section before the FAQ showing 3 featured articles
+
+### Footer Update
+Add quick links to popular article categories
+
+## User Flow
 
 ```text
-User submits form
-       │
-       ▼
-┌─────────────────────┐
-│   BookingModal.tsx  │
-│   (Form validation) │
-└──────────┬──────────┘
-           │ POST request
-           ▼
-┌─────────────────────────────┐
-│  send-booking-notification  │
-│     (Edge Function)         │
-│                             │
-│  1. Validate input          │
-│  2. Save to database        │
-│  3. Send email via Resend   │
-└──────────┬──────────────────┘
-           │
-     ┌─────┴─────┐
-     ▼           ▼
-┌─────────┐  ┌─────────┐
-│ Supabase│  │ Resend  │
-│   DB    │  │  Email  │
-└─────────┘  └─────────┘
+Homepage
+    │
+    ├── "Latest from the Journal" section
+    │       │
+    │       └── Click article → /blog/article-slug
+    │
+    └── Nav: "Blog" → /blog
+                        │
+                        ├── Filter by category
+                        │
+                        └── Click article → /blog/article-slug
+                                              │
+                                              └── Related articles
+                                              └── CTA: Book a retreat
 ```
+
+## Content Management
+For now, articles will be stored in the database and you can add them directly. In the future, we could add an admin panel for easier content management.
 
 ## Files to Create/Modify
 
-| File | Action | Description |
-|------|--------|-------------|
-| Database migration | Create | New `booking_requests` table with RLS |
-| `supabase/functions/send-booking-notification/index.ts` | Create | Edge function for saving + emailing |
-| `supabase/config.toml` | Update | Register the new edge function |
-| `src/components/BookingModal.tsx` | Update | Connect form to edge function |
+| File | Action |
+|------|--------|
+| Database migration | Create `articles` table |
+| `src/pages/Blog.tsx` | New blog listing page |
+| `src/pages/BlogArticle.tsx` | New article detail page |
+| `src/components/BlogPreviewSection.tsx` | Homepage articles preview |
+| `src/components/ArticleCard.tsx` | Reusable article card |
+| `src/App.tsx` | Add new routes |
+| `src/components/NavigationHeader.tsx` | Add Blog link |
+| `src/pages/Index.tsx` | Add BlogPreviewSection |
+
+## Sample Article Categories
+- **Yoga** - Poses, sequences, practice tips
+- **Wellness** - Holistic health, self-care
+- **Travel** - Destination guides, retreat previews
+- **Meditation** - Mindfulness techniques
+- **Nutrition** - Plant-based recipes, healthy eating
 
 ## Technical Details
 
-### Edge Function Logic
-```typescript
-// Pseudocode for the edge function
-1. Parse incoming request (guest info + retreat info)
-2. Validate all required fields
-3. Insert into booking_requests table using service role
-4. Send formatted email via Resend API
-5. Return success response
-```
+### Markdown Rendering
+Articles will support Markdown formatting for rich content:
+- Headings (H1-H6)
+- Bold, italic text
+- Bullet and numbered lists
+- Block quotes
+- Images with captions
+- Links
 
-### Email Template Content
-The notification email will include:
-- Retreat name, location, dates, and price
-- Guest name, email, and phone
-- Special requests/message if provided
-- Timestamp of submission
-- Quick action links (reply to guest email)
+### SEO Implementation
+Each article page will include:
+- Dynamic page title: `{Article Title} | Serenity Blog`
+- Meta description from article excerpt
+- Open Graph tags for social sharing
+- Canonical URLs
+- JSON-LD structured data for articles
 
-### Security Considerations
-- Edge function handles database insert (bypasses need for public write RLS)
-- Input validation on both client and server
-- Rate limiting considerations for spam prevention
-- Email addresses not exposed publicly
+### Image Handling
+Cover images can be:
+- External URLs (Unsplash, etc.)
+- Uploaded to Supabase Storage (future enhancement)
 
