@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
@@ -8,12 +9,15 @@ const navLinks = [
   { label: "Gallery", href: "#gallery" },
   { label: "Testimonials", href: "#testimonials" },
   { label: "FAQ", href: "#faq" },
+  { label: "Blog", href: "/blog", isPage: true },
   { label: "Contact", href: "#contact" },
 ];
 
 const NavigationHeader = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,13 +27,26 @@ const NavigationHeader = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, link: typeof navLinks[0]) => {
     e.preventDefault();
-    const element = document.querySelector(href);
+    setIsMobileMenuOpen(false);
+    
+    if (link.isPage) {
+      navigate(link.href);
+      return;
+    }
+    
+    // If we're not on the home page, navigate there first
+    if (location.pathname !== "/") {
+      navigate("/" + link.href);
+      return;
+    }
+    
+    // Scroll to section on home page
+    const element = document.querySelector(link.href);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -57,9 +74,13 @@ const NavigationHeader = () => {
           {navLinks.map((link) => (
             <a
               key={link.href}
-              href={link.href}
-              onClick={(e) => scrollToSection(e, link.href)}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              href={link.isPage ? link.href : link.href}
+              onClick={(e) => handleNavClick(e, link)}
+              className={`text-sm font-medium transition-colors ${
+                link.isPage && location.pathname.startsWith("/blog")
+                  ? "text-primary"
+                  : "text-muted-foreground hover:text-primary"
+              }`}
             >
               {link.label}
             </a>
@@ -83,9 +104,13 @@ const NavigationHeader = () => {
             {navLinks.map((link) => (
               <a
                 key={link.href}
-                href={link.href}
-                onClick={(e) => scrollToSection(e, link.href)}
-                className="text-base font-medium text-muted-foreground hover:text-primary transition-colors py-2"
+                href={link.isPage ? link.href : link.href}
+                onClick={(e) => handleNavClick(e, link)}
+                className={`text-base font-medium transition-colors py-2 ${
+                  link.isPage && location.pathname.startsWith("/blog")
+                    ? "text-primary"
+                    : "text-muted-foreground hover:text-primary"
+                }`}
               >
                 {link.label}
               </a>
