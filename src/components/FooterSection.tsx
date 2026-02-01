@@ -33,7 +33,7 @@ const FooterSection = () => {
           
           <span className="flex items-center gap-3 text-primary-foreground/80">
             <MapPin className="w-5 h-5" />
-            Ubud, Bali, Indonesia
+            Bali • Costa Rica • Portugal
           </span>
         </div>
         
