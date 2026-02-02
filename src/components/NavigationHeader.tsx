@@ -19,6 +19,9 @@ const NavigationHeader = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
+  const isRetreatPage = location.pathname.startsWith("/retreats");
+  const isBlogPage = location.pathname.startsWith("/blog");
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -49,6 +52,21 @@ const NavigationHeader = () => {
     }
   };
 
+  const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (location.pathname !== "/") {
+      navigate("/");
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
+  const isLinkActive = (link: typeof navLinks[0]) => {
+    if (link.isPage && isBlogPage) return true;
+    if (link.href === "#retreats" && isRetreatPage) return true;
+    return false;
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -59,11 +77,8 @@ const NavigationHeader = () => {
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
+          href="/"
+          onClick={handleLogoClick}
           className="font-serif text-2xl text-foreground hover:text-primary transition-colors"
         >
           Serenity
@@ -77,7 +92,7 @@ const NavigationHeader = () => {
               href={link.isPage ? link.href : link.href}
               onClick={(e) => handleNavClick(e, link)}
               className={`text-sm font-medium transition-colors ${
-                link.isPage && location.pathname.startsWith("/blog")
+                isLinkActive(link)
                   ? "text-primary"
                   : "text-muted-foreground hover:text-primary"
               }`}
@@ -107,7 +122,7 @@ const NavigationHeader = () => {
                 href={link.isPage ? link.href : link.href}
                 onClick={(e) => handleNavClick(e, link)}
                 className={`text-base font-medium transition-colors py-2 ${
-                  link.isPage && location.pathname.startsWith("/blog")
+                  isLinkActive(link)
                     ? "text-primary"
                     : "text-muted-foreground hover:text-primary"
                 }`}
