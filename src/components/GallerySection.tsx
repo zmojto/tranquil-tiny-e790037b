@@ -10,12 +10,12 @@ import gallerySpa from "@/assets/gallery-spa.jpg";
 import galleryNature from "@/assets/gallery-nature.jpg";
 
 const images = [
-  { src: galleryPool, alt: "Infinity pool at sunset", caption: "Infinity Pool" },
-  { src: galleryRoom, alt: "Luxury eco-lodge bedroom", caption: "Accommodation" },
-  { src: galleryFood, alt: "Organic breakfast spread", caption: "Farm-to-Table Cuisine" },
-  { src: galleryMeditation, alt: "Meditation pavilion", caption: "Meditation Space" },
-  { src: gallerySpa, alt: "Spa treatment room", caption: "Wellness Spa" },
-  { src: galleryNature, alt: "Jungle hiking trail", caption: "Nature Excursions" },
+  { src: galleryPool, alt: "Nekonečný bazén pri západe slnka", caption: "Nekonečný bazén" },
+  { src: galleryRoom, alt: "Luxusná izba v eko-lodge", caption: "Ubytovanie" },
+  { src: galleryFood, alt: "Organické raňajky", caption: "Farmárska kuchyňa" },
+  { src: galleryMeditation, alt: "Meditačný pavilón", caption: "Meditačný priestor" },
+  { src: gallerySpa, alt: "Kúpeľná miestnosť", caption: "Wellness kúpele" },
+  { src: galleryNature, alt: "Džungľový turistický chodník", caption: "Výlety do prírody" },
 ];
 
 const GallerySection = () => {
@@ -41,10 +41,10 @@ const GallerySection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-primary font-medium tracking-widest uppercase text-sm">
-            Our Sanctuary
+            Naša svätyňa
           </span>
           <h2 className="text-4xl md:text-5xl font-serif text-foreground mt-4">
-            Explore the Retreat
+            Preskúmajte pobyt
           </h2>
         </div>
 
@@ -75,7 +75,7 @@ const GallerySection = () => {
             <button
               onClick={closeLightbox}
               className="absolute -top-12 right-0 text-white/80 hover:text-white transition-colors z-10"
-              aria-label="Close lightbox"
+              aria-label="Zavrieť galériu"
             >
               <X className="w-8 h-8" />
             </button>
@@ -96,7 +96,7 @@ const GallerySection = () => {
             <button
               onClick={goToPrevious}
               className="absolute left-4 top-1/2 -translate-y-1/2 bg-foreground/50 hover:bg-foreground/70 text-white p-2 rounded-full transition-colors"
-              aria-label="Previous image"
+              aria-label="Predchádzajúci obrázok"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
@@ -104,7 +104,7 @@ const GallerySection = () => {
             <button
               onClick={goToNext}
               className="absolute right-4 top-1/2 -translate-y-1/2 bg-foreground/50 hover:bg-foreground/70 text-white p-2 rounded-full transition-colors"
-              aria-label="Next image"
+              aria-label="Ďalší obrázok"
             >
               <ChevronRight className="w-6 h-6" />
             </button>

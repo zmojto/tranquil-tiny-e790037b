@@ -6,26 +6,34 @@ import { Badge } from "@/components/ui/badge";
 import ArticleCard from "@/components/ArticleCard";
 import { useArticles } from "@/hooks/useArticles";
 
-const CATEGORIES = ["All", "Yoga", "Meditation", "Wellness", "Nutrition", "Travel"];
+const CATEGORIES = ["Všetko", "Yoga", "Meditation", "Wellness", "Nutrition", "Travel"];
+const CATEGORY_LABELS: Record<string, string> = {
+  "Všetko": "Všetko",
+  "Yoga": "Jóga",
+  "Meditation": "Meditácia",
+  "Wellness": "Wellness",
+  "Nutrition": "Výživa",
+  "Travel": "Cestovanie",
+};
 
 const Blog = () => {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState("Všetko");
   const { data: articles, isLoading } = useArticles();
 
   useEffect(() => {
-    document.title = "Blog | Serenity Retreats";
+    document.title = "Blog | Serene Retreats";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Explore wellness articles, yoga tips, meditation guides, and retreat stories from Serenity Retreats."
+        "Objavte články o wellness, tipy na jógu, meditačné sprievodcov a príbehy z pobytov od Serene Retreats."
       );
     }
   }, []);
 
   const filteredArticles = articles?.filter(
     (article) =>
-      selectedCategory === "All" || article.category === selectedCategory
+      selectedCategory === "Všetko" || article.category === selectedCategory
   );
 
   return (
@@ -38,14 +46,14 @@ const Blog = () => {
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Home
+            Späť domov
           </Link>
           <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4">
-            The Serenity Journal
+            Denník Serenity
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl">
-            Discover articles on yoga, meditation, wellness, and mindful living.
-            Our journal is your guide to a more balanced life.
+            Objavte články o jóge, meditácii, wellness a vedomom živote.
+            Náš denník je vašim sprievodcom k vyváženejšiemu životu.
           </p>
         </div>
       </header>
@@ -62,7 +70,7 @@ const Blog = () => {
                 className="cursor-pointer whitespace-nowrap transition-all hover:bg-primary/10"
                 onClick={() => setSelectedCategory(category)}
               >
-                {category}
+                {CATEGORY_LABELS[category]}
               </Badge>
             ))}
           </div>
@@ -90,13 +98,13 @@ const Blog = () => {
           ) : (
             <div className="text-center py-16">
               <p className="text-muted-foreground text-lg mb-4">
-                No articles found in this category yet.
+                V tejto kategórii zatiaľ nie sú žiadne články.
               </p>
               <Button
                 variant="outline"
-                onClick={() => setSelectedCategory("All")}
+                onClick={() => setSelectedCategory("Všetko")}
               >
-                View All Articles
+                Zobraziť všetky články
               </Button>
             </div>
           )}
@@ -107,14 +115,14 @@ const Blog = () => {
       <section className="py-16 bg-primary/5">
         <div className="container max-w-4xl mx-auto px-6 text-center">
           <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-4">
-            Ready to Experience It Yourself?
+            Ste pripravení to zažiť?
           </h2>
           <p className="text-muted-foreground mb-8">
-            Join one of our transformative wellness retreats and turn reading
-            into practice.
+            Pripojte sa k jednému z našich transformačných wellness pobytov a premeňte čítanie
+            na prax.
           </p>
           <Button asChild size="lg">
-            <Link to="/#retreats">Explore Retreats</Link>
+            <Link to="/#retreats">Preskúmať pobyty</Link>
           </Button>
         </div>
       </section>

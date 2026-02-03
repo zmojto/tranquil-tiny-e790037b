@@ -10,14 +10,14 @@ const EventsSection = () => {
       <div className="container max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-primary uppercase tracking-[0.2em] text-sm mb-4 font-sans">
-            2026 Retreats
+            Pobyty 2026
           </p>
           <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-6">
-            Choose Your Journey
+            Vyberte si svoju cestu
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
-            Three unique destinations, one transformative experience. Each retreat offers
-            7 days of yoga, meditation, and connection in stunning natural settings.
+            Tri jedinečné destinácie, jeden transformačný zážitok. Každý pobyt ponúka
+            7 dní jógy, meditácie a spojenia v úchvatnom prírodnom prostredí.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ const EventsSection = () => {
                     </div>
                     <div className="flex items-center gap-3 text-muted-foreground">
                       <Users className="w-5 h-5 text-primary" />
-                      <span>{retreat.spotsLeft} spots remaining</span>
+                      <span>{retreat.spotsLeft} zostávajúcich miest</span>
                     </div>
                   </div>
 
@@ -69,7 +69,7 @@ const EventsSection = () => {
                   <div className="text-center border-t border-primary/10 pt-6">
                     <div className="mb-4">
                       <span className="font-serif text-4xl text-foreground">${retreat.price.toLocaleString()}</span>
-                      <span className="text-muted-foreground ml-2">per person</span>
+                      <span className="text-muted-foreground ml-2">za osobu</span>
                     </div>
                     <Button 
                       variant="hero" 
@@ -77,7 +77,7 @@ const EventsSection = () => {
                       asChild
                     >
                       <Link to={`/retreats/${retreat.id}`}>
-                        Explore Retreat
+                        Preskúmať pobyt
                       </Link>
                     </Button>
                   </div>
@@ -88,7 +88,7 @@ const EventsSection = () => {
         </div>
 
         <p className="text-center text-muted-foreground mt-12">
-          All retreats include 7 nights accommodation, daily yoga & meditation, organic meals, and curated experiences.
+          Všetky pobyty zahŕňajú 7 nocí ubytovania, dennú jógu a meditáciu, organické jedlá a kurátorované zážitky.
         </p>
       </div>
     </section>

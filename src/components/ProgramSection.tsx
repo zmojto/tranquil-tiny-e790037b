@@ -3,14 +3,14 @@ import { Button } from "@/components/ui/button";
 
 const ProgramSection = () => {
   const inclusions = [
-    "7 nights luxury eco-lodge accommodation",
-    "Daily sunrise & sunset yoga sessions",
-    "Guided meditation & breathwork",
-    "Three organic plant-based meals daily",
-    "Spa treatment or wellness massage",
-    "Sound healing ceremony",
-    "Curated nature excursion",
-    "Airport transfers & welcome ritual"
+    "7 nocí v luxusnom eko-lodge ubytovaní",
+    "Denné ranné a večerné jógové lekcie",
+    "Vedená meditácia a dychové cvičenia",
+    "Tri organické rastlinné jedlá denne",
+    "Kúpeľné ošetrenie alebo wellness masáž",
+    "Ceremónia zvukovej liečby",
+    "Kurátorovaný výlet do prírody",
+    "Letiskové transfery a uvítací rituál"
   ];
 
   return (
@@ -20,14 +20,14 @@ const ProgramSection = () => {
           {/* Content */}
           <div>
             <p className="text-primary uppercase tracking-[0.2em] text-sm mb-4 font-sans">
-              What's Included
+              Čo je zahrnuté
             </p>
             <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-6">
-              Everything You Need to Unwind
+              Všetko čo potrebujete na oddych
             </h2>
             <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
-              Every retreat includes the same thoughtfully curated experience. 
-              From the moment you arrive, simply be present.
+              Každý pobyt zahŕňa rovnaký starostlivo zostavený zážitok. 
+              Od chvíle príchodu jednoducho buďte prítomní.
             </p>
             
             <ul className="space-y-4 mb-10">
@@ -46,14 +46,14 @@ const ProgramSection = () => {
           <div className="bg-background rounded-3xl p-10 md:p-12 shadow-glow">
             <div className="text-center">
               <p className="text-primary uppercase tracking-[0.2em] text-sm mb-2 font-sans">
-                Investment
+                Investícia
               </p>
               <div className="mb-6">
-                <span className="font-serif text-5xl md:text-6xl text-foreground">$2,600 – $3,200</span>
-                <span className="text-muted-foreground text-lg ml-2 block mt-2">per person</span>
+                <span className="font-serif text-5xl md:text-6xl text-foreground">2 600 $ – 3 200 $</span>
+                <span className="text-muted-foreground text-lg ml-2 block mt-2">za osobu</span>
               </div>
               <p className="text-muted-foreground mb-8">
-                Pricing varies by destination • Single rooms available
+                Ceny sa líšia podľa destinácie • K dispozícii jednoložné izby
               </p>
               
               <Button 
@@ -61,11 +61,11 @@ const ProgramSection = () => {
                 className="w-full mb-4"
                 onClick={() => document.getElementById('retreats')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Choose Your Retreat
+                Vyberte si pobyt
               </Button>
               
               <p className="text-muted-foreground text-sm">
-                Limited to 12 guests per retreat • $500 deposit to secure
+                Maximálne 12 hostí na pobyt • Záloha 500 $ na potvrdenie
               </p>
             </div>
           </div>
