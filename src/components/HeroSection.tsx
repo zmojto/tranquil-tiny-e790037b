@@ -19,23 +19,23 @@ const HeroSection = () => {
           className="text-primary-foreground/80 uppercase tracking-[0.3em] text-sm mb-6 animate-fade-up font-sans"
           style={{ animationDelay: "0.1s" }}
         >
-          Escape • Restore • Transform
+          Únik • Obnova • Premena
         </p>
         
         <h1 
           className="font-serif text-5xl md:text-7xl lg:text-8xl text-primary-foreground mb-6 animate-fade-up leading-tight"
           style={{ animationDelay: "0.2s" }}
         >
-          Find Your
-          <span className="block italic">Inner Peace</span>
+          Nájdite Svoj
+          <span className="block italic">Vnútorný Pokoj</span>
         </h1>
         
         <p 
           className="text-primary-foreground/90 text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-fade-up font-light leading-relaxed"
           style={{ animationDelay: "0.4s" }}
         >
-          Transformative 7-day yoga retreats in the world's most inspiring destinations.
-          Reconnect with yourself through daily practice, meditation, and mindful living.
+          Transformačné 7-dňové jógové pobyty na najinšpiratívnejších miestach sveta.
+          Znovu sa spojte so sebou prostredníctvom dennej praxe, meditácie a vedomého života.
         </p>
         
         <div 
@@ -46,14 +46,14 @@ const HeroSection = () => {
             variant="hero"
             onClick={() => document.getElementById('retreats')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            View Retreats
+            Zobraziť pobyty
           </Button>
           <Button 
             variant="heroOutline" 
             className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
             onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            Learn More
+            Zistiť viac
           </Button>
         </div>
         
@@ -61,7 +61,7 @@ const HeroSection = () => {
           className="text-primary-foreground/60 text-sm mt-8 animate-fade-up"
           style={{ animationDelay: "0.8s" }}
         >
-          3 Transformative Retreats • 2026
+          3 Transformačné pobyty • 2026
         </p>
       </div>
       

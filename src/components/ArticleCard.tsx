@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { format } from "date-fns";
+import { sk } from "date-fns/locale";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { Article } from "@/types/article";
@@ -11,7 +12,7 @@ interface ArticleCardProps {
 
 const ArticleCard = ({ article, variant = "default" }: ArticleCardProps) => {
   const formattedDate = article.published_at
-    ? format(new Date(article.published_at), "MMMM d, yyyy")
+    ? format(new Date(article.published_at), "d. MMMM yyyy", { locale: sk })
     : "";
 
   if (variant === "compact") {
@@ -71,10 +72,10 @@ const ArticleCard = ({ article, variant = "default" }: ArticleCardProps) => {
           </p>
           <div className="flex items-center justify-between mt-auto pt-4 border-t border-primary/10">
             <span className="text-xs text-muted-foreground">
-              By {article.author_name}
+              Od {article.author_name}
             </span>
             <span className="text-sm font-medium text-primary group-hover:underline">
-              Read more →
+              Čítať viac →
             </span>
           </div>
         </CardContent>

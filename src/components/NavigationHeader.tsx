@@ -3,14 +3,14 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Retreats", href: "#retreats" },
+  { label: "O nás", href: "#about" },
+  { label: "Pobyty", href: "#retreats" },
   { label: "Program", href: "#program" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Galéria", href: "#gallery" },
+  { label: "Referencie", href: "#testimonials" },
+  { label: "Časté otázky", href: "#faq" },
   { label: "Blog", href: "/blog", isPage: true },
-  { label: "Contact", href: "#contact" },
+  { label: "Kontakt", href: "#contact" },
 ];
 
 const NavigationHeader = () => {
@@ -106,7 +106,7 @@ const NavigationHeader = () => {
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="md:hidden text-foreground p-2"
-          aria-label="Toggle menu"
+          aria-label="Prepnúť menu"
         >
           {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>

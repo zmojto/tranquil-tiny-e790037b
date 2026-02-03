@@ -7,14 +7,14 @@ const AboutSection = () => {
         {/* Section Header */}
         <div className="text-center mb-20">
           <p className="text-primary uppercase tracking-[0.2em] text-sm mb-4 font-sans">
-            Our Philosophy
+            Naša filozofia
           </p>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-            A Journey Within
+            Cesta do vnútra
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
-            More than just a retreat, this is an invitation to slow down, breathe deeply, 
-            and rediscover the harmony between body, mind, and soul.
+            Viac ako len pobyt, toto je pozvánka spomaliť, hlboko sa nadýchnuť
+            a znovu objaviť harmóniu medzi telom, mysľou a dušou.
           </p>
         </div>
         
@@ -22,18 +22,18 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-3 gap-8 md:gap-12">
           <FeatureCard 
             icon={<Sun className="w-8 h-8" />}
-            title="Daily Practice"
-            description="Wake with the sunrise for morning Vinyasa flows and wind down with restorative evening sessions guided by master teachers."
+            title="Denná prax"
+            description="Prebuďte sa so svitaním na ranné Vinyasa flow a ukončite deň regeneračnými večernými lekciami pod vedením skúsených učiteľov."
           />
           <FeatureCard 
             icon={<Heart className="w-8 h-8" />}
-            title="Mindful Living"
-            description="Embrace plant-based Ayurvedic cuisine, digital detox, and conscious living practices that nurture your whole being."
+            title="Vedomý život"
+            description="Objímte rastlinnú ajurvédsku kuchyňu, digitálny detox a praktiky vedomého života, ktoré vyživujú celú vašu bytosť."
           />
           <FeatureCard 
             icon={<Leaf className="w-8 h-8" />}
-            title="Nature Immersion"
-            description="Surrounded by tropical gardens and rice terraces, every moment becomes an opportunity for deep connection with nature."
+            title="Ponorenie do prírody"
+            description="Obklopení tropickými záhradami a ryžovými terasami sa každý okamih stáva príležitosťou na hlboké spojenie s prírodou."
           />
         </div>
       </div>

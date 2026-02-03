@@ -13,10 +13,10 @@ const BlogPreviewSection = () => {
         <div className="container max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
-              Latest from the Journal
+              Najnovšie z blogu
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Insights, tips, and stories to inspire your wellness journey
+              Inšpirácie, tipy a príbehy pre vašu wellness cestu
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -41,13 +41,13 @@ const BlogPreviewSection = () => {
       <div className="container max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <span className="text-primary text-sm font-medium tracking-wider uppercase mb-3 block">
-            Our Blog
+            Náš blog
           </span>
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
-            Latest from the Journal
+            Najnovšie z blogu
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Insights, tips, and stories to inspire your wellness journey
+            Inšpirácie, tipy a príbehy pre vašu wellness cestu
           </p>
         </div>
 
@@ -60,7 +60,7 @@ const BlogPreviewSection = () => {
         <div className="text-center">
           <Button asChild variant="outline" size="lg">
             <Link to="/blog" className="gap-2">
-              View All Articles
+              Zobraziť všetky články
               <ArrowRight className="w-4 h-4" />
             </Link>
           </Button>

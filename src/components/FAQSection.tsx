@@ -7,28 +7,28 @@ import {
 
 const faqs = [
   {
-    question: "What's different between each retreat?",
-    answer: "While all retreats include the same core experience (7 nights, daily yoga, meditation, organic meals), each destination offers unique cultural experiences. Bali features traditional ceremonies and rice terrace views, Costa Rica offers beachfront practice and jungle adventures, and Portugal includes historic palace visits and wine country tours.",
+    question: "Aký je rozdiel medzi jednotlivými pobytmi?",
+    answer: "Zatiaľ čo všetky pobyty zahŕňajú rovnaký základný zážitok (7 nocí, denná jóga, meditácia, organické jedlá), každá destinácia ponúka jedinečné kultúrne zážitky. Bali ponúka tradičné ceremónie a výhľady na ryžové terasy, Kostarika plážovú prax a dobrodružstvá v džungli, a Portugalsko návštevy historických palácoov a túry po vinárskej oblasti.",
   },
   {
-    question: "What is included in the retreat package?",
-    answer: "Every retreat includes luxury eco-lodge accommodation, three organic meals daily, twice-daily yoga sessions, guided meditation, spa treatments, nature excursions, and airport transfers. Each location also features unique local experiences.",
+    question: "Čo je zahrnuté v balíku pobytu?",
+    answer: "Každý pobyt zahŕňa luxusné eko-lodge ubytovanie, tri organické jedlá denne, dve jógové lekcie denne, vedené meditácie, kúpeľné ošetrenia, výlety do prírody a letiskové transfery. Každá lokácia tiež ponúka jedinečné miestne zážitky.",
   },
   {
-    question: "Do I need prior yoga experience?",
-    answer: "No prior experience is necessary. Our instructors cater to all levels, from complete beginners to advanced practitioners. Each session offers modifications to suit your personal practice.",
+    question: "Potrebujem predchádzajúce skúsenosti s jógou?",
+    answer: "Nie, predchádzajúce skúsenosti nie sú potrebné. Naši inštruktori sa prispôsobujú všetkým úrovniam, od úplných začiatočníkov po pokročilých praktizujúcich. Každá lekcia ponúka modifikácie prispôsobené vašej osobnej praxi.",
   },
   {
-    question: "What should I bring?",
-    answer: "We recommend comfortable clothing for yoga, swimwear, hiking shoes, sunscreen, and a reusable water bottle. Yoga mats and props are provided, but you're welcome to bring your own if preferred.",
+    question: "Čo si mám priniesť?",
+    answer: "Odporúčame pohodlné oblečenie na jógu, plavky, turistickú obuv, opaľovací krém a opakovane použiteľnú fľašu na vodu. Jógové podložky a pomôcky sú k dispozícii, ale môžete si priniesť vlastné, ak chcete.",
   },
   {
-    question: "How do I get to the retreat location?",
-    answer: "We provide airport transfers from the nearest international airport for each destination. Detailed travel instructions and pickup arrangements will be sent upon booking confirmation.",
+    question: "Ako sa dostanem na miesto pobytu?",
+    answer: "Poskytujeme letiskové transfery z najbližšieho medzinárodného letiska pre každú destináciu. Podrobné pokyny k cestovaniu a informácie o vyzdvihnutí budú zaslané po potvrdení rezervácie.",
   },
   {
-    question: "What is your cancellation policy?",
-    answer: "Full refunds are available up to 30 days before the retreat start date. Cancellations within 30 days receive a 50% refund or full credit toward any future retreat.",
+    question: "Aká je vaša politika zrušenia?",
+    answer: "Plná refundácia je k dispozícii do 30 dní pred začiatkom pobytu. Zrušenia do 30 dní dostávajú 50% refundáciu alebo plný kredit na akýkoľvek budúci pobyt.",
   },
 ];
 
@@ -38,10 +38,10 @@ const FAQSection = () => {
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-primary font-medium tracking-widest uppercase text-sm">
-            Common Questions
+            Časté otázky
           </span>
           <h2 className="text-4xl md:text-5xl font-serif text-foreground mt-4">
-            Frequently Asked
+            Otázky a odpovede
           </h2>
         </div>
 

@@ -18,7 +18,7 @@ const RetreatDetail = () => {
 
   useEffect(() => {
     if (retreat) {
-      document.title = `${retreat.name} Yoga Retreat | Serenity`;
+      document.title = `${retreat.name} Jógový pobyt | Serenity`;
       
       // Update meta description
       const metaDescription = document.querySelector('meta[name="description"]');
@@ -29,7 +29,7 @@ const RetreatDetail = () => {
       // Update Open Graph tags
       const ogTitle = document.querySelector('meta[property="og:title"]');
       const ogDescription = document.querySelector('meta[property="og:description"]');
-      if (ogTitle) ogTitle.setAttribute("content", `${retreat.name} Yoga Retreat | Serenity`);
+      if (ogTitle) ogTitle.setAttribute("content", `${retreat.name} Jógový pobyt | Serenity`);
       if (ogDescription) ogDescription.setAttribute("content", retreat.description.slice(0, 155) + "...");
     }
   }, [retreat]);
@@ -39,10 +39,10 @@ const RetreatDetail = () => {
       <div className="min-h-screen bg-background">
         <NavigationHeader />
         <div className="pt-32 pb-24 text-center">
-          <h1 className="font-serif text-4xl text-foreground mb-4">Retreat Not Found</h1>
-          <p className="text-muted-foreground mb-8">The retreat you're looking for doesn't exist.</p>
+          <h1 className="font-serif text-4xl text-foreground mb-4">Pobyt nenájdený</h1>
+          <p className="text-muted-foreground mb-8">Pobyt, ktorý hľadáte, neexistuje.</p>
           <Button variant="hero" onClick={() => navigate("/#retreats")}>
-            View All Retreats
+            Zobraziť všetky pobyty
           </Button>
         </div>
         <FooterSection />
@@ -69,7 +69,7 @@ const RetreatDetail = () => {
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to All Retreats
+            Späť na všetky pobyty
           </Link>
 
           <p className="text-primary uppercase tracking-[0.2em] text-sm mb-4 font-sans">
@@ -90,7 +90,7 @@ const RetreatDetail = () => {
             </div>
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5 text-primary" />
-              <span>{retreat.spotsLeft} spots remaining</span>
+              <span>{retreat.spotsLeft} zostávajúcich miest</span>
             </div>
           </div>
 
@@ -98,7 +98,7 @@ const RetreatDetail = () => {
             <span className="font-serif text-4xl md:text-5xl text-foreground">
               ${retreat.price.toLocaleString()}
             </span>
-            <span className="text-muted-foreground">per person</span>
+            <span className="text-muted-foreground">za osobu</span>
           </div>
 
           <Button 
@@ -106,7 +106,7 @@ const RetreatDetail = () => {
             size="lg"
             onClick={() => document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" })}
           >
-            Reserve Your Spot
+            Rezervovať miesto
           </Button>
         </div>
       </section>
@@ -115,10 +115,10 @@ const RetreatDetail = () => {
       <section className="py-16 md:py-24 bg-card">
         <div className="container max-w-4xl mx-auto px-6">
           <p className="text-primary uppercase tracking-[0.2em] text-sm mb-4 font-sans text-center">
-            About This Retreat
+            O tomto pobyte
           </p>
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8 text-center">
-            Your Journey Awaits
+            Vaša cesta čaká
           </h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             {retreat.description.split('\n\n').map((paragraph, index) => (
@@ -132,10 +132,10 @@ const RetreatDetail = () => {
       <section className="py-16 md:py-24 bg-background">
         <div className="container max-w-4xl mx-auto px-6">
           <p className="text-primary uppercase tracking-[0.2em] text-sm mb-4 font-sans text-center">
-            Sample Schedule
+            Vzorový rozvrh
           </p>
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-12 text-center">
-            A Day in Paradise
+            Deň v raji
           </h2>
           <div className="space-y-4">
             {retreat.dailySchedule.map((item, index) => (
@@ -158,10 +158,10 @@ const RetreatDetail = () => {
       <section className="py-16 md:py-24 bg-card">
         <div className="container max-w-4xl mx-auto px-6">
           <p className="text-primary uppercase tracking-[0.2em] text-sm mb-4 font-sans text-center">
-            Everything You Need
+            Všetko čo potrebujete
           </p>
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-12 text-center">
-            What's Included
+            Čo je zahrnuté
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
             {retreat.inclusions.map((inclusion, index) => (
@@ -183,10 +183,10 @@ const RetreatDetail = () => {
       <section className="py-16 md:py-24 bg-background">
         <div className="container max-w-6xl mx-auto px-6">
           <p className="text-primary uppercase tracking-[0.2em] text-sm mb-4 font-sans text-center">
-            Gallery
+            Galéria
           </p>
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-12 text-center">
-            Glimpses of Paradise
+            Pohľady do raja
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {retreat.galleryImages.map((image, index) => (
@@ -196,7 +196,7 @@ const RetreatDetail = () => {
               >
                 <img 
                   src={image} 
-                  alt={`${retreat.name} gallery image ${index + 1}`}
+                  alt={`${retreat.name} galéria obrázok ${index + 1}`}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>

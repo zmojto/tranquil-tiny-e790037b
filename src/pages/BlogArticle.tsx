@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, Calendar, User, Tag } from "lucide-react";
 import { format } from "date-fns";
+import { sk } from "date-fns/locale";
 import ReactMarkdown from "react-markdown";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -66,7 +67,7 @@ const BlogArticle = () => {
         image: article.cover_image_url,
         publisher: {
           "@type": "Organization",
-          name: "Serenity Retreats",
+          name: "Serene Retreats",
         },
       };
 
@@ -114,13 +115,13 @@ const BlogArticle = () => {
       <main className="min-h-screen bg-background flex items-center justify-center">
         <div className="text-center">
           <h1 className="font-serif text-3xl text-foreground mb-4">
-            Article Not Found
+            Článok nenájdený
           </h1>
           <p className="text-muted-foreground mb-8">
-            The article you're looking for doesn't exist or has been removed.
+            Článok, ktorý hľadáte, neexistuje alebo bol odstránený.
           </p>
           <Button asChild>
-            <Link to="/blog">Back to Blog</Link>
+            <Link to="/blog">Späť na blog</Link>
           </Button>
         </div>
       </main>
@@ -128,7 +129,7 @@ const BlogArticle = () => {
   }
 
   const formattedDate = article.published_at
-    ? format(new Date(article.published_at), "MMMM d, yyyy")
+    ? format(new Date(article.published_at), "d. MMMM yyyy", { locale: sk })
     : "";
 
   return (
@@ -141,7 +142,7 @@ const BlogArticle = () => {
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Blog
+            Späť na blog
           </Link>
 
           <Badge variant="secondary" className="mb-4">
@@ -195,14 +196,14 @@ const BlogArticle = () => {
       <section className="bg-primary text-primary-foreground py-12">
         <div className="container max-w-4xl mx-auto px-6 text-center">
           <h2 className="font-serif text-2xl md:text-3xl mb-4">
-            Ready to Experience This Yourself?
+            Ste pripravení to zažiť na vlastnej koži?
           </h2>
           <p className="text-primary-foreground/80 mb-8 max-w-xl mx-auto">
-            Transform your practice with one of our immersive wellness retreats
-            in beautiful destinations around the world.
+            Premeňte svoju prax s jedným z našich pútavých wellness pobytov
+            na krásnych miestach po celom svete.
           </p>
           <Button asChild variant="secondary" size="lg">
-            <Link to="/#retreats">Explore Our Retreats</Link>
+            <Link to="/#retreats">Preskúmať naše pobyty</Link>
           </Button>
         </div>
       </section>
@@ -212,7 +213,7 @@ const BlogArticle = () => {
         <section className="py-16 bg-secondary/30">
           <div className="container max-w-6xl mx-auto px-6">
             <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8 text-center">
-              Related Articles
+              Súvisiace články
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               {relatedArticles.map((relatedArticle) => (

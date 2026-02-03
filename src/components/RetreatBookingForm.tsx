@@ -18,10 +18,10 @@ import { MapPin, Calendar, Users } from "lucide-react";
 import type { Retreat } from "@/data/retreats";
 
 const bookingSchema = z.object({
-  name: z.string().trim().min(2, "Name must be at least 2 characters").max(100, "Name must be less than 100 characters"),
-  email: z.string().trim().email("Please enter a valid email").max(255, "Email must be less than 255 characters"),
-  phone: z.string().trim().min(10, "Please enter a valid phone number").max(20, "Phone number is too long"),
-  message: z.string().trim().max(500, "Message must be less than 500 characters").optional(),
+  name: z.string().trim().min(2, "Meno musí mať aspoň 2 znaky").max(100, "Meno musí mať menej ako 100 znakov"),
+  email: z.string().trim().email("Zadajte platný e-mail").max(255, "E-mail musí mať menej ako 255 znakov"),
+  phone: z.string().trim().min(10, "Zadajte platné telefónne číslo").max(20, "Telefónne číslo je príliš dlhé"),
+  message: z.string().trim().max(500, "Správa musí mať menej ako 500 znakov").optional(),
 });
 
 type BookingFormValues = z.infer<typeof bookingSchema>;
@@ -51,8 +51,8 @@ const RetreatBookingForm = ({ retreat }: RetreatBookingFormProps) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     
     toast({
-      title: "Reservation Request Sent!",
-      description: `We've received your request for ${retreat.name}. We'll contact you within 24 hours.`,
+      title: "Žiadosť o rezerváciu odoslaná!",
+      description: `Prijali sme vašu žiadosť o ${retreat.name}. Budeme vás kontaktovať do 24 hodín.`,
     });
     
     form.reset();
@@ -64,13 +64,13 @@ const RetreatBookingForm = ({ retreat }: RetreatBookingFormProps) => {
       <div className="container max-w-4xl mx-auto px-6">
         <div className="text-center mb-12">
           <p className="text-primary uppercase tracking-[0.2em] text-sm mb-4 font-sans">
-            Reserve Your Spot
+            Rezervujte si miesto
           </p>
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
-            Begin Your Journey
+            Začnite svoju cestu
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Complete the form below to request your reservation. Our team will contact you within 24 hours to confirm availability.
+            Vyplňte formulár nižšie a požiadajte o rezerváciu. Náš tím vás bude kontaktovať do 24 hodín na potvrdenie dostupnosti.
           </p>
         </div>
 
@@ -89,17 +89,17 @@ const RetreatBookingForm = ({ retreat }: RetreatBookingFormProps) => {
               </div>
               <div className="flex items-center gap-3">
                 <Users className="w-5 h-5 text-primary flex-shrink-0" />
-                <span>{retreat.spotsLeft} spots remaining</span>
+                <span>{retreat.spotsLeft} zostávajúcich miest</span>
               </div>
             </div>
             <div className="border-t border-primary/10 mt-6 pt-6">
               <div className="text-center">
                 <span className="font-serif text-3xl text-foreground">${retreat.price.toLocaleString()}</span>
-                <span className="text-muted-foreground ml-2">per person</span>
+                <span className="text-muted-foreground ml-2">za osobu</span>
               </div>
             </div>
             <p className="text-xs text-muted-foreground text-center mt-4">
-              A $500 deposit is required to confirm your spot. Payment details will be sent after your request is received.
+              Na potvrdenie miesta sa vyžaduje záloha 500 $. Platobné údaje budú zaslané po prijatí vašej žiadosti.
             </p>
           </div>
 
@@ -112,9 +112,9 @@ const RetreatBookingForm = ({ retreat }: RetreatBookingFormProps) => {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Full Name</FormLabel>
+                      <FormLabel>Celé meno</FormLabel>
                       <FormControl>
-                        <Input placeholder="Your full name" {...field} />
+                        <Input placeholder="Vaše celé meno" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -126,9 +126,9 @@ const RetreatBookingForm = ({ retreat }: RetreatBookingFormProps) => {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Email</FormLabel>
+                      <FormLabel>E-mail</FormLabel>
                       <FormControl>
-                        <Input type="email" placeholder="your@email.com" {...field} />
+                        <Input type="email" placeholder="vas@email.sk" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -140,9 +140,9 @@ const RetreatBookingForm = ({ retreat }: RetreatBookingFormProps) => {
                   name="phone"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Phone Number</FormLabel>
+                      <FormLabel>Telefónne číslo</FormLabel>
                       <FormControl>
-                        <Input type="tel" placeholder="+1 (555) 000-0000" {...field} />
+                        <Input type="tel" placeholder="+421 900 000 000" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -154,10 +154,10 @@ const RetreatBookingForm = ({ retreat }: RetreatBookingFormProps) => {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Special Requests (Optional)</FormLabel>
+                      <FormLabel>Špeciálne požiadavky (voliteľné)</FormLabel>
                       <FormControl>
                         <Textarea 
-                          placeholder="Dietary requirements, room preferences, questions..."
+                          placeholder="Stravovanie, preferencie izby, otázky..."
                           className="resize-none"
                           rows={4}
                           {...field} 
@@ -175,7 +175,7 @@ const RetreatBookingForm = ({ retreat }: RetreatBookingFormProps) => {
                   className="w-full"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? "Sending..." : "Request Reservation"}
+                  {isSubmitting ? "Odosiela sa..." : "Odoslať rezerváciu"}
                 </Button>
               </form>
             </Form>
