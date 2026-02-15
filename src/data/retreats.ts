@@ -146,6 +146,162 @@ Večery spájajú našu skupinu pri večerách pri sviečkach s tým najlepším
     heroImage: heroRetreat,
     galleryImages: [galleryRoom, gallerySpa, galleryFood, galleryNature, galleryPool, galleryMeditation],
   },
+  {
+    id: "greece-harmony",
+    name: "Greece Harmony",
+    tagline: "Stredomorská harmónia",
+    location: "Santorini",
+    country: "Grécko",
+    dates: "20. – 27. júna 2026",
+    price: 2900,
+    spotsLeft: 7,
+    highlights: ["Výhľady na kalderou", "Prax pri západe slnka", "Grécka kuchyňa"],
+    description: `Objavte magickú energiu Santorini na našom 7-dňovom pobyte v srdci Egejského mora. Bielo-modré domčeky, dramatické výhľady na kalderou a nezabudnuteľné západy slnka tvoria kulisu pre hlbokú jógovú prax a vnútornú regeneráciu.
+
+Každé ráno začína meditáciou s panoramatickým výhľadom na more, po ktorej nasleduje dynamická jógová prax na terase s výhľadom na sopečný ostrov. Popoludnia sú venované objavovaniu gréckeho dedičstva – návšteva starobylých ruín, prechádzky po malebných uličkách a ochutnávka miestnych vín.
+
+Tento pobyt je ideálny pre tých, ktorí hľadajú kombináciu wellness a kultúrneho zážitku v jednej z najkrajších destinácií Stredozemného mora. Naši učitelia vás povedú praxou prispôsobenou vašej úrovni v prostredí, ktoré inšpiruje a lieči.`,
+    dailySchedule: [
+      { time: "6:30", activity: "Meditácia s výhľadom na more" },
+      { time: "7:30", activity: "Hatha jóga na terase (90 min)" },
+      { time: "9:00", activity: "Grécke raňajky" },
+      { time: "11:00", activity: "Kultúrny výlet alebo voľný čas" },
+      { time: "13:00", activity: "Stredomorský obed" },
+      { time: "15:00", activity: "Plavba alebo kúpeľné ošetrenie" },
+      { time: "17:30", activity: "Jóga pri západe slnka" },
+      { time: "19:30", activity: "Večera a ochutnávka vín" },
+    ],
+    inclusions: [
+      "7 nocí v butikových suites s výhľadom na more",
+      "Všetky jedlá s gréckou kuchyňou",
+      "Denné jógové a meditačné lekcie",
+      "Plavba po okolitých ostrovoch",
+      "Návšteva starobylých ruín Akrotiri",
+      "Ochutnávka miestnych vín",
+      "Jedno 60-minútové kúpeľné ošetrenie",
+      "Letiskové transfery",
+      "Ceremónia pri západe slnka na kaldeire",
+    ],
+    heroImage: heroRetreat,
+    galleryImages: [gallerySpa, galleryFood, galleryPool, galleryNature, galleryRoom, galleryMeditation],
+  },
+  {
+    id: "sri-lanka-zen",
+    name: "Sri Lanka Zen",
+    tagline: "Tropický pokoj",
+    location: "Ella",
+    country: "Srí Lanka",
+    dates: "8. – 15. augusta 2026",
+    price: 2500,
+    spotsLeft: 9,
+    highlights: ["Čajové plantáže", "Ayurvédske ošetrenia", "Výlety k vodopádom"],
+    description: `Ponorte sa do pokojnej krásy srílanskej vysočiny v mestečku Ella, obklopenom smaragdovými čajovými plantážami a hmlistými horami. Tento 7-dňový pobyt kombinuje starobylé ayurvédske tradície s modernou jógovou praxou v prostredí tropického raja.
+
+Ráná začínajú jemnou praxou s výhľadom na Nine Arch Bridge, po ktorej nasledujú ayurvédske workshopy a organické raňajky z miestnych produktov. Popoludnia ponúkajú túry k vodopádom, návštevy čajových plantáží a relax v prírodných kúpeľoch.
+
+Ella je miestom, kde sa čas spomaľuje a príroda lieči. Odídete s hlbokým pochopením ayurvédskych princípov, obnovení na tele aj na duchu, a s nezabudnuteľnými spomienkami na jednu z najkrajších krajín Ázie.`,
+    dailySchedule: [
+      { time: "6:00", activity: "Ranná meditácia v horách" },
+      { time: "7:00", activity: "Ashtanga jóga (90 min)" },
+      { time: "9:00", activity: "Ayurvédske raňajky" },
+      { time: "10:30", activity: "Ayurvédsky workshop alebo túra" },
+      { time: "13:00", activity: "Obed z miestnych produktov" },
+      { time: "15:00", activity: "Výlet k vodopádu alebo čajovej plantáži" },
+      { time: "17:30", activity: "Regeneračná jóga a pranayama" },
+      { time: "19:00", activity: "Večera a večerná meditácia" },
+    ],
+    inclusions: [
+      "7 nocí v horskom rezorte",
+      "Všetky ayurvédske jedlá a občerstvenie",
+      "Denné jógové a meditačné lekcie",
+      "Ayurvédska konzultácia a ošetrenie",
+      "Návšteva čajovej plantáže s degustáciou",
+      "Túra k vodopádu Ravana Falls",
+      "Jazda legendárnym vlakom cez hory",
+      "Letiskové transfery z Colomba",
+      "Safari v národnom parku Yala",
+    ],
+    heroImage: heroRetreat,
+    galleryImages: [galleryNature, galleryMeditation, galleryFood, gallerySpa, galleryPool, galleryRoom],
+  },
+  {
+    id: "mexico-spirit",
+    name: "Mexico Spirit",
+    tagline: "Mayská energia",
+    location: "Tulum",
+    country: "Mexiko",
+    dates: "18. – 25. októbra 2026",
+    price: 2700,
+    spotsLeft: 8,
+    highlights: ["Cenote kúpanie", "Mayské ruiny", "Kakao ceremónie"],
+    description: `Zažite mystickú energiu Tulumu na pobreží Karibského mora, kde sa starobylá mayská múdrosť stretáva s moderným wellness. Náš 7-dňový pobyt v eko-rezorte obklopenom džungľou a tyrkysovým morom vás pozýva na cestu hlbokej duchovnej premeny.
+
+Každý deň začína plážovou jógou za zvukov morských vĺn, po ktorej nasleduje kúpanie v posvätných cenote – prírodných jaskynných jazerách, ktoré Mayovia považovali za brány do podsvetia. Popoludnia ponúkajú návštevy starobylých ruín, kakao ceremónie a relax na bielych plážach.
+
+Tulum je miestom, kde sa história, príroda a spiritualita spájajú v dokonalej harmónii. Náš pobyt zahŕňa tradičnú temazcal ceremóniu – mayský parný rituál, ktorý očisťuje telo aj dušu.`,
+    dailySchedule: [
+      { time: "6:30", activity: "Plážová jóga pri východe slnka" },
+      { time: "8:00", activity: "Tropické raňajky" },
+      { time: "10:00", activity: "Návšteva cenote alebo ruín" },
+      { time: "13:00", activity: "Mexický obed" },
+      { time: "15:00", activity: "Kakao ceremónia alebo voľný čas" },
+      { time: "17:00", activity: "Yin jóga a zvuková terapia" },
+      { time: "19:00", activity: "Večera pri sviečkach" },
+      { time: "21:00", activity: "Hviezdna meditácia na pláži" },
+    ],
+    inclusions: [
+      "7 nocí v eko-rezorte v džungli",
+      "Všetky jedlá z mexickej kuchyne",
+      "Denné jógové a meditačné lekcie",
+      "Návšteva cenote s ceremóniou",
+      "Sprievodený výlet k mayským ruinám",
+      "Tradičná temazcal ceremónia",
+      "Kakao ceremónia s miestnym šamanom",
+      "Letiskové transfery z Cancúnu",
+      "Šnorchlovanie na koralovom útese",
+    ],
+    heroImage: heroRetreat,
+    galleryImages: [galleryPool, gallerySpa, galleryNature, galleryMeditation, galleryFood, galleryRoom],
+  },
+  {
+    id: "thailand-awakening",
+    name: "Thailand Awakening",
+    tagline: "Ostrovné prebudenie",
+    location: "Koh Samui",
+    country: "Thajsko",
+    dates: "14. – 21. novembra 2026",
+    price: 3000,
+    spotsLeft: 5,
+    highlights: ["Thajská masáž", "Budhistické chrámy", "Ostrovný kajaking"],
+    description: `Prebuďte sa na tropickom ostrove Koh Samui, kde kokosové palmy lemujú krištáľovo čisté pláže a starobylé budhistické chrámy ponúkajú priestor na hlbokú meditáciu. Náš 7-dňový pobyt v luxusnom plážovom rezorte kombinuje thajské wellness tradície s intenzívnou jógovou praxou.
+
+Každé ráno začína meditáciou pri východe slnka na pláži, po ktorej si môžete vybrať medzi dynamickou jógou alebo lekciou Muay Thai – thajského boxu, ktorý posilňuje telo aj myseľ. Popoludnia ponúkajú kajaking po okolitých ostrovoch, návštevy zlatých chrámov a autentickú thajskú masáž.
+
+Koh Samui je ostrov kontrastov – od rušných nočných trhov po tiché meditačné záhrady. Náš pobyt vás prevedie tým najlepším z thajskej kultúry a pomôže vám nájsť vnútorný pokoj v prostredí tropického raja.`,
+    dailySchedule: [
+      { time: "6:00", activity: "Meditácia pri východe slnka na pláži" },
+      { time: "7:00", activity: "Vinyasa jóga alebo Muay Thai (90 min)" },
+      { time: "9:00", activity: "Thajské raňajky" },
+      { time: "10:30", activity: "Kajaking alebo návšteva chrámu" },
+      { time: "13:00", activity: "Obed z miestnej kuchyne" },
+      { time: "15:00", activity: "Thajská masáž alebo voľný čas" },
+      { time: "17:30", activity: "Jóga Nidra a zvuková meditácia" },
+      { time: "19:30", activity: "Večera a kultúrny program" },
+    ],
+    inclusions: [
+      "7 nocí v plážovom rezorte",
+      "Všetky jedlá z thajskej kuchyne",
+      "Denné jógové a meditačné lekcie",
+      "Dve tradičné thajské masáže",
+      "Návšteva budhistického chrámu s mníchom",
+      "Kajak výlet po ostrovoch Ang Thong",
+      "Lekcia thajského varenia",
+      "Letiskové transfery",
+      "Návšteva nočného trhu Fisherman's Village",
+    ],
+    heroImage: heroRetreat,
+    galleryImages: [galleryMeditation, galleryPool, galleryRoom, galleryFood, gallerySpa, galleryNature],
+  },
 ];
 
 export const getRetreatById = (id: string): Retreat | undefined => {
