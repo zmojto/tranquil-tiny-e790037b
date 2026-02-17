@@ -23,7 +23,7 @@ const AboutSection = () => {
           <FeatureCard 
             icon={<Sun className="w-8 h-8" />}
             title="Denná prax"
-            description="Prebuďte sa so svitaním na ranné Vinyasa flow a ukončite deň regeneračnými večernými lekciami pod vedením skúsených učiteľov."
+            description="Prebuďte sa so svitaním na ranné Hathajóga flow a ukončite deň regeneračnými večernými lekciami pod vedením skúsených učiteľov."
           />
           <FeatureCard 
             icon={<Heart className="w-8 h-8" />}
