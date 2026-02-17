@@ -1,26 +1,37 @@
 
 
-# Oprava formátovania článkov na blogu
+# Oprava formátovania dvoch článkov v databáze
 
 ## Problém
-Markdown obsah článkov sa zobrazuje bez formátovania -- chýbajú medzery medzi odsekmi, nadpisy nie sú štylizované, zoznamy nemajú odrážky. Dôvod: plugin `@tailwindcss/typography` je nainštalovaný, ale nie je pridaný do konfigurácie Tailwindu.
+Dva články majú v databáze obsah bez znakov nového riadku, takže sa zobrazujú ako jeden súvislý blok textu bez nadpisov, zoznamov a medzier:
+
+- `morning-yoga-routine-beginners` - jógové pozície
+- `mindfulness-meditation-guide` - meditácia vsimavosti
+
+Tretí článok (`benefits-of-digital-detox`) je v poriadku.
 
 ## Riešenie
-Jedna jednoduchá zmena v jednom súbore.
+Aktualizácia stĺpca `content` v databáze pre oba články - pridanie správnych znakov nového riadku, aby sa Markdown správne parsoval.
 
 ## Technické detaily
 
-### Súbor: `tailwind.config.ts`
-Pridať `@tailwindcss/typography` do poľa `plugins`:
+### 1. UPDATE pre `morning-yoga-routine-beginners`
+SQL UPDATE príkaz, ktorý nahradí obsah správne formátovaným Markdown textom s `\n` znakmi medzi:
+- Úvodným odsekom a zoznamom prínosov
+- Každou jógovou pozíciou (## nadpisy)
+- Popismi pozícií a inštrukciami
+- Záverečnou výzvou
 
-```typescript
-plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
-```
+### 2. UPDATE pre `mindfulness-meditation-guide`
+SQL UPDATE príkaz s formátovaným obsahom vrátane:
+- Úvodnej citácie (blockquote)
+- Sekcie "Naučíme sa" so zoznamom
+- Info o lektorke s odkazom
+- Sekcie "Čo je všímavosť?" (## nadpis)
+- Zoznamu výhod
+- Sekcie "Ako začať?" s pokynmi
+- Záverečnej citácie
 
-Toto aktivuje triedy `prose`, `prose-lg`, `prose-headings:*`, `prose-p:*` atď., ktoré sú už použité v `BlogArticle.tsx` na riadku 190. Po tejto zmene sa Markdown obsah z databázy bude správne zobrazovať s:
-- Medzerami medzi odsekmi
-- Štylizovanými nadpismi (##, ###)
-- Odrážkovými a číselnými zoznamami
-- Tučným a kurzívnym textom
-- Blokovou citáciou
-- Horizontálnymi oddeľovačmi (---)
+### Žiadne zmeny kódu
+Nie sú potrebné žiadne zmeny v súboroch projektu - iba dátové opravy v databáze.
+
