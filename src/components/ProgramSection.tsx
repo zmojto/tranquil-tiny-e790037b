@@ -6,7 +6,7 @@ const ProgramSection = () => {
   "7 nocí v luxusnom ubytovaní / 4 noci v útulnej štýlovej kolibe",
   "Denné ranné a večerné jógové lekcie",
   "Vedená meditácia a dychové cvičenia",
-  "Tri organické rastlinné jedlá denne",
+  "Tri ajurvédské rastlinné jedlá denne",
   "Kúpeľné ošetrenie alebo wellness masáž",
   "Ceremónia zvukovej liečby",
   "Kurátorovaný výlet do prírody",
