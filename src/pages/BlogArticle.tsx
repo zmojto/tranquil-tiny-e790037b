@@ -188,7 +188,12 @@ const BlogArticle = () => {
       {/* Article Content */}
       <article className="container max-w-4xl mx-auto px-6 pb-16">
         <div className="prose prose-lg max-w-none prose-headings:font-serif prose-headings:text-foreground prose-p:text-muted-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-blockquote:border-l-primary prose-blockquote:text-muted-foreground prose-strong:text-foreground prose-li:text-muted-foreground">
-          <ReactMarkdown>{article.content}</ReactMarkdown>
+          <ReactMarkdown
+            skipHtml={true}
+            disallowedElements={['script', 'iframe', 'object', 'embed']}
+          >
+            {article.content}
+          </ReactMarkdown>
         </div>
       </article>
 
