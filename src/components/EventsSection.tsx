@@ -88,11 +88,12 @@ const EventsSection = () => {
         </div>
 
         <p className="text-center text-muted-foreground mt-12">
-          Všetky pobyty zahŕňajú 7 nocí ubytovania, dennú jógu a meditáciu, organické jedlá a kurátorované zážitky.
+          Aktivity sú starostlivo a odborne vybrané tak, aby vám priniesli priniesli vysokú kvalitu a ucelený tematický zážitok. 
+ 
+ 
+
+
+        
         </p>
       </div>
-    </section>);
-
-};
-
-export default EventsSection;
+    </section>);};export default EventsSection;
