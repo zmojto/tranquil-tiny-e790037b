@@ -3,15 +3,15 @@ import { Button } from "@/components/ui/button";
 
 const ProgramSection = () => {
   const inclusions = [
-    "7 nocí v luxusnom eko-lodge ubytovaní",
-    "Denné ranné a večerné jógové lekcie",
-    "Vedená meditácia a dychové cvičenia",
-    "Tri organické rastlinné jedlá denne",
-    "Kúpeľné ošetrenie alebo wellness masáž",
-    "Ceremónia zvukovej liečby",
-    "Kurátorovaný výlet do prírody",
-    "Letiskové transfery a uvítací rituál"
-  ];
+  "7 nocí v luxusnom eko-lodge ubytovaní",
+  "Denné ranné a večerné jógové lekcie",
+  "Vedená meditácia a dychové cvičenia",
+  "Tri organické rastlinné jedlá denne",
+  "Kúpeľné ošetrenie alebo wellness masáž",
+  "Ceremónia zvukovej liečby",
+  "Kurátorovaný výlet do prírody",
+  "Letiskové transfery a uvítací rituál"];
+
 
   return (
     <section id="program" className="py-24 md:py-32 bg-card scroll-mt-20">
@@ -26,19 +26,19 @@ const ProgramSection = () => {
               Všetko čo potrebujete na oddych
             </h2>
             <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
-              Každý pobyt zahŕňa rovnaký starostlivo zostavený zážitok. 
-              Od chvíle príchodu jednoducho buďte prítomní.
+              Každý pobyt zahŕňa rovnaký starostlivo zostavený zážitok. Od chvíle príchodu jednoducho buďte prítomní. Práca s telom, mysľou a emóciami, pestovanie spokojnosti a stability v každodennom živote, je pozvánkou návratu k sebe.
+            
             </p>
             
             <ul className="space-y-4 mb-10">
-              {inclusions.map((item, index) => (
-                <li key={index} className="flex items-start gap-3">
+              {inclusions.map((item, index) =>
+              <li key={index} className="flex items-start gap-3">
                   <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
                     <Check className="w-4 h-4 text-primary" />
                   </span>
                   <span className="text-foreground">{item}</span>
                 </li>
-              ))}
+              )}
             </ul>
           </div>
           
@@ -56,11 +56,11 @@ const ProgramSection = () => {
                 Ceny sa líšia podľa destinácie • K dispozícii jednoložné izby
               </p>
               
-              <Button 
-                variant="hero" 
+              <Button
+                variant="hero"
                 className="w-full mb-4"
-                onClick={() => document.getElementById('retreats')?.scrollIntoView({ behavior: 'smooth' })}
-              >
+                onClick={() => document.getElementById('retreats')?.scrollIntoView({ behavior: 'smooth' })}>
+
                 Vyberte si pobyt
               </Button>
               
@@ -71,8 +71,8 @@ const ProgramSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default ProgramSection;
