@@ -16,17 +16,18 @@ const EventsSection = () => {
             Vyberte si svoju cestu
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
-            Tri jedinečné destinácie, jeden transformačný zážitok. Každý pobyt ponúka
-            7 dní jógy, meditácie a spojenia v úchvatnom prírodnom prostredí.
+            Sedem jedinečných destinácií, jeden transformačný zážitok. Všetky pobyty zahŕňajú ubytovanie, dennú jógu a meditáciu, organické jedlá a nezabudnuteľné zážitky.
+
+ 
+ 
+ 
+
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {retreats.map((retreat) => (
-            <Card 
-              key={retreat.id} 
-              className="group bg-background border-primary/10 hover:border-primary/30 transition-all duration-300 overflow-hidden"
-            >
+          {retreats.map((retreat) => <Card key={retreat.id} className="group bg-background border-primary/10 hover:border-primary/30 transition-all duration-300 overflow-hidden">
+
               <CardContent className="p-0">
                 {/* Header with gradient */}
                 <div className="bg-gradient-to-br from-primary/20 to-primary/5 p-8 text-center">
@@ -57,12 +58,11 @@ const EventsSection = () => {
 
                   {/* Highlights */}
                   <ul className="mb-8 space-y-2">
-                    {retreat.highlights.map((highlight, index) => (
-                      <li key={index} className="text-sm text-muted-foreground flex items-center gap-2">
+                    {retreat.highlights.map((highlight, index) => <li key={index} className="text-sm text-muted-foreground flex items-center gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary/60" />
                         {highlight}
                       </li>
-                    ))}
+                  )}
                   </ul>
 
                   {/* Pricing & CTA */}
@@ -71,11 +71,11 @@ const EventsSection = () => {
                       <span className="font-serif text-4xl text-foreground">${retreat.price.toLocaleString()}</span>
                       <span className="text-muted-foreground ml-2">za osobu</span>
                     </div>
-                    <Button 
-                      variant="hero" 
-                      className="w-full"
-                      asChild
-                    >
+                    <Button
+                    variant="hero"
+                    className="w-full"
+                    asChild>
+
                       <Link to={`/retreats/${retreat.id}`}>
                         Preskúmať pobyt
                       </Link>
@@ -84,15 +84,15 @@ const EventsSection = () => {
                 </div>
               </CardContent>
             </Card>
-          ))}
+          )}
         </div>
 
         <p className="text-center text-muted-foreground mt-12">
           Všetky pobyty zahŕňajú 7 nocí ubytovania, dennú jógu a meditáciu, organické jedlá a kurátorované zážitky.
         </p>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default EventsSection;
