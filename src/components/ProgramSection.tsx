@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const ProgramSection = () => {
   const inclusions = [
-  "7 nocí v luxusnom eko-lodge ubytovaní",
+  "7 nocí v luxusnom ubytovaní / 4 noci v útulnej štýlovej kolibe",
   "Denné ranné a večerné jógové lekcie",
   "Vedená meditácia a dychové cvičenia",
   "Tri organické rastlinné jedlá denne",
