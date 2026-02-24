@@ -1,26 +1,32 @@
 
 
-## Plan: Replace Bali Bliss with Cyprus Awakening "Slnečný pokoj"
+## Plan: Add Villa Lucilla website images to Cyprus Awakening retreat
 
-### What changes
+### Overview
 
-**File: `src/data/retreats.ts`** — Replace the first retreat entry (Bali Bliss, lines 32–70) with:
+Replace the generic placeholder images used for the Cyprus retreat's hero and gallery with real photos from villalucilla.eu. The images will be referenced as external URLs directly in the data file, removing the need for local asset imports for this retreat.
 
-- **id:** `"cyprus-awakening"`
-- **name:** `"Slnečný pokoj"`
-- **tagline:** `"Cyprus Awakening"`
-- **location:** `"Protaras"`
-- **country:** `"Cyprus"`
-- **dates:** `"12. – 19. októbra 2026"`
-- **price:** `2700`
-- **spotsLeft:** `8`
-- **highlights:** `["Meditácie pri mori", "Staroveké svätyne a energetické miesta", "Plavba pri západe slnka"]`
-- **description:** Villa Lucilla text provided by user (3 paragraphs about Protaras location, proximity to Mimosa Beach / Fig Tree Bay, and the resort character)
-- **dailySchedule:** Adapted for a coastal Cyprus retreat (morning sea meditation, hatha yoga, cultural/beach excursions, sunset sailing)
-- **inclusions:** Updated to reflect Cyprus context (Villa Lucilla accommodation, Mediterranean meals, boat trip, ancient sanctuary visits, etc.)
-- **heroImage & galleryImages:** Keep existing placeholder images (same assets)
+### Available images from villalucilla.eu
 
-### Detail
+**Hero candidate:**
+- `https://villalucilla.eu/images/hero-pool.jpg` — Villa entrance/exterior with pool area
 
-The retreat card on the homepage and the `/retreats/cyprus-awakening` detail page will both automatically reflect the new data since they read from the same `retreats` array. No changes needed in `EventsSection.tsx` or `RetreatDetail.tsx` — only the data file.
+**Gallery candidates (selecting 6 for the grid):**
+1. `https://villalucilla.eu/images/night-pool.jpg` — Pool by Night
+2. `https://villalucilla.eu/images/livingroom1.jpeg` — Living Room
+3. `https://villalucilla.eu/images/bedroom-master.jpg` — Master Suite
+4. `https://villalucilla.eu/images/konnos-bay.jpg` — Konnos Bay Vista
+5. `https://villalucilla.eu/images/blue-lagoon.jpg` — Crystal Blue Lagoon
+6. `https://villalucilla.eu/images/mimosa-beach-real.jpg` — Steps to Mimosa Beach
+
+### Changes
+
+**File: `src/data/retreats.ts`** (lines 68-69 of the Cyprus retreat entry):
+
+- Change `heroImage` from the imported `heroRetreat` asset to the external URL string `"https://villalucilla.eu/images/hero-pool.jpg"`
+- Change `galleryImages` from the array of imported local assets to an array of 6 external URL strings from the villa website
+
+The `Retreat` type already uses `string` for both `heroImage` and `galleryImages`, so external URLs work without any type changes. The `RetreatDetail.tsx` page and `EventsSection.tsx` already use these strings in `<img src>` and CSS `backgroundImage`, so external URLs will render correctly.
+
+No other files need modification.
 
