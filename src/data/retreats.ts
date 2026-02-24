@@ -65,8 +65,15 @@ Protaras je známy malebnými zátokami, čistým morom a pokojnejšou atmosfér
       "Letiskové transfery",
       "Uvítacie a záverečné ceremónie",
     ],
-    heroImage: heroRetreat,
-    galleryImages: [galleryNature, galleryMeditation, gallerySpa, galleryFood, galleryRoom, galleryPool],
+    heroImage: "https://villalucilla.eu/images/hero-pool.jpg",
+    galleryImages: [
+      "https://villalucilla.eu/images/night-pool.jpg",
+      "https://villalucilla.eu/images/livingroom1.jpeg",
+      "https://villalucilla.eu/images/bedroom-master.jpg",
+      "https://villalucilla.eu/images/konnos-bay.jpg",
+      "https://villalucilla.eu/images/blue-lagoon.jpg",
+      "https://villalucilla.eu/images/mimosa-beach-real.jpg",
+    ],
   },
   {
     id: "costa-rica",
