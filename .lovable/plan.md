@@ -1,32 +1,22 @@
 
 
-## Plan: Add Villa Lucilla website images to Cyprus Awakening retreat
+## Plan: Restore Bali Bliss, Replace Greece Harmony with Cyprus
 
-### Overview
+### What changes
 
-Replace the generic placeholder images used for the Cyprus retreat's hero and gallery with real photos from villalucilla.eu. The images will be referenced as external URLs directly in the data file, removing the need for local asset imports for this retreat.
+**File: `src/data/retreats.ts`**
 
-### Available images from villalucilla.eu
+1. **Replace the Cyprus retreat (lines 32–77)** with the original Bali Bliss retreat data:
+   - id: `"bali-bliss"`
+   - name: `"Bali Bliss"`
+   - tagline: `"Ostrovná harmónia"`
+   - location: `"Ubud"`, country: `"Bali"`
+   - dates: `"15. – 22. marca 2026"`, price: `2800`, spotsLeft: `12`
+   - highlights: `["Chrámové ceremónie", "Ryžové terasy", "Tradičný tanec"]`
+   - Original Bali description, daily schedule, inclusions
+   - heroImage: `heroRetreat`, galleryImages: original local asset imports
 
-**Hero candidate:**
-- `https://villalucilla.eu/images/hero-pool.jpg` — Villa entrance/exterior with pool area
+2. **Replace the Greece Harmony retreat (lines 156–194)** with the Cyprus Awakening retreat (the current data from lines 32–77, including Villa Lucilla description and external image URLs)
 
-**Gallery candidates (selecting 6 for the grid):**
-1. `https://villalucilla.eu/images/night-pool.jpg` — Pool by Night
-2. `https://villalucilla.eu/images/livingroom1.jpeg` — Living Room
-3. `https://villalucilla.eu/images/bedroom-master.jpg` — Master Suite
-4. `https://villalucilla.eu/images/konnos-bay.jpg` — Konnos Bay Vista
-5. `https://villalucilla.eu/images/blue-lagoon.jpg` — Crystal Blue Lagoon
-6. `https://villalucilla.eu/images/mimosa-beach-real.jpg` — Steps to Mimosa Beach
-
-### Changes
-
-**File: `src/data/retreats.ts`** (lines 68-69 of the Cyprus retreat entry):
-
-- Change `heroImage` from the imported `heroRetreat` asset to the external URL string `"https://villalucilla.eu/images/hero-pool.jpg"`
-- Change `galleryImages` from the array of imported local assets to an array of 6 external URL strings from the villa website
-
-The `Retreat` type already uses `string` for both `heroImage` and `galleryImages`, so external URLs work without any type changes. The `RetreatDetail.tsx` page and `EventsSection.tsx` already use these strings in `<img src>` and CSS `backgroundImage`, so external URLs will render correctly.
-
-No other files need modification.
+No other files need changes — both EventsSection and RetreatDetail read from this array.
 
