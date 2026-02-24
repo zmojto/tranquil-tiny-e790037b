@@ -1,22 +1,24 @@
 
 
-## Plan: Restore Bali Bliss, Replace Greece Harmony with Cyprus
+## Plan: Fix navigation visibility on hero section
 
-### What changes
+### Problem
 
-**File: `src/data/retreats.ts`**
+When the page is at the top (not scrolled), the header has `bg-transparent` and uses dark-colored text (`text-foreground`, `text-muted-foreground`). This blends into the dark hero image, making the logo and nav links unreadable.
 
-1. **Replace the Cyprus retreat (lines 32–77)** with the original Bali Bliss retreat data:
-   - id: `"bali-bliss"`
-   - name: `"Bali Bliss"`
-   - tagline: `"Ostrovná harmónia"`
-   - location: `"Ubud"`, country: `"Bali"`
-   - dates: `"15. – 22. marca 2026"`, price: `2800`, spotsLeft: `12`
-   - highlights: `["Chrámové ceremónie", "Ryžové terasy", "Tradičný tanec"]`
-   - Original Bali description, daily schedule, inclusions
-   - heroImage: `heroRetreat`, galleryImages: original local asset imports
+### Solution
 
-2. **Replace the Greece Harmony retreat (lines 156–194)** with the Cyprus Awakening retreat (the current data from lines 32–77, including Villa Lucilla description and external image URLs)
+**File: `src/components/NavigationHeader.tsx`**
 
-No other files need changes — both EventsSection and RetreatDetail read from this array.
+Add a state-dependent text color scheme:
+- **Not scrolled (over hero):** Use white text for the logo and nav links so they stand out against the dark hero image
+- **Scrolled (solid background):** Keep current dark text colors (`text-foreground`, `text-muted-foreground`)
+
+Specific changes:
+1. Logo `<a>` — when `!isScrolled`, use `text-white` instead of `text-foreground`
+2. Desktop nav links — when `!isScrolled`, use `text-white/80 hover:text-white` instead of `text-muted-foreground hover:text-primary`
+3. Mobile menu button — when `!isScrolled`, use `text-white`
+4. Active link state — adjust similarly for contrast
+
+No other files need changes.
 
