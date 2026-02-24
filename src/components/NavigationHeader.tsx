@@ -79,7 +79,9 @@ const NavigationHeader = () => {
         <a
           href="/"
           onClick={handleLogoClick}
-          className="font-serif text-2xl text-foreground hover:text-primary transition-colors"
+          className={`font-serif text-2xl transition-colors ${
+            isScrolled ? "text-foreground hover:text-primary" : "text-white hover:text-white/80"
+          }`}
         >
           Serenity
         </a>
@@ -92,9 +94,9 @@ const NavigationHeader = () => {
               href={link.isPage ? link.href : link.href}
               onClick={(e) => handleNavClick(e, link)}
               className={`text-sm font-medium transition-colors ${
-                isLinkActive(link)
-                  ? "text-primary"
-                  : "text-muted-foreground hover:text-primary"
+                isScrolled
+                  ? isLinkActive(link) ? "text-primary" : "text-muted-foreground hover:text-primary"
+                  : isLinkActive(link) ? "text-white" : "text-white/80 hover:text-white"
               }`}
             >
               {link.label}
@@ -105,7 +107,7 @@ const NavigationHeader = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden text-foreground p-2"
+          className={`md:hidden p-2 ${isScrolled ? "text-foreground" : "text-white"}`}
           aria-label="Prepnúť menu"
         >
           {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
