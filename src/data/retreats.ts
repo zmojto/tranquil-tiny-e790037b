@@ -30,38 +30,38 @@ export interface Retreat {
 
 export const retreats: Retreat[] = [
   {
-    id: "bali-bliss",
-    name: "Bali Bliss",
-    tagline: "Prebuďte sa v raji",
-    location: "Ubud",
-    country: "Bali, Indonézia",
-    dates: "15. – 22. marca 2026",
-    price: 2800,
+    id: "cyprus-awakening",
+    name: "Slnečný pokoj",
+    tagline: "Cyprus Awakening",
+    location: "Protaras",
+    country: "Cyprus",
+    dates: "12. – 19. októbra 2026",
+    price: 2700,
     spotsLeft: 8,
-    highlights: ["Výhľady na ryžové terasy", "Tradičné ceremónie", "Výlety k vodopádom"],
-    description: `Ponorte sa do duchovného srdca Bali s naším transformačným 7-dňovým pobytom v Ubude. Obklopení bujnými ryžovými terasami a starobylými chrámami zažijete dokonalú kombináciu tradičných balijských liečebných praktík a moderných wellness techník.
+    highlights: ["Meditácie pri mori", "Staroveké svätyne a energetické miesta", "Plavba pri západe slnka"],
+    description: `Villa Lucilla – sa nachádza v Protaras, čo je príjemné pobrežné letovisko na východnom pobreží Cypru v administratívnom okrese Famagusta.
 
-Každé ráno začína jógou pri východe slnka s výhľadom na džungľový baldachýn, po ktorej nasledujú výživné organické raňajky pripravené naším miestnym šéfkuchárom. Popoludnia ponúkajú výber kultúrnych výletov, kúpeľných ošetrení alebo tichého času na rozjímanie v našich meditačných záhradách.
+Villa Lucilla stojí v pokojnej časti mesta (Anthorina Gardens) len krátkou prechádzkou od pláže Mimosa Beach a blízko známej Fig Tree Bay.
 
-Tento pobyt je navrhnutý pre tých, ktorí hľadajú hlbokú vnútornú premenu. Či už ste skúsený praktizujúci alebo nováčik v jóge, naši skúsení učitelia vás povedú praxou prispôsobenou vašej úrovni a zámerom.`,
+Protaras je známy malebnými zátokami, čistým morom a pokojnejšou atmosférou než rušnejšia Ayia Napa, napriek tomu ponúka všetky služby letoviska (obchody, reštaurácie, pláže).`,
     dailySchedule: [
-      { time: "6:30", activity: "Meditácia pri východe slnka a pranayama" },
-      { time: "7:30", activity: "Vinyasa Flow jóga (90 min)" },
-      { time: "9:00", activity: "Organické raňajky" },
-      { time: "11:00", activity: "Workshop alebo voľný čas" },
+      { time: "7:00", activity: "Meditácia pri mori a pranayama" },
+      { time: "8:00", activity: "Hatha jóga na terase (90 min)" },
+      { time: "9:30", activity: "Stredomorské raňajky" },
+      { time: "11:00", activity: "Workshop alebo voľný čas na pláži" },
       { time: "13:00", activity: "Zdravý obed" },
-      { time: "15:00", activity: "Výlet alebo kúpeľné ošetrenie" },
+      { time: "15:00", activity: "Výlet k starovekým svätyniam alebo pláž" },
       { time: "17:30", activity: "Regeneračná jóga a Yin" },
-      { time: "19:00", activity: "Večera a večerný program" },
+      { time: "19:00", activity: "Večera a plavba pri západe slnka (vybrané dni)" },
     ],
     inclusions: [
-      "7 nocí v luxusnej vile",
-      "Všetky organické jedlá a občerstvenie",
+      "7 nocí v Villa Lucilla, Protaras",
+      "Všetky stredomorské jedlá a občerstvenie",
       "Denné jógové a meditačné lekcie",
-      "Tradičná balijská liečebná ceremónia",
-      "Návšteva chrámu a požehnanie",
-      "Výlet k vodopádu",
-      "Jedno 60-minútové kúpeľné ošetrenie",
+      "Plavba pri západe slnka",
+      "Návšteva starovekých svätýň a energetických miest",
+      "Výlet na pláž Fig Tree Bay",
+      "Jedno wellness ošetrenie",
       "Letiskové transfery",
       "Uvítacie a záverečné ceremónie",
     ],
