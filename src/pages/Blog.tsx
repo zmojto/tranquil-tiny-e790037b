@@ -21,7 +21,7 @@ const Blog = () => {
   const { data: articles, isLoading } = useArticles();
 
   useEffect(() => {
-    document.title = "Blog | Serene Retreats";
+    document.title = "Blog – Články o jóge a wellness | Serene";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(

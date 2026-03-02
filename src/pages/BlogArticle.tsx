@@ -20,7 +20,7 @@ const BlogArticle = () => {
 
   useEffect(() => {
     if (article) {
-      document.title = `${article.title} | Serenity Blog`;
+      document.title = `${article.title} | Serene Retreats`;
 
       // Update meta description
       let metaDescription = document.querySelector('meta[name="description"]');
