@@ -18,7 +18,7 @@ const RetreatDetail = () => {
 
   useEffect(() => {
     if (retreat) {
-      document.title = `${retreat.name} Jógový pobyt | Serenity`;
+      document.title = `${retreat.name} – Jógový pobyt | Serene`;
       
       // Update meta description
       const metaDescription = document.querySelector('meta[name="description"]');
