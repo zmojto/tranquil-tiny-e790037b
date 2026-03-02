@@ -11,7 +11,7 @@ import FooterSection from "@/components/FooterSection";
 
 const Index = () => {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen" id="top">
       <NavigationHeader />
       <HeroSection />
       <AboutSection />
