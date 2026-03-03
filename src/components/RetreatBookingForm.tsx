@@ -2,6 +2,7 @@ import { useState } from "react";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { supabase } from "@/integrations/supabase/client";
 import {
   Form,
   FormControl,
@@ -47,16 +48,43 @@ const RetreatBookingForm = ({ retreat }: RetreatBookingFormProps) => {
   const onSubmit = async (data: BookingFormValues) => {
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "Žiadosť o rezerváciu odoslaná!",
-      description: `Prijali sme vašu žiadosť o ${retreat.name}. Budeme vás kontaktovať do 24 hodín.`,
-    });
-    
-    form.reset();
-    setIsSubmitting(false);
+    try {
+      const { error } = await supabase.from('bookings').insert({
+        full_name: data.name,
+        email: data.email,
+        phone: data.phone,
+        special_requests: data.message || null,
+        retreat_name: retreat.name,
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Vaša rezervácia bola odoslaná!",
+        description: `Prijali sme vašu žiadosť o ${retreat.name}. Budeme vás kontaktovať do 24 hodín.`,
+      });
+
+      // Fire-and-forget email notification
+      supabase.functions.invoke('send-booking-email', {
+        body: {
+          full_name: data.name,
+          email: data.email,
+          phone: data.phone,
+          retreat_name: retreat.name,
+          special_requests: data.message || null,
+        },
+      }).catch((err) => console.error('Email notification failed:', err));
+
+      form.reset();
+    } catch (error: any) {
+      toast({
+        title: "Chyba pri odosielaní",
+        description: "Nepodarilo sa odoslať rezerváciu. Skúste to prosím znova.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

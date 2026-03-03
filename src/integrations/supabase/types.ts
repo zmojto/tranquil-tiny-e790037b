@@ -59,6 +59,36 @@ export type Database = {
         }
         Relationships: []
       }
+      bookings: {
+        Row: {
+          created_at: string
+          email: string
+          full_name: string
+          id: string
+          phone: string
+          retreat_name: string
+          special_requests: string | null
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          full_name: string
+          id?: string
+          phone: string
+          retreat_name: string
+          special_requests?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          full_name?: string
+          id?: string
+          phone?: string
+          retreat_name?: string
+          special_requests?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
