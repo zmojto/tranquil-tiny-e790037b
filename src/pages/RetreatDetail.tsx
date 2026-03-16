@@ -21,7 +21,7 @@ const RetreatDetail = () => {
       document.title = `${retreat.name} – Jógový pobyt | Serene`;
       
       // Update meta description
-      const metaDesc = `${retreat.name} – ${retreat.duration} jógový pobyt v destinácii ${retreat.location}. Meditácia, jóga a wellness pre max. 12 hostí.`;
+      const metaDesc = `${retreat.name} – jógový pobyt v destinácii ${retreat.location}. Meditácia, jóga a wellness pre max. 12 hostí. Rezervujte si miesto.`;
       const trimmedDesc = metaDesc.length > 160 ? metaDesc.slice(0, 157) + "..." : metaDesc;
       
       const metaDescription = document.querySelector('meta[name="description"]');
