@@ -21,16 +21,19 @@ const RetreatDetail = () => {
       document.title = `${retreat.name} – Jógový pobyt | Serene`;
       
       // Update meta description
+      const metaDesc = `${retreat.name} – jógový pobyt v destinácii ${retreat.location}. Meditácia, jóga a wellness pre max. 12 hostí. Rezervujte si miesto.`;
+      const trimmedDesc = metaDesc.length > 160 ? metaDesc.slice(0, 157) + "..." : metaDesc;
+      
       const metaDescription = document.querySelector('meta[name="description"]');
       if (metaDescription) {
-        metaDescription.setAttribute("content", retreat.description.slice(0, 155) + "...");
+        metaDescription.setAttribute("content", trimmedDesc);
       }
 
       // Update Open Graph tags
       const ogTitle = document.querySelector('meta[property="og:title"]');
       const ogDescription = document.querySelector('meta[property="og:description"]');
-      if (ogTitle) ogTitle.setAttribute("content", `${retreat.name} Jógový pobyt | Serenity`);
-      if (ogDescription) ogDescription.setAttribute("content", retreat.description.slice(0, 155) + "...");
+      if (ogTitle) ogTitle.setAttribute("content", `${retreat.name} – Jógový pobyt | Serene`);
+      if (ogDescription) ogDescription.setAttribute("content", trimmedDesc);
     }
   }, [retreat]);
 

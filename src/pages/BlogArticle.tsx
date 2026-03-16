@@ -29,7 +29,8 @@ const BlogArticle = () => {
         metaDescription.setAttribute("name", "description");
         document.head.appendChild(metaDescription);
       }
-      metaDescription.setAttribute("content", article.excerpt);
+      const excerpt = article.excerpt.length > 160 ? article.excerpt.slice(0, 157) + "..." : article.excerpt;
+      metaDescription.setAttribute("content", excerpt);
 
       // Open Graph tags
       const ogTags = [
