@@ -26,7 +26,7 @@ const Blog = () => {
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Objavte články o wellness, tipy na jógu, meditačné sprievodcov a príbehy z pobytov od Serene Retreats."
+        "Čítajte články o jóge, meditácii a wellness. Praktické tipy, inšpirácie na vedomý život a príbehy z našich pobytov po celom svete."
       );
     }
   }, []);
