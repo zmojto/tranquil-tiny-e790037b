@@ -8,7 +8,7 @@ const NotFound = () => {
     document.title = "Stránka nenájdená | Serene Retreats";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Táto stránka neexistuje. Vráťte sa na úvod a objavte naše jógové pobyty, blog a wellness programy Serene Retreats.");
+      metaDescription.setAttribute("content", "Táto stránka neexistuje alebo bola presunutá. Vráťte sa na úvod a objavte jógové pobyty, wellness programy a blog Serene Retreats.");
     }
     console.error("404 Error: User attempted to access non-existent route:", location.pathname);
   }, [location.pathname]);
