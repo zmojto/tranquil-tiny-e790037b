@@ -19,7 +19,7 @@ const HeroSection = () => {
           className="text-primary-foreground/80 uppercase tracking-[0.3em] text-sm mb-6 animate-fade-up font-sans"
           style={{ animationDelay: "0.1s" }}
         >
-          Únik • Obnova • Premena
+          Uvolnenie • Obnova • Premena
         </p>
         
         <h1 
