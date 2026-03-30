@@ -1,22 +1,17 @@
 
 
-## Plan: Add new blog article from uploaded DOCX
+## Plan: Replace article content at /blog/benefits-of-digital-detox
 
-### Content summary
-The document "Disciplína ako kľúč k skutočnej slobode" is a wellness/mindfulness article about discipline as a path to freedom. Page 1 contains the polished version; pages 2-3 are drafts/notes. We will use the polished content from page 1.
+### Summary
+Update the existing article (id: `ce5d107d-b8ad-4434-bd4a-6c0dc8e980b3`) with the Slovak text from the uploaded DOCX. The article slug stays the same so existing URLs continue to work.
 
 ### Changes
 
-1. **Insert article into the database** using the Supabase insert tool with:
-   - **slug**: `disciplina-ako-kluc-k-skutocnej-slobode`
-   - **title**: `Disciplína ako kľúč k skutočnej slobode`
-   - **excerpt**: A concise 1-2 sentence summary of the article (~150 chars)
-   - **content**: The full article text from page 1, formatted as Markdown (headings, bullet lists, paragraphs)
-   - **category**: `Wellness` (fits the existing categories)
-   - **author_name**: `Serenity Team` (default)
-   - **published**: `true`
-   - **published_at**: current timestamp
-   - **cover_image_url**: `null` (no image provided)
+1. **Update the article record** using the Supabase insert tool (UPDATE query) with:
+   - **title**: `Prečo je digitálny detox nevyhnutný pre naše zdravie`
+   - **excerpt**: `Digitálny detox nie je o odmietnutí technológií. Je o vedomom nastavení hraníc a návrate k sebe samému.` (~100 chars)
+   - **content**: Full text from both pages formatted as Markdown (headings `##`, bullet lists, paragraphs), including the closing section from page 2
+   - **category**, **author_name**, **published**, **slug**, **cover_image_url**: unchanged
 
-No code changes needed — the blog system already renders Markdown articles from the database.
+No code changes needed — the blog already renders Markdown from the database.
 
