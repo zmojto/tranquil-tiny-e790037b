@@ -1,17 +1,42 @@
 
 
-## Plan: Replace article content at /blog/benefits-of-digital-detox
+## Plán: Pridanie 3 nových blogových článkov s obrázkami
 
-### Summary
-Update the existing article (id: `ce5d107d-b8ad-4434-bd4a-6c0dc8e980b3`) with the Slovak text from the uploaded DOCX. The article slug stays the same so existing URLs continue to work.
+### Súhrn
+Pridáme 3 nové články do databázy a ku každému vygenerujeme originálny titulný (hero) obrázok. Obsah bude obohatený o lepšie Markdown formátovanie (citáty, oddeľovače, zvýraznenia).
 
-### Changes
+### Článok 1: Tajomstvo vnútornej sily (sádhuovia a disciplína)
+- **slug**: `tajomstvo-vnutornej-sily-co-nas-mozu-naucit-indicki-asketi`
+- **title**: `Tajomstvo vnútornej sily: Čo nás môžu naučiť indickí askéti o každodennej disciplíne?`
+- **category**: `Wellness`
+- **excerpt**: `Tapasya – vedomý proces, pri ktorom pomocou disciplíny a sebazapierania „pálime" staré vrstvy ega. Cesta k transformácii prostredníctvom dobrovoľného nekomfortu.`
+- **content**: Plný text z oboch strán DOCX (vrátane sekcie Vrata vs. Tapas), formátovaný ako Markdown s `##` nadpismi, číslovanými zoznamami, `---` oddeľovačmi a `**bold**` zvýrazneniami
 
-1. **Update the article record** using the Supabase insert tool (UPDATE query) with:
-   - **title**: `Prečo je digitálny detox nevyhnutný pre naše zdravie`
-   - **excerpt**: `Digitálny detox nie je o odmietnutí technológií. Je o vedomom nastavení hraníc a návrate k sebe samému.` (~100 chars)
-   - **content**: Full text from both pages formatted as Markdown (headings `##`, bullet lists, paragraphs), including the closing section from page 2
-   - **category**, **author_name**, **published**, **slug**, **cover_image_url**: unchanged
+### Článok 2: Kašeľ – psychosomatický pohľad
+- **slug**: `kasel-prirodzena-obrana-tela-aj-prejav-vnutornej-nespokojnosti`
+- **title**: `Kašeľ: Prirodzená obrana tela aj prejav vnútornej nespokojnosti`
+- **category**: `Zdravie`
+- **excerpt**: `Kašeľ sa rodí z pocitu, že máme niečoho „plný krk". Potlačená vnútorná nespokojnosť vysušuje hrdlo a vytvára v ňom pomyselný oheň.`
+- **content**: Plný text vrátane typov kašľa, otázok na sebapoznanie a sekcie Cesta k uzdraveniu; s `##` nadpismi, odrážkami a zvýrazneniami
 
-No code changes needed — the blog already renders Markdown from the database.
+### Článok 3: Recept na spokojný život
+- **slug**: `recept-na-spokojny-zivot`
+- **title**: `Recept na spokojný život: Máme svoju spokojnosť vo vlastných rukách?`
+- **category**: `Wellness`
+- **excerpt**: `Spokojnosť nie je výsledok, ku ktorému sa dopracujeme. Je to vnútorný postoj, ktorý si vyberáme každý deň.`
+- **content**: Text zo strany 1 (polished verzia) s citátom H. Forda, sekciou Piliere naplneného života; formátovaný s `>` blockquote, `##` nadpismi, odrážkami
+
+### Kroky implementácie
+
+1. **Vygenerovať 3 hero obrázky** pomocou AI image generation modelu:
+   - Článok 1: Meditatívna scéna – indický askét, teplé farby, spirituálna atmosféra
+   - Článok 2: Abstraktná vizualizácia dýchania/hrdla, jemné tóny, wellness estetika
+   - Článok 3: Pokojná scéna – západ slnka, príroda, vnútorný pokoj
+
+2. **Nahrať obrázky** do storage bucketu `article-images`
+
+3. **Vložiť 3 články** do tabuľky `articles` s príslušnými `cover_image_url` odkazmi, `published: true` a aktuálnym timestampom
+
+### Bez zmien v kóde
+Blog systém už renderuje Markdown články z databázy vrátane obrázkov, takže žiadne zmeny v kóde nie sú potrebné.
 
