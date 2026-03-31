@@ -28,7 +28,7 @@ const AboutSection = () => {
           <FeatureCard 
             icon={<Heart className="w-8 h-8" />}
             title="Vedomý život"
-            description="Objímte rastlinnú ajurvédsku kuchyňu, digitálny detox a praktiky vedomého života, ktoré vyživujú celú vašu bytosť."
+            description="Zažite a ocente ajurvédsku rastlinnú stravu, digitálny detox a rituály pre rovnováhu tela i mysle."
           />
           <FeatureCard 
             icon={<Leaf className="w-8 h-8" />}
