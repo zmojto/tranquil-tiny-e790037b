@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { ArrowLeft, MapPin, Calendar, Users, Check, Clock } from "lucide-react";
+import { ArrowLeft, MapPin, Calendar, Users, Check, Clock, Plane } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import NavigationHeader from "@/components/NavigationHeader";
 import FooterSection from "@/components/FooterSection";
