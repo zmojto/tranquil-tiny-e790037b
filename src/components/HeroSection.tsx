@@ -34,8 +34,8 @@ const HeroSection = () => {
           className="text-primary-foreground/90 text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-fade-up font-light leading-relaxed"
           style={{ animationDelay: "0.4s" }}
         >
-          Transformačné 3 až 4 dňové jógové pobyty na najinšpiratívnejších miestach sveta.
-          Znovu sa spojte so sebou prostredníctvom dennej praxe, meditácie a vedomého života.
+          Transformačné 4- a 7-dňové jogové pobyty na inšpiratívnejších miestach sveta.
+          Spomaľte, prehĺbte svoju každodennú prax, ponorte sa do meditácie a začnite žiť plne vedome.
         </p>
         
         <div 
