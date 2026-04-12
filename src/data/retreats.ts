@@ -283,8 +283,14 @@ Villa Quince sa nachádza v pokojnej dedine Murvica, len niekoľko minút od mor
       "Tenisový kurt a stolný tenis",
       "Kurátorované výlety po okolí Zadaru",
     ],
-    heroImage: heroRetreat,
-    galleryImages: [galleryPool, gallerySpa, galleryNature, galleryMeditation, galleryFood, galleryRoom],
+    heroImage: "https://www.zadarvillas.com/photos/villas/header/04062025094615_dji-0336.jpg",
+    galleryImages: [
+      "https://www.zadarvillas.com/photos/villas/galleries/22082024125935_dji-0336.jpg",
+      "https://www.zadarvillas.com/photos/villas/galleries/22082024130139_dji-0413.jpg",
+      "https://www.zadarvillas.com/photos/villas/galleries/22082024130153_dji-0433.jpg",
+      "https://www.zadarvillas.com/photos/villas/galleries/22082024130701_dsc-5122.jpg",
+      "https://www.zadarvillas.com/photos/villas/galleries/22082024130858_dsc-5453.jpg",
+    ],
     travelInfo: {
       outbound: { flight: "Individuálna doprava", time: "Príchod 12. septembra" },
       returnFlight: { flight: "Individuálna doprava", time: "Odchod 19. septembra" },
