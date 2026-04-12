@@ -99,7 +99,7 @@ const RetreatDetail = () => {
 
           <div className="flex items-baseline gap-2 mb-8">
             <span className="font-serif text-4xl md:text-5xl text-foreground">
-              {retreat.currency === "€" ? `${retreat.price.toLocaleString()} €` : `$${retreat.price.toLocaleString()}`}
+              {retreat.price.toLocaleString()} €
             </span>
             <span className="text-muted-foreground">za osobu</span>
           </div>
