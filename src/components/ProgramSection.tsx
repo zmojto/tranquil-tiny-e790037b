@@ -8,7 +8,7 @@ const ProgramSection = () => {
   "Vedená meditácia a dychové cvičenia",
   "Tri ajurvédské rastlinné jedlá denne",
   "Wellness",
-  "Workshopy Sloboda je voľba, o transformácii mysle: od napätia k pokoju",
+  "Workshopy zamerané na osobný rast a mindfulness",
   "Kurátorovaný výlet do prírody",
   "Letiskové transfery a uvítací rituál"];
 
