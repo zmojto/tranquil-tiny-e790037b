@@ -164,13 +164,13 @@ Večery spájajú našu skupinu pri večerách pri sviečkach s tým najlepším
     dates: "29. mája – 5. júna 2026",
     price: 1100,
     currency: "€",
-    spotsLeft: 8,
+    spotsLeft: 6,
     highlights: ["Meditácie pri mori", "Staroveké svätyne a energetické miesta", "Plavba pri západe slnka"],
     description: `Príďte zažiť transformačný pobyt vo Villa Lucilla v pokojnom Protarase na východnom pobreží Cypru. Tento 7-dňový retreat je navrhnutý tak, aby ste sa úplne odpojili od každodenného zhonu a znovu sa spojili so sebou samým.
 
 Každé ráno začína vedenou meditáciou a dychovými cvičeniami priamo na pláži, po ktorých nasleduje hatha jóga. Popoludnia sú venované objavovaniu prírodných krás okolia – od majestátneho Cape Greco cez morské jaskyne Ayia Napa Sea Caves až po kryštáľovo čistú Konnos Bay a slávnu Fig Tree Bay.
 
-Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len krátkou prechádzkou od pláže Mimosa Beach. Ubytovanie je v dvojlôžkových izbách s prístupom k bazénu. Všetky jedlá sú organické a pripravované s láskou. Večery patria workshopom, zdieľaniu a hlbokému vnútornému pokoju.`,
+Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len krátkou prechádzkou od pláže Mimosa Beach. Ubytovanie je v dvojlôžkových izbách s prístupom k bazénu. Všetky jedlá sú vegetariánske a pripravované s láskou. Večery patria workshopom, zdieľaniu a hlbokému vnútornému pokoju.`,
     dailySchedule: [
       { time: "6:00", activity: "Vedená meditácia a dychové cvičenia na pláži" },
       { time: "7:00", activity: "Hatha jóga" },
@@ -183,13 +183,13 @@ Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len kr
       { time: "20:00", activity: "Workshop" },
     ],
     inclusions: [
-      "Všetky organické jedlá a občerstvenie",
+      "Vegetariánske jedlá a občerstvenie",
       "Bazén",
       "Dvojlôžkové izby vo Villa Lucilla",
       "Vedené meditácie",
       "Workshopy",
       "Hodiny jógy",
-      "Transfer z letiska Larnaka na miesto pobytu",
+      "Transfer z letiska Larnaka",
     ],
     heroImage: "https://villalucilla.eu/images/hero-pool.jpg",
     galleryImages: [
@@ -203,7 +203,7 @@ Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len kr
     travelInfo: {
       outbound: { flight: "Wizz Air – Bratislava → Larnaka", time: "Piatok 29. mája, 15:00 → 19:05 (3h 5min)" },
       returnFlight: { flight: "Wizz Air – Larnaka → Bratislava", time: "Piatok 5. júna, 12:00 → 14:25 (3h 25min)" },
-      ticketPrice: "cca 70 €",
+      ticketPrice: "cca 200 €",
       note: "Letenky sprostredkujeme – nie sú zahrnuté v cene pobytu.",
     },
   },
