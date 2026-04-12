@@ -1,42 +1,48 @@
-
-
-## Plán: Pridanie 3 nových blogových článkov s obrázkami
+## Plán: Aktualizácia Cyprus pobytu podľa zadania
 
 ### Súhrn
-Pridáme 3 nové články do databázy a ku každému vygenerujeme originálny titulný (hero) obrázok. Obsah bude obohatený o lepšie Markdown formátovanie (citáty, oddeľovače, zvýraznenia).
 
-### Článok 1: Tajomstvo vnútornej sily (sádhuovia a disciplína)
-- **slug**: `tajomstvo-vnutornej-sily-co-nas-mozu-naucit-indicki-asketi`
-- **title**: `Tajomstvo vnútornej sily: Čo nás môžu naučiť indickí askéti o každodennej disciplíne?`
-- **category**: `Wellness`
-- **excerpt**: `Tapasya – vedomý proces, pri ktorom pomocou disciplíny a sebazapierania „pálime" staré vrstvy ega. Cesta k transformácii prostredníctvom dobrovoľného nekomfortu.`
-- **content**: Plný text z oboch strán DOCX (vrátane sekcie Vrata vs. Tapas), formátovaný ako Markdown s `##` nadpismi, číslovanými zoznamami, `---` oddeľovačmi a `**bold**` zvýrazneniami
+Aktualizujeme údaje o cypruskom pobyte "Slnečný pokoj" v `src/data/retreats.ts` podľa informácií z dokumentu. Zahŕňa to zmenu ceny, dátumov, rozvrhu, zahrnutých služieb, popisu a pridanie sekcie s informáciami o lete. Tiež pridáme novú sekciu na stránku detailu pobytu pre letové informácie.
 
-### Článok 2: Kašeľ – psychosomatický pohľad
-- **slug**: `kasel-prirodzena-obrana-tela-aj-prejav-vnutornej-nespokojnosti`
-- **title**: `Kašeľ: Prirodzená obrana tela aj prejav vnútornej nespokojnosti`
-- **category**: `Zdravie`
-- **excerpt**: `Kašeľ sa rodí z pocitu, že máme niečoho „plný krk". Potlačená vnútorná nespokojnosť vysušuje hrdlo a vytvára v ňom pomyselný oheň.`
-- **content**: Plný text vrátane typov kašľa, otázok na sebapoznanie a sekcie Cesta k uzdraveniu; s `##` nadpismi, odrážkami a zvýrazneniami
+### Zmeny v dátach (`src/data/retreats.ts`)
 
-### Článok 3: Recept na spokojný život
-- **slug**: `recept-na-spokojny-zivot`
-- **title**: `Recept na spokojný život: Máme svoju spokojnosť vo vlastných rukách?`
-- **category**: `Wellness`
-- **excerpt**: `Spokojnosť nie je výsledok, ku ktorému sa dopracujeme. Je to vnútorný postoj, ktorý si vyberáme každý deň.`
-- **content**: Text zo strany 1 (polished verzia) s citátom H. Forda, sekciou Piliere naplneného života; formátovaný s `>` blockquote, `##` nadpismi, odrážkami
+**Rozšírenie Retreat interface** – pridanie voliteľného poľa `travelInfo` pre informácie o letoch.
 
-### Kroky implementácie
+**Aktualizácia Cyprus pobytu:**
 
-1. **Vygenerovať 3 hero obrázky** pomocou AI image generation modelu:
-   - Článok 1: Meditatívna scéna – indický askét, teplé farby, spirituálna atmosféra
-   - Článok 2: Abstraktná vizualizácia dýchania/hrdla, jemné tóny, wellness estetika
-   - Článok 3: Pokojná scéna – západ slnka, príroda, vnútorný pokoj
+- **Cena**: 2700 → 1100 (bez letenky), s poznámkou že letenka cca 200 €
+- **Dátumy**: "12. – 19. októbra 2026" → "29. mája – 5. júna 2026" (piatok–piatok)
+- **Popis** ("Vaša cesta čaká"): Napísať nový inšpiratívny text o pobyte vo Villa Lucilla – ranné meditácie na pláži, jóga, workshopy, pokojné prostredie Protarasu
+- **Denný rozvrh** – podľa zadania:
+  - 6:00 – Vedená meditácia a dychové cvičenia na pláži
+  - 7:00 – Hatha jóga
+  - 9:00 – Raňajky
+  - 10:30 – Workshop alebo voľný čas
+  - 13:00 – Obed
+  - 15:00 – Výlety v okolí (Cape Greco, Ayia Napa Sea Caves, Konnos Bay, Fig Tree Bay)
+  - 17:30 – Jóga a meditácia
+  - 19:00 – Večera
+  - 20:00 – Workshop
+- **Zahrnuté služby** – aktualizovať podľa zadania:
+  - Všetky organické jedlá a občerstvenie
+  - Bazén
+  - Dvojlôžkové izby vo Villa Lucilla
+  - Vedené meditácie
+  - Workshopy
+  - Hodiny jógy
+  - Transfer z letiska Larnaka na miesto pobytu
+- **Travel info** – nové pole:
+  - Odlet: Piatok 29. mája, 15:00 Bratislava → 19:05 Larnaka (Wizz Air, 3h 5min)
+  - Prílet späť: Piatok 5. júna, 12:00 Larnaka → 14:25 Bratislava (Wizz Air, 3h 25min)
+  - Cena letenky: cca 70 € (sprostredkujeme kúpu)
 
-2. **Nahrať obrázky** do storage bucketu `article-images`
+### Zmeny v RetreatDetail.tsx
 
-3. **Vložiť 3 články** do tabuľky `articles` s príslušnými `cover_image_url` odkazmi, `published: true` a aktuálnym timestampom
+- Pridať novú sekciu **"Cestovné informácie"** (medzi hero a popis alebo za popis), ktorá zobrazí letové detaily ak `retreat.travelInfo` existuje
+- Zobrazí odletové/príletové časy, leteckú spoločnosť, poznámku o sprostredkovaní letenky
 
-### Bez zmien v kóde
-Blog systém už renderuje Markdown články z databázy vrátane obrázkov, takže žiadne zmeny v kóde nie sú potrebné.
+### Technické detaily
 
+- Rozšíriť `Retreat` interface o `travelInfo?: { outbound: {...}, returnFlight: {...}, ticketPrice: string, note: string }`
+- Pridať sekciu s ikonou `Plane` z lucide-react
+- Mena: zobraziť cenu v € namiesto $ pre Cyprus pobyt (pridať pole `currency` do interface)
