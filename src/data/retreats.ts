@@ -264,12 +264,12 @@ Ubytovanie je v trojlôžkových izbách v kolibe priamo pri jazere. Všetky jed
   },
   {
     id: "croatia-harmony",
-    name: "Dalmatian Harmony",
-    tagline: "Dalmatínsky pokoj",
+    name: "Pura Vida Energia",
+    tagline: "Pura Vida Energia",
     location: "Murvica, Zadar",
     country: "Chorvátsko",
     dates: "12. – 19. septembra 2026",
-    price: 1650,
+    price: 1550,
     spotsLeft: 12,
     highlights: ["Bazén a jacuzzi", "Tenisový kurt a sauna", "Výlety po okolí Zadaru"],
     description: `Zažite harmóniu tela a mysle v nádhernej kamennej Villa Quince neďaleko Zadaru na dalmatínskom pobreží. Táto luxusná vila s vyhrievaným bazénom, jacuzzi, saunou a tenisovým kurtom poskytuje ideálne prostredie pre 7-dňový transformačný pobyt uprostred stredomorskej prírody.
