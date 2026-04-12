@@ -1,59 +1,29 @@
 
 
-## Plan: Replace Mexico retreat with Croatia (Chorvatsko)
+## Plan: Make travel info section generic (not flight-specific)
 
-### Summary
+### Problem
+The travel info section in `RetreatDetail.tsx` uses flight-specific language: heading "Informácie o lete", labels "Odlet"/"Návrat", Plane icons, and "Cena letenky". This doesn't work for Croatia where transport is by car.
 
-Replace the "Mexico Spirit" retreat (id: `mexico-spirit`) with a new "Croatia" retreat based on the uploaded DOCX and Villa Quince website data.
+### Solution
+Add an optional `transportType` field to the `TravelInfo` interface. When set to `"car"` (or similar), the UI adapts labels and icons. When it's `"flight"` or undefined, it keeps the current flight-specific text.
 
-### Changes in `src/data/retreats.ts`
+### Changes
 
-Replace the entire Mexico retreat object (lines 250-288) with a new Croatia retreat:
+**1. `src/data/retreats.ts`** — Add `transportType` to `TravelInfo` interface:
+- Add field: `transportType?: "flight" | "car" | "individual"`
+- Rename `flight` property in sub-objects to `detail` (or keep as-is and just change UI labels)
+- Set Croatia's `transportType` to `"individual"`
+- Set `ticketPrice` to `"individuálne"` and update labels accordingly
 
-- **id**: `croatia-harmony`
-- **name**: `Dalmatian Harmony` (or similar)
-- **tagline**: `Dalmatínsky pokoj`
-- **location**: `Murvica, Zadar`
-- **country**: `Chorvátsko`
-- **dates**: `12. – 19. septembra 2026`
-- **price**: `1650`
-- **spotsLeft**: `12`
-- **highlights**: `["Bazén a jacuzzi", "Tenisový kurt a sauna", "Výlety po okolí Zadaru"]`
-- **description**: 3 paragraphs about the retreat at Villa Quince -- stone villa near Zadar, daily yoga and meditation, exploring Dalmatian coast (national parks, beaches, old town Zadar)
-- **dailySchedule**: From the document:
-  - 6:00 Vedená meditácia a dychové cvičenia
-  - 7:00 Hatha jóga
-  - 9:00 Raňajky
-  - 10:30 Workshop alebo voľný čas
-  - 13:00 Obed
-  - 15:00 Výlet v okolí (navrhnem: Národný park Kornati, Krka vodopády, staré mesto Zadar, pláž Saharun, ostrov Ugljan)
-  - 17:30 Jóga a meditácia
-  - 19:00 Večera
-  - 20:00 Workshop
-
-- **inclusions** (navrhnuté):
-  - 7 nocí v luxusnej Villa Quince s vyhrievaným bazénom
-  - Vegetariánske a ajurvédske jedlá a občerstvenie
-  - Denné ranné a večerné jógové lekcie (hatha)
-  - Vedené meditácie a dychové cvičenia
-  - Workshopy zamerané na osobný rast a mindfulness
-  - Prístup k saune, jacuzzi a fitness
-  - Tenisový kurt a stolný tenis
-  - Kurátorované výlety po okolí Zadaru
-
-- **heroImage**: `heroRetreat` (fallback asset, same as other non-Cyprus retreats)
-- **galleryImages**: Use existing imported gallery assets (same approach as other retreats)
-- **travelInfo**: Basic info structure:
-  - outbound flight: `Individuálna doprava`
-  - note: `Doprava je individuálna. Na požiadanie vieme sprostredkovať.`
-
-### Changes in `supabase/functions/sitemap/index.ts`
-
-Replace `"mexico-spirit"` with `"croatia-harmony"` in the `RETREAT_IDS` array.
+**2. `src/pages/RetreatDetail.tsx`** — Make the section adaptive:
+- Heading: `"Informácie o lete"` → conditionally show `"Informácie o doprave"` when not a flight
+- Labels: `"Odlet"` → `"Príchod"`, `"Návrat"` → `"Odchod"` for non-flight
+- Icons: Use `Car` or `MapPin` icon from lucide instead of `Plane` for non-flight retreats
+- Price label: `"Cena letenky"` → `"Cena dopravy"` for non-flight
 
 ### Technical details
-
-- The `travelInfo` interface expects `outbound` and `returnFlight` objects plus `ticketPrice` and `note`. We will repurpose slightly: set flight fields to descriptive text since there is no specific flight, or alternatively skip `travelInfo` and add a simpler note in the description. Given the user wants basic info, we will use the existing `travelInfo` structure with generic text.
-- No database changes needed.
-- No new images to download -- reuse existing gallery assets.
+- The `transportType` field is optional — defaults to `"flight"` behavior for backward compatibility (Cyprus retreat unchanged)
+- Only Croatia gets `transportType: "individual"`
+- Import `Car` from lucide-react
 
