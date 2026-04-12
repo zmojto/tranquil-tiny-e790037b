@@ -1,16 +1,10 @@
 
+## Plán: Úpravy Cyprus pobytu
 
-## Plán: Všetky ceny v € bez podmienky
+4 jednoduché zmeny v `src/data/retreats.ts`:
 
-Odstrániť podmienkovú logiku `retreat.currency === "€"` a všade zobraziť cenu v formáte `X €`.
-
-### Zmeny v súboroch
-
-1. **`src/components/EventsSection.tsx`** – zmeniť `${retreat.price.toLocaleString()}` na `{retreat.price.toLocaleString()} €` (odstrániť dolár)
-
-2. **`src/pages/RetreatDetail.tsx`** – nahradiť podmienku `retreat.currency === "€" ? ... : ...` za pevné `{retreat.price.toLocaleString()} €`
-
-3. **`src/components/RetreatBookingForm.tsx`** – rovnako nahradiť podmienku za pevné `{retreat.price.toLocaleString()} €`
-
-4. **`src/data/retreats.ts`** – voliteľne odstrániť pole `currency` z interface a dát, keďže už nebude potrebné
-
+1. **Riadok 167**: `spotsLeft: 8` → `spotsLeft: 6`
+2. **Riadok 206**: `ticketPrice: "cca 70 €"` → `ticketPrice: "cca 200 €"`
+3. **Riadok 186**: `"Všetky organické jedlá a občerstvenie"` → `"Vegetariánske jedlá a občerstvenie"`
+4. **Riadok 192**: `"Transfer z letiska Larnaka na miesto pobytu"` → `"Transfer z letiska Larnaka"`
+5. **Riadok 173** (v popise): aktualizovať text "organické" na "vegetariánske" v popise pobytu
