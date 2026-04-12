@@ -131,7 +131,50 @@ const RetreatDetail = () => {
         </div>
       </section>
 
-      {/* Daily Schedule Section */}
+      {/* Travel Info Section */}
+      {retreat.travelInfo && (
+        <section className="py-16 md:py-24 bg-background">
+          <div className="container max-w-4xl mx-auto px-6">
+            <p className="text-primary uppercase tracking-[0.2em] text-sm mb-4 font-sans text-center">
+              Cestovné informácie
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-12 text-center">
+              Informácie o lete
+            </h2>
+            <div className="space-y-4">
+              <div className="flex items-start gap-4 p-5 bg-card rounded-xl border border-primary/10">
+                <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <Plane className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-medium text-foreground mb-1">Odlet</p>
+                  <p className="text-muted-foreground">{retreat.travelInfo.outbound.flight}</p>
+                  <p className="text-muted-foreground text-sm">{retreat.travelInfo.outbound.time}</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4 p-5 bg-card rounded-xl border border-primary/10">
+                <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <Plane className="w-5 h-5 text-primary rotate-180" />
+                </div>
+                <div>
+                  <p className="font-medium text-foreground mb-1">Návrat</p>
+                  <p className="text-muted-foreground">{retreat.travelInfo.returnFlight.flight}</p>
+                  <p className="text-muted-foreground text-sm">{retreat.travelInfo.returnFlight.time}</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4 p-5 bg-card rounded-xl border border-primary/10">
+                <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span className="text-primary font-medium text-sm">€</span>
+                </div>
+                <div>
+                  <p className="font-medium text-foreground mb-1">Cena letenky: {retreat.travelInfo.ticketPrice}</p>
+                  <p className="text-muted-foreground text-sm">{retreat.travelInfo.note}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
       <section className="py-16 md:py-24 bg-background">
         <div className="container max-w-4xl mx-auto px-6">
           <p className="text-primary uppercase tracking-[0.2em] text-sm mb-4 font-sans text-center">
