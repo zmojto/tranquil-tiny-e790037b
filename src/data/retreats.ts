@@ -290,6 +290,10 @@ Villa Quince sa nachádza v pokojnej dedine Murvica, len niekoľko minút od mor
       "https://www.zadarvillas.com/photos/villas/galleries/22082024130153_dji-0433.jpg",
       "https://www.zadarvillas.com/photos/villas/galleries/22082024130701_dsc-5122.jpg",
       "https://www.zadarvillas.com/photos/villas/galleries/22082024130858_dsc-5453.jpg",
+      "https://www.zadarvillas.com/photos/villas/listing/08112024143705_beyvdwog.jpeg",
+      "https://www.zadarvillas.com/photos/villas/listing/08112024143707_hszcwfnh.jpeg",
+      "https://www.zadarvillas.com/photos/villas/listing/08112024143753_g9yiofif.jpeg",
+      "https://www.zadarvillas.com/photos/villas/listing/08112024143856_f4vcomba.jpeg",
     ],
     travelInfo: {
       outbound: { flight: "Individuálna doprava", time: "Príchod 12. septembra" },
