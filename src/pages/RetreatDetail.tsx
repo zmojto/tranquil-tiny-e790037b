@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { ArrowLeft, MapPin, Calendar, Users, Check, Clock, Plane } from "lucide-react";
+import { ArrowLeft, MapPin, Calendar, Users, Check, Clock, Plane, Car } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import NavigationHeader from "@/components/NavigationHeader";
 import FooterSection from "@/components/FooterSection";
@@ -132,32 +132,35 @@ const RetreatDetail = () => {
       </section>
 
       {/* Travel Info Section */}
-      {retreat.travelInfo && (
+      {retreat.travelInfo && (() => {
+        const isFlight = !retreat.travelInfo.transportType || retreat.travelInfo.transportType === "flight";
+        const TransportIcon = isFlight ? Plane : Car;
+        return (
         <section className="py-16 md:py-24 bg-background">
           <div className="container max-w-4xl mx-auto px-6">
             <p className="text-primary uppercase tracking-[0.2em] text-sm mb-4 font-sans text-center">
               Cestovné informácie
             </p>
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-12 text-center">
-              Informácie o lete
+              {isFlight ? "Informácie o lete" : "Informácie o doprave"}
             </h2>
             <div className="space-y-4">
               <div className="flex items-start gap-4 p-5 bg-card rounded-xl border border-primary/10">
                 <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <Plane className="w-5 h-5 text-primary" />
+                  <TransportIcon className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="font-medium text-foreground mb-1">Odlet</p>
+                  <p className="font-medium text-foreground mb-1">{isFlight ? "Odlet" : "Príchod"}</p>
                   <p className="text-muted-foreground">{retreat.travelInfo.outbound.flight}</p>
                   <p className="text-muted-foreground text-sm">{retreat.travelInfo.outbound.time}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4 p-5 bg-card rounded-xl border border-primary/10">
                 <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <Plane className="w-5 h-5 text-primary rotate-180" />
+                  <TransportIcon className={`w-5 h-5 text-primary ${isFlight ? "rotate-180" : ""}`} />
                 </div>
                 <div>
-                  <p className="font-medium text-foreground mb-1">Návrat</p>
+                  <p className="font-medium text-foreground mb-1">{isFlight ? "Návrat" : "Odchod"}</p>
                   <p className="text-muted-foreground">{retreat.travelInfo.returnFlight.flight}</p>
                   <p className="text-muted-foreground text-sm">{retreat.travelInfo.returnFlight.time}</p>
                 </div>
@@ -167,14 +170,15 @@ const RetreatDetail = () => {
                   <span className="text-primary font-medium text-sm">€</span>
                 </div>
                 <div>
-                  <p className="font-medium text-foreground mb-1">Cena letenky: {retreat.travelInfo.ticketPrice}</p>
+                  <p className="font-medium text-foreground mb-1">{isFlight ? "Cena letenky" : "Cena dopravy"}: {retreat.travelInfo.ticketPrice}</p>
                   <p className="text-muted-foreground text-sm">{retreat.travelInfo.note}</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-      )}
+        );
+      })()}
       <section className="py-16 md:py-24 bg-background">
         <div className="container max-w-4xl mx-auto px-6">
           <p className="text-primary uppercase tracking-[0.2em] text-sm mb-4 font-sans text-center">

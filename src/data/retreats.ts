@@ -12,6 +12,7 @@ export interface DailyScheduleItem {
 }
 
 export interface TravelInfo {
+  transportType?: "flight" | "car" | "individual";
   outbound: { flight: string; time: string };
   returnFlight: { flight: string; time: string };
   ticketPrice: string;
@@ -292,10 +293,11 @@ Villa Quince sa nachádza v pokojnej dedine Murvica, len niekoľko minút od mor
       "https://www.zadarvillas.com/photos/villas/galleries/22082024130858_dsc-5453.jpg",
     ],
     travelInfo: {
-      outbound: { flight: "Individuálna doprava", time: "Príchod 12. septembra" },
-      returnFlight: { flight: "Individuálna doprava", time: "Odchod 19. septembra" },
+      transportType: "individual",
+      outbound: { flight: "Individuálna doprava autom", time: "Príchod 12. septembra" },
+      returnFlight: { flight: "Individuálna doprava autom", time: "Odchod 19. septembra" },
       ticketPrice: "individuálne",
-      note: "Doprava je individuálna. Na požiadanie vieme sprostredkovať.",
+      note: "Doprava je individuálna – autom alebo na požiadanie vieme sprostredkovať spoločný odvoz.",
     },
   },
   {
