@@ -166,7 +166,7 @@ Večery spájajú našu skupinu pri večerách pri sviečkach s tým najlepším
     price: 1100,
     currency: "€",
     spotsLeft: 6,
-    highlights: ["Meditácie pri mori", "Staroveké svätyne a energetické miesta", "Plavba pri západe slnka"],
+    highlights: ["Meditácie pri mori", "Staroveké svätyne a energetické miesta", "Ostrovné dobrodružstvá"],
     description: `Príďte zažiť transformačný pobyt vo Villa Lucilla v pokojnom Protarase na východnom pobreží Cypru. Tento 7-dňový retreat je navrhnutý tak, aby ste sa úplne odpojili od každodenného zhonu a znovu sa spojili so sebou samým.
 
 Každé ráno začína vedenou meditáciou a dychovými cvičeniami priamo na pláži, po ktorých nasleduje hatha jóga. Popoludnia sú venované objavovaniu prírodných krás okolia – od majestátneho Cape Greco cez morské jaskyne Ayia Napa Sea Caves až po kryštáľovo čistú Konnos Bay a slávnu Fig Tree Bay.
