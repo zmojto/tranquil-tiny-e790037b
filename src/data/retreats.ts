@@ -11,6 +11,13 @@ export interface DailyScheduleItem {
   activity: string;
 }
 
+export interface TravelInfo {
+  outbound: { flight: string; time: string };
+  returnFlight: { flight: string; time: string };
+  ticketPrice: string;
+  note: string;
+}
+
 export interface Retreat {
   id: string;
   name: string;
@@ -19,6 +26,7 @@ export interface Retreat {
   country: string;
   dates: string;
   price: number;
+  currency?: string;
   spotsLeft: number;
   highlights: string[];
   description: string;
@@ -26,6 +34,7 @@ export interface Retreat {
   inclusions: string[];
   heroImage: string;
   galleryImages: string[];
+  travelInfo?: TravelInfo;
 }
 
 export const retreats: Retreat[] = [
