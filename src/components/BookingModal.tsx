@@ -131,7 +131,7 @@ const BookingModal = ({ isOpen, onClose, retreat }: BookingModalProps) => {
               {retreat.dates}
             </div>
             <div className="font-serif text-lg text-foreground mt-1">
-              ${retreat.price.toLocaleString()} per person
+              {retreat.price.toLocaleString()} € per person
             </div>
           </div>
         </div>
