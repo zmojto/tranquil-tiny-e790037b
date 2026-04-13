@@ -7,7 +7,7 @@ const RETREAT_IDS = [
   "costa-rica",
   "portugal-soul",
   "cyprus-awakening",
-  "krpacovo-pokoj",
+  "krpacovo-soul",
   "croatia-harmony",
   "thailand-awakening",
 ];
