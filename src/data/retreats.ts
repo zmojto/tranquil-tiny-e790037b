@@ -242,7 +242,7 @@ Ubytovanie je v trojlôžkových izbách v kolibe priamo pri jazere. Všetky jed
       "Vedené meditácie a dychové cvičenia",
       "Workshopy zamerané na osobný rast a mindfulness",
       "Paddleboarding na jazere",
-      "Prístup k fínskej saune a vonkajším vyhrievaným kadiam s vírivkou",
+      "Fínska sauna a vonkajšie vyhrievané kade s vírivkou",
       "Masáže k dispozícii (za príplatok)",
     ],
     heroImage: "https://i1.wp.com/www.polianka.sk/wp-content/uploads/2017/08/CountryKrpacovo2014_top58_35-1024x683.jpg?fit=1024%2C683&ssl=1",
