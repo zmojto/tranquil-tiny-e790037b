@@ -38,7 +38,7 @@ export interface Retreat {
   travelInfo?: TravelInfo;
 }
 
-export const retreats: Retreat[] = [
+const _retreats: Retreat[] = [
   {
     id: "bali-bliss",
     name: "Bali Bliss",
@@ -353,6 +353,12 @@ Koh Samui je ostrov kontrastov – od rušných nočných trhov po tiché medita
     heroImage: heroRetreat,
     galleryImages: [galleryMeditation, galleryPool, galleryRoom, galleryFood, gallerySpa, galleryNature],
   },
+];
+
+const activeOrder = ["cyprus-awakening", "krpacovo-soul", "croatia-harmony"];
+export const retreats: Retreat[] = [
+  ..._retreats.filter(r => activeOrder.includes(r.id)).sort((a, b) => activeOrder.indexOf(a.id) - activeOrder.indexOf(b.id)),
+  ..._retreats.filter(r => !activeOrder.includes(r.id)),
 ];
 
 export const getRetreatById = (id: string): Retreat | undefined => {
