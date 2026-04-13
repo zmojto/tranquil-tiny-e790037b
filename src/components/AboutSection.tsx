@@ -33,7 +33,7 @@ const AboutSection = () => {
           <FeatureCard 
             icon={<Leaf className="w-8 h-8" />}
             title="Ponorenie do prírody"
-            description="Slnečné pobrežia s vôňou mora, kamenné zátoky a šum vĺn, horské lúky, husté smrekové lesy a ticho dolín – každé prostredie prináša jedinečný zážitok prepojenia s prírodou, ktoré nás navracia do stavu vitality a pokoja. Lieči životnú energiu v našom tele."
+            description="Slnečné pobrežia s vôňou mora, kamenné zátoky a šum vĺn, horské lúky, husté smrekové lesy a ticho dolín – každé prostredie prináša jedinečný zážitok prepojenia s prírodou, ktorá lieči životnú energiu v našom tele."
           />
         </div>
       </div>
