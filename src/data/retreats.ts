@@ -210,8 +210,8 @@ Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len kr
     },
   },
   {
-    id: "krpacovo-pokoj",
-    name: "Krpáčovo Pokoj",
+    id: "krpacovo-soul",
+    name: "Krpáčovo Soul",
     tagline: "Tatranská harmónia",
     location: "Krpáčovo",
     country: "Slovensko",
