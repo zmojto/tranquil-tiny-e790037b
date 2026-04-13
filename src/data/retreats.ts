@@ -38,9 +38,9 @@ export interface Retreat {
   travelInfo?: TravelInfo;
 }
 
-export const retreats: Retreat[] = [
+const _retreats: Retreat[] = [
   {
-    id: "cyprus-awakening",
+    id: "bali-bliss",
     name: "Bali Bliss",
     tagline: "Ostrovná harmónia",
     location: "Ubud",
