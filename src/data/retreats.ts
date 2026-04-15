@@ -410,9 +410,58 @@ Náš program je zostavený tak, aby vyvažoval spoločné aktivity a váš osob
       note: "Doprava je individuálna – autom. Na požiadanie vieme sprostredkovať spoločný odvoz.",
     },
   },
+  {
+    id: "blatinka-retreat",
+    name: "Vaša cesta čaká",
+    tagline: "Podpoľanie",
+    location: "Blatinka, Podpoľanie",
+    country: "Slovensko",
+    dates: "14. – 16. augusta 2026",
+    price: 220,
+    spotsLeft: 14,
+    highlights: ["Etikoterapia", "Bazén", "Krása Podpoľania"],
+    description: `Srdečne vás pozývame na víkendové stretnutie na Blatinke. Spoločne sa pozrieme na to, ako sme spokojní so svojim životom, tak, ako ho žijeme. Zameriame sa na programy, ktoré riadia náš život a povieme si viac o tom, ako sa stať tvorcom svojho vlastného života a nakoľko ho máme vo svojich vlastných rukách.
+
+Budeme pracovať s našou mysľou, s jej prepojením na telo, vôľu a naše emócie. Pracujeme metódou etikoterapie, ktorá nám pomáha odkrývať pravdu o sebe samom. Budeme si spoločne klásť otázky a hľadať na ne odpovede.
+
+Veľkou podporou pri našej práci je krásne prostredie Podpoľania. Sme v lone prírody v starostlivých rukách milých domácich, známych svojou skvelou kuchyňou. Stravu chystá pani domáca – chutné vegetariánske jedlá z ich vlastnej záhrady. V lete je k dispozícii bazén.`,
+    dailySchedule: [
+      { time: "6:00", activity: "Vedená meditácia a dychové cvičenia" },
+      { time: "7:00", activity: "Hatha jóga" },
+      { time: "9:00", activity: "Raňajky" },
+      { time: "10:30", activity: "Workshop – etikoterapia" },
+      { time: "13:00", activity: "Obed" },
+      { time: "15:00", activity: "Bazén, voľný čas" },
+      { time: "17:00", activity: "Workshop – etikoterapia" },
+      { time: "19:00", activity: "Večera" },
+    ],
+    inclusions: [
+      "2 noci v útulnom ubytovaní (spoločné izby)",
+      "Vegetariánske jedlá z domácej záhrady",
+      "Denné ranné jógové lekcie (hatha)",
+      "Vedené meditácie a dychové cvičenia",
+      "Etikoterapia workshopy – Vaša cesta čaká",
+      "Prístup k bazénu",
+    ],
+    heroImage: "/images/blatinka/main.jpg",
+    galleryImages: [
+      "/images/blatinka/group.jpg",
+      "/images/blatinka/interior.jpg",
+      "/images/blatinka/garden.jpg",
+      "/images/blatinka/yoga.jpg",
+      "/images/blatinka/main.jpg",
+    ],
+    travelInfo: {
+      transportType: "individual",
+      outbound: { flight: "Individuálna doprava autom", time: "Príchod 14. augusta" },
+      returnFlight: { flight: "Individuálna doprava autom", time: "Odchod 16. augusta" },
+      ticketPrice: "individuálne",
+      note: "Doprava je individuálna – autom.",
+    },
+  },
 ];
 
-const activeOrder = ["cyprus-awakening", "krpacovo-soul", "croatia-harmony", "necpaly-retreat"];
+const activeOrder = ["cyprus-awakening", "krpacovo-soul", "croatia-harmony", "necpaly-retreat", "blatinka-retreat"];
 export const retreats: Retreat[] = [
   ..._retreats.filter(r => activeOrder.includes(r.id)).sort((a, b) => activeOrder.indexOf(a.id) - activeOrder.indexOf(b.id)),
   ..._retreats.filter(r => !activeOrder.includes(r.id)),
