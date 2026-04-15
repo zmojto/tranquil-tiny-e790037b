@@ -357,7 +357,7 @@ Koh Samui je ostrov kontrastov – od rušných nočných trhov po tiché medita
     id: "necpaly-retreat",
     name: "Spokojnosť je voľba",
     tagline: "Veľká Fatra",
-    location: "Nečpaly, Veľká Fatra",
+    location: "Necpaly, Veľká Fatra",
     country: "Slovensko",
     dates: "15. – 18. októbra 2026",
     price: 390,
