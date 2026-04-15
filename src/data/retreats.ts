@@ -274,7 +274,7 @@ Ubytovanie je v trojlôžkových a štvorlôžkových izbách v kolibe priamo pr
     highlights: ["Bazén a jacuzzi", "Tenisový kurt a sauna", "Výlety po okolí Zadaru"],
     description: `Zažite harmóniu tela a mysle v nádhernej kamennej Villa Quince neďaleko Zadaru na dalmatínskom pobreží. Táto luxusná vila s vyhrievaným bazénom, jacuzzi, saunou a tenisovým kurtom poskytuje ideálne prostredie pre 7-dňový transformačný pobyt uprostred stredomorskej prírody.
 
-Každý deň začína vedenou meditáciou a dychovými cvičeniami, po ktorých nasleduje hatha jóga. Popoludnia sú venované objavovaniu krás dalmatínskeho pobrežia – Národný park Kornati, vodopády Krka, staré mesto Zadar so slávnym morským orgánom, pláž Saharun či ostrov Ugljan.
+Každý deň začína vedenou meditáciou a dychovými cvičeniami, po ktorých nasleduje hatha jóga. Popoludnia sú venované objavovaniu krás dalmatínskeho pobrežia – Národný park Kornati, vodopády Krka, staré mesto Zadar so slávnym morským orgánom, pláž Saharun či ostrov Ugljan. Večery sú venované workshopom na tému Mentálny detox.
 
 Villa Quince sa nachádza v pokojnej dedine Murvica, len niekoľko minút od mora. Ubytovanie je v elegantných izbách s výhľadom na záhradu. Všetky jedlá sú vegetariánske a ajurvédske, pripravované s láskou z čerstvých miestnych surovín. Večery patria workshopom zameraným na osobný rast a mindfulness.`,
     dailySchedule: [
