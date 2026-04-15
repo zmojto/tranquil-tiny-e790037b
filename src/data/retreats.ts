@@ -265,7 +265,7 @@ Ubytovanie je v trojlôžkových izbách v kolibe priamo pri jazere. Všetky jed
   {
     id: "croatia-harmony",
     name: "Pura Vida Energia",
-    tagline: "Slnko Dalmácie",
+    tagline: "Magická Dalmácia",
     location: "Murvica, Zadar",
     country: "Chorvátsko",
     dates: "12. – 19. septembra 2026",
