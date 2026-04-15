@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { retreats } from "@/data/retreats";
 
-const activeIds = ["cyprus-awakening", "krpacovo-soul", "croatia-harmony", "necpaly-retreat"];
+const activeIds = ["cyprus-awakening", "krpacovo-soul", "croatia-harmony", "necpaly-retreat", "blatinka-retreat"];
 
 const EventsSection = () => {
   return (
