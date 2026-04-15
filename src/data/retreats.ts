@@ -158,8 +158,8 @@ Večery spájajú našu skupinu pri večerách pri sviečkach s tým najlepším
   },
   {
     id: "cyprus-awakening",
-    name: "Slnečný pokoj",
-    tagline: "Cyprus Awakening",
+    name: "Cyprus Awakening",
+    tagline: "Slnečný pokoj",
     location: "Protaras",
     country: "Cyprus",
     dates: "29. mája – 5. júna 2026",
