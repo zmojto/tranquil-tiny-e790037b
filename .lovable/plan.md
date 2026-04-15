@@ -1,36 +1,40 @@
 
 
-## Plán: Pridať nový pobyt Nečpaly (Chalet Alexandra)
+## Plan: Add new retreat "Blatinka" (Podpoľanie)
 
-### Čo sa pridá
+### New retreat details (from document)
 
-Nový pobyt **"Nečpaly"** v Chalet Alexandra, Národný park Veľká Fatra, podľa zadania z prílohy.
+- **ID**: `blatinka-retreat`
+- **Name**: "Vaša cesta čaká"
+- **Tagline**: "Podpoľanie"
+- **Location**: "Blatinka, Podpoľanie"
+- **Country**: "Slovensko"
+- **Dates**: "14. – 16. augusta 2026"
+- **Price**: 220
+- **Spots**: 14
+- **Highlights**: Etikoterapia, Bazén, Krása Podpoľania
 
-### Zmeny v súboroch
+### Changes
 
-#### 1. `src/data/retreats.ts` — pridať nový retreat objekt
+#### 1. Copy uploaded images to `public/images/blatinka/`
 
-Nový záznam s ID `necpaly-retreat`:
-- **name**: "Spokojnosť je voľba"
-- **tagline**: "Veľká Fatra"
-- **location**: "Nečpaly, Veľká Fatra"
-- **country**: "Slovensko"
-- **dates**: "15. – 18. októbra 2026"
-- **price**: 390
-- **spotsLeft**: 10
-- **highlights**: Etikoterapia, Sauna a vírivka pod hviezdami, Túry vo Veľkej Fatre
-- **description**: Text podľa zadania — jóga (lektorka Ali, diplom FTVŠ UK), meditácie (Sabinka), etikoterapia "Spokojnosť je voľba" (sabinakalmarova.sk), voľný čas s wellness a túrami
-- **dailySchedule**: Podľa rozvrhu zo zadania (6:00 meditácia, 7:00 hatha jóga, 9:00 raňajky, 10:30 workshop, 13:00 obed, 15:00 výlety, 17:30 jóga+meditácia, 19:00 večera, 20:00 wellness)
-- **inclusions**: 3 noci v Chalet Alexandra (2-4 lôžkové izby), vegetariánske a ajurvédske jedlá, denná jóga a meditácia, etikoterapia workshopy, sauna a vírivka, prístup k wellness
-- **heroImage**: `http://chataalexandra.sk/main.jpg`
-- **galleryImages**: Výber z fotiek na chataalexandra.sk (exteriér, interiér, okolie)
-- **travelInfo**: Individuálna doprava, na požiadanie sprostredkovanie
+Copy the 5 unique photos from the document (group photo, house exterior, meditation room, yoga outdoors, garden) as local assets.
 
-#### 2. `src/components/EventsSection.tsx` — pridať do aktívnych
+#### 2. `src/data/retreats.ts` — add new retreat object
 
-Pridať `"necpaly-retreat"` do `activeIds` a `activeOrder` (v retreats.ts), aby sa zobrazoval ako aktívny pobyt.
+New entry before the closing `];` with:
+- **description**: Text from the document about the weekend stay at Blatinka — etikoterapia workshop, yoga, meditation, beautiful Podpoľanie surroundings, home-cooked vegetarian meals from their garden, pool available in summer.
+- **dailySchedule**: 6:00 meditation, 7:00 hatha yoga, 9:00 breakfast, 10:30 workshop, 13:00 lunch, 15:00 pool/free time, 17:00 workshop, 19:00 dinner
+- **inclusions**: 2 nights accommodation (shared rooms), vegetarian meals from local garden, daily yoga and meditation, etikoterapia workshops, pool access
+- **heroImage**: `/images/blatinka/main.jpg` (the house exterior photo)
+- **galleryImages**: 6 images from the uploaded photos
+- **travelInfo**: Individual transport (car)
 
-#### 3. `src/data/retreats.ts` — pridať do `activeOrder`
+#### 3. `src/data/retreats.ts` — add to `activeOrder`
 
-Pridať `"necpaly-retreat"` do poľa `activeOrder` na riadku 358, aby sa zobrazoval medzi prvými.
+Add `"blatinka-retreat"` to the `activeOrder` array.
+
+#### 4. `src/components/EventsSection.tsx` — add to `activeIds`
+
+Add `"blatinka-retreat"` to `activeIds` array.
 
