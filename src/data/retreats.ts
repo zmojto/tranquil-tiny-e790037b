@@ -353,9 +353,66 @@ Koh Samui je ostrov kontrastov – od rušných nočných trhov po tiché medita
     heroImage: heroRetreat,
     galleryImages: [galleryMeditation, galleryPool, galleryRoom, galleryFood, gallerySpa, galleryNature],
   },
+  {
+    id: "necpaly-retreat",
+    name: "Spokojnosť je voľba",
+    tagline: "Veľká Fatra",
+    location: "Nečpaly, Veľká Fatra",
+    country: "Slovensko",
+    dates: "15. – 18. októbra 2026",
+    price: 390,
+    spotsLeft: 10,
+    highlights: ["Etikoterapia", "Sauna a vírivka pod hviezdami", "Túry vo Veľkej Fatre"],
+    description: `Doprajte si pár dní len pre seba v Chalet Alexandra – exkluzívnom ubytovaní v srdci Národného parku Veľká Fatra. Tento 3-dňový retreat je navrhnutý tak, aby ste sa zastavili, stíšili a skutočne sa naladili na svoje vnútro.
+
+Jóga: jemná a pomalá prax, kde sa pozície držia dlhšie. Zameriava sa na úplný relax, regeneráciu a uvoľnenie napätia, pomáha znižovať stres, uvoľniť telo a upokojiť myseľ. Prax je vedená lektorkou Ali, ktorá má diplom Karlovej univerzity, Fakulty telesnej výchovy a športu, odbor Jóga a jógová terapia – ste v dobrých rukách.
+
+Meditácia: Sabinkou vedené meditácie vám pomôžu obrátiť pozornosť dovnútra, stíšiť myseľ a byť – tu a teraz.
+
+Etikoterapia: séria prednášok na tému „Spokojnosť je voľba" pod vedením Sabiny Kalmárovej (sabinakalmarova.sk).
+
+Náš program je zostavený tak, aby vyvažoval spoločné aktivity a váš osobný čas. Ten môžete využiť v saune či vírivke pod hviezdami, pri tichom čítaní v útulnej relaxačnej miestnosti, alebo objavujte krásy prírody na peších túrach v okolí Veľkej Fatry. Všetko s dôrazom na pohodu, regeneráciu a pocit výnimočného oddychu.`,
+    dailySchedule: [
+      { time: "6:00", activity: "Vedená meditácia a dychové cvičenia" },
+      { time: "7:00", activity: "Hatha jóga – menšia skupina, individuálny prístup" },
+      { time: "9:00", activity: "Raňajky" },
+      { time: "10:30", activity: "Workshop – Spokojnosť je voľba" },
+      { time: "13:00", activity: "Obed" },
+      { time: "15:00", activity: "Výlety v okolí (túry vo Veľkej Fatre, prírodné pamiatky)" },
+      { time: "17:30", activity: "Jóga a meditácia" },
+      { time: "19:00", activity: "Večera" },
+      { time: "20:00", activity: "Wellness – sauna a vírivka pod hviezdami" },
+    ],
+    inclusions: [
+      "3 noci v Chalet Alexandra (2–4 lôžkové izby)",
+      "Vegetariánske a ajurvédske jedlá a občerstvenie",
+      "Denné ranné a večerné jógové lekcie (hatha)",
+      "Vedené meditácie a dychové cvičenia",
+      "Etikoterapia workshopy – Spokojnosť je voľba",
+      "Sauna a vírivka pod hviezdami",
+      "Prístup k relaxačnej miestnosti a wellness",
+      "Pešie túry v Národnom parku Veľká Fatra",
+    ],
+    heroImage: "http://chataalexandra.sk/main.jpg",
+    galleryImages: [
+      "http://chataalexandra.sk/static/images/vonka/1.jpg",
+      "http://chataalexandra.sk/static/images/vonka/3.jpg",
+      "http://chataalexandra.sk/static/images/dnu/1.jpg",
+      "http://chataalexandra.sk/static/images/dnu/4.jpg",
+      "http://chataalexandra.sk/static/images/vonka/9.jpg",
+      "http://chataalexandra.sk/static/images/dnu/8.jpg",
+    ],
+    travelInfo: {
+      transportType: "individual",
+      outbound: { flight: "Individuálna doprava autom", time: "Príchod 15. októbra" },
+      returnFlight: { flight: "Individuálna doprava autom", time: "Odchod 18. októbra" },
+      ticketPrice: "individuálne",
+      note: "Doprava je individuálna – autom. Na požiadanie vieme sprostredkovať spoločný odvoz.",
+    },
+  },
 ];
 
-const activeOrder = ["cyprus-awakening", "krpacovo-soul", "croatia-harmony"];
+const activeOrder = ["cyprus-awakening", "krpacovo-soul", "croatia-harmony", "necpaly-retreat"];
 export const retreats: Retreat[] = [
   ..._retreats.filter(r => activeOrder.includes(r.id)).sort((a, b) => activeOrder.indexOf(a.id) - activeOrder.indexOf(b.id)),
   ..._retreats.filter(r => !activeOrder.includes(r.id)),
