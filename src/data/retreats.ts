@@ -219,7 +219,7 @@ Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len kr
     price: 390,
     spotsLeft: 12,
     highlights: ["Koliba pri jazere", "Paddleboarding", "Sauna a wellness"],
-    description: `Príďte zažiť pokojný pobyt v srdci Nízkych Tatier, v kolibe pri jazere v malebnom Krpáčove. Tento 4-dňový retreat je navrhnutý tak, aby ste sa úplne odpojili od každodenného zhonu a znovu sa spojili s prírodou a sebou samým.
+    description: `Doprajte si pokojný pobyt v srdci Nízkych Tatier, v kolibe pri jazere v malebnom Krpáčove. Čakajú vás štyri dni v objatí prírody, naplnené hlbokým oddychom a obnovou.
 
 Každé ráno začína vedenou meditáciou a dychovými cvičeniami v lone prírody, po ktorých nasleduje hatha jóga. Popoludnia sú venované objavovaniu krás okolia – nenáročné prechádzky, náučné chodníky, Bystrianská jaskyňa, Farma Javor či Černohorská železnička. Na jazere si môžete vyskúšať paddleboarding a po aktívnom dni relaxovať vo fínskej saune alebo vonkajších vyhrievaných kadeniach s vírivkou.
 
