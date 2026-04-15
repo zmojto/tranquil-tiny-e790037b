@@ -223,7 +223,7 @@ Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len kr
 
 Každé ráno začína vedenou meditáciou a dychovými cvičeniami v lone prírody, po ktorých nasleduje hatha jóga. Popoludnia sú venované objavovaniu krás okolia – nenáročné prechádzky, náučné chodníky, Bystrianská jaskyňa, Farma Javor či Černohorská železnička. Na jazere si môžete vyskúšať paddleboarding a po aktívnom dni relaxovať vo fínskej saune alebo vonkajších vyhrievaných kadeniach s vírivkou.
 
-Ubytovanie je v trojlôžkových izbách v kolibe priamo pri jazere. Všetky jedlá sú vegetariánske a ajurvédske, pripravované s láskou z čerstvých surovín. Večery patria workshopom zameraným na osobný rast a mindfulness.`,
+Ubytovanie je v trojlôžkových a štvorlôžkových izbách v kolibe priamo pri jazere. Všetky jedlá sú vegetariánske a ajurvédske, pripravované s láskou z čerstvých surovín. Večery patria workshopom na tému Mentálna odolnosť.`,
     dailySchedule: [
       { time: "6:00", activity: "Vedená meditácia a dychové cvičenia" },
       { time: "7:00", activity: "Hatha jóga" },
@@ -236,11 +236,11 @@ Ubytovanie je v trojlôžkových izbách v kolibe priamo pri jazere. Všetky jed
       { time: "20:00", activity: "Workshop" },
     ],
     inclusions: [
-      "4 noci v kolibe pri jazere v trojlôžkových izbách",
+      "4 noci v kolibe pri jazere v trojlôžkových a štvorlôžkových izbách",
       "Vegetariánske a ajurvédske jedlá a občerstvenie",
       "Denné ranné a večerné jógové lekcie (hatha)",
       "Vedené meditácie a dychové cvičenia",
-      "Workshopy zamerané na osobný rast a mindfulness",
+      "Workshopy na tému Mentálna odolnosť",
       "Paddleboarding na jazere",
       "Fínska sauna a vonkajšie vyhrievané kade s vírivkou",
       "Masáže k dispozícii (za príplatok)",
