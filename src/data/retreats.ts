@@ -363,7 +363,7 @@ Koh Samui je ostrov kontrastov – od rušných nočných trhov po tiché medita
     price: 390,
     spotsLeft: 10,
     highlights: ["Etikoterapia", "Sauna a vírivka pod hviezdami", "Túry vo Veľkej Fatre"],
-    description: `Doprajte si pár dní len pre seba v Chalet Alexandra – exkluzívnom ubytovaní v srdci Národného parku Veľká Fatra. Tento 3-dňový retreat je navrhnutý tak, aby ste sa zastavili, stíšili a skutočne sa naladili na svoje vnútro.
+    description: `Doprajte si pár dní len pre seba v Chalet Alexandra – exkluzívnom útočisku v srdci Národného parku Veľká Fatra. Tento 3-dňový retreat je pozvánkou spomaliť, stíšiť sa a znovu sa naladiť na svoje vnútro.
 
 Jóga: jemná a pomalá prax, kde sa pozície držia dlhšie. Zameriava sa na úplný relax, regeneráciu a uvoľnenie napätia, pomáha znižovať stres, uvoľniť telo a upokojiť myseľ. Prax je vedená lektorkou Ali, ktorá má diplom Karlovej univerzity, Fakulty telesnej výchovy a športu, odbor Jóga a jógová terapia – ste v dobrých rukách.
 
