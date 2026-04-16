@@ -365,8 +365,8 @@ Koh Samui je ostrov kontrastov – od rušných nočných trhov po tiché medita
     highlights: ["Etikoterapia", "Sauna a vírivka pod hviezdami", "Túry vo Veľkej Fatre"],
     description: `Doprajte si pár dní len pre seba v Chalet Alexandra – exkluzívnom útočisku v srdci Národného parku Veľká Fatra. Tento 3-dňový retreat je pozvánkou spomaliť, stíšiť sa a znovu sa naladiť na svoje vnútro.
 
-Etikoterapia
-Séria inšpiratívnych prednášok „Spokojnosť je voľba“ pod vedením Sabiny Kalmárovej (sabinakalmarova.sk) vám ponúkne nový pohľad na každodenný život aj vaše vnútorné nastavenie.
+Meditácia
+Vedené meditácie so Sabinkou vás prirodzene privedú späť k sebe – do ticha, prítomnosti a vnútorného pokoja.
 
 Jóga
 Jemná, pomalá prax s dlhším zotrvaním v pozíciách prináša hlboké uvoľnenie, regeneráciu a úľavu od napätia. Pomáha znižovať stres, uvoľniť telo a upokojiť myseľ. Prax vedie lektorka Ali Hodáková, absolventka Karlovej univerzity (Fakulta telesnej výchovy a športu, odbor Jóga a jógová terapia) – ste v citlivých a odborných rukách.
