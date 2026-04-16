@@ -371,7 +371,7 @@ Vedené meditácie so Sabinkou vás prirodzene privedú späť k sebe – do tic
 Jóga
 Jemná, pomalá prax s dlhším zotrvaním v pozíciách prináša hlboké uvoľnenie, regeneráciu a úľavu od napätia. Pomáha znižovať stres, uvoľniť telo a upokojiť myseľ. Prax vedie lektorka Ali Hodáková, absolventka Karlovej univerzity (Fakulta telesnej výchovy a športu, odbor Jóga a jógová terapia) – ste v citlivých a odborných rukách.
 
-Náš program je zostavený tak, aby vyvažoval spoločné aktivity a váš osobný čas. Ten môžete využiť v saune či vírivke pod hviezdami, pri tichom čítaní v útulnej relaxačnej miestnosti, alebo objavujte krásy prírody na peších túrach v okolí Veľkej Fatry. Všetko s dôrazom na pohodu, regeneráciu a pocit výnimočného oddychu.`,
+Program je navrhnutý s dôrazom na rovnováhu medzi spoločným časom a priestorom len pre vás. Oddýchnite si v saune či vírivke pod hviezdami, ponorte sa do ticha s knihou v útulnej relaxačnej miestnosti alebo objavujte krásu okolitej prírody na peších prechádzkach. Každý moment je pozvaním k regenerácii, uvoľneniu a hlbokému oddychu.`,
     dailySchedule: [
       { time: "6:00", activity: "Vedená meditácia a dychové cvičenia" },
       { time: "7:00", activity: "Hatha jóga – menšia skupina, individuálny prístup" },
