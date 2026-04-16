@@ -93,7 +93,7 @@ const EventsSection = () => {
                     {/* Pricing & CTA */}
                     <div className="text-center border-t border-primary/10 pt-6">
                       <div className="mb-4">
-                        <span className="font-serif text-4xl text-foreground">{retreat.price.toLocaleString()} €</span>
+                        <span className="font-serif text-4xl text-foreground">{retreat.price.toLocaleString('sk-SK')} €</span>
                         <span className="text-muted-foreground ml-2">za osobu</span>
                       </div>
                       {isActive ? (
