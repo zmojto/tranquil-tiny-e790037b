@@ -29,7 +29,7 @@ const EventsSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {retreats.map((retreat) => {
+          {filteredRetreats.map((retreat) => {
             const isActive = activeIds.includes(retreat.id);
             return (
               <Card
