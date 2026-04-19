@@ -1,3 +1,10 @@
+import cyprusBedroom from "@/assets/cyprus-bedroom.jpg";
+import cyprusBlueLagoon from "@/assets/cyprus-blue-lagoon.jpg";
+import cyprusHero from "@/assets/cyprus-hero.jpg";
+import cyprusKonnosBay from "@/assets/cyprus-konnos-bay.jpg";
+import cyprusLivingroom from "@/assets/cyprus-livingroom.jpg";
+import cyprusMimosaBeach from "@/assets/cyprus-mimosa-beach.jpg";
+import cyprusPoolNight from "@/assets/cyprus-pool-night.jpg";
 import galleryFood from "@/assets/gallery-food.jpg";
 import galleryMeditation from "@/assets/gallery-meditation.jpg";
 import galleryNature from "@/assets/gallery-nature.jpg";
@@ -193,14 +200,14 @@ Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len kr
       "Transfer z letiska Larnaka",
       "Voľný prístup k pláži Mimosa Beach",
     ],
-    heroImage: "https://villalucilla.eu/images/hero-pool.jpg",
+    heroImage: cyprusHero,
     galleryImages: [
-      "https://villalucilla.eu/images/night-pool.jpg",
-      "https://villalucilla.eu/images/livingroom1.jpeg",
-      "https://villalucilla.eu/images/bedroom-master.jpg",
-      "https://villalucilla.eu/images/konnos-bay.jpg",
-      "https://villalucilla.eu/images/blue-lagoon.jpg",
-      "https://villalucilla.eu/images/mimosa-beach-real.jpg",
+      cyprusPoolNight,
+      cyprusLivingroom,
+      cyprusBedroom,
+      cyprusKonnosBay,
+      cyprusBlueLagoon,
+      cyprusMimosaBeach,
     ],
     travelInfo: {
       outbound: { flight: "Wizz Air – Bratislava → Larnaka", time: "Piatok 29. mája, 15:00 → 19:05 (3h 5min)" },
