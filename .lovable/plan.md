@@ -1,35 +1,22 @@
 
 
-User wants me to NOT generate images for Cyprus, but instead download the existing images from villalucilla.eu and use them locally.
+## Plán: Nastaviť hero obrázok ako Open Graph náhľad pri zdieľaní
 
-## Plán: Stiahnutie obrázkov z villalucilla.eu pre pobyt Cyprus
+### Problém
+Pri zdieľaní stránky (napr. v správach) sa zobrazuje štandardný Lovable obrázok namiesto hero obrázku z homepage. Príčina: v `index.html` je `og:image` a `twitter:image` nastavené na `https://lovable.dev/opengraph-image-p98pqg.png`.
 
-### Čo treba urobiť
+### Riešenie
 
-1. **Stiahnuť 7 obrázkov** z `villalucilla.eu` (aktuálne externé URL v `src/data/retreats.ts` riadky 196–204) a uložiť ich lokálne do `src/assets/`:
-   - `cyprus-hero.jpg` ← `Pool-and-villa-night-1.jpg`
-   - `cyprus-pool-night.jpg` ← `Pool-and-villa-night-1.jpg` (alebo iná nočná verzia)
-   - `cyprus-livingroom.jpg` ← `livingroom-1.jpg`
-   - `cyprus-bedroom.jpg` ← `bedroom-1.jpg`
-   - `cyprus-konnos-bay.jpg` ← `Konnos-Bay.jpg`
-   - `cyprus-blue-lagoon.jpg` ← `Blue-Lagoon.jpg`
-   - `cyprus-mimosa-beach.jpg` ← `Mimosa-Beach.jpg`
+1. **Skopírovať `src/assets/hero-retreat.jpg` do `public/`** ako `og-image.jpg`
+   - OG obrázky musia byť dostupné cez absolútnu URL, takže musia byť v `public/` adresári (nie v `src/assets/`, ktorý prechádza Vite bundlingom s hashom v názve)
 
-   (presné názvy súborov si overím pri sťahovaní – použijem `curl` na URL z `retreats.ts`)
-
-2. **Aktualizovať `src/data/retreats.ts`**:
-   - Pridať `import` statementy pre 7 nových lokálnych obrázkov na vrchu súboru
-   - Nahradiť `heroImage` URL lokálnym importom
-   - Nahradiť všetkých 6 položiek v `galleryImages` lokálnymi importmi
+2. **Aktualizovať `index.html`**:
+   - `og:image` → `https://tranquil-tiny.lovable.app/og-image.jpg`
+   - `twitter:image` → `https://tranquil-tiny.lovable.app/og-image.jpg`
+   - Pridať `og:image:width` (1200) a `og:image:height` (630) pre lepšiu kompatibilitu so sociálnymi sieťami
+   - Pridať `og:url` s adresou stránky
 
 ### Technické detaily
-
-- Obrázky sa stiahnu pomocou `curl` priamo z aktuálnych URL uvedených v `retreats.ts`
-- Uložia sa do `src/assets/` (rovnaká konvencia ako pri ostatných pobytoch)
-- Vite ich pri buildovaní automaticky optimalizuje a vloží do bundle
-- Žiadne zmeny v `RetreatDetail.tsx` ani inde – len výmena zdrojov
-
-### Mimo rozsahu
-
-- Pobyt **Krpáčovo Soul** (externé obrázky z `polianka.sk`) ostáva nezmenený
+- Hero obrázok má rozmery vhodné na použitie (krajinný formát). Ak by bol príliš veľký, môžem ho zmenšiť/orezať na odporúčaný OG pomer 1200×630 px pre optimálne zobrazenie na Facebooku, LinkedIn, iMessage, WhatsApp a Twitteri.
+- Sociálne siete cachujú OG obrázky – po deployi môže byť potrebné použiť napr. Facebook Sharing Debugger na vyčistenie cache.
 
