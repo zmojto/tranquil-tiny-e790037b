@@ -195,7 +195,7 @@ Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len kr
       "Denné ranné a večerné jógové lekcie (hatha, vinyasa)",
       "Vedené meditácie a dychové cvičenia na pláži",
       "Vegetariánske jedlá a občerstvenie po celý deň",
-      "Workshopy zamerané na osobný rast a mindfulness",
+      "Workshopy zamerané na osobný rast",
       "Kurátorované výlety: Cape Greco, morské jaskyne, Konnos Bay, Fig Tree Bay",
       "Transfer z letiska Larnaka",
       "Voľný prístup k pláži Mimosa Beach",
@@ -283,7 +283,7 @@ Ubytovanie je v trojlôžkových a štvorlôžkových izbách v kolibe priamo pr
 
 Každý deň začína vedenou meditáciou a dychovými cvičeniami, po ktorých nasleduje hatha jóga. Popoludnia sú venované objavovaniu krás dalmatínskeho pobrežia – Národný park Kornati, vodopády Krka, staré mesto Zadar so slávnym morským orgánom, pláž Saharun či ostrov Ugljan. Večery sú venované workshopom na tému Mentálny detox.
 
-Villa Quince sa nachádza v pokojnej dedine Murvica, len niekoľko minút od mora. Ubytovanie je v elegantných izbách s výhľadom na záhradu. Všetky jedlá sú vegetariánske a ajurvédske, pripravované s láskou z čerstvých miestnych surovín. Večery patria workshopom zameraným na osobný rast a mindfulness.`,
+Villa Quince sa nachádza v pokojnej dedine Murvica, len niekoľko minút od mora. Ubytovanie je v elegantných izbách s výhľadom na záhradu. Všetky jedlá sú vegetariánske a ajurvédske, pripravované s láskou z čerstvých miestnych surovín. Večery patria workshopom zameraným na osobný rast.`,
     dailySchedule: [
       { time: "6:00", activity: "Vedená meditácia a dychové cvičenia" },
       { time: "7:00", activity: "Hatha jóga" },
@@ -300,7 +300,7 @@ Villa Quince sa nachádza v pokojnej dedine Murvica, len niekoľko minút od mor
       "Vegetariánske a ajurvédske jedlá a občerstvenie",
       "Denné ranné a večerné jógové lekcie (hatha)",
       "Vedené meditácie a dychové cvičenia",
-      "Workshopy zamerané na osobný rast a mindfulness",
+      "Workshopy zamerané na osobný rast",
       "Prístup k saune, jacuzzi a fitness",
       "Tenisový kurt a stolný tenis",
       "Kurátorované výlety po okolí Zadaru",

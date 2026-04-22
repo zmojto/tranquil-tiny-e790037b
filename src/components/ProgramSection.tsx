@@ -6,9 +6,9 @@ const ProgramSection = () => {
   "7 nocí v luxusnom ubytovaní / 4 noci v útulnej štýlovej kolibe",
   "Denné ranné a večerné jógové lekcie",
   "Vedená meditácia a dychové cvičenia",
-  "Tri ajurvédské rastlinné jedlá denne",
-  "Wellness",
-  "Workshopy zamerané na osobný rast a mindfulness",
+    "Tri ajurvédské, rastlinné jedlá denne",
+    "Wellness",
+    "Workshopy zamerané na osobný rast",
   "Kurátorovaný výlet do prírody",
   "Letiskové transfery a uvítací rituál"];
 
@@ -26,7 +26,7 @@ const ProgramSection = () => {
               Všetko čo potrebujete na oddych
             </h2>
             <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
-              Každý pobyt zahŕňa rovnaký starostlivo zostavený zážitok. Od chvíle príchodu jednoducho buďte prítomní. Práca s telom, mysľou a emóciami, pestovanie spokojnosti a stability v každodennom živote, je pozvánkou návratu k sebe.
+              Každý pobyt zahŕňa rovnako starostlivo zostavený zážitok. Od chvíle príchodu jednoducho buďte prítomní. Práca s telom, mysľou a emóciami, pestovanie spokojnosti a stability v každodennom živote, je pozvánkou návratu k sebe.
             
             </p>
             
