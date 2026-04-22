@@ -29,7 +29,7 @@ const DailyProgramSection = () => {
           <TimelineCard
             icon={<Sun className="w-8 h-8" />}
             time="Popoludnie"
-            title="Objavovanie a relax"
+            title="Ponorenie do prírody"
             description="Čas pre seba: prechádzky v prírode, ajurvédske jedlá, sauna, čítanie alebo workshopy osobného rastu."
           />
           <TimelineCard
