@@ -178,7 +178,7 @@ Večery spájajú našu skupinu pri večerách pri sviečkach s tým najlepším
 
 Každé ráno začína vedenou meditáciou a dychovými cvičeniami priamo na pláži, po ktorých nasleduje hatha jóga. Popoludnia sú venované objavovaniu prírodných krás okolia – od majestátneho Cape Greco cez morské jaskyne Ayia Napa Sea Caves až po kryštáľovo čistú Konnos Bay a slávnu Fig Tree Bay.
 
-Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len krátkou prechádzkou od pláže Mimosa Beach. Ubytovanie je v dvojlôžkových izbách s prístupom k bazénu. Všetky jedlá sú vegetariánske a pripravované s láskou. Večery patria workshopom, zdieľaniu a hlbokému vnútornému pokoju.`,
+Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len krátkou prechádzkou od pláže Mimosa Beach. Ubytovanie je v dvojlôžkových izbách s prístupom k bazénu. Všetky jedlá sú vegetariánske a pripravované s láskou. Večery patria workshopom a zdieľaniu.`,
     dailySchedule: [
       { time: "6:00", activity: "Vedená meditácia a dychové cvičenia na pláži" },
       { time: "7:00", activity: "Hatha jóga" },
