@@ -126,9 +126,6 @@ const RetreatBookingForm = ({ retreat }: RetreatBookingFormProps) => {
                 <span className="text-muted-foreground ml-2">za osobu</span>
               </div>
             </div>
-            <p className="text-xs text-muted-foreground text-center mt-4">
-              Na potvrdenie miesta sa vyžaduje záloha 500 €. Platobné údaje budú zaslané po prijatí vašej žiadosti.
-            </p>
           </div>
 
           {/* Booking Form */}
