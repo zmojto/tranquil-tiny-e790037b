@@ -1,23 +1,42 @@
 
 
-## Plán: Odstrániť informácie o zálohách z aktívnych pobytov
+## Plán: Pridať sekciu „Program dňa" na one-pager
 
-### Čo sa zmení
+Doplníme krátku samostatnú sekciu, ktorá vizuálne zhrnie typický deň na pobyte – ranná prax, popoludnie a večerné lekcie. Sekcia bude umiestnená medzi „Naša filozofia" (`AboutSection`) a ďalšiu existujúcu sekciu na hlavnej stránke.
 
-V kóde sa nachádzajú tri zmienky o zálohe – jedna v karte ceny na homepage, druhá v rezervačnom formulári detailu pobytu (Cyprus, Krpáčovo, Chorvátsko) a jedna v starom (nepoužívanom) modálnom okne.
+### Obsah sekcie
 
-1. **`src/components/ProgramSection.tsx`** (homepage, sekcia "Investícia")
-   - Aktuálne: „Maximálne 12 hostí na pobyt • Záloha 100 € na potvrdenie"
-   - Nové: „Maximálne 12 hostí na pobyt"
+Trojstĺpcová časová os (timeline) s ikonami a krátkymi popismi:
 
-2. **`src/components/RetreatBookingForm.tsx`** (formulár na detaile každého aktívneho pobytu)
-   - Odstrániť celý odstavec: „Na potvrdenie miesta sa vyžaduje záloha 500 €. Platobné údaje budú zaslané po prijatí vašej žiadosti."
+1. **Ráno – Hathajóga flow**
+   „Začnite deň so svitaním. Vedená meditácia, dychové cvičenia a Hathajóga flow pre prebudenie tela aj mysle."
 
-3. **`src/components/BookingModal.tsx`** (mŕtvy kód, ale pre čistotu tiež)
-   - Odstrániť odstavec: „A $500 deposit is required to confirm your spot..."
+2. **Popoludnie – Vedomý odpočinok**
+   „Čas pre seba: prechádzky v prírode, ajurvédske jedlá, sauna, čítanie alebo workshopy osobného rastu."
+
+3. **Večer – Regeneračná prax**
+   „Jemné večerné lekcie jógy, dychu a relaxácie pre hlboký a regeneračný spánok."
+
+### Vizuálny štýl
+
+- Konzistentný s existujúcim `AboutSection` – rovnaké typo (Cormorant serif nadpis, sage green akcenty), `section-gradient` pozadie alebo neutrálne pozadie pre striedanie.
+- Ikony z `lucide-react`: `Sunrise`, `Sun`, `Moon`.
+- Layout: `grid md:grid-cols-3` s vertikálnou linkou medzi kartami na desktope (jemná timeline), na mobile sa karty radia pod seba.
+- Krátky úvodný odstavec nad gridom: „Typický deň v retreate" + jedna veta.
+
+### Technické zmeny
+
+1. **Nový súbor `src/components/DailyProgramSection.tsx`**
+   - Štruktúra podľa vzoru `AboutSection.tsx` (sekcia + container + header + grid + interná `TimelineCard` komponenta).
+   - `id="daily-program"` aby sa dalo prípadne prelinkovať z navigácie.
+   - `scroll-mt-20` pre korektné scrollovanie pod fixed nav.
+
+2. **Úprava `src/pages/Index.tsx`**
+   - Pridať import a vložiť `<DailyProgramSection />` hneď za `<AboutSection />`.
 
 ### Mimo rozsahu
 
-- Logika rezervácie a ukladania do databázy ostáva nezmenená – meníme iba textové oznámenia.
-- Pobyty „Pripravujeme" (Bali, Costa Rica, Portugal, Thailand) majú tlačidlo „Čoskoro" bez formulára, takže sa ich to netýka.
+- Bez úpravy navigácie (žiadny nový odkaz v menu) – ak budete chcieť, doplníme dodatočne.
+- Bez zmien v detailoch jednotlivých pobytov – tam zostávajú existujúce konkrétne programy.
+- Bez zásahu do databázy či bookingu.
 
