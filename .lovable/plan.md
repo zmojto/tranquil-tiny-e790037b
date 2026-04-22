@@ -1,22 +1,23 @@
 
 
-## Plán: Nastaviť hero obrázok ako Open Graph náhľad pri zdieľaní
+## Plán: Odstrániť informácie o zálohách z aktívnych pobytov
 
-### Problém
-Pri zdieľaní stránky (napr. v správach) sa zobrazuje štandardný Lovable obrázok namiesto hero obrázku z homepage. Príčina: v `index.html` je `og:image` a `twitter:image` nastavené na `https://lovable.dev/opengraph-image-p98pqg.png`.
+### Čo sa zmení
 
-### Riešenie
+V kóde sa nachádzajú tri zmienky o zálohe – jedna v karte ceny na homepage, druhá v rezervačnom formulári detailu pobytu (Cyprus, Krpáčovo, Chorvátsko) a jedna v starom (nepoužívanom) modálnom okne.
 
-1. **Skopírovať `src/assets/hero-retreat.jpg` do `public/`** ako `og-image.jpg`
-   - OG obrázky musia byť dostupné cez absolútnu URL, takže musia byť v `public/` adresári (nie v `src/assets/`, ktorý prechádza Vite bundlingom s hashom v názve)
+1. **`src/components/ProgramSection.tsx`** (homepage, sekcia "Investícia")
+   - Aktuálne: „Maximálne 12 hostí na pobyt • Záloha 100 € na potvrdenie"
+   - Nové: „Maximálne 12 hostí na pobyt"
 
-2. **Aktualizovať `index.html`**:
-   - `og:image` → `https://tranquil-tiny.lovable.app/og-image.jpg`
-   - `twitter:image` → `https://tranquil-tiny.lovable.app/og-image.jpg`
-   - Pridať `og:image:width` (1200) a `og:image:height` (630) pre lepšiu kompatibilitu so sociálnymi sieťami
-   - Pridať `og:url` s adresou stránky
+2. **`src/components/RetreatBookingForm.tsx`** (formulár na detaile každého aktívneho pobytu)
+   - Odstrániť celý odstavec: „Na potvrdenie miesta sa vyžaduje záloha 500 €. Platobné údaje budú zaslané po prijatí vašej žiadosti."
 
-### Technické detaily
-- Hero obrázok má rozmery vhodné na použitie (krajinný formát). Ak by bol príliš veľký, môžem ho zmenšiť/orezať na odporúčaný OG pomer 1200×630 px pre optimálne zobrazenie na Facebooku, LinkedIn, iMessage, WhatsApp a Twitteri.
-- Sociálne siete cachujú OG obrázky – po deployi môže byť potrebné použiť napr. Facebook Sharing Debugger na vyčistenie cache.
+3. **`src/components/BookingModal.tsx`** (mŕtvy kód, ale pre čistotu tiež)
+   - Odstrániť odstavec: „A $500 deposit is required to confirm your spot..."
+
+### Mimo rozsahu
+
+- Logika rezervácie a ukladania do databázy ostáva nezmenená – meníme iba textové oznámenia.
+- Pobyty „Pripravujeme" (Bali, Costa Rica, Portugal, Thailand) majú tlačidlo „Čoskoro" bez formulára, takže sa ich to netýka.
 
