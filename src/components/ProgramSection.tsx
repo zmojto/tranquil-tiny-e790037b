@@ -65,7 +65,7 @@ const ProgramSection = () => {
               </Button>
               
               <p className="text-muted-foreground text-sm">
-                Maximálne 12 hostí na pobyt • Záloha 100 € na potvrdenie
+                Maximálne 12 hostí na pobyt
               </p>
             </div>
           </div>

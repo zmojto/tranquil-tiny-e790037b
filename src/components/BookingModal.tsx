@@ -217,10 +217,6 @@ const BookingModal = ({ isOpen, onClose, retreat }: BookingModalProps) => {
                 {isSubmitting ? "Sending..." : "Request Reservation"}
               </Button>
             </div>
-
-            <p className="text-xs text-muted-foreground text-center">
-              A $500 deposit is required to confirm your spot. We'll send payment details after receiving your request.
-            </p>
           </form>
         </Form>
       </DialogContent>
