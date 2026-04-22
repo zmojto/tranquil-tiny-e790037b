@@ -283,7 +283,7 @@ Ubytovanie je v trojlôžkových a štvorlôžkových izbách v kolibe priamo pr
 
 Každý deň začína vedenou meditáciou a dychovými cvičeniami, po ktorých nasleduje hatha jóga. Popoludnia sú venované objavovaniu krás dalmatínskeho pobrežia – Národný park Kornati, vodopády Krka, staré mesto Zadar so slávnym morským orgánom, pláž Saharun či ostrov Ugljan. Večery sú venované workshopom na tému Mentálny detox.
 
-Villa Quince sa nachádza v pokojnej dedine Murvica, len niekoľko minút od mora. Ubytovanie je v elegantných izbách s výhľadom na záhradu. Všetky jedlá sú vegetariánske a ajurvédske, pripravované s láskou z čerstvých miestnych surovín. Večery patria workshopom zameraným na osobný rast.`,
+Villa Quince sa nachádza v pokojnej dedine Murvica, len niekoľko minút autom od mora. Ubytovanie je v elegantných izbách s výhľadom na záhradu. Všetky jedlá sú vegetariánske a ajurvédske, pripravované s láskou z čerstvých miestnych surovín. Večery patria workshopom zameraným na osobný rast.`,
     dailySchedule: [
       { time: "6:00", activity: "Vedená meditácia a dychové cvičenia" },
       { time: "7:00", activity: "Hatha jóga" },
