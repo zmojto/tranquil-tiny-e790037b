@@ -125,6 +125,7 @@ const RetreatBookingForm = ({ retreat }: RetreatBookingFormProps) => {
                 <span className="font-serif text-3xl text-foreground">{retreat.price.toLocaleString('sk-SK')} €</span>
                 <span className="text-muted-foreground ml-2">za osobu</span>
               </div>
+            </div>
           </div>
 
           {/* Booking Form */}
