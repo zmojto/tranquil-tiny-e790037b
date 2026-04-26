@@ -3,7 +3,7 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 import cyprusPoolNight from "@/assets/cyprus-pool-night.jpg";
-import cyprusLivingroom from "@/assets/cyprus-livingroom.jpg";
+
 import cyprusBlueLagoon from "@/assets/cyprus-blue-lagoon.jpg";
 import cyprusBedroom from "@/assets/cyprus-bedroom.jpg";
 import cyprusKonnosBay from "@/assets/cyprus-konnos-bay.jpg";
