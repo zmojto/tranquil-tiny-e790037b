@@ -1,27 +1,42 @@
 ## Cieľ
 
-Premenovať retreat v Necpaloch v rovnakom štýle ako ostatné aktívne pobyty (Cyprus Awakening, Krpáčovo Soul, Blatinka Roots) a doplniť opisný prívlastok k „Veľkej Fatre".
+Zoradiť pobyty na webe chronologicky podľa dátumu konania (od najbližšieho po najvzdialenejší).
 
-## Návrh
+## Aktuálny stav
 
-Použijeme nový názov **„Necpaly Stillness"** a tagline **„Tichá Veľká Fatra"** — ladí so štýlom ostatných pobytov (anglický príznak + slovenská lokalita s prívlastkom).
+Pobyty sú v `src/data/retreats.ts` zoradené v ľubovoľnom poradí. Aktívne poradie je definované ručne v poli `activeOrder` (riadok 470) a v `EventsSection.tsx` v poli `activeIds`.
 
-Ak by si preferoval iné varianty, povedz a upravím:
+## Navrhované poradie (podľa dátumu)
 
-- Názov: napr. *Necpaly Soul*, *Fatra Serenity*, *Necpaly Stillness*, alebo vlastný
-- Prívlastok: napr. *Tichá Veľká Fatra*, *Malebná Veľká Fatra*, *Pokojná Veľká Fatra*, alebo vlastný
+**Aktívne pobyty 2026:**
 
-## Zmeny v súbore `src/data/retreats.ts` (id: `necpaly-retreat`)
+1. Cyprus Awakening – 29. mája
+2. Krpáčovo Soul – 1. júla
+3. Blatinka Roots – 14. augusta
+4. Croatia Harmony – 12. septembra
+5. Necpaly Stillness – 15. októbra
 
-1. **Riadok 365** – `name`: „Spokojnosť je voľba" → **„Necpaly Stillness"**
-2. **Riadok 366** – `tagline`: „Veľká Fatra" → **„Tichá Veľká Fatra"**
-  &nbsp;
+**Pripravované pobyty (tiež chronologicky):**
 
-## Audit
+1. Bali Bliss – 15. februar 2027
+2. Costa Rica – 10. mája 2027
+3. Portugal Soul – 5. septembra 2027
+4. Thailand Awakening – 14. novembra 2027
 
-Vykoná sa `rg „Spokojnos"` po zmenách, aby sa overilo, že nikde inde názov nezostal (napr. v kópiách v iných sekciách, blogu alebo SEO textoch).
+## Zmeny v kóde
 
-## Bez ďalších úprav
+`**src/data/retreats.ts**` (riadok 470)
 
-- Lokalita `location: "Necpaly, Veľká Fatra"` zostáva, slúži ako adresa.
-- Popis a všetky ostatné texty zostávajú nezmenené.
+- Upraviť `activeOrder` na nové chronologické poradie:
+  ```
+  ["cyprus-awakening", "krpacovo-soul", "blatinka-retreat", "croatia-harmony", "necpaly-retreat"]
+  ```
+- Pripravované pobyty zoradiť tiež chronologicky cez druhú lookup tabuľku (`upcomingOrder`), aby sa zobrazovali podľa dátumu.
+
+`**src/components/EventsSection.tsx**` (riadky 9-10)
+
+- Aktualizovať `activeIds` a `upcomingIds` na rovnaké chronologické poradie, aby filter rešpektoval poradie z dátového súboru.
+
+## Výsledok
+
+Karty pobytov na hlavnej stránke (sekcia „Vyberte si svoju cestu") sa budú zobrazovať podľa dátumu konania – najprv najbližšie aktívne, potom pripravované.
