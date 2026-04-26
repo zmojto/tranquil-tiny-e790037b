@@ -18,7 +18,7 @@ const EventsSection = () => {
       <div className="container max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-primary uppercase tracking-[0.2em] text-sm mb-4 font-sans">
-            Pobyty 2026
+            Pobyty 2026 / 2027
           </p>
           <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-6">
             Vyberte si svoju cestu
