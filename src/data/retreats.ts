@@ -130,7 +130,7 @@ Náš butikový eko-lodge kladie dôraz na udržateľnosť a spojenie s prírodn
     tagline: "Stredomorská serenita",
     location: "Sintra",
     country: "Portugalsko",
-    dates: "5. – 12. septembra 2026",
+    dates: "5. – 12. septembra 2027",
     price: 2600,
     spotsLeft: 10,
     highlights: ["Historické paláce", "Prechádzky po pobrežných útesoch", "Túry po vinárskej oblasti"],
