@@ -29,10 +29,9 @@ const HostsSection = () => {
             v bezpečí a inšpirovaní vrátiť sa späť k sebe.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Sabínka vás prevedie meditačnou praxou a vnútorným stíšením,
-            Ali sa s vami podelí o etikoterapiu a rozhovory o spokojnosti
-            v každodennom živote. Spolu vytvárame priestor, kde má každý z vás
-            možnosť rásť vlastným tempom.
+            Sabínka sa s vami podelí o etikoterapiu a rozhovory o spokojnosti v každodennom živote.<br />
+            Ali vás prevedie jógovou a meditačnou praxou.<br />
+            Spolu vytvárame priestor, kde má každý z vás možnosť rásť vlastným tempom.
           </p>
         </div>
       </div>
