@@ -421,7 +421,7 @@ Program je navrhnutý s dôrazom na rovnováhu medzi spoločným časom a priest
     id: "blatinka-retreat",
     name: "Blatinka Roots",
     tagline: "Malebné Podpoľanie",
-    location: "Blatinka, Malebné Podpoľanie",
+    location: "Blatinka, Podpoľanie",
     country: "Slovensko",
     dates: "14. – 16. augusta 2026",
     price: 250,
