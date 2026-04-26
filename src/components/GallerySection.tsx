@@ -3,7 +3,7 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 import cyprusPoolNight from "@/assets/cyprus-pool-night.jpg";
-import cyprusLivingroom from "@/assets/cyprus-livingroom.jpg";
+
 import cyprusBlueLagoon from "@/assets/cyprus-blue-lagoon.jpg";
 import cyprusBedroom from "@/assets/cyprus-bedroom.jpg";
 import cyprusKonnosBay from "@/assets/cyprus-konnos-bay.jpg";
@@ -11,7 +11,7 @@ import cyprusMimosaBeach from "@/assets/cyprus-mimosa-beach.jpg";
 
 const images = [
   { src: cyprusPoolNight, alt: "Bazén pri západe slnka na Cypre", caption: "Cyprus – bazén" },
-  { src: cyprusLivingroom, alt: "Útulná spoločenská miestnosť", caption: "Spoločné priestory" },
+  { src: "/images/blatinka/interior.jpg", alt: "Útulná spoločenská miestnosť v Blatinke", caption: "Spoločné priestory" },
   { src: "/images/necpaly/main.jpg", alt: "Chalet Alexandra v Necpaloch", caption: "Necpaly – Veľká Fatra" },
   { src: "/images/blatinka/yoga.jpg", alt: "Jóga v Blatinke", caption: "Jóga v prírode" },
   { src: cyprusKonnosBay, alt: "Záliv Konnos na Cypre", caption: "Cyprus – pobrežie" },
