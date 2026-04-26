@@ -447,7 +447,7 @@ Veľkou podporou pri našej práci je krásne prostredie Podpoľania. Sme v lone
       "Vegetariánske jedlá z domácej záhrady",
       "Denné ranné jógové lekcie (hatha)",
       "Vedené meditácie a dychové cvičenia",
-      "Etikoterapia workshopy – Vaša cesta čaká",
+      "Etikoterapia workshopy – Blatinka Roots",
       "Prístup k bazénu",
     ],
     heroImage: "/images/blatinka/main.jpg",
