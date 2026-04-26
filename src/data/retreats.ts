@@ -398,7 +398,7 @@ Program je navrhnutý s dôrazom na rovnováhu medzi spoločným časom a priest
       "Etikoterapia workshopy – Spokojnosť je voľba",
       "Sauna a vírivka pod hviezdami",
       "Prístup k relaxačnej miestnosti a wellness",
-      "Pešie túry v Národnom parku Veľká Fatra",
+      "Prechádzky v Národnom parku Veľká Fatra",
     ],
     heroImage: "/images/necpaly/main.jpg",
     galleryImages: [
