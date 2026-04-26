@@ -37,7 +37,7 @@ const FooterSection = () => {
               </a>
               <span className="flex items-center gap-3 text-primary-foreground/80 justify-center md:justify-start">
                 <MapPin className="w-5 h-5" />
-                Bali • Kostarika • Portugalsko
+                Cyprus • Podpoľanie • Krpáčovo
               </span>
             </div>
           </div>
@@ -72,7 +72,7 @@ const FooterSection = () => {
         
         <div className="border-t border-primary-foreground/20 pt-8 text-center">
           <p className="text-primary-foreground/60 text-sm">
-            © 2026 Serene Retreats. Všetky práva vyhradené.
+            © 2027 Serene Retreats. Všetky práva vyhradené.
           </p>
         </div>
       </div>
