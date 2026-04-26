@@ -18,8 +18,8 @@ const TestimonialSection = () => {
             <span className="font-serif text-2xl text-primary">S</span>
           </div>
           <div className="text-left">
-            <p className="font-medium text-foreground">Sarah Mitchell</p>
-            <p className="text-muted-foreground text-sm">Učiteľka jógy, Kalifornia</p>
+            <p className="font-medium text-foreground">Sára Mladá</p>
+            <p className="text-muted-foreground text-sm whitespace-pre-line">Učiteľka {"\n"}</p>
           </div>
         </div>
       </div>
