@@ -2,20 +2,20 @@ import { useState } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
-import galleryPool from "@/assets/gallery-pool.jpg";
-import galleryRoom from "@/assets/gallery-room.jpg";
-import galleryFood from "@/assets/gallery-food.jpg";
-import galleryMeditation from "@/assets/gallery-meditation.jpg";
-import gallerySpa from "@/assets/gallery-spa.jpg";
-import galleryNature from "@/assets/gallery-nature.jpg";
+import cyprusPoolNight from "@/assets/cyprus-pool-night.jpg";
+import cyprusLivingroom from "@/assets/cyprus-livingroom.jpg";
+import cyprusBlueLagoon from "@/assets/cyprus-blue-lagoon.jpg";
+import cyprusBedroom from "@/assets/cyprus-bedroom.jpg";
+import cyprusKonnosBay from "@/assets/cyprus-konnos-bay.jpg";
+import cyprusMimosaBeach from "@/assets/cyprus-mimosa-beach.jpg";
 
 const images = [
-  { src: galleryPool, alt: "Nekonečný bazén pri západe slnka", caption: "Nekonečný bazén" },
-  { src: galleryRoom, alt: "Luxusná izba v eko-lodge", caption: "Ubytovanie" },
-  { src: galleryFood, alt: "Organické raňajky", caption: "Farmárska kuchyňa" },
-  { src: galleryMeditation, alt: "Meditačný pavilón", caption: "Meditačný priestor" },
-  { src: gallerySpa, alt: "Kúpeľná miestnosť", caption: "Wellness kúpele" },
-  { src: galleryNature, alt: "Džungľový turistický chodník", caption: "Výlety do prírody" },
+  { src: cyprusPoolNight, alt: "Bazén pri západe slnka na Cypre", caption: "Cyprus – bazén" },
+  { src: cyprusLivingroom, alt: "Útulná spoločenská miestnosť", caption: "Spoločné priestory" },
+  { src: "/images/necpaly/main.jpg", alt: "Chalet Alexandra v Necpaloch", caption: "Necpaly – Veľká Fatra" },
+  { src: "/images/blatinka/yoga.jpg", alt: "Jóga v Blatinke", caption: "Jóga v prírode" },
+  { src: cyprusKonnosBay, alt: "Záliv Konnos na Cypre", caption: "Cyprus – pobrežie" },
+  { src: "/images/necpaly/dnu1.jpg", alt: "Interiér Chalet Alexandra", caption: "Útulné ubytovanie" },
 ];
 
 const GallerySection = () => {
