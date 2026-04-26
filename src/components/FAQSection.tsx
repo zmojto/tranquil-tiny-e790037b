@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     question: "Potrebujem predchádzajúce skúsenosti s jógou?",
-    answer: "Nie, predchádzajúce skúsenosti nie sú potrebné. Naši inštruktori sa prispôsobujú všetkým úrovniam, od úplných začiatočníkov po pokročilých praktizujúcich. Každá lekcia ponúka modifikácie prispôsobené vašej osobnej praxi.",
+    answer: "Nie, predchádzajúce skúsenosti nie sú potrebné. Prispôsobujeme sa všetkým úrovniam, od úplných začiatočníkov po pokročilých praktizujúcich. Každá lekcia ponúka modifikácie prispôsobené vašej osobnej praxi.",
   },
   {
     question: "Čo si mám priniesť?",
