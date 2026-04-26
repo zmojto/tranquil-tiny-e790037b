@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: "Čo je zahrnuté v balíku pobytu?",
-    answer: "Každý pobyt zahŕňa luxusné eko-lodge ubytovanie, tri organické jedlá denne, dve jógové lekcie denne, vedené meditácie, kúpeľné ošetrenia, výlety do prírody a letiskové transfery. Každá lokácia tiež ponúka jedinečné miestne zážitky.",
+    answer: "Každý pobyt zahŕňa ubytovanie, tri organické jedlá denne, dve jógové lekcie denne, workshopy, vedené meditácie, výlety do prírody a letiskové transfery. Každá lokácia tiež ponúka jedinečné miestne zážitky.",
   },
   {
     question: "Potrebujem predchádzajúce skúsenosti s jógou?",
