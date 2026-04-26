@@ -91,7 +91,7 @@ Ubud je duchovným centrom Bali, miestom kde sa umenie, príroda a spiritualita 
     tagline: "Pura Vida energia",
     location: "Nosara",
     country: "Kostarika",
-    dates: "10. – 17. mája 2026",
+    dates: "10. – 17. mája 2027",
     price: 3200,
     spotsLeft: 6,
     highlights: ["Prax pri pláži", "Lekcie surfovania", "Dobrodružstvá v džungli"],
