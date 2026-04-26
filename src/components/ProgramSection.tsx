@@ -49,7 +49,7 @@ const ProgramSection = () => {
                 Investícia
               </p>
               <div className="mb-6">
-                <span className="font-serif text-5xl md:text-6xl text-foreground">390 € - 1 550 € </span>
+                <span className="font-serif text-5xl md:text-6xl text-foreground">250 € - 1 550 € </span>
                 <span className="text-muted-foreground text-lg ml-2 block mt-2">za osobu</span>
               </div>
               <p className="text-muted-foreground mb-8">
