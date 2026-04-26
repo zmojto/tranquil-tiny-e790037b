@@ -424,7 +424,7 @@ Program je navrhnutý s dôrazom na rovnováhu medzi spoločným časom a priest
     location: "Blatinka, Podpoľanie",
     country: "Slovensko",
     dates: "14. – 16. augusta 2026",
-    price: 220,
+    price: 250,
     spotsLeft: 14,
     highlights: ["Etikoterapia", "Bazén", "Krása Podpoľania"],
     description: `Srdečne vás pozývame na víkendové stretnutie na Blatinke. Spoločne sa pozrieme na to, ako sme spokojní so svojim životom, tak, ako ho žijeme. Zameriame sa na programy, ktoré riadia náš život a povieme si viac o tom, ako sa stať tvorcom svojho vlastného života a nakoľko ho máme vo svojich vlastných rukách.
