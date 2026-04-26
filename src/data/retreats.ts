@@ -419,9 +419,9 @@ Program je navrhnutý s dôrazom na rovnováhu medzi spoločným časom a priest
   },
   {
     id: "blatinka-retreat",
-    name: "Vaša cesta čaká",
-    tagline: "Podpoľanie",
-    location: "Blatinka, Podpoľanie",
+    name: "Blatinka Roots",
+    tagline: "Malebné Podpoľanie",
+    location: "Blatinka, Malebné Podpoľanie",
     country: "Slovensko",
     dates: "14. – 16. augusta 2026",
     price: 250,
