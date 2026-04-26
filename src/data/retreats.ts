@@ -327,7 +327,7 @@ Villa Quince sa nachádza v pokojnej dedine Murvica, len niekoľko minút autom 
     tagline: "Ostrovné prebudenie",
     location: "Koh Samui",
     country: "Thajsko",
-    dates: "14. – 21. novembra 2026",
+    dates: "14. – 21. novembra 2027",
     price: 3000,
     spotsLeft: 5,
     highlights: ["Thajská masáž", "Budhistické chrámy", "Ostrovný kajaking"],
