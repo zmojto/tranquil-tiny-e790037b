@@ -52,7 +52,7 @@ const _retreats: Retreat[] = [
     tagline: "Ostrovná harmónia",
     location: "Ubud",
     country: "Bali",
-    dates: "15. – 22. marca 2026",
+    dates: "15. – 22. marca 2027",
     price: 2800,
     spotsLeft: 12,
     highlights: ["Chrámové ceremónie", "Ryžové terasy", "Tradičný tanec"],
