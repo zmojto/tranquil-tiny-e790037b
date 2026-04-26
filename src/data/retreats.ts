@@ -373,12 +373,8 @@ Koh Samui je ostrov kontrastov – od rušných nočných trhov po tiché medita
     description: `Doprajte si pár dní len pre seba v Chalet Alexandra, v srdci Národného parku Veľká Fatra. Chalet je exkluzívne útočisko ponúkajúce pokoj a mnoho možností. Tento 3-dňový retreat je pozvánkou spomaliť, stíšiť sa a znovu sa naladiť na svoje vnútro. 
 
 Etikoterapia
-Séria inšpiratívnych prednášok „Spokojnosť je voľba“ vám ponúkne nový pohľad na každodenný život aj vaše vnútorné nastavenie. V rámci nich sa pozrieme bližšie na tému našej životnej spokojnosti. Nakoľko ju mám vo svojich rukách? A aké mám možnosti pri práci s ňou? Súčasťou našej práce bude aj tréning meditačnej praxe. Túto časť si pre vás pripravila Sabína Kalmárová. sabinakalmarova.sk
 
-Jóga
-Jemná, pomalá prax s dlhším zotrvaním v pozíciách prináša hlboké uvoľnenie, regeneráciu a úľavu od napätia. Pomáha znižovať stres, uvoľniť telo a upokojiť myseľ. Prax vedie lektorka Ali Hodáková, absolventka Karlovej univerzity (Fakulta telesnej výchovy a športu, odbor Jóga a jógová terapia) – ste v citlivých a odborných rukách.
-
-Program je navrhnutý s dôrazom na rovnováhu medzi spoločným časom a priestorom len pre vás. Oddýchnite si v saune či vírivke pod hviezdami, ponorte sa do ticha s knihou v útulnej relaxačnej miestnosti alebo objavujte krásu okolitej prírody na peších prechádzkach. Každý moment je pozvaním k regenerácii, uvoľneniu a hlbokému oddychu.`,
+Séria inšpiratívnych prednášok „Spokojnosť je voľba“ vám ponúkne nový pohľad na každodenný život aj vaše vnútorné nastavenie. V rámci nich sa pozrieme bližšie na tému našej životnej spokojnosti. Nakoľko ju mám vo svojich rukách? A aké mám možnosti pri práci s ňou? Súčasťou našej práce bude aj tréning meditačnej praxe. Túto časť si pre vás pripravila Sabína Kalmárová. sabinakalmarova.sk`,
     dailySchedule: [
       { time: "6:00", activity: "Vedená meditácia a dychové cvičenia" },
       { time: "7:00", activity: "Hatha jóga – menšia skupina, individuálny prístup" },
