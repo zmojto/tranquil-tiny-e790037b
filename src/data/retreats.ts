@@ -370,7 +370,7 @@ Koh Samui je ostrov kontrastov – od rušných nočných trhov po tiché medita
     price: 415,
     spotsLeft: 10,
     highlights: ["Etikoterapia", "Sauna a vírivka pod hviezdami", "Túry vo Veľkej Fatre"],
-    description: `Doprajte si pár dní len pre seba v Chalet Alexandra – exkluzívnom útočisku v srdci Národného parku Veľká Fatra. Tento 3-dňový retreat je pozvánkou spomaliť, stíšiť sa a znovu sa naladiť na svoje vnútro.
+    description: `Doprajte si pár dní len pre seba v Chalet Alexandra, v srdci Národného parku Veľká Fatra. Chalet je exkluzívne útočisko ponúkajúce pokoj a mnoho možností. Tento 3-dňový retreat je pozvánkou spomaliť, stíšiť sa a znovu sa naladiť na svoje vnútro.
 
 Meditácia
 Vedené meditácie so Sabinkou vás prirodzene privedú späť k sebe – do ticha, prítomnosti a vnútorného pokoja.
