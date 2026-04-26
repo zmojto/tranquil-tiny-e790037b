@@ -8,7 +8,7 @@ import {
 const faqs = [
   {
     question: "Aký je rozdiel medzi jednotlivými pobytmi?",
-    answer: "Zatiaľ čo všetky pobyty zahŕňajú rovnaký základný zážitok (denná jóga, meditácia, workshopy, organické jedlá), každá destinácia ponúka jedinečné kultúrne zážitky. Cyprus Bali ponúka plážovú prax a návštevy historických palácov, Podpoľanie vyniká množstvom lesov, potokov a minerálnych prameňov, ale aj ľudovou kultúrou, Krpáčovo rozľahlými pláňami a túrami po Národnom parku Nízke Tatry. ",
+    answer: "Zatiaľ čo všetky pobyty zahŕňajú rovnaký základný zážitok (denná jóga, meditácia, workshopy, organické jedlá), každá destinácia ponúka jedinečné kultúrne zážitky. Cyprus Bali ponúka plážovú prax a návštevy historických palácov, Podpoľanie vyniká množstvom lesov, potokov a minerálnych prameňov, ale aj ľudovou kultúrou a Krpáčovo napríklad rozľahlými pláňami a túrami po Národnom parku Nízke Tatry. Okrem prírody a kultúrnych inakosti, sú pobyty rôzne dlhé.",
   },
   {
     question: "Čo je zahrnuté v balíku pobytu?",
