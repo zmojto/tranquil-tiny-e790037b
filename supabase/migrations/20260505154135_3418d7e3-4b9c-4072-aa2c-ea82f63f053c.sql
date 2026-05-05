@@ -1,1 +1,0 @@
-UPDATE articles SET cover_image_url = 'https://cmufbtkjjbqqrnkbgddi.supabase.co/storage/v1/object/public/article-images/meditation-two-women.jpg' WHERE id = 'f9dd27a1-c027-40ff-83db-527101c51800';
