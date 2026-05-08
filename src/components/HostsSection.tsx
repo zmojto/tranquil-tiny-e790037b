@@ -33,34 +33,66 @@ const HostsSection = () => {
             Ali vás prevedie jógovou a meditačnou praxou.<br />
             Spolu vytvárame priestor, kde má každý z vás možnosť rásť vlastným tempom.
           </p>
-          <div className="mt-8 pt-8 border-t border-border/50 space-y-4">
-            <h3 className="font-serif text-2xl text-foreground">
-              Sabína Kalmárová a Alena Hodáková
-            </h3>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Sabína Kalmárová vyštudovala sociológiu na FiFUK Bratislava, školu
-              Angelológie RNDr. Emila Páleša, Etikoterapiu – škola Advaita Mgr.
-              Vladimíra Červenáka, je žiačkou Živej školy Iva Leinvebera.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Má bohaté skúsenosti ako etikoterapeutka, rovnako ako i lektorka,
-              prednášala vo viac ako stovke firiem.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Na našich pobytoch vás bude sprevádzať workshopmi na rôzne témy,
-              napr. Mentálna odolnosť, Spokojnosť ako voľba... a taktiež
-              meditačnou praxou.
-            </p>
-            <p className="text-lg">
-              <a
-                href="https://sabinakalmarova.sk"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:underline font-medium"
-              >
-                sabinakalmarova.sk
-              </a>
-            </p>
+          <div className="mt-10 pt-10 border-t border-border/50 space-y-10">
+            <div className="space-y-4">
+              <h3 className="font-serif text-3xl text-foreground">
+                Sabína Kalmárová
+              </h3>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Vyštudovala sociológiu na FiFUK v Bratislave, školu Angelológie
+                RNDr. Emila Páleša, Etikoterapiu v škole Advaita Mgr. Vladimíra
+                Červenáka a je žiačkou Živej školy Iva Leinvebera.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Má bohaté skúsenosti ako etikoterapeutka aj lektorka –
+                prednášala vo viac ako stovke firiem.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Na našich pobytoch vás bude sprevádzať workshopmi na rôzne témy,
+                ako sú <em>Mentálna odolnosť</em> či <em>Spokojnosť ako voľba</em>,
+                a tiež meditačnou praxou.
+              </p>
+              <p className="text-lg">
+                <a
+                  href="https://sabinakalmarova.sk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline font-medium"
+                >
+                  sabinakalmarova.sk
+                </a>
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="font-serif text-3xl text-foreground">
+                Alena Hodáková
+              </h3>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Vyštudovala Ekonomickú univerzitu v Bratislave, no jej cesta ju
+                zaviedla k hlbšiemu poznaniu tela a mysle. Úspešne absolvovala
+                štúdium Jogy a jogovej terapie na Fakulte telesnej výchovy
+                a športu Univerzity Karlovej v Prahe, ako aj štúdium
+                Etikoterapie v škole Advaita Mgr. Vladimíra Červenáka.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Na našich pobytoch sa postará o:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 text-lg text-muted-foreground leading-relaxed">
+                <li>
+                  vedenie jogových cvičení (ásan) pre posilnenie a uvoľnenie
+                  tela,
+                </li>
+                <li>
+                  nácvik správnych dychových techník (pránájáma) pre upokojenie
+                  mysle,
+                </li>
+                <li>
+                  priblíženie jogovej filozofie a jej prepojenie s bežným
+                  životom.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
