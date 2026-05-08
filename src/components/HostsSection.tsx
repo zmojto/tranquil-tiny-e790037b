@@ -80,19 +80,12 @@ const HostsSection = () => {
               Etikoterapie v škole Advaita Mgr. Vladimíra Červenáka.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Na našich pobytoch sa postará o:
+              Na našich pobytoch sa postará o vedenie vedenie jogových cvičení (ásan) pre posilnenie a uvoľnenie tela, nácvik správnych dychových techník (pránájáma) pre upokojenie mysle, priblíženie jogovej filozofie a jej prepojenie s bežným životom.
             </p>
-            <ul className="list-disc pl-6 space-y-2 text-lg text-muted-foreground leading-relaxed">
-              <li>
-                vedenie jogových cvičení (ásan) pre posilnenie a uvoľnenie tela,
-              </li>
-              <li>
-                nácvik správnych dychových techník (pránájáma) pre upokojenie
-                mysle,
-              </li>
-              <li>
-                priblíženie jogovej filozofie a jej prepojenie s bežným životom.
-              </li>
+            <ul className="list-disc pl-6 space-y-2 text-lg text-muted-foreground leading-relaxed text-left">
+              <li>​</li>
+              <li>​</li>
+              <li>​</li>
             </ul>
           </div>
         </div>
