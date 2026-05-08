@@ -29,10 +29,11 @@ const HostsSection = () => {
               pozornosťou a otvoreným srdcom – aby ste sa pri nás cítili
               v bezpečí, prirodzene, aby ste sa uvoľnili a odniesli si viac než
               len zážitok.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Sabínka sa s vami podelí o etikoterapiu a rozhovory o spokojnosti v každodennom živote.<br />
-              Ali vás prevedie jógovou a meditačnou praxou.<br />
+              <br />
+              Sabínka sa s vami podelí o etikoterapiu a rozhovory o spokojnosti v každodennom živote.
+              <br />
+              Ali vás prevedie jógovou praxou.
+              <br />
               Spolu vytvárame priestor, kde má každý z vás možnosť rásť vlastným tempom.
             </p>
           </div>
