@@ -35,6 +35,8 @@ const HostsSection = () => {
               Ali vás prevedie jógovou praxou.
               <br />
               Spolu vytvárame priestor, kde má každý z vás možnosť rásť vlastným tempom.
+              <br />
+              A pretože chceme, aby ste si naozaj odniesli maximum, ako bonus k nášmu pobytu dostane každý účastník možnosť osobnej etikoterapeutickej konzultácie v cene pobytu.
             </p>
           </div>
         </div>
