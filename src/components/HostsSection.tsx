@@ -83,11 +83,10 @@ const HostsSection = () => {
             <p className="text-lg text-muted-foreground leading-relaxed">
               Na našich pobytoch sa postará o vedenie jogových cvičení (ásan) pre posilnenie a uvoľnenie tela, nácvik správnych dychových techník (pránájáma) pre upokojenie mysle, priblíženie jogovej filozofie a jej prepojenie s bežným životom.
             </p>
-            <ul className="list-disc pl-6 space-y-2 text-lg text-muted-foreground leading-relaxed text-left">
-              <li>​</li>
-              <li>​</li>
-              <li>​</li>
-            </ul>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Už niekoľko rokov úspešne vedie kurzy pre malé skupinky, kde je
+              jej prioritou citlivý a vysoko individuálny prístup.
+            </p>
           </div>
         </div>
       </div>
