@@ -24,7 +24,7 @@ const DailyProgramSection = () => {
             icon={<Sunrise className="w-8 h-8" />}
             time="Ráno"
             title="Hathajóga"
-            description="Začnite deň so svitaním. Meditácia, dychové cvičenia a Hathajóga pre prebudenie tela aj mysle."
+            description="Začnite deň so svitaním. Hathajóga, dychové cvičenia a meditácia pre prebudenie tela aj mysle."
           />
           <TimelineCard
             icon={<Sun className="w-8 h-8" />}
