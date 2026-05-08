@@ -26,8 +26,9 @@ const HostsSection = () => {
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
               Tešíme sa na spoločný čas s vami. Každý pobyt pripravujeme s láskou,
-              pozornosťou a otvoreným srdcom – aby ste sa pri nás cítili vítaní,
-              v bezpečí a inšpirovaní vrátiť sa späť k sebe.
+              pozornosťou a otvoreným srdcom – aby ste sa pri nás cítili
+              v bezpečí, prirodzene, aby ste sa uvoľnili a odniesli si viac než
+              len zážitok.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Sabínka sa s vami podelí o etikoterapiu a rozhovory o spokojnosti v každodennom živote.<br />
