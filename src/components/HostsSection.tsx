@@ -26,8 +26,9 @@ const HostsSection = () => {
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
               Tešíme sa na spoločný čas s vami. Každý pobyt pripravujeme s láskou,
-              pozornosťou a otvoreným srdcom – aby ste sa pri nás cítili vítaní,
-              v bezpečí a inšpirovaní vrátiť sa späť k sebe.
+              pozornosťou a otvoreným srdcom – aby ste sa pri nás cítili
+              v bezpečí, prirodzene, aby ste sa uvoľnili a odniesli si viac než
+              len zážitok.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Sabínka sa s vami podelí o etikoterapiu a rozhovory o spokojnosti v každodennom živote.<br />
@@ -80,7 +81,7 @@ const HostsSection = () => {
               Etikoterapie v škole Advaita Mgr. Vladimíra Červenáka.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Na našich pobytoch sa postará o vedenie vedenie jogových cvičení (ásan) pre posilnenie a uvoľnenie tela, nácvik správnych dychových techník (pránájáma) pre upokojenie mysle, priblíženie jogovej filozofie a jej prepojenie s bežným životom.
+              Na našich pobytoch sa postará o vedenie jogových cvičení (ásan) pre posilnenie a uvoľnenie tela, nácvik správnych dychových techník (pránájáma) pre upokojenie mysle, priblíženie jogovej filozofie a jej prepojenie s bežným životom.
             </p>
             <ul className="list-disc pl-6 space-y-2 text-lg text-muted-foreground leading-relaxed text-left">
               <li>​</li>
