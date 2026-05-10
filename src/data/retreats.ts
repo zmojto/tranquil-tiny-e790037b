@@ -222,7 +222,7 @@ Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len kr
     tagline: "Tatranská harmónia",
     location: "Krpáčovo",
     country: "Slovensko",
-    dates: "1. – 5. júla 2026",
+    dates: "26. – 29. júla 2026",
     price: 390,
     spotsLeft: 12,
     highlights: ["Koliba pri jazere", "Paddleboarding", "Sauna a wellness"],
