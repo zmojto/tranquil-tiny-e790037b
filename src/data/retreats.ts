@@ -374,7 +374,7 @@ Koh Samui je ostrov kontrastov – od rušných nočných trhov po tiché medita
 
 Etikoterapia
 
-Séria inšpiratívnych prednášok „Spokojnosť je voľba“ vám ponúkne nový pohľad na každodenný život aj vaše vnútorné nastavenie. V rámci nich sa pozrieme bližšie na tému našej životnej spokojnosti. Nakoľko ju mám vo svojich rukách? A aké mám možnosti pri práci s ňou? Súčasťou našej práce bude aj tréning meditačnej praxe. Túto časť si pre vás pripravila Sabína Kalmárová. sabinakalmarova.sk`,
+Séria inšpiratívnych prednášok „Spokojnosť je voľba“ vám ponúkne nový pohľad na každodenný život aj vaše vnútorné nastavenie. V rámci nich sa pozrieme bližšie na tému našej životnej spokojnosti. Nakoľko ju mám vo svojich rukách? A aké mám možnosti pri práci s ňou? Súčasťou našej práce bude aj tréning meditačnej praxe. `,
     dailySchedule: [
       { time: "6:00", activity: "Vedená meditácia a dychové cvičenia" },
       { time: "7:00", activity: "Hatha jóga – menšia skupina, individuálny prístup" },
