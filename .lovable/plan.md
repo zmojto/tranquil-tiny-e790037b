@@ -1,42 +1,39 @@
 ## Cieľ
 
-Zoradiť pobyty na webe chronologicky podľa dátumu konania (od najbližšieho po najvzdialenejší).
+Vo všetkých pobytoch posunúť celý vzorový denný rozvrh o **+1 hodinu**, aby program nezačínal o 6:00, ale až o 7:00. Posunú sa všetky položky `dailySchedule`, nielen prvá – aby zostali pôvodné rozostupy medzi jednotlivými aktivitami zachované.
 
-## Aktuálny stav
+## Dotknutý súbor
 
-Pobyty sú v `src/data/retreats.ts` zoradené v ľubovoľnom poradí. Aktívne poradie je definované ručne v poli `activeOrder` (riadok 470) a v `EventsSection.tsx` v poli `activeIds`.
+`src/data/retreats.ts` – pole `dailySchedule` v každom pobyte.
 
-## Navrhované poradie (podľa dátumu)
+## Mapovanie časov (+1 h)
 
-**Aktívne pobyty 2026:**
+| Pôvodné | Nové |
+|---------|------|
+| 6:00 | 7:00 |
+| 7:00 | 8:00 |
+| 7:30 | 8:30 |
+| 8:30 | 9:30 |
+| 9:00 | 10:00 |
+| 10:00 | 11:00 |
+| 10:30 | 11:30 |
+| 13:00 | 14:00 |
+| 15:00 | 16:00 |
+| 17:00 | 18:00 |
+| 17:30 | 18:30 |
+| 18:30 | 19:30 |
+| 19:00 | 20:00 |
+| 19:30 | 20:30 |
+| 20:00 | 21:00 |
 
-1. Cyprus Awakening – 29. mája
-2. Krpáčovo Soul – 1. júla
-3. Blatinka Roots – 14. augusta
-4. Croatia Harmony – 12. septembra
-5. Necpaly Stillness – 15. októbra
+## Dotknuté pobyty
 
-**Pripravované pobyty (tiež chronologicky):**
+Bali Bliss, Costa Rica, Portugal Soul, Cyprus Awakening, Krpáčovo Soul, Croatia Harmony, Thailand Awakening, Necpaly Stillness, Blatinka Roots.
 
-1. Bali Bliss – 15. februar 2027
-2. Costa Rica – 10. mája 2027
-3. Portugal Soul – 5. septembra 2027
-4. Thailand Awakening – 14. novembra 2027
+## Mimo rozsahu
 
-## Zmeny v kóde
+Polia `outbound.time` / `returnFlight.time` (časy príletov/odchodov) sa **nemenia** – ide o reálne časy dopravy, nie o denný program.
 
-`**src/data/retreats.ts**` (riadok 470)
+## Upozornenie
 
-- Upraviť `activeOrder` na nové chronologické poradie:
-  ```
-  ["cyprus-awakening", "krpacovo-soul", "blatinka-retreat", "croatia-harmony", "necpaly-retreat"]
-  ```
-- Pripravované pobyty zoradiť tiež chronologicky cez druhú lookup tabuľku (`upcomingOrder`), aby sa zobrazovali podľa dátumu.
-
-`**src/components/EventsSection.tsx**` (riadky 9-10)
-
-- Aktualizovať `activeIds` a `upcomingIds` na rovnaké chronologické poradie, aby filter rešpektoval poradie z dátového súboru.
-
-## Výsledok
-
-Karty pobytov na hlavnej stránke (sekcia „Vyberte si svoju cestu") sa budú zobrazovať podľa dátumu konania – najprv najbližšie aktívne, potom pripravované.
+Po posune sa raňajky budú podávať o 10:00, obed o 14:00 a večera typicky o 20:00 – ak je toto zámer, pokračujeme. Ak by ste chceli posunúť iba ranný štart (napr. zlúčiť 6:00 + 7:00 do 7:00) bez posunu obeda/večere, daj vedieť a plán upravím.
