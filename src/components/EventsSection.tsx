@@ -5,14 +5,16 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { retreats } from "@/data/retreats";
 
-const activeIds = ["cyprus-awakening", "krpacovo-soul", "blatinka-retreat", "croatia-harmony", "necpaly-retreat"];
+const activeIds = ["krpacovo-soul", "blatinka-retreat", "croatia-harmony", "cyprus-awakening", "necpaly-retreat"];
 const upcomingIds = ["bali-bliss", "costa-rica"];
 
+const orderedIds = [...activeIds, ...upcomingIds];
+
 const EventsSection = () => {
-  // Filter retreats to show only active and selected upcoming
-  const filteredRetreats = retreats.filter(
-    (retreat) => activeIds.includes(retreat.id) || upcomingIds.includes(retreat.id)
-  );
+  // Filter and order retreats according to defined order
+  const filteredRetreats = orderedIds
+    .map((id) => retreats.find((r) => r.id === id))
+    .filter((r): r is (typeof retreats)[number] => Boolean(r));
   return (
     <section id="retreats" className="py-24 md:py-32 bg-card scroll-mt-20">
       <div className="container max-w-6xl mx-auto px-6">
