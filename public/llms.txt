@@ -1,0 +1,22 @@
+# Nájdite Svoj Vnútorný Pokoj
+
+> Transformačné jogové a wellness pobyty na inšpiratívnych miestach Slovenska a sveta. Ponúkame 3- až 7-dňové retreaty zahŕňajúce dennú jógu, meditáciu, workshopy, organickú stravu a ponorenie do prírody.
+
+## Stránky
+
+- [/](/): Hlavná stránka — úvod do filozofie, denný program, ponuka pobytov, referencie a často kladené otázky.
+- [/blog](/blog): Blog o vedomom živote, joge, meditácii a wellness.
+- [/retreats/krpacovo-soul](/retreats/krpacovo-soul): Pobyt Krpacovo Soul — 4-dňový jesenný retreat v Nízkych Tatrách.
+- [/retreats/blatinka-retreat](/retreats/blatinka-retreat): Pobyt Blatinka — 3-dňový jarný retreat v prírode.
+- [/retreats/croatia-harmony](/retreats/croatia-harmony): Pobyt Dalmácia Chorvatsko — 7-dňový letný retreat pri mori.
+- [/retreats/cyprus-awakening](/retreats/cyprus-awakening): Pobyt Cyprus — 7-dňový letný retreat na Cypre.
+- [/retreats/necpaly-retreat](/retreats/necpaly-retreat): Pobyt Necpaly — 4-dňový jesenný retreat v Malej Fatre.
+
+## Blog
+
+- [/blog](/blog): Zoznam článkov o vedomom živote, joge a wellness.
+
+## Nepovinné
+
+- [/retreats/bali-bliss](/retreats/bali-bliss): Pripravovaný pobyt Bali.
+- [/retreats/costa-rica](/retreats/costa-rica): Pripravovaný pobyt Kostarika.
