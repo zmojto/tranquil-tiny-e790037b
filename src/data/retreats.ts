@@ -228,7 +228,11 @@ Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len kr
     highlights: ["Koliba pri jazere", "Paddleboarding", "Sauna a wellness"],
     description: `Doprajte si pokojný pobyt v srdci Nízkych Tatier, v malebnom Krpáčove. Čakajú vás štyri dni v objatí prírody, naplnené hlbokým oddychom a obnovou. Ubytovanie je v trojlôžkových a štvorlôžkových izbách v kolibe priamo pri jazere.
 
-Každé ráno začína vedenou meditáciou a dychovými cvičeniami v lone prírody, po ktorých nasleduje hatha jóga - jemná, pomalá prax s dlhším zotrvaním v pozíciách prináša hlboké uvoľnenie, regeneráciu a úľavu od napätia. Pomáha znižovať stres, uvoľniť telo a upokojiť myseľ. Popoludnia sú venované objavovaniu krás okolia – nenáročné prechádzky, náučné chodníky, Bystrianská jaskyňa, Farma Javor či Černohorská železnička. Na jazere si môžete vyskúšať paddleboarding a po aktívnom dni relaxovať vo fínskej saune alebo vonkajších vyhrievaných kadiach s vírivkou. Večery patria workshopom na tému Mentálna odolnosť - séria inšpiratívnych prednášok z etikoterapie vám prinesie nový pohľad na váš každodenný život a vnútorné prežívanie. Spoločne sa ponoríme do témy mentálnej odolnosti a životnej spokojnosti a budeme hľadať odpovede na dôležité otázky: Do akej miery dokážem ovplyvniť svoje vlastné šťastie? A aké praktické nástroje mám k dispozícii, aby som na ňom mohla aktívne pracovať?`,
+Každé ráno začína vedenou meditáciou a dychovými cvičeniami v lone prírody, po ktorých nasleduje hatha jóga - jemná, pomalá prax s dlhším zotrvaním v pozíciách prináša hlboké uvoľnenie, regeneráciu a úľavu od napätia. Pomáha znižovať stres, uvoľniť telo a upokojiť myseľ.
+
+Popoludnia sú venované objavovaniu krás okolia – nenáročné prechádzky, náučné chodníky, Bystrianská jaskyňa, Farma Javor či Černohorská železnička. Na jazere si môžete vyskúšať paddleboarding a po aktívnom dni relaxovať vo fínskej saune alebo vonkajších vyhrievaných kadiach s vírivkou.
+
+Večery patria workshopom na tému Mentálna odolnosť - séria inšpiratívnych prednášok z etikoterapie vám prinesie nový pohľad na váš každodenný život a vnútorné prežívanie. Spoločne sa ponoríme do témy mentálnej odolnosti a životnej spokojnosti a budeme hľadať odpovede na dôležité otázky: Do akej miery dokážem ovplyvniť svoje vlastné šťastie? A aké praktické nástroje mám k dispozícii, aby som na ňom mohla aktívne pracovať?`,
     dailySchedule: [
       { time: "7:00", activity: "Vedená meditácia a dychové cvičenia" },
       { time: "8:00", activity: "Hatha jóga" },
