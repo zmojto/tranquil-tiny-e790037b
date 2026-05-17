@@ -1,23 +1,6 @@
-## Oprava: Spätný link z detailu pobytu neskroluje na sekciu pobyty
+Nahradiť prvú fotku v galérii pobytu Krpáčovo Soul novou priloženou fotkou.
 
-### Problém
-V `RetreatDetail.tsx` je link `<Link to="/#retreats">` aj `<Button onClick={() => navigate("/#retreats")}>`. Pri kliknutí sa používateľ dostane na hlavnú stránku `/`, ale neskroluje sa na sekciu `#retreats`. Dôvodom je, že React Router pri client-side navigácii nevykonáva natívny hash scroll prehliadača.
+1. Skopírovať `user-uploads://Uuchjg.jpeg` → `public/images/krpacovo-jazero.jpg`
+2. V `src/data/retreats.ts` v `galleryImages` pre `krpacovo-soul` nahradiť prvý prvok novou cestou `/images/krpacovo-jazero.jpg`
 
-### Riešenie
-Pridať do `src/pages/Index.tsx` jednoduchý `useEffect`, ktorý po načítaní stránky skontroluje `window.location.hash` a programovo skroluje na príslušný element pomocou `scrollIntoView({ behavior: "smooth" })`.
-
-```text
-Index.tsx
-  + useEffect(() => {
-  +   const hash = window.location.hash;
-  +   if (hash) {
-  +     const el = document.querySelector(hash);
-  +     if (el) el.scrollIntoView({ behavior: "smooth" });
-  +   }
-  + }, []);
-```
-
-Súbory na úpravu:
-- `src/pages/Index.tsx` — pridať hash scroll handler
-
-Výsledok: Klik na "Späť na všetky pobyty" z detailu pobytu plynule naskroluje na sekciu pobyty.
+Hero fotka a ostatné položky galérie zostanú nezmenené.
