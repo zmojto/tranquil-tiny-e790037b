@@ -182,8 +182,8 @@ Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len kr
     dailySchedule: [
       { time: "7:00", activity: "Vedená meditácia a dychové cvičenia na pláži" },
       { time: "8:00", activity: "Hatha jóga" },
-      { time: "10:00", activity: "Raňajky" },
-      { time: "11:30", activity: "Workshop alebo voľný čas" },
+      { time: "9:00", activity: "Raňajky" },
+      { time: "10:30", activity: "Workshop alebo voľný čas" },
       { time: "14:00", activity: "Obed" },
       { time: "16:00", activity: "Výlety v okolí (Cape Greco, Ayia Napa Sea Caves, Konnos Bay, Fig Tree Bay)" },
       { time: "18:30", activity: "Jóga a meditácia" },
@@ -234,8 +234,8 @@ Ubytovanie je v trojlôžkových a štvorlôžkových izbách v kolibe priamo pr
     dailySchedule: [
       { time: "7:00", activity: "Vedená meditácia a dychové cvičenia" },
       { time: "8:00", activity: "Hatha jóga" },
-      { time: "10:00", activity: "Raňajky" },
-      { time: "11:30", activity: "Workshop alebo voľný čas" },
+      { time: "9:00", activity: "Raňajky" },
+      { time: "10:30", activity: "Workshop alebo voľný čas" },
       { time: "14:00", activity: "Obed" },
       { time: "16:00", activity: "Výlety v okolí (Bystrianská jaskyňa, Farma Javor, Černohorská železnička, prechádzky)" },
       { time: "18:30", activity: "Jóga a meditácia" },
@@ -287,8 +287,8 @@ Villa Quince sa nachádza v pokojnej dedine Murvica, len niekoľko minút autom 
     dailySchedule: [
       { time: "7:00", activity: "Vedená meditácia a dychové cvičenia" },
       { time: "8:00", activity: "Hatha jóga" },
-      { time: "10:00", activity: "Raňajky" },
-      { time: "11:30", activity: "Workshop alebo voľný čas" },
+      { time: "9:00", activity: "Raňajky" },
+      { time: "10:30", activity: "Workshop alebo voľný čas" },
       { time: "14:00", activity: "Obed" },
       { time: "16:00", activity: "Výlet v okolí (Kornati, Krka, staré mesto Zadar, pláž Saharun, ostrov Ugljan)" },
       { time: "18:30", activity: "Jóga a meditácia" },
