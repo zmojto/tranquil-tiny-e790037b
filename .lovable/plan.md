@@ -1,39 +1,33 @@
 ## Cieľ
 
-Vo všetkých pobytoch posunúť celý vzorový denný rozvrh o **+1 hodinu**, aby program nezačínal o 6:00, ale až o 7:00. Posunú sa všetky položky `dailySchedule`, nielen prvá – aby zostali pôvodné rozostupy medzi jednotlivými aktivitami zachované.
+Vo všetkých 9 pobytoch posunúť **iba dve položky** v `dailySchedule` o 1 hodinu skôr:
+- **raňajky**
+- **prvý workshop / prvá popoludňajšia aktivita** hneď po raňajkách
+
+Ostatné časy (ranná meditácia, jóga, obed, výlety, večerná jóga, večera, večerný workshop) zostávajú **nezmenené**.
 
 ## Dotknutý súbor
 
-`src/data/retreats.ts` – pole `dailySchedule` v každom pobyte.
+`src/data/retreats.ts`
 
-## Mapovanie časov (+1 h)
+## Zmeny po pobytoch
 
-| Pôvodné | Nové |
-|---------|------|
-| 6:00 | 7:00 |
-| 7:00 | 8:00 |
-| 7:30 | 8:30 |
-| 8:30 | 9:30 |
-| 9:00 | 10:00 |
-| 10:00 | 11:00 |
-| 10:30 | 11:30 |
-| 13:00 | 14:00 |
-| 15:00 | 16:00 |
-| 17:00 | 18:00 |
-| 17:30 | 18:30 |
-| 18:30 | 19:30 |
-| 19:00 | 20:00 |
-| 19:30 | 20:30 |
-| 20:00 | 21:00 |
-
-## Dotknuté pobyty
-
-Bali Bliss, Costa Rica, Portugal Soul, Cyprus Awakening, Krpáčovo Soul, Croatia Harmony, Thailand Awakening, Necpaly Stillness, Blatinka Roots.
-
-## Mimo rozsahu
-
-Polia `outbound.time` / `returnFlight.time` (časy príletov/odchodov) sa **nemenia** – ide o reálne časy dopravy, nie o denný program.
+| Pobyt | Raňajky | Prvý workshop / popoludňajšia aktivita |
+|---|---|---|
+| Bali Bliss | 10:00 → **9:00** | 11:30 → **10:30** (Kultúrny workshop) |
+| Costa Rica | 10:00 → **9:00** | 11:30 → **10:30** (Lekcia surfovania) |
+| Portugal Soul | 9:30 → **8:30** | 11:00 → **10:00** (Kultúrny výlet) |
+| Cyprus Awakening | 10:00 → **9:00** | 11:30 → **10:30** (Workshop) |
+| Krpáčovo Soul | 10:00 → **9:00** | 11:30 → **10:30** (Workshop) |
+| Croatia Harmony | 10:00 → **9:00** | 11:30 → **10:30** (Workshop) |
+| Thailand Awakening | 10:00 → **9:00** | 11:30 → **10:30** (Kajaking/chrám) |
+| Necpaly Stillness | 10:00 → **9:00** | 11:30 → **10:30** (Workshop – Spokojnosť je voľba) |
+| Blatinka Roots | 10:00 → **9:00** | 11:30 → **10:30** (Workshop – etikoterapia) |
 
 ## Upozornenie
 
-Po posune sa raňajky budú podávať o 10:00, obed o 14:00 a večera typicky o 20:00 – ak je toto zámer, pokračujeme. Ak by ste chceli posunúť iba ranný štart (napr. zlúčiť 6:00 + 7:00 do 7:00) bez posunu obeda/večere, daj vedieť a plán upravím.
+Medzi rannou jógou (končí cca 9:00) a raňajkami už nebude pauza – jóga plynule prechádza do raňajok. Ak chcete medzi nimi zachovať aspoň 30 min pauzu, dajte vedieť a posuniem aj koniec rannej jógy alebo nechám raňajky o 9:30.
+
+## Mimo rozsahu
+
+Všetky ostatné položky programu, ceny, popisy, `travelInfo` a `inclusions` zostávajú nezmenené.
