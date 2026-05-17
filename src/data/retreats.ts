@@ -427,7 +427,9 @@ Séria inšpiratívnych prednášok „Spokojnosť je voľba“ vám ponúkne no
 
 Budeme pracovať s našou mysľou, s jej prepojením na telo, vôľu a naše emócie. Pracujeme metódou etikoterapie, ktorá nám pomáha odkrývať pravdu o sebe samom. Budeme si spoločne klásť otázky a hľadať na ne odpovede.
 
-Veľkou podporou pri našej práci je krásne prostredie Podpoľania. Sme v lone prírody v starostlivých rukách milých domácich, známych svojou skvelou kuchyňou. Stravu chystá pani domáca – chutné vegetariánske jedlá z ich vlastnej záhrady. V lete je k dispozícii bazén.`,
+Veľkou podporou pri našej práci je krásne prostredie Podpoľania. Sme v lone prírody v starostlivých rukách milých domácich, známych svojou skvelou kuchyňou. Stravu chystá pani domáca – chutné vegetariánske jedlá z ich vlastnej záhrady. V lete je k dispozícii bazén.
+
+Čaká nás cvičenie jógy, meditácie, workshopy, kúpanie v bazéne, tanec a večer pri ohni.`,
     dailySchedule: [
       { time: "8:00", activity: "Hatha jóga" },
       { time: "9:00", activity: "Raňajky" },
