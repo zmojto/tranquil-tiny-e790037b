@@ -1,33 +1,31 @@
+# Plán úpravy textu chorvátskeho pobytu
+
 ## Cieľ
+Upraviť popisný text v objekte `croatia-harmony` v súbore `src/data/retreats.ts` podľa nového znenia poskytnutého používateľom.
 
-Vo všetkých 9 pobytoch posunúť **iba dve položky** v `dailySchedule` o 1 hodinu skôr:
-- **raňajky**
-- **prvý workshop / prvá popoludňajšia aktivita** hneď po raňajkách
+## Zmeny v texte
 
-Ostatné časy (ranná meditácia, jóga, obed, výlety, večerná jóga, večera, večerný workshop) zostávajú **nezmenené**.
+### Aktuálny text (riadky 282-286)
+```
+Zažite harmóniu tela a mysle v nádhernej kamennej Villa Quince neďaleko Zadaru na dalmatínskom pobreží. Táto luxusná vila s vyhrievaným bazénom, jacuzzi, saunou a tenisovým kurtom poskytuje ideálne prostredie pre 7-dňový transformačný pobyt uprostred stredomorskej prírody.
 
-## Dotknutý súbor
+Každý deň začína vedenou meditáciou a dychovými cvičeniami, po ktorých nasleduje hatha jóga. Popoludnia sú venované objavovaniu krás dalmatínskeho pobrežia – Národný park Kornati, vodopády Krka, staré mesto Zadar so slávnym morským orgánom, pláž Saharun či ostrov Ugljan. Večery sú venované workshopom na tému Mentálny detox.
 
-`src/data/retreats.ts`
+Villa Quince sa nachádza v pokojnej dedine Murvica, len niekoľko minút autom od mora. Ubytovanie je v elegantných izbách s výhľadom na záhradu. Všetky jedlá sú vegetariánske a ajurvédske, pripravované s láskou z čerstvých miestnych surovín. Večery patria workshopom zameraným na osobný rast.
+```
 
-## Zmeny po pobytoch
+### Nový text
+```
+Zažite harmóniu tela a mysle v nádhernej kamennej Villa Quince neďaleko Zadaru na dalmatínskom pobreží. Táto luxusná vila s vyhrievaným bazénom, jacuzzi, saunou a tenisovým kurtom poskytuje ideálne prostredie pre 7-dňový transformačný pobyt uprostred stredomorskej prírody. Nachádza v pokojnej dedine Murvica, len niekoľko minút autom od mora. Ubytovanie je v elegantných izbách s výhľadom na záhradu.
 
-| Pobyt | Raňajky | Prvý workshop / popoludňajšia aktivita |
-|---|---|---|
-| Bali Bliss | 10:00 → **9:00** | 11:30 → **10:30** (Kultúrny workshop) |
-| Costa Rica | 10:00 → **9:00** | 11:30 → **10:30** (Lekcia surfovania) |
-| Portugal Soul | 9:30 → **8:30** | 11:00 → **10:00** (Kultúrny výlet) |
-| Cyprus Awakening | 10:00 → **9:00** | 11:30 → **10:30** (Workshop) |
-| Krpáčovo Soul | 10:00 → **9:00** | 11:30 → **10:30** (Workshop) |
-| Croatia Harmony | 10:00 → **9:00** | 11:30 → **10:30** (Workshop) |
-| Thailand Awakening | 10:00 → **9:00** | 11:30 → **10:30** (Kajaking/chrám) |
-| Necpaly Stillness | 10:00 → **9:00** | 11:30 → **10:30** (Workshop – Spokojnosť je voľba) |
-| Blatinka Roots | 10:00 → **9:00** | 11:30 → **10:30** (Workshop – etikoterapia) |
+Každý deň začína vedenou meditáciou a dychovými cvičeniami, po ktorých nasleduje hatha jóga. Popoludnia sú venované objavovaniu krás dalmatínskeho pobrežia – Národný park Kornati, vodopády Krka, staré mesto Zadar so slávnym morským orgánom, pláž Saharun či ostrov Ugljan a tiež kúpaniu v mori, v bazéne, saunovaniu, prípadne hraniu tenisu. Večery sú venované praktikovaniu jógy a workshopom na tému Mentálny detox.
 
-## Upozornenie
+Všetky jedlá sú vegetariánske alebo ajurvédske, pripravované s láskou z čerstvých miestnych surovín.
+```
 
-Medzi rannou jógou (končí cca 9:00) a raňajkami už nebude pauza – jóga plynule prechádza do raňajok. Ak chcete medzi nimi zachovať aspoň 30 min pauzu, dajte vedieť a posuniem aj koniec rannej jógy alebo nechám raňajky o 9:30.
+## Súbor na úpravu
+- `src/data/retreats.ts` – zmena hodnoty vlastnosti `description` v objekte s `id: "croatia-harmony"`
 
-## Mimo rozsahu
-
-Všetky ostatné položky programu, ceny, popisy, `travelInfo` a `inclusions` zostávajú nezmenené.
+## Technické detaily
+- Použiť `code--line_replace` na nahradenie riadkov 282-286.
+- Nový text má 3 odstavce: prvý spojený s info o lokalite, druhý rozšírený o aktivity (kúpanie, sauna, tenis) a večerná jóga, tretí skrátený (bez poslednej vety o večerných workshopoch).
