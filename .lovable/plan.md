@@ -1,31 +1,23 @@
-# Plán úpravy textu chorvátskeho pobytu
+## Oprava: Spätný link z detailu pobytu neskroluje na sekciu pobyty
 
-## Cieľ
-Upraviť popisný text v objekte `croatia-harmony` v súbore `src/data/retreats.ts` podľa nového znenia poskytnutého používateľom.
+### Problém
+V `RetreatDetail.tsx` je link `<Link to="/#retreats">` aj `<Button onClick={() => navigate("/#retreats")}>`. Pri kliknutí sa používateľ dostane na hlavnú stránku `/`, ale neskroluje sa na sekciu `#retreats`. Dôvodom je, že React Router pri client-side navigácii nevykonáva natívny hash scroll prehliadača.
 
-## Zmeny v texte
+### Riešenie
+Pridať do `src/pages/Index.tsx` jednoduchý `useEffect`, ktorý po načítaní stránky skontroluje `window.location.hash` a programovo skroluje na príslušný element pomocou `scrollIntoView({ behavior: "smooth" })`.
 
-### Aktuálny text (riadky 282-286)
-```
-Zažite harmóniu tela a mysle v nádhernej kamennej Villa Quince neďaleko Zadaru na dalmatínskom pobreží. Táto luxusná vila s vyhrievaným bazénom, jacuzzi, saunou a tenisovým kurtom poskytuje ideálne prostredie pre 7-dňový transformačný pobyt uprostred stredomorskej prírody.
-
-Každý deň začína vedenou meditáciou a dychovými cvičeniami, po ktorých nasleduje hatha jóga. Popoludnia sú venované objavovaniu krás dalmatínskeho pobrežia – Národný park Kornati, vodopády Krka, staré mesto Zadar so slávnym morským orgánom, pláž Saharun či ostrov Ugljan. Večery sú venované workshopom na tému Mentálny detox.
-
-Villa Quince sa nachádza v pokojnej dedine Murvica, len niekoľko minút autom od mora. Ubytovanie je v elegantných izbách s výhľadom na záhradu. Všetky jedlá sú vegetariánske a ajurvédske, pripravované s láskou z čerstvých miestnych surovín. Večery patria workshopom zameraným na osobný rast.
-```
-
-### Nový text
-```
-Zažite harmóniu tela a mysle v nádhernej kamennej Villa Quince neďaleko Zadaru na dalmatínskom pobreží. Táto luxusná vila s vyhrievaným bazénom, jacuzzi, saunou a tenisovým kurtom poskytuje ideálne prostredie pre 7-dňový transformačný pobyt uprostred stredomorskej prírody. Nachádza v pokojnej dedine Murvica, len niekoľko minút autom od mora. Ubytovanie je v elegantných izbách s výhľadom na záhradu.
-
-Každý deň začína vedenou meditáciou a dychovými cvičeniami, po ktorých nasleduje hatha jóga. Popoludnia sú venované objavovaniu krás dalmatínskeho pobrežia – Národný park Kornati, vodopády Krka, staré mesto Zadar so slávnym morským orgánom, pláž Saharun či ostrov Ugljan a tiež kúpaniu v mori, v bazéne, saunovaniu, prípadne hraniu tenisu. Večery sú venované praktikovaniu jógy a workshopom na tému Mentálny detox.
-
-Všetky jedlá sú vegetariánske alebo ajurvédske, pripravované s láskou z čerstvých miestnych surovín.
+```text
+Index.tsx
+  + useEffect(() => {
+  +   const hash = window.location.hash;
+  +   if (hash) {
+  +     const el = document.querySelector(hash);
+  +     if (el) el.scrollIntoView({ behavior: "smooth" });
+  +   }
+  + }, []);
 ```
 
-## Súbor na úpravu
-- `src/data/retreats.ts` – zmena hodnoty vlastnosti `description` v objekte s `id: "croatia-harmony"`
+Súbory na úpravu:
+- `src/pages/Index.tsx` — pridať hash scroll handler
 
-## Technické detaily
-- Použiť `code--line_replace` na nahradenie riadkov 282-286.
-- Nový text má 3 odstavce: prvý spojený s info o lokalite, druhý rozšírený o aktivity (kúpanie, sauna, tenis) a večerná jóga, tretí skrátený (bez poslednej vety o večerných workshopoch).
+Výsledok: Klik na "Späť na všetky pobyty" z detailu pobytu plynule naskroluje na sekciu pobyty.
