@@ -290,7 +290,7 @@ Villa Quince sa nachádza v pokojnej dedine Murvica, len niekoľko minút autom 
       { time: "9:00", activity: "Raňajky" },
       { time: "10:30", activity: "Workshop alebo voľný čas" },
       { time: "14:00", activity: "Obed" },
-      { time: "16:00", activity: "Výlet v okolí (Kornati, Krka, staré mesto Zadar, pláž Saharun, ostrov Ugljan)" },
+      { time: "16:00", activity: "Výlet v okolí" },
       { time: "18:30", activity: "Jóga a meditácia" },
       { time: "20:00", activity: "Večera" },
       { time: "21:00", activity: "Workshop" },
