@@ -256,7 +256,7 @@ Večery patria workshopom na tému Mentálna odolnosť - séria inšpiratívnych
     ],
     heroImage: "https://i1.wp.com/www.polianka.sk/wp-content/uploads/2017/08/CountryKrpacovo2014_top58_35-1024x683.jpg?fit=1024%2C683&ssl=1",
     galleryImages: [
-      "https://i1.wp.com/www.polianka.sk/wp-content/uploads/2017/08/Hotel-Polianka-vyhlad-na-jazero-2-1024x561.jpg?fit=1024%2C561&ssl=1",
+      "/images/krpacovo-jazero.jpg",
       "https://i2.wp.com/www.polianka.sk/wp-content/uploads/2022/02/Polianka_wellness_lowres_027.jpg?fit=1920%2C1280&ssl=1",
       "/images/krpacovo-sup.webp",
       "https://i2.wp.com/www.polianka.sk/wp-content/uploads/2017/08/Polianka_Koliba_Jan2019_lowres_020-2.jpg?fit=1920%2C1280&ssl=1",
