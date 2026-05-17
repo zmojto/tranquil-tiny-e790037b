@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: "Čo je zahrnuté v balíku pobytu?",
-    answer: "Každý pobyt zahŕňa ubytovanie, tri organické jedlá denne, dve jógové lekcie, workshopy, vedené meditácie, výlety do prírody, letiskové transfery s rovnako starostlivo zostavený zážitok. Od príchodu spomalíte a regenerujete. Pohyb, dych a ticho postupne uvoľnia napätie a vrátia vás viac k sebe - pokojnejších, pevnejších, viac v rovnováhe.  ",
+    answer: "Každý pobyt zahŕňa ubytovanie, tri organické jedlá denne, jógové lekcie, workshopy, vedené meditácie, výlety do prírody, letiskové transfery. Od príchodu spomalíte a regenerujete. Pohyb, dych a ticho postupne uvoľnia napätie a vrátia vás viac k sebe - pokojnejších, pevnejších, viac v rovnováhe.",
   },
   {
     question: "Potrebujem predchádzajúce skúsenosti s jógou?",
