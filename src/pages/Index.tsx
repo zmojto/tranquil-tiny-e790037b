@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import NavigationHeader from "@/components/NavigationHeader";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
