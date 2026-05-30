@@ -3,14 +3,15 @@ import { Button } from "@/components/ui/button";
 
 const ProgramSection = () => {
   const inclusions = [
-  "7 nocí v luxusnom ubytovaní / 4 noci v útulnej štýlovej kolibe",
-  "Denné ranné a večerné jógové lekcie",
-  "Vedená meditácia a dychové cvičenia",
+    "Štýlové a pohodlné ubytovanie\n",
+    "Denné ranné a večerné jógové lekcie",
+    "Vedená meditácia a dychové cvičenia",
     "Tri ajurvédské alebo rastlinné jedlá denne",
     "Wellness",
     "Workshopy zamerané na osobný rast",
-  "Kurátorovaný výlet do prírody",
-  "Letiskové transfery a uvítací rituál"];
+    "Kurátorované výlety do prírody",
+    "Letiskové transfery\n"
+  ];
 
 
   return (
