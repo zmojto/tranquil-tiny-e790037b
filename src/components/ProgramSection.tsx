@@ -53,7 +53,7 @@ const ProgramSection = () => {
                 <span className="text-muted-foreground text-lg ml-2 block mt-2">za osobu</span>
               </div>
               <p className="text-muted-foreground mb-8">
-                Ceny sa líšia podľa destinácie • K dispozícii dvojlôžkové a trojlôžkové izby
+                Ceny sa líšia podľa destinácie
               </p>
               
               <Button
