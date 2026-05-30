@@ -83,7 +83,7 @@ const NavigationHeader = () => {
             isScrolled ? "text-foreground hover:text-primary" : "text-white hover:text-white/80"
           }`}
         >
-          Serenity
+          Samaveša
         </a>
 
         {/* Desktop Navigation */}

@@ -1,6 +1,23 @@
-Nahradiť prvú fotku v galérii pobytu Krpáčovo Soul novou priloženou fotkou.
+## Rebranding na Samaveša
 
-1. Skopírovať `user-uploads://Uuchjg.jpeg` → `public/images/krpacovo-jazero.jpg`
-2. V `src/data/retreats.ts` v `galleryImages` pre `krpacovo-soul` nahradiť prvý prvok novou cestou `/images/krpacovo-jazero.jpg`
+Nahradím všetky výskyty brandových názvov "Serenity" a "Serene Retreats" textom **Samaveša** v celom projekte.
 
-Hero fotka a ostatné položky galérie zostanú nezmenené.
+### Súbory na úpravu
+
+- `index.html` — `<title>`, og:title, meta author
+- `src/components/NavigationHeader.tsx` — logo v navigácii
+- `src/components/FooterSection.tsx` — copyright v pätičke
+- `src/pages/BlogArticle.tsx` — title článku, JSON-LD publisher name
+- `src/pages/NotFound.tsx` — title a meta description 404 stránky
+- `src/pages/RetreatDetail.tsx` — title a og:title detailu pobytu
+
+### Pravidlo nahradenia
+
+- "Serenity" → "Samaveša"
+- "Serene Retreats" → "Samaveša"
+- "Serene" (samostatne v title suffixoch) → "Samaveša"
+
+### Mimo rozsahu
+
+- Doménové URL (`tranquil-tiny.lovable.app`, `hello@sereneretreats.com`, `@sereneretreats`) zostávajú — ich zmena vyžaduje samostatné rozhodnutie (nová doména/email).
+- Nemenia sa žiadne komponenty, štýly ani funkcionalita.

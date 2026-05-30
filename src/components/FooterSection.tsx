@@ -72,7 +72,7 @@ const FooterSection = () => {
         
         <div className="border-t border-primary-foreground/20 pt-8 text-center">
           <p className="text-primary-foreground/60 text-sm">
-            © 2027 Serene Retreats. Všetky práva vyhradené.
+            © 2027 Samaveša. Všetky práva vyhradené.
           </p>
         </div>
       </div>
