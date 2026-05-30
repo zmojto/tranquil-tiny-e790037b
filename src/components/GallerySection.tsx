@@ -41,10 +41,10 @@ const GallerySection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-primary font-medium tracking-widest uppercase text-sm">
-            Naša svätyňa
+            Naš priestor pokoja a bezpečia
           </span>
           <h2 className="text-4xl md:text-5xl font-serif text-foreground mt-4">
-            Preskúmajte pobyt
+            Z našich pobytov
           </h2>
         </div>
 
