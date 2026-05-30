@@ -17,7 +17,7 @@ const FooterSection = () => {
           <div className="text-center md:text-left">
             <h3 className="font-serif text-2xl mb-4">Začnite svoju cestu</h3>
             <p className="text-primary-foreground/80 mb-6">
-              Máte otázky? Radi vás vypočujeme. Napíšte nám.
+              Máte otázky? Rady vás vypočujeme. Napíšte nám.
             </p>
             <div className="flex flex-col gap-3">
               <a 
