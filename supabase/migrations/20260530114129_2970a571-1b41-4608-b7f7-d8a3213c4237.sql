@@ -1,0 +1,1 @@
+UPDATE public.articles SET author_name = 'Sabína Kalmárová' WHERE author_name = 'Denník Serenity';
