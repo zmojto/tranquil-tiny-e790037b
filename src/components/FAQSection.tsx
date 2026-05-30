@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     question: "Čo si mám priniesť?",
-    answer: "Odporúčame pohodlné oblečenie na jógu, plavky, turistickú obuv, opaľovací krém a opakovane použiteľnú fľašu na vodu. Jógové podložky a pomôcky sú k dispozícii, ale môžete si priniesť vlastné, ak chcete.",
+    answer: "Odporúčame pohodlné oblečenie na jógu, jógamatku, plavky, turistickú obuv, opaľovací krém a opakovane použiteľnú fľašu na vodu.",
   },
   {
     question: "Ako sa dostanem na miesto pobytu?",
