@@ -36,7 +36,7 @@ const HostsSection = () => {
               <br />
               Spolu vytvárame priestor, kde má každý z vás možnosť rásť vlastným tempom.
               <br />
-              A pretože chceme, aby ste si naozaj odniesli maximum, ako bonus k nášmu pobytu dostane každý účastník možnosť osobnej etikoterapeutickej konzultácie v cene pobytu.
+              A pretože chceme, aby ste si odniesli maximum, ako bonus k nášmu pobytu dostane, v prípade záujmu, každý účastník možnosť osobnej etikoterapeutickej konzultácie v cene pobytu.
             </p>
           </div>
         </div>
