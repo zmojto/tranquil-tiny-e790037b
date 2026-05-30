@@ -26,7 +26,7 @@ const EventsSection = () => {
             Vyberte si svoju cestu
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
-            Sedem jedinečných destinácií, jeden transformačný zážitok. Všetky pobyty zahŕňajú ubytovanie, dennú jógu a meditáciu, workshopy, organické jedlá a unikátné zážitky.
+            Sedem jedinečných destinácií, jeden transformačný zážitok. Všetky pobyty zahŕňajú ubytovanie, dennú jógu a meditáciu, workshopy, organické jedlá a unikátne zážitky.
           </p>
         </div>
 
