@@ -5,10 +5,10 @@ const NotFound = () => {
   const location = useLocation();
 
   useEffect(() => {
-    document.title = "Stránka nenájdená | Serene Retreats";
+    document.title = "Stránka nenájdená | Samaveša";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Táto stránka neexistuje alebo bola presunutá. Vráťte sa na úvod a objavte jógové pobyty, wellness programy a blog Serene Retreats.");
+      metaDescription.setAttribute("content", "Táto stránka neexistuje alebo bola presunutá. Vráťte sa na úvod a objavte jógové pobyty, wellness programy a blog Samaveša.");
     }
     console.error("404 Error: User attempted to access non-existent route:", location.pathname);
   }, [location.pathname]);

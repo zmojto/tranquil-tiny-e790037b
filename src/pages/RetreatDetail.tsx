@@ -18,7 +18,7 @@ const RetreatDetail = () => {
 
   useEffect(() => {
     if (retreat) {
-      document.title = `${retreat.name} – Jógový pobyt | Serene`;
+      document.title = `${retreat.name} – Jógový pobyt | Samaveša`;
       
       // Update meta description
       const metaDesc = `${retreat.name} – jógový pobyt v destinácii ${retreat.location}. Meditácia, jóga a wellness pre max. 12 hostí. Rezervujte si miesto.`;
