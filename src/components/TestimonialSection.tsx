@@ -7,10 +7,11 @@ const TestimonialSection = () => {
         <Quote className="w-12 h-12 text-primary/30 mx-auto mb-8" />
         
         <blockquote className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground leading-relaxed mb-10 italic">
-          "Tento pobyt bol zlomovým bodom v mojom živote. Kombinácia skúsených 
-          učiteľov, úchvatnej lokality a duchovnej komunity vytvorila priestor, 
-          kde bola skutočná premena možná. Odišla som obnovená, vycentrovaná 
-          a hlboko spojená so svojím poslaním."
+          "Obe dámy plne rozumejú tomu čo hovoria a čo prezentujú. 
+          Prišla som hľadať odpovede na moje nezodpovedané otázky o sebe samej. 
+          V nádhernom prostredí to išlo nesmierne ľahko. Uvoľnenosť a spokojnosť 
+          so všetkým, čo som absolvala, som si odniesla na dlhý čas so sebou, 
+          na miesto kde bývam a pracujem."
         </blockquote>
         
         <div className="flex items-center justify-center gap-4">
