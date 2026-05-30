@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     question: "Aká je vaša politika zrušenia?",
-    answer: "Plná refundácia je k dispozícii 30 a viac dní pred začiatkom pobytu. Zrušenia do 30 dní dostávajú 50% refundáciu.",
+    answer: "Plná refundácia je k dispozícii 30 a viac dní pred začiatkom pobytu. Zrušenia do 30 dní dostávajú 0% refundáciu.",
   },
 ];
 
