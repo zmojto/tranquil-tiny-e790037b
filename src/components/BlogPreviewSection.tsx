@@ -13,10 +13,10 @@ const BlogPreviewSection = () => {
         <div className="container max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
-              Najnovšie z blogu
+              Medzi riadkami Sabíny Kalmárovej
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Inšpirácie, tipy a príbehy pre vašu wellness cestu
+              Inšpirácie, tipy a príbehy pre vašu cestu
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -44,10 +44,10 @@ const BlogPreviewSection = () => {
             Náš blog
           </span>
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
-            Najnovšie z blogu
+            Medzi riadkami Sabíny Kalmárovej
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Inšpirácie, tipy a príbehy pre vašu wellness cestu
+            Inšpirácie, tipy a príbehy pre vašu cestu
           </p>
         </div>
 
