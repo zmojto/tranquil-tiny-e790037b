@@ -67,7 +67,7 @@ const HostsSection = () => {
                 rel="noopener noreferrer"
                 className="text-primary hover:underline font-medium"
               >
-                sabinakalmarova.sk
+                www.sabinakalmarova.sk
               </a>
             </p>
           </div>
