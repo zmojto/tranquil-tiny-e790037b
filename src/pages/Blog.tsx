@@ -21,12 +21,12 @@ const Blog = () => {
   const { data: articles, isLoading } = useArticles();
 
   useEffect(() => {
-    document.title = "Blog – Články o jóge a wellness | Serene";
+    document.title = "Medzi riadkami Sabíny Kalmárovej – Články o jóge a nastavení mysle";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Čítajte články o jóge, meditácii a wellness. Praktické tipy, inšpirácie na vedomý život a príbehy z našich pobytov po celom svete."
+        "Objavte články o jóge, meditácii, zákonitostiach života a práci o nastavení mysle. Budú vašim sprievodcom k vyváženejšiemu a vedomejšiemu životu."
       );
     }
   }, []);
@@ -49,11 +49,11 @@ const Blog = () => {
             Späť domov
           </Link>
           <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4">
-            Denník Serenity
+            Medzi riadkami Sabíny Kalmárovej
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl">
-            Objavte články o jóge, meditácii, wellness a vedomom živote.
-            Náš denník je vašim sprievodcom k vyváženejšiemu životu.
+            Objavte články o jóge, meditácii, zákonitostiach života a práci o nastavení mysle. 
+            Budú vašim sprievodcom k vyváženejšiemu a vedomejšiemu životu.
           </p>
         </div>
       </header>
