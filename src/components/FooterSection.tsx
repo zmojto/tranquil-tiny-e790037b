@@ -4,7 +4,7 @@ import { Mail, MapPin, Instagram } from "lucide-react";
 const blogCategories = [
   { label: "Jóga", href: "/blog?category=Yoga" },
   { label: "Meditácia", href: "/blog?category=Meditation" },
-  { label: "Wellness", href: "/blog?category=Wellness" },
+  { label: "Rovnováha", href: "/blog?category=Balance" },
   { label: "Výživa", href: "/blog?category=Nutrition" },
 ];
 

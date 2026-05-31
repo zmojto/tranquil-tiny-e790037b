@@ -6,12 +6,13 @@ import { Badge } from "@/components/ui/badge";
 import ArticleCard from "@/components/ArticleCard";
 import { useArticles } from "@/hooks/useArticles";
 
-const CATEGORIES = ["Všetko", "Yoga", "Meditation", "Wellness", "Nutrition", "Travel"];
+const CATEGORIES = ["Všetko", "Yoga", "Meditation", "Wellness", "Balance", "Nutrition", "Travel"];
 const CATEGORY_LABELS: Record<string, string> = {
   "Všetko": "Všetko",
   "Yoga": "Jóga",
   "Meditation": "Meditácia",
   "Wellness": "Wellness",
+  "Balance": "Rovnováha",
   "Nutrition": "Výživa",
   "Travel": "Cestovanie",
 };
