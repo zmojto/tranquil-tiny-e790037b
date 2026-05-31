@@ -6,16 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import ArticleCard from "@/components/ArticleCard";
 import { useArticles } from "@/hooks/useArticles";
 
-const CATEGORIES = ["Všetko", "Yoga", "Meditation", "Wellness", "Rovnováha", "Nutrition", "Travel"];
-const CATEGORY_LABELS: Record<string, string> = {
-  "Všetko": "Všetko",
-  "Yoga": "Jóga",
-  "Meditation": "Meditácia",
-  "Wellness": "Wellness",
-  "Rovnováha": "Rovnováha",
-  "Nutrition": "Výživa",
-  "Travel": "Cestovanie",
-};
+const CATEGORIES = ["Všetko", "Jóga", "Meditácia", "Wellness", "Rovnováha", "Zdravie", "Výživa", "Cestovanie"];
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState("Všetko");
@@ -71,7 +62,7 @@ const Blog = () => {
                 className="cursor-pointer whitespace-nowrap transition-all hover:bg-primary/10"
                 onClick={() => setSelectedCategory(category)}
               >
-                {CATEGORY_LABELS[category]}
+                {category}
               </Badge>
             ))}
           </div>

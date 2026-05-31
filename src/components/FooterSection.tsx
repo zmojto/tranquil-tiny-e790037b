@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import { Mail, MapPin, Instagram } from "lucide-react";
 
 const blogCategories = [
-  { label: "Jóga", href: "/blog?category=Yoga" },
-  { label: "Meditácia", href: "/blog?category=Meditation" },
-  { label: "Rovnováha", href: "/blog?category=Rovnováha" },
-  { label: "Výživa", href: "/blog?category=Nutrition" },
+ { label: "Jóga", href: "/blog?category=Jóga" },
+ { label: "Meditácia", href: "/blog?category=Meditácia" },
+ { label: "Rovnováha", href: "/blog?category=Rovnováha" },
+ { label: "Výživa", href: "/blog?category=Výživa" },
 ];
 
 const FooterSection = () => {
