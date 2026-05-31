@@ -62,7 +62,7 @@ const Blog = () => {
                 className="cursor-pointer whitespace-nowrap transition-all hover:bg-primary/10"
                 onClick={() => setSelectedCategory(category)}
               >
-                {CATEGORY_LABELS[category]}
+                {category}
               </Badge>
             ))}
           </div>
