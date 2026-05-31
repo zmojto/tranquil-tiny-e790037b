@@ -1,23 +1,27 @@
-## Rebranding na Samaveša
+## Stav v databáze
 
-Nahradím všetky výskyty brandových názvov "Serenity" a "Serene Retreats" textom **Samaveša** v celom projekte.
+- "Ajurvédske jedlá" už má kategóriu `Nutrition` (zobrazuje sa ako **Výživa**) — netreba meniť.
+- 4 články majú aktuálne kategóriu `Wellness`:
+  - Prečo je digitálny detox nevyhnutný pre naše zdravie
+  - Disciplína ako kľúč k skutočnej slobode
+  - Recept na spokojný život
+  - Tajomstvo vnútornej sily
 
-### Súbory na úpravu
+## Plán
 
-- `index.html` — `<title>`, og:title, meta author
-- `src/components/NavigationHeader.tsx` — logo v navigácii
-- `src/components/FooterSection.tsx` — copyright v pätičke
-- `src/pages/BlogArticle.tsx` — title článku, JSON-LD publisher name
-- `src/pages/NotFound.tsx` — title a meta description 404 stránky
-- `src/pages/RetreatDetail.tsx` — title a og:title detailu pobytu
+1. **Pridať novú kategóriu `Balance` s labelom „Rovnováha"** v `src/pages/Blog.tsx`:
+   - Doplniť do `CATEGORIES`: `["Všetko", "Yoga", "Meditation", "Wellness", "Balance", "Nutrition", "Travel"]`
+   - Doplniť do `CATEGORY_LABELS`: `"Balance": "Rovnováha"`
+   - (Wellness ostáva ako samostatná kategória pre prípadné budúce články.)
 
-### Pravidlo nahradenia
+2. **Aktualizovať 4 články v databáze** (migrácia) — nastaviť `category = 'Balance'` pre slugy:
+   - `preco-je-digitalny-detox-nevyhnutny-pre-nase-zdravie`
+   - `disciplina-ako-kluc-k-skutocnej-slobode`
+   - `recept-na-spokojny-zivot`
+   - `tajomstvo-vnutornej-sily-co-nas-mozu-naucit-indicki-asketi`
 
-- "Serenity" → "Samaveša"
-- "Serene Retreats" → "Samaveša"
-- "Serene" (samostatne v title suffixoch) → "Samaveša"
+3. **Footer** (`FooterSection.tsx`): ponechať odkaz na Wellness alebo prepnúť na Rovnováhu? Predvolene ho **prepnem na Rovnováhu** (`/blog?category=Balance`), keďže tam smerujú nové články. Ak chceš nechať Wellness, daj vedieť.
 
-### Mimo rozsahu
+## Poznámka
 
-- Doménové URL (`tranquil-tiny.lovable.app`, `hello@sereneretreats.com`, `@sereneretreats`) zostávajú — ich zmena vyžaduje samostatné rozhodnutie (nová doména/email).
-- Nemenia sa žiadne komponenty, štýly ani funkcionalita.
+Kategória „Ajurvédske jedlá" už je Výživa, takže pre ňu nerobím žiadnu zmenu.
