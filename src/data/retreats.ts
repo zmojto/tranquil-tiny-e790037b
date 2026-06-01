@@ -169,7 +169,7 @@ Večery spájajú našu skupinu pri večerách pri sviečkach s tým najlepším
     tagline: "Slnečný pokoj",
     location: "Protaras",
     country: "Cyprus",
-    dates: "25. septembra – 2. októbra 2026",
+    dates: "28. septembra – 4. októbra 2026",
     price: 1100,
     currency: "€",
     spotsLeft: 6,
