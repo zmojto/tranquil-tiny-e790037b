@@ -210,8 +210,8 @@ Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len kr
       cyprusMimosaBeach,
     ],
     travelInfo: {
-      outbound: { flight: "Wizz Air – Bratislava → Larnaka", time: "Piatok 29. mája, 15:00 → 19:05 (3h 5min)" },
-      returnFlight: { flight: "Wizz Air – Larnaka → Bratislava", time: "Piatok 5. júna, 12:00 → 14:25 (3h 25min)" },
+      outbound: { flight: "Wizz Air – Bratislava → Larnaka", time: "Pondelok 28. septembra, 11:00 → 15:05 (3h 5min)" },
+      returnFlight: { flight: "Wizz Air – Larnaka → Bratislava", time: "Pondelok 5. októbra, 12:00 → 14:25 (3h 25min)" },
       ticketPrice: "cca 200 €",
       note: "Letenky sprostredkujeme – nie sú zahrnuté v cene pobytu.",
     },
