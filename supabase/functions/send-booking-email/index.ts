@@ -20,7 +20,7 @@ Deno.serve(async (req) => {
   }
 
   try {
-    // Verify the request comes from an authenticated caller (anon key + valid session)
+    // Require a Bearer token (anon or user) — public booking form
     const authHeader = req.headers.get('Authorization');
     if (!authHeader?.startsWith('Bearer ')) {
       return new Response(
@@ -29,26 +29,6 @@ Deno.serve(async (req) => {
       );
     }
 
-    const supabaseUrl = Deno.env.get('SUPABASE_URL')!;
-    const supabaseAnonKey = Deno.env.get('SUPABASE_ANON_KEY')!;
-    const supabase = createClient(supabaseUrl, supabaseAnonKey, {
-      global: { headers: { Authorization: authHeader } },
-    });
-
-    const { data: claimsData, error: claimsError } = await supabase.auth.getClaims(
-      authHeader.replace('Bearer ', '')
-    );
-
-    // Allow anon role (unauthenticated visitors using the anon key)
-    const isAnon = claimsData?.claims?.role === 'anon';
-    const isAuthenticated = claimsData?.claims?.role === 'authenticated';
-
-    if (claimsError || !claimsData?.claims || (!isAnon && !isAuthenticated)) {
-      return new Response(
-        JSON.stringify({ error: 'Unauthorized' }),
-        { status: 401, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
-      );
-    }
 
     const RESEND_API_KEY = Deno.env.get('RESEND_API_KEY');
     const NOTIFICATION_EMAIL = Deno.env.get('BOOKING_NOTIFICATION_EMAIL');

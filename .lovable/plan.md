@@ -1,28 +1,21 @@
-## Cieľ
+## Problém
 
-Pridať nový blogový článok do kategórie **Cestovanie** s obsahom z priloženého dokumentu o obci Necpaly a s priloženou fotografiou ako titulnou.
+Rezervácie sa stále ukladajú do databázy, ale e-mailové notifikácie sa neposielajú. Edge funkcia `send-booking-email` vracia **401 Unauthorized** ešte pred odoslaním e-mailu, preto v logoch nie sú žiadne záznamy o invokáciách.
 
-## Postup
+Príčina: vo funkcii sa volá `supabase.auth.getClaims(token)` s anon kľúčom, čo zlyháva (getClaims očakáva user-session JWT, nie API kľúč). Kontrola potom odmietne aj legitímne anonymné požiadavky z verejného formulára.
 
-1. **Nahranie titulnej fotografie**
-   - Použiť priložený obrázok `necpaly.JPG` (pohľad na kaštieľ v Necpaloch)
-   - Nahrať do Lovable Cloud storage (bucket `article-images`) ako titulný obrázok článku
+## Riešenie
 
-2. **Vloženie článku do databázy (`public.articles`)**
-   - `title`: „Necpaly – zabudnutý klenot Turca"
-   - `slug`: `necpaly-zabudnuty-klenot-turca`
-   - `category`: `Cestovanie`
-   - `author_name`: Sabína Kalmárová
-   - `excerpt`: krátka anotácia (do ~160 znakov) – napr. „Objavte obec na úpätí Veľkej Fatry, ktorá v sebe spája bohatú históriu, šľachtické kaštiele a nedotknutú prírodu Turca."
-   - `content`: markdown verzia textu z dokumentu so zachovanými nadpismi (Dedina, kde sa písali dejiny; Papier, ktorý putoval k cisárskemu dvoru; Pivo, ktoré malo príliš veľký úspech; Necpalská dolina – brána do Veľkej Fatry; Miesto, ktoré má dušu)
-   - `cover_image_url`: URL nahranej fotografie
-   - `published`: `true`
-   - `published_at`: aktuálny dátum
+Zjednodušiť autorizáciu v `supabase/functions/send-booking-email/index.ts`:
 
-3. **Overenie**
-   - Skontrolovať, že článok sa zobrazuje na `/blog` pod filtrom **Cestovanie**
-   - Skontrolovať detail článku na `/blog/necpaly-zabudnuty-klenot-turca`
+- Odstrániť volanie `supabase.auth.getClaims(...)` a s tým súvisiace vetvenie `isAnon` / `isAuthenticated`.
+- Ponechať len overenie, že request obsahuje hlavičku `Authorization: Bearer ...` (chráni pred priamym zneužitím bez anon kľúča).
+- Zachovať existujúcu validáciu vstupu (Zod-like kontroly dĺžok), CORS, escaping a volanie Resend API — bez zmeny.
 
-## Bez zmien v kóde
+Po úprave funkciu nasadiť (`deploy_edge_functions`) a otestovať priamym volaním, či vráti 200 a do nakonfigurovaného `BOOKING_NOTIFICATION_EMAIL` príde testovací e-mail.
 
-Žiadne zmeny v komponentoch nie sú potrebné – existujúce `Blog.tsx`, `BlogArticle.tsx` a `ArticleCard.tsx` článok automaticky zobrazia.
+## Bez zmeny
+
+- Frontend (`BookingModal.tsx`, `RetreatBookingForm.tsx`) — invokácia funkcie ostáva rovnaká.
+- Tajné kľúče (`RESEND_API_KEY`, `BOOKING_NOTIFICATION_EMAIL`, `BOOKING_FROM_EMAIL`) sú už nastavené, netreba meniť.
+- Tabuľka `bookings` a jej RLS — funguje korektne.
