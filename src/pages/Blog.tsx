@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import ArticleCard from "@/components/ArticleCard";
 import { useArticles } from "@/hooks/useArticles";
 
-const CATEGORIES = ["Všetko", "Jóga", "Meditácia", "Wellness", "Rovnováha", "Zdravie", "Výživa", "Cestovanie"];
+const CATEGORIES = ["Všetko", "Jóga", "Meditácia", "Rovnováha", "Zdravie", "Výživa", "Cestovanie"];
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState("Všetko");
