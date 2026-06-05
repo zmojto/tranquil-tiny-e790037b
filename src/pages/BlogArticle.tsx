@@ -20,7 +20,7 @@ const BlogArticle = () => {
 
   useEffect(() => {
     if (article) {
-      document.title = `${article.title} | Samaveša`;
+      document.title = `${article.title} | Samāveśa`;
 
       // Update meta description
       let metaDescription = document.querySelector('meta[name="description"]');
@@ -68,7 +68,7 @@ const BlogArticle = () => {
         image: article.cover_image_url,
         publisher: {
           "@type": "Organization",
-          name: "Samaveša",
+          name: "Samāveśa",
         },
       };
 
