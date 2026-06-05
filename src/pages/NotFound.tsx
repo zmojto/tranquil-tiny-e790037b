@@ -5,10 +5,10 @@ const NotFound = () => {
   const location = useLocation();
 
   useEffect(() => {
-    document.title = "Stránka nenájdená | Samaveša";
+    document.title = "Stránka nenájdená | Samāveśa";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Táto stránka neexistuje alebo bola presunutá. Vráťte sa na úvod a objavte jógové pobyty, wellness programy a blog Samaveša.");
+      metaDescription.setAttribute("content", "Táto stránka neexistuje alebo bola presunutá. Vráťte sa na úvod a objavte jógové pobyty, wellness programy a blog Samāveśa.");
     }
     console.error("404 Error: User attempted to access non-existent route:", location.pathname);
   }, [location.pathname]);
