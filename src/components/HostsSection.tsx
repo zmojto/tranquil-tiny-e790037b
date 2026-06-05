@@ -53,12 +53,12 @@ const HostsSection = () => {
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Má bohaté skúsenosti ako etikoterapeutka aj lektorka –
-              prednášala vo viac ako stovke firiem.
+              prednášala vo viac ako stovke firiem. Venuje sa tiež práci s pozornosťou.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Na našich pobytoch vás bude sprevádzať workshopmi na rôzne témy,
               ako sú <em>Mentálna odolnosť</em> či <em>Spokojnosť ako voľba</em>,
-              a tiež meditačnou praxou.
+              a tiež meditačnou praxou.{" "}
             </p>
             <p className="text-lg">
               <a
