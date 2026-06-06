@@ -44,7 +44,7 @@ const HostsSection = () => {
         <div className="mt-16 pt-12 border-t border-border/50 grid md:grid-cols-2 gap-12">
           <div className="space-y-4">
             <h3 className="font-serif text-3xl text-foreground">
-              Alena Hodáková
+              Sabína Kalmárová
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Vyštudovala sociológiu na FiFUK v Bratislave, školu Angelológie
