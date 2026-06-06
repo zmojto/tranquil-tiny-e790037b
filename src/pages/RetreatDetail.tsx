@@ -246,7 +246,7 @@ const RetreatDetail = () => {
                   <span className="text-primary font-medium text-sm">€</span>
                 </div>
                 <div>
-                  <p className="font-medium text-foreground mb-1">{isFlight ? "Cena letenky" : "Cena dopravy"}: {retreat.travelInfo.ticketPrice}</p>
+                  <p className="font-medium text-foreground mb-1">{isFlight ? "Cena spiatočnej letenky" : "Cena dopravy"}: {retreat.travelInfo.ticketPrice}</p>
                   <p className="text-muted-foreground text-sm">{retreat.travelInfo.note}</p>
                 </div>
               </div>
