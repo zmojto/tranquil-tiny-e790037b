@@ -232,7 +232,7 @@ Každé ráno začína vedenou meditáciou a dychovými cvičeniami v lone prír
 
 Popoludnia sú venované objavovaniu krás okolia – nenáročné prechádzky, náučné chodníky, Bystrianská jaskyňa, Farma Javor či Černohorská železnička. Na jazere si môžete vyskúšať paddleboarding a po aktívnom dni relaxovať vo fínskej saune alebo vonkajších vyhrievaných kadiach s vírivkou.
 
-Večery patria workshopom na tému Mentálna odolnosť - séria inšpiratívnych prednášok z etikoterapie vám prinesie nový pohľad na váš každodenný život a vnútorné prežívanie. Spoločne sa ponoríme do témy mentálnej odolnosti a životnej spokojnosti a budeme hľadať odpovede na dôležité otázky: Do akej miery dokážem ovplyvniť svoje vlastné šťastie? A aké praktické nástroje mám k dispozícii, aby som na ňom mohla aktívne pracovať? \n\nTento pobyt si môžete objednať do 30. júla 2026.`,
+Večery patria workshopom na tému Práca s pozornosťou, Mentálna odolnosť - séria inšpiratívnych prednášok z etikoterapie vám prinesie nový pohľad na váš každodenný život a vnútorné prežívanie. Spoločne sa ponoríme do témy mentálnej odolnosti a životnej spokojnosti a budeme hľadať odpovede na dôležité otázky: Do akej miery dokážem ovplyvniť svoje vlastné šťastie? A aké praktické nástroje mám k dispozícii, aby som na ňom mohla aktívne pracovať? \n\nTento pobyt si môžete objednať do 30. júla 2026.`,
     dailySchedule: [
       { time: "7:00", activity: "Vedená meditácia a dychové cvičenia" },
       { time: "8:00", activity: "Hatha jóga" },
@@ -249,7 +249,7 @@ Večery patria workshopom na tému Mentálna odolnosť - séria inšpiratívnych
       "Vegetariánske a ajurvédske jedlá a občerstvenie",
       "Denné ranné a večerné jógové lekcie (hatha)",
       "Vedené meditácie a dychové cvičenia",
-      "Workshopy na tému Mentálna odolnosť",
+      "Workshopy na tému Práca s pozornosťou, Mentálna odolnosť",
       "Paddleboarding na jazere",
       "Fínska sauna a vonkajšie vyhrievané kade s vírivkou",
       "Masáže k dispozícii (za príplatok)",
