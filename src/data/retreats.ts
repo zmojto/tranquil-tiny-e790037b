@@ -287,7 +287,7 @@ Každý deň začína vedenou meditáciou a dychovými cvičeniami, po ktorých 
 
 Večery sú venované praktikovaniu jógy a workshopom na tému Mentálny detox. Budeme si spoločne klásť otázky a hľadať na ne odpovede.
 
-Všetky jedlá sú vegetariánske alebo ajurvédske, pripravované s láskou z čerstvých miestnych surovín.\n\n\nTento pobyt si môžete objednať do 20. júla 2026.`,
+Všetky jedlá sú vegetariánske alebo ajurvédske, pripravované s láskou z čerstvých miestnych surovín.`,
     dailySchedule: [
       { time: "7:00", activity: "Vedená meditácia a dychové cvičenia" },
       { time: "8:00", activity: "Hatha jóga" },
