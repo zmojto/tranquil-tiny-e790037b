@@ -380,7 +380,7 @@ Etikoterapia - séria inšpiratívnych prednášok „Spokojnosť je voľba“ v
 
 Jóga - jemná, pomalá prax s dlhším zotrvaním v pozíciách prináša hlboké uvoľnenie, regeneráciu a úľavu od napätia. Pomáha znižovať stres, uvoľniť telo a upokojiť myseľ.
 
-Program je navrhnutý s dôrazom na rovnováhu medzi spoločným časom a priestorom len pre vás. Oddýchnite si v saune či vírivke pod hviezdami, ponorte sa do ticha s knihou v útulnej relaxačnej miestnosti alebo objavujte krásu okolitej prírody na peších prechádzkach. Každý moment je pozvaním k regenerácii, uvoľneniu a hlbokému oddychu.\n\n\nTento pobyt si môžete objednať do 2. septembra 2026.`,
+Program je navrhnutý s dôrazom na rovnováhu medzi spoločným časom a priestorom len pre vás. Oddýchnite si v saune či vírivke pod hviezdami, ponorte sa do ticha s knihou v útulnej relaxačnej miestnosti alebo objavujte krásu okolitej prírody na peších prechádzkach. Každý moment je pozvaním k regenerácii, uvoľneniu a hlbokému oddychu.\n\n\nJógový pobyt Necpaly Stillness si môžete objednať do 2. septembra 2026.`,
 
     dailySchedule: [
       { time: "7:00", activity: "Vedená meditácia a dychové cvičenia" },
