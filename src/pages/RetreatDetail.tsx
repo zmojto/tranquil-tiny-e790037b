@@ -125,7 +125,7 @@ const RetreatDetail = () => {
           </h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             {retreat.description.split('\n\n').map((paragraph, index) => (
-              <p key={index} className="mb-6 font-bold">{paragraph}</p>
+              <p key={index} className={`mb-6 ${paragraph.trim().startsWith('Tento pobyt si môžete objednať') ? 'font-bold' : ''}`}>{paragraph}</p>
             ))}
           </div>
         </div>
