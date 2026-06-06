@@ -74,7 +74,7 @@ const HostsSection = () => {
 
           <div className="space-y-4">
             <h3 className="font-serif text-3xl text-foreground">
-              Alena Hodáková
+              Sabína Kalmárová
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Vyštudovala Ekonomickú univerzitu v Bratislave, no jej cesta ju
