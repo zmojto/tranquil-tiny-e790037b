@@ -13,14 +13,29 @@ const Blog = () => {
   const { data: articles, isLoading } = useArticles();
 
   useEffect(() => {
-    document.title = "Medzi riadkami Sabíny Kalmárovej – Články o jóge a nastavení mysle";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute(
-        "content",
-        "Objavte články o jóge, meditácii, zákonitostiach života a práci o nastavení mysle. Budú vašim sprievodcom k vyváženejšiemu a vedomejšiemu životu."
-      );
-    }
+    const pageTitle = "Medzi riadkami Sabíny Kalmárovej – Články o jóge a nastavení mysle";
+    const pageDescription =
+      "Objavte články o jóge, meditácii, zákonitostiach života a práci o nastavení mysle. Budú vašim sprievodcom k vyváženejšiemu a vedomejšiemu životu.";
+
+    document.title = pageTitle;
+
+    const setMeta = (selector: string, attr: "name" | "property", key: string, content: string) => {
+      let tag = document.querySelector(`meta[${attr}="${key}"]`);
+      if (!tag) {
+        tag = document.createElement("meta");
+        tag.setAttribute(attr, key);
+        document.head.appendChild(tag);
+      }
+      tag.setAttribute("content", content);
+    };
+
+    setMeta("description", "name", "description", pageDescription);
+    setMeta("og:title", "property", "og:title", pageTitle);
+    setMeta("og:description", "property", "og:description", pageDescription);
+    setMeta("og:url", "property", "og:url", window.location.href);
+    setMeta("og:type", "property", "og:type", "website");
+    setMeta("twitter:title", "name", "twitter:title", pageTitle);
+    setMeta("twitter:description", "name", "twitter:description", pageDescription);
   }, []);
 
   const filteredArticles = articles?.filter(
