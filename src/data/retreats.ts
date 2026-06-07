@@ -454,13 +454,13 @@ Veľkou podporou pri našej práci je krásne prostredie Podpoľania. Sme v lone
       "Etikoterapia workshopy – Blatinka Roots",
       "Prístup k bazénu",
     ],
-    heroImage: "/images/podpolanie-hero.jpg",
+    heroImage: "/images/blatinka/main.jpg",
     galleryImages: [
       "/images/blatinka/group.jpg",
       "/images/blatinka/interior.jpg",
       "/images/blatinka/garden.jpg",
       "/images/blatinka/yoga.jpg",
-      "/images/podpolanie-hero.jpg",
+      "/images/blatinka/main.jpg",
     ],
     travelInfo: {
       transportType: "individual",
