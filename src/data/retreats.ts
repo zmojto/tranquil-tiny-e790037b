@@ -460,7 +460,7 @@ Veľkou podporou pri našej práci je krásne prostredie Podpoľania. Sme v lone
       "/images/blatinka/interior.jpg",
       "/images/blatinka/garden.jpg",
       "/images/blatinka/yoga.jpg",
-      "/images/blatinka/main.jpg",
+      "/images/podpolanie-hero.jpg",
     ],
     travelInfo: {
       transportType: "individual",
