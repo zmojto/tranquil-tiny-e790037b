@@ -55,6 +55,24 @@ const RetreatDetail = () => {
         <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:image" content={ogImage} />
         <link rel="canonical" href={pageUrl} />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Product",
+          name: retreat.name,
+          description: `${retreat.tagline}. ${retreat.dates}. ${retreat.location}, ${retreat.country}.`,
+          image: ogImage,
+          brand: { "@type": "Brand", name: "Samaveša" },
+          category: "Jógový a wellness pobyt",
+          offers: {
+            "@type": "Offer",
+            url: pageUrl,
+            priceCurrency: "EUR",
+            price: retreat.price,
+            availability: retreat.spotsLeft > 0
+              ? "https://schema.org/InStock"
+              : "https://schema.org/SoldOut",
+          },
+        })}</script>
       </Helmet>
       <NavigationHeader />
 

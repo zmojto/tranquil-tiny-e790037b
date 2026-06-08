@@ -40,6 +40,26 @@ const Index = () => {
         <meta name="twitter:title" content={TITLE} />
         <meta name="twitter:description" content={DESCRIPTION} />
         <link rel="canonical" href={`${SITE_URL}/`} />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Samaveša",
+          url: SITE_URL,
+          description: DESCRIPTION,
+          sameAs: [],
+        })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Samaveša",
+          url: SITE_URL,
+          inLanguage: "sk",
+          potentialAction: {
+            "@type": "SearchAction",
+            target: `${SITE_URL}/blog?q={search_term_string}`,
+            "query-input": "required name=search_term_string",
+          },
+        })}</script>
       </Helmet>
       <NavigationHeader />
       <HeroSection />
