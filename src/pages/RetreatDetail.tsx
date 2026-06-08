@@ -1,11 +1,14 @@
 import { useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, MapPin, Calendar, Users, Check, Clock, Plane, Car } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import NavigationHeader from "@/components/NavigationHeader";
 import FooterSection from "@/components/FooterSection";
 import RetreatBookingForm from "@/components/RetreatBookingForm";
 import { getRetreatById } from "@/data/retreats";
+
+const SITE_URL = "https://samavesa.sk";
 
 const RetreatDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -15,27 +18,6 @@ const RetreatDetail = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
-
-  useEffect(() => {
-    if (retreat) {
-      document.title = `${retreat.name} – Jógový pobyt | Samāveśa`;
-      
-      // Update meta description
-      const metaDesc = `${retreat.name} – jógový pobyt v destinácii ${retreat.location}. Meditácia, jóga a wellness pre max. 12 hostí. Rezervujte si miesto.`;
-      const trimmedDesc = metaDesc.length > 160 ? metaDesc.slice(0, 157) + "..." : metaDesc;
-      
-      const metaDescription = document.querySelector('meta[name="description"]');
-      if (metaDescription) {
-        metaDescription.setAttribute("content", trimmedDesc);
-      }
-
-      // Update Open Graph tags
-      const ogTitle = document.querySelector('meta[property="og:title"]');
-      const ogDescription = document.querySelector('meta[property="og:description"]');
-      if (ogTitle) ogTitle.setAttribute("content", `${retreat.name} – Jógový pobyt | Samāveśa`);
-      if (ogDescription) ogDescription.setAttribute("content", trimmedDesc);
-    }
-  }, [retreat]);
 
   if (!retreat) {
     return (
@@ -53,8 +35,27 @@ const RetreatDetail = () => {
     );
   }
 
+  const pageTitle = `${retreat.name} – Jógový pobyt v destinácii ${retreat.location} | Samaveša`;
+  const baseDesc = `${retreat.tagline}. Termín ${retreat.dates}, max. 12 hostí, cena od ${retreat.price.toLocaleString("sk-SK")} €. Jóga, meditácia a wellness v destinácii ${retreat.location}.`;
+  const pageDescription = baseDesc.length > 160 ? baseDesc.slice(0, 157) + "..." : baseDesc;
+  const pageUrl = `${SITE_URL}/retreats/${retreat.id}`;
+  const ogImage = retreat.heroImage.startsWith("http") ? retreat.heroImage : `${SITE_URL}${retreat.heroImage}`;
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:image" content={ogImage} />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content={ogImage} />
+        <link rel="canonical" href={pageUrl} />
+      </Helmet>
       <NavigationHeader />
 
       {/* Hero Section */}
