@@ -35,8 +35,27 @@ const RetreatDetail = () => {
     );
   }
 
+  const pageTitle = `${retreat.name} – Jógový pobyt v destinácii ${retreat.location} | Samaveša`;
+  const baseDesc = `${retreat.tagline}. Termín ${retreat.dates}, max. 12 hostí, cena od ${retreat.price.toLocaleString("sk-SK")} €. Jóga, meditácia a wellness v destinácii ${retreat.location}.`;
+  const pageDescription = baseDesc.length > 160 ? baseDesc.slice(0, 157) + "..." : baseDesc;
+  const pageUrl = `${SITE_URL}/retreats/${retreat.id}`;
+  const ogImage = retreat.heroImage.startsWith("http") ? retreat.heroImage : `${SITE_URL}${retreat.heroImage}`;
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:image" content={ogImage} />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content={ogImage} />
+        <link rel="canonical" href={pageUrl} />
+      </Helmet>
       <NavigationHeader />
 
       {/* Hero Section */}
