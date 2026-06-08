@@ -67,8 +67,42 @@ const BlogArticle = () => {
     ? format(new Date(article.published_at), "d. MMMM yyyy", { locale: sk })
     : "";
 
+  const pageTitle = `${article.title} | Samaveša`;
+  const pageDescription = article.excerpt.length > 160
+    ? article.excerpt.slice(0, 157) + "..."
+    : article.excerpt;
+  const pageUrl = `${SITE_URL}/blog/${article.slug}`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.excerpt,
+    author: { "@type": "Person", name: article.author_name },
+    datePublished: article.published_at,
+    image: article.cover_image_url,
+    publisher: { "@type": "Organization", name: "Samaveša" },
+  };
+
   return (
     <main className="min-h-screen bg-background">
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={pageUrl} />
+        {article.cover_image_url && (
+          <meta property="og:image" content={article.cover_image_url} />
+        )}
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        {article.cover_image_url && (
+          <meta name="twitter:image" content={article.cover_image_url} />
+        )}
+        <link rel="canonical" href={pageUrl} />
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      </Helmet>
       {/* Article Header */}
       <header className="bg-primary/5 py-12 md:py-16">
         <div className="container max-w-4xl mx-auto px-6">
