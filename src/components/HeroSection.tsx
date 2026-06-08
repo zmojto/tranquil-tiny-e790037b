@@ -66,7 +66,7 @@ const HeroSection = () => {
           className="text-primary-foreground/60 text-sm mt-8 animate-fade-up"
           style={{ animationDelay: "0.8s" }}
         >
-          3 Transformačné pobyty • 2026
+          Transformačné pobyty • 2026
         </p>
       </div>
       
