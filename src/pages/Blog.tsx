@@ -10,7 +10,7 @@ import { useArticles } from "@/hooks/useArticles";
 const CATEGORIES = ["Všetko", "Jóga", "Meditácia", "Rovnováha", "Zdravie", "Výživa", "Cestovanie"];
 
 const SITE_URL = "https://samavesa.sk";
-const TITLE = "Medzi riadkami Sabíny Kalmárovej – Blog o jóge a nastavení mysle";
+const TITLE = "Medzi riadkami Sabíny Kalmárovej – Blog Samaveša";
 const DESCRIPTION = "Články o jóge, meditácii, zákonitostiach života a nastavení mysle. Sprievodca k vyváženejšiemu a vedomejšiemu životu.";
 
 const Blog = () => {
