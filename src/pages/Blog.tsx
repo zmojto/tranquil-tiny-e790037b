@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Filter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -8,35 +9,13 @@ import { useArticles } from "@/hooks/useArticles";
 
 const CATEGORIES = ["Všetko", "Jóga", "Meditácia", "Rovnováha", "Zdravie", "Výživa", "Cestovanie"];
 
+const SITE_URL = "https://samavesa.sk";
+const TITLE = "Medzi riadkami Sabíny Kalmárovej – Blog o jóge a nastavení mysle";
+const DESCRIPTION = "Články o jóge, meditácii, zákonitostiach života a nastavení mysle. Sprievodca k vyváženejšiemu a vedomejšiemu životu.";
+
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState("Všetko");
   const { data: articles, isLoading } = useArticles();
-
-  useEffect(() => {
-    const pageTitle = "Medzi riadkami Sabíny Kalmárovej – Články o jóge a nastavení mysle";
-    const pageDescription =
-      "Objavte články o jóge, meditácii, zákonitostiach života a práci o nastavení mysle. Budú vašim sprievodcom k vyváženejšiemu a vedomejšiemu životu.";
-
-    document.title = pageTitle;
-
-    const setMeta = (selector: string, attr: "name" | "property", key: string, content: string) => {
-      let tag = document.querySelector(`meta[${attr}="${key}"]`);
-      if (!tag) {
-        tag = document.createElement("meta");
-        tag.setAttribute(attr, key);
-        document.head.appendChild(tag);
-      }
-      tag.setAttribute("content", content);
-    };
-
-    setMeta("description", "name", "description", pageDescription);
-    setMeta("og:title", "property", "og:title", pageTitle);
-    setMeta("og:description", "property", "og:description", pageDescription);
-    setMeta("og:url", "property", "og:url", window.location.href);
-    setMeta("og:type", "property", "og:type", "website");
-    setMeta("twitter:title", "name", "twitter:title", pageTitle);
-    setMeta("twitter:description", "name", "twitter:description", pageDescription);
-  }, []);
 
   const filteredArticles = articles?.filter(
     (article) =>
@@ -45,6 +24,17 @@ const Blog = () => {
 
   return (
     <main className="min-h-screen bg-background">
+      <Helmet>
+        <title>{TITLE}</title>
+        <meta name="description" content={DESCRIPTION} />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:description" content={DESCRIPTION} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${SITE_URL}/blog`} />
+        <meta name="twitter:title" content={TITLE} />
+        <meta name="twitter:description" content={DESCRIPTION} />
+        <link rel="canonical" href={`${SITE_URL}/blog`} />
+      </Helmet>
       {/* Header */}
       <header className="bg-primary/5 py-16 md:py-24">
         <div className="container max-w-6xl mx-auto px-6">
