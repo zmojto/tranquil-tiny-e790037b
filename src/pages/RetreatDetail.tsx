@@ -1,11 +1,14 @@
 import { useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, MapPin, Calendar, Users, Check, Clock, Plane, Car } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import NavigationHeader from "@/components/NavigationHeader";
 import FooterSection from "@/components/FooterSection";
 import RetreatBookingForm from "@/components/RetreatBookingForm";
 import { getRetreatById } from "@/data/retreats";
+
+const SITE_URL = "https://samavesa.sk";
 
 const RetreatDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -15,27 +18,6 @@ const RetreatDetail = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
-
-  useEffect(() => {
-    if (retreat) {
-      document.title = `${retreat.name} – Jógový pobyt | Samāveśa`;
-      
-      // Update meta description
-      const metaDesc = `${retreat.name} – jógový pobyt v destinácii ${retreat.location}. Meditácia, jóga a wellness pre max. 12 hostí. Rezervujte si miesto.`;
-      const trimmedDesc = metaDesc.length > 160 ? metaDesc.slice(0, 157) + "..." : metaDesc;
-      
-      const metaDescription = document.querySelector('meta[name="description"]');
-      if (metaDescription) {
-        metaDescription.setAttribute("content", trimmedDesc);
-      }
-
-      // Update Open Graph tags
-      const ogTitle = document.querySelector('meta[property="og:title"]');
-      const ogDescription = document.querySelector('meta[property="og:description"]');
-      if (ogTitle) ogTitle.setAttribute("content", `${retreat.name} – Jógový pobyt | Samāveśa`);
-      if (ogDescription) ogDescription.setAttribute("content", trimmedDesc);
-    }
-  }, [retreat]);
 
   if (!retreat) {
     return (
