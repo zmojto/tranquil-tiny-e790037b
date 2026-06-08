@@ -31,7 +31,7 @@ const HeroSection = () => {
           className="font-serif text-5xl md:text-7xl lg:text-8xl text-primary-foreground mb-6 animate-fade-up leading-tight"
           style={{ animationDelay: "0.2s" }}
         >
-          Nájdite svoj
+          Nájdite svoj{" "}
           <span className="block italic">vnútorný pokoj</span>
         </h1>
         
