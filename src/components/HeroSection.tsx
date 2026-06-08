@@ -4,12 +4,17 @@ import heroImage from "@/assets/hero-retreat.jpg";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
+      {/* Background Image (LCP) */}
+      <img
+        src={heroImage}
+        alt="Jógový pobyt v prírode"
+        width={1920}
+        height={1080}
+        fetchPriority="high"
+        decoding="async"
+        className="absolute inset-0 w-full h-full object-cover"
       />
-      
+
       {/* Overlay */}
       <div className="absolute inset-0 hero-overlay" />
       
