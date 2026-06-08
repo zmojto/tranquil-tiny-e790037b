@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Calendar, User, Tag } from "lucide-react";
 import { format } from "date-fns";
 import { sk } from "date-fns/locale";
@@ -8,6 +9,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import ArticleCard from "@/components/ArticleCard";
 import { useArticle, useRelatedArticles } from "@/hooks/useArticles";
+
+const SITE_URL = "https://samavesa.sk";
 
 const BlogArticle = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -19,77 +22,8 @@ const BlogArticle = () => {
   );
 
   useEffect(() => {
-    if (article) {
-      document.title = `${article.title} | Samāveśa`;
-
-      // Update meta description
-      let metaDescription = document.querySelector('meta[name="description"]');
-      if (!metaDescription) {
-        metaDescription = document.createElement("meta");
-        metaDescription.setAttribute("name", "description");
-        document.head.appendChild(metaDescription);
-      }
-      const excerpt = article.excerpt.length > 160 ? article.excerpt.slice(0, 157) + "..." : article.excerpt;
-      metaDescription.setAttribute("content", excerpt);
-
-      // Open Graph tags
-      const ogTags = [
-        { property: "og:title", content: article.title },
-        { property: "og:description", content: article.excerpt },
-        { property: "og:type", content: "article" },
-        { property: "og:url", content: window.location.href },
-      ];
-
-      if (article.cover_image_url) {
-        ogTags.push({ property: "og:image", content: article.cover_image_url });
-      }
-
-      ogTags.forEach(({ property, content }) => {
-        let tag = document.querySelector(`meta[property="${property}"]`);
-        if (!tag) {
-          tag = document.createElement("meta");
-          tag.setAttribute("property", property);
-          document.head.appendChild(tag);
-        }
-        tag.setAttribute("content", content);
-      });
-
-      // JSON-LD structured data
-      const jsonLd = {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        headline: article.title,
-        description: article.excerpt,
-        author: {
-          "@type": "Person",
-          name: article.author_name,
-        },
-        datePublished: article.published_at,
-        image: article.cover_image_url,
-        publisher: {
-          "@type": "Organization",
-          name: "Samāveśa",
-        },
-      };
-
-      let scriptTag = document.querySelector("#article-jsonld");
-      if (!scriptTag) {
-        scriptTag = document.createElement("script");
-        scriptTag.setAttribute("id", "article-jsonld");
-        scriptTag.setAttribute("type", "application/ld+json");
-        document.head.appendChild(scriptTag);
-      }
-      scriptTag.textContent = JSON.stringify(jsonLd);
-    }
-
-    // Scroll to top on article change
     window.scrollTo(0, 0);
-
-    return () => {
-      const scriptTag = document.querySelector("#article-jsonld");
-      if (scriptTag) scriptTag.remove();
-    };
-  }, [article]);
+  }, [slug]);
 
   if (isLoading) {
     return (
