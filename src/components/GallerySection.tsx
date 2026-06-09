@@ -15,7 +15,7 @@ const images = [
   { src: "/images/necpaly/main.jpg", alt: "Chalet Alexandra v Necpaloch", caption: "Necpaly – Veľká Fatra" },
   { src: "/images/blatinka/yoga.jpg", alt: "Jóga v Blatinke", caption: "Blatinka - jóga v prírode" },
   { src: cyprusKonnosBay, alt: "Záliv Konnos na Cypre", caption: "Cyprus – pobrežie" },
-  { src: "https://www.zadarvillas.com/photos/villas/galleries/22082024130701_dsc-5122.jpg", alt: "Villa Quince v Chorvátsku", caption: "Útulné ubytovanie" },
+  { src: "https://www.zadarvillas.com/photos/villas/galleries/22082024130701_dsc-5122.jpg", alt: "Villa Quince v Chorvátsku", caption: "Chorvátsko - bazén" },
 ];
 
 const GallerySection = () => {
