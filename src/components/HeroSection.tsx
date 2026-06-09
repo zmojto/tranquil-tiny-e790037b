@@ -24,7 +24,7 @@ const HeroSection = () => {
           className="text-primary-foreground/80 uppercase tracking-[0.3em] text-sm mb-6 animate-fade-up font-sans"
           style={{ animationDelay: "0.1s" }}
         >
-          Uvoľnenie • Transformácia • Prebudenie
+          UVOĽNENIE • TRANSFORMÁCIA • OBOHATENIE
         </p>
         
         <h1 
