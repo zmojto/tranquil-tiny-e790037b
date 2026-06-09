@@ -29,14 +29,16 @@ const HostsSection = () => {
               pozornosťou a otvoreným srdcom – aby ste sa pri nás cítili
               v bezpečí, prirodzene, aby ste sa uvoľnili a odniesli si viac než
               len zážitok.
-              <br />
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-4">
               Sabínka sa s vami podelí o etikoterapiu a rozhovory o spokojnosti v každodennom živote.
               <br />
               Ali vás prevedie jógovou praxou.
               <br />
               Spolu vytvárame priestor, kde má každý z vás možnosť rásť vlastným tempom.
-              <br />
-              A pretože chceme, aby ste si odniesli maximum, ako bonus k nášmu pobytu dostane, v prípade záujmu, každý účastník možnosť osobnej etikoterapeutickej konzultácie v cene pobytu.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              A pretože chceme, aby ste si odniesli maximum, ako bonus k nášmu pobytu, v prípade záujmu, dostane každý účastník možnosť osobnej etikoterapeutickej konzultácie v cene pobytu.
             </p>
           </div>
         </div>
