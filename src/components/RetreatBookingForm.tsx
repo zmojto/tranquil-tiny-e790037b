@@ -117,7 +117,11 @@ const RetreatBookingForm = ({ retreat }: RetreatBookingFormProps) => {
               </div>
               <div className="flex items-center gap-3">
                 <Users className="w-5 h-5 text-primary flex-shrink-0" />
-                <span>{retreat.spotsLeft} zostávajúcich miest</span>
+                <span>
+                  {retreat.spotsLeft > 0 
+                    ? `${retreat.spotsLeft} zostávajúcich miest`
+                    : "REGISTRÁCIA UZAVRETÁ"}
+                </span>
               </div>
             </div>
             <div className="border-t border-primary/10 mt-6 pt-6">
@@ -193,15 +197,27 @@ const RetreatBookingForm = ({ retreat }: RetreatBookingFormProps) => {
                   )}
                 />
 
-                <Button
-                  type="submit"
-                  variant="hero"
-                  size="lg"
-                  className="w-full"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? "Odosiela sa..." : "Odoslať rezerváciu"}
-                </Button>
+                {retreat.spotsLeft > 0 ? (
+                  <Button
+                    type="submit"
+                    variant="hero"
+                    size="lg"
+                    className="w-full"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? "Odosiela sa..." : "Odoslať rezerváciu"}
+                  </Button>
+                ) : (
+                  <Button
+                    type="button"
+                    variant="heroOutline"
+                    size="lg"
+                    className="w-full opacity-50 cursor-not-allowed"
+                    disabled
+                  >
+                    REGISTRÁCIA UZAVRETÁ
+                  </Button>
+                )}
               </form>
             </Form>
           </div>
