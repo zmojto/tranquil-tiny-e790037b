@@ -172,7 +172,7 @@ Večery spájajú našu skupinu pri večerách pri sviečkach s tým najlepším
     dates: "28. septembra – 4. októbra 2026",
     price: 1100,
     currency: "€",
-    spotsLeft: 6,
+    spotsLeft: 0,
     highlights: ["Meditácie pri mori", "Staroveké svätyne a energetické miesta", "Ostrovné dobrodružstvá"],
     description: `Témou 7-dňového pobytu vo Villa Lucilla v pokojnom Protarase na východnom pobreží Cypru je práca s našou životnou energiou. Ponúkame vám nový pohľad – nie ako na niečo, čo „máme alebo nemáme“, ale ako na vedome riadený zdroj, ktorý dokážeme uchopiť, rozvíjať a aktívne využívať v každodennom živote.
 
@@ -428,7 +428,7 @@ Program je navrhnutý s dôrazom na rovnováhu medzi spoločným časom a priest
     country: "Slovensko",
     dates: "14. – 16. augusta 2026",
     price: 250,
-    spotsLeft: 10,
+    spotsLeft: 0,
     highlights: ["Etikoterapia", "Bazén", "Krása Podpoľania"],
     description: `Srdečne vás pozývame na víkendové stretnutie na Blatinke. Spoločne sa pozrieme na to, ako sme spokojní so svojim životom, tak, ako ho žijeme. Zameriame sa na programy, ktoré riadia náš život a povieme si viac o tom, ako sa stať tvorcom svojho vlastného života a nakoľko ho máme vo svojich vlastných rukách.
 
