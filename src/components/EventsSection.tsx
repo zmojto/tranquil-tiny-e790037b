@@ -68,22 +68,19 @@ const EventsSection = () => {
                         <span>{retreat.dates}</span>
                       </div>
                       <div className="flex items-center gap-3 text-muted-foreground">
-                        {isActive ? (
-                          retreat.spotsLeft === 0 ? (
-                            <>
-                              <Users className="w-5 h-5 text-primary" />
-                              <span className="font-bold text-destructive">REZERVÁCIA UZAVRETÁ</span>
-                            </>
-                          ) : (
-                            <>
-                              <Users className="w-5 h-5 text-primary" />
-                              <span>{retreat.spotsLeft} zostávajúcich miest</span>
-                            </>
-                          )
-                        ) : (
+                        {!isActive ? (
                           <>
                             <Clock className="w-5 h-5 text-primary" />
                             <span>Termín sa upresní</span>
+                          </>
+                        ) : (
+                          <>
+                            <Users className="w-5 h-5 text-primary" />
+                            {retreat.spotsLeft === 0 ? (
+                              <span className="font-bold text-destructive">REZERVÁCIA UZAVRETÁ</span>
+                            ) : (
+                              <span>{retreat.spotsLeft} zostávajúcich miest</span>
+                            )}
                           </>
                         )}
                       </div>
