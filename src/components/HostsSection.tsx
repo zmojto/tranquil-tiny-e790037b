@@ -10,7 +10,7 @@ const HostsSection = () => {
               <img
                 src={sabiAli}
                 alt="Sabínka a Ali – sprievodkyne pobytov"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-right"
                 loading="lazy"
               />
             </div>
