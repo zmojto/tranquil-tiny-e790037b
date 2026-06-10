@@ -112,7 +112,11 @@ const RetreatDetail = () => {
             </div>
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5 text-primary" />
-              <span>{retreat.spotsLeft} zostávajúcich miest</span>
+              {retreat.spotsLeft === 0 ? (
+                <span className="font-bold text-destructive">REZERVÁCIA UZAVRETÁ</span>
+              ) : (
+                <span>{retreat.spotsLeft} zostávajúcich miest</span>
+              )}
             </div>
           </div>
 
