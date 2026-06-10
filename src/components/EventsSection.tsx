@@ -69,10 +69,17 @@ const EventsSection = () => {
                       </div>
                       <div className="flex items-center gap-3 text-muted-foreground">
                         {isActive ? (
-                          <>
-                            <Users className="w-5 h-5 text-primary" />
-                            <span>{retreat.spotsLeft} zostávajúcich miest</span>
-                          </>
+                          retreat.spotsLeft === 0 ? (
+                            <>
+                              <Users className="w-5 h-5 text-primary" />
+                              <span className="font-bold text-destructive">REZERVÁCIA UZAVRETÁ</span>
+                            </>
+                          ) : (
+                            <>
+                              <Users className="w-5 h-5 text-primary" />
+                              <span>{retreat.spotsLeft} zostávajúcich miest</span>
+                            </>
+                          )
                         ) : (
                           <>
                             <Clock className="w-5 h-5 text-primary" />
