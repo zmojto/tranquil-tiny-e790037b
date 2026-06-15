@@ -13,4 +13,5 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://tranquil-tiny.lovable.app/functions/v1/sitemap
+Sitemap: https://samavesa.sk/sitemap.xml
+
