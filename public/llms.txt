@@ -20,3 +20,4 @@
 
 - [/retreats/bali-bliss](/retreats/bali-bliss): Pripravovaný pobyt Bali.
 - [/retreats/costa-rica](/retreats/costa-rica): Pripravovaný pobyt Kostarika.
+- [/retreats/provence-haute-alpes](/retreats/provence-haute-alpes): Pripravovaný pobyt Provence Haute-Alpes, Francúzsko (júl 2027, 8 nocí).
