@@ -77,9 +77,9 @@ const EventsSection = () => {
                           <>
                             <Users className="w-5 h-5 text-primary" />
                             {retreat.spotsLeft === 0 ? (
-                              <span className="font-bold text-destructive">REZERVÁCIA UZAVRETÁ</span>
+                              <span className="font-bold text-destructive">1</span>
                             ) : (
-                              <span>{retreat.spotsLeft} zostávajúcich miest</span>
+                              <span>10 zostávajúcich miest</span>
                             )}
                           </>
                         )}
