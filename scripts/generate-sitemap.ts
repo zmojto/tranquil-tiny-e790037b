@@ -10,6 +10,7 @@ const SUPABASE_ANON_KEY =
 const RETREAT_IDS = [
   "bali-bliss",
   "costa-rica",
+  "provence-haute-alpes",
   "portugal-soul",
   "cyprus-awakening",
   "krpacovo-soul",

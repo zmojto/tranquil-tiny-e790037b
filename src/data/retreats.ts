@@ -125,6 +125,42 @@ Náš butikový eko-lodge kladie dôraz na udržateľnosť a spojenie s prírodn
     galleryImages: [galleryPool, galleryNature, galleryFood, galleryMeditation, gallerySpa, galleryRoom],
   },
   {
+    id: "provence-haute-alpes",
+    name: "Provence Haute-Alpes",
+    tagline: "Alpská harmónia v srdci Provence",
+    location: "Haute-Alpes",
+    country: "Francúzsko",
+    dates: "Júl 2027 – termín sa upresní",
+    price: 1800,
+    spotsLeft: 12,
+    highlights: ["Levanduľové polia", "Horská príroda", "Alpské jazerá"],
+    description: `Objavte čaro francúzskej Provence vo vysokohorskom prostredí regiónu Haute-Alpes. 8-nočný pobyt vás zavedie do krajiny, kde sa levanduľové polia stretávajú s majestátnymi alpskými štítmi a krištáľovo čistými jazerami.
+
+Každý deň začneme rannou jógovou praxou s výhľadom na hory, po ktorej nasledujú prechádzky v prírode, meditácie pri jazerách a workshopy v atmosfére autentickej provensálskej dediny.
+
+Tento pobyt je ideálnou kombináciou hĺbkovej regenerácie, kontaktu s prírodou a francúzskeho šarmu.`,
+    dailySchedule: [
+      { time: "7:30", activity: "Ranná meditácia v záhrade" },
+      { time: "8:00", activity: "Hatha jóga (90 min)" },
+      { time: "9:30", activity: "Provensálske raňajky" },
+      { time: "11:00", activity: "Túra v Alpách alebo voľný čas" },
+      { time: "13:30", activity: "Obed z miestnych produktov" },
+      { time: "16:00", activity: "Workshop alebo návšteva levanduľových polí" },
+      { time: "18:30", activity: "Yin jóga a meditácia" },
+      { time: "20:00", activity: "Spoločná večera" },
+    ],
+    inclusions: [
+      "8 nocí ubytovania v provensálskom dome",
+      "Všetky jedlá z miestnych a sezónnych surovín",
+      "Denné jógové a meditačné lekcie",
+      "Túry v alpskej prírode",
+      "Návšteva levanduľových polí",
+      "Workshopy a sprievodné aktivity",
+    ],
+    heroImage: heroRetreat,
+    galleryImages: [galleryPool, galleryNature, galleryFood, galleryMeditation, gallerySpa, galleryRoom],
+  },
+  {
     id: "portugal-soul",
     name: "Portugal Soul",
     tagline: "Stredomorská serenita",
@@ -473,7 +509,7 @@ Veľkou podporou pri našej práci je krásne prostredie Podpoľania. Sme v lone
 ];
 
 const activeOrder = ["cyprus-awakening", "krpacovo-soul", "blatinka-retreat", "croatia-harmony", "necpaly-retreat"];
-const upcomingOrder = ["bali-bliss", "costa-rica", "portugal-soul", "thailand-awakening"];
+const upcomingOrder = ["bali-bliss", "costa-rica", "provence-haute-alpes", "portugal-soul", "thailand-awakening"];
 export const retreats: Retreat[] = [
   ..._retreats.filter(r => activeOrder.includes(r.id)).sort((a, b) => activeOrder.indexOf(a.id) - activeOrder.indexOf(b.id)),
   ..._retreats.filter(r => upcomingOrder.includes(r.id)).sort((a, b) => upcomingOrder.indexOf(a.id) - upcomingOrder.indexOf(b.id)),
