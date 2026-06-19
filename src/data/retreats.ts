@@ -126,8 +126,8 @@ Náš butikový eko-lodge kladie dôraz na udržateľnosť a spojenie s prírodn
   },
   {
     id: "provence-haute-alpes",
-    name: "ALPSKÉ ČARO",
-    tagline: "Alpská harmónia v srdci Provence",
+    name: "Provence Beauty",
+    tagline: "ALPSKÁ HARMÓNIA ",
     location: "Haute-Alpes",
     country: "Francúzsko",
     dates: "Júl 2027 – termín sa upresní",
