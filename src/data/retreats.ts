@@ -130,7 +130,7 @@ Náš butikový eko-lodge kladie dôraz na udržateľnosť a spojenie s prírodn
     tagline: "Alpská harmónia v srdci Provence",
     location: "Haute-Alpes",
     country: "Francúzsko",
-    dates: "Júl 2027 – termín sa upresní",
+    dates: "Júl 2027 ",
     price: 1800,
     spotsLeft: 12,
     highlights: ["Levanduľové polia", "Horská príroda", "Alpské jazerá"],
