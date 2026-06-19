@@ -509,7 +509,7 @@ Veľkou podporou pri našej práci je krásne prostredie Podpoľania. Sme v lone
 ];
 
 const activeOrder = ["cyprus-awakening", "krpacovo-soul", "blatinka-retreat", "croatia-harmony", "necpaly-retreat"];
-const upcomingOrder = ["bali-bliss", "costa-rica", "portugal-soul", "thailand-awakening"];
+const upcomingOrder = ["bali-bliss", "costa-rica", "provence-haute-alpes", "portugal-soul", "thailand-awakening"];
 export const retreats: Retreat[] = [
   ..._retreats.filter(r => activeOrder.includes(r.id)).sort((a, b) => activeOrder.indexOf(a.id) - activeOrder.indexOf(b.id)),
   ..._retreats.filter(r => upcomingOrder.includes(r.id)).sort((a, b) => upcomingOrder.indexOf(a.id) - upcomingOrder.indexOf(b.id)),
