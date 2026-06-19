@@ -127,7 +127,7 @@ Náš butikový eko-lodge kladie dôraz na udržateľnosť a spojenie s prírodn
   {
     id: "provence-haute-alpes",
     name: "Provence Beauty",
-    tagline: "ALPSKÁ HARMÓNIA ",
+    tagline: "ALPSKÝ RELAX",
     location: "Haute-Alpes",
     country: "Francúzsko",
     dates: "Júl 2027 – termín sa upresní",
