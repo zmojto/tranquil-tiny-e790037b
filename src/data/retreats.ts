@@ -168,7 +168,7 @@ Tento pobyt je ideálnou kombináciou hĺbkovej regenerácie, kontaktu s prírod
     country: "Portugalsko",
     dates: "5. – 12. septembra 2027",
     price: 2600,
-    spotsLeft: 10,
+    spotsLeft: 6,
     highlights: ["Historické paláce", "Prechádzky po pobrežných útesoch", "Túry po vinárskej oblasti"],
     description: `Zažite očarujúcu krásu Sintry, miesta svetového dedičstva UNESCO zasadené v kopcoch neďaleko Lisabonu. Naša historická quinta, obklopená storočnými záhradami, poskytuje intímne prostredie pre hlbokú relaxáciu a kultúrne objavovanie.
 
