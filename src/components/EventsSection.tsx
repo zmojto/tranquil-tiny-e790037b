@@ -79,7 +79,7 @@ const EventsSection = () => {
                             {retreat.spotsLeft === 0 ? (
                               <span className="font-bold text-destructive">{"\n"}</span>
                             ) : (
-                              <span>10 zostávajúcich miest</span>
+                              <span>{retreat.spotsLeft} zostávajúcich miest</span>
                             )}
                           </>
                         )}

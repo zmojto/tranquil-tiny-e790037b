@@ -260,7 +260,7 @@ Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len kr
     country: "Slovensko",
     dates: "30. júla – 2. august 2026",
     price: 420,
-    spotsLeft: 8,
+    spotsLeft: 4,
     highlights: ["Koliba pri jazere", "Paddleboarding", "Sauna a wellness"],
     description: `Doprajte si pokojný pobyt v srdci Nízkych Tatier, v malebnom Krpáčove. Čakajú vás štyri dni v objatí prírody, naplnené hlbokým oddychom a obnovou. Ubytovanie je v trojlôžkových a štvorlôžkových izbách v kolibe priamo pri jazere.
 
