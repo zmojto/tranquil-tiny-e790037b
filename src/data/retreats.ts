@@ -260,7 +260,7 @@ Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len kr
     country: "Slovensko",
     dates: "30. júla – 2. august 2026",
     price: 420,
-    spotsLeft: 4,
+    spotsLeft: 8,
     highlights: ["Koliba pri jazere", "Paddleboarding", "Sauna a wellness"],
     description: `Doprajte si pokojný pobyt v srdci Nízkych Tatier, v malebnom Krpáčove. Čakajú vás štyri dni v objatí prírody, naplnené hlbokým oddychom a obnovou. Ubytovanie je v trojlôžkových a štvorlôžkových izbách v kolibe priamo pri jazere.
 
@@ -315,7 +315,7 @@ Večery patria workshopom na tému Práca s pozornosťou, Mentálna odolnosť - 
     country: "Chorvátsko",
     dates: "12. – 19. septembra 2026",
     price: 1550,
-    spotsLeft: 10,
+    spotsLeft: 6,
     highlights: ["Bazén a jacuzzi", "Tenisový kurt a sauna", "Výlety po okolí Zadaru"],
     description: `Zažite harmóniu tela a mysle v nádhernej kamennej Villa Quince neďaleko Zadaru na dalmatínskom pobreží. Táto luxusná vila s vyhrievaným bazénom, jacuzzi, saunou a tenisovým kurtom poskytuje ideálne prostredie pre 7-dňový transformačný pobyt uprostred stredomorskej prírody. Nachádza v pokojnej dedine Murvica, len niekoľko minút autom od mora. Ubytovanie je v elegantných izbách s výhľadom na záhradu.
 
@@ -408,7 +408,7 @@ Koh Samui je ostrov kontrastov – od rušných nočných trhov po tiché medita
     country: "Slovensko",
     dates: "15. – 18. októbra 2026",
     price: 420,
-    spotsLeft: 10,
+    spotsLeft: 6,
     highlights: ["Etikoterapia", "Sauna a vírivka pod hviezdami", "Túry vo Veľkej Fatre"],
     description: `Doprajte si pár dní len pre seba v Chalet Alexandra, v srdci Národného parku Veľká Fatra. Chalet je exkluzívne útočisko ponúkajúce pokoj a mnoho možností. Tento 3-dňový retreat je pozvánkou spomaliť, stíšiť sa a znovu sa naladiť na svoje vnútro.
 
@@ -464,7 +464,7 @@ Program je navrhnutý s dôrazom na rovnováhu medzi spoločným časom a priest
     country: "Slovensko",
     dates: "14. – 16. augusta 2026",
     price: 250,
-    spotsLeft: 10,
+    spotsLeft: 6,
     highlights: ["Etikoterapia", "Bazén", "Krása Podpoľania"],
     description: `Srdečne vás pozývame na víkendové stretnutie na Blatinke. Spoločne sa pozrieme na to, ako sme spokojní so svojim životom, tak, ako ho žijeme. Zameriame sa na programy, ktoré riadia náš život a povieme si viac o tom, ako sa stať tvorcom svojho vlastného života a nakoľko ho máme vo svojich vlastných rukách.
 
