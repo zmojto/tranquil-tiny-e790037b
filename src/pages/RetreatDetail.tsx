@@ -49,6 +49,8 @@ const RetreatDetail = () => {
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Samaveša" />
+        <meta property="og:locale" content="sk_SK" />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:image" content={ogImage} />
         <meta name="twitter:title" content={pageTitle} />

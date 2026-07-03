@@ -30,6 +30,9 @@ const Blog = () => {
         <meta property="og:title" content={TITLE} />
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Samaveša" />
+        <meta property="og:locale" content="sk_SK" />
+        <meta property="og:image" content="https://samavesa.sk/og-image.jpg" />
         <meta property="og:url" content={`${SITE_URL}/blog`} />
         <meta name="twitter:title" content={TITLE} />
         <meta name="twitter:description" content={DESCRIPTION} />
