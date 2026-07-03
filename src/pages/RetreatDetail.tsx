@@ -41,6 +41,44 @@ const RetreatDetail = () => {
   const pageDescription = baseDesc.length > 160 ? baseDesc.slice(0, 157) + "..." : baseDesc;
   const pageUrl = `${SITE_URL}/retreats/${retreat.id}`;
   const ogImage = retreat.heroImage.startsWith("http") ? retreat.heroImage : `${SITE_URL}${retreat.heroImage}`;
+  const parsedDates = parseRetreatDates(retreat.dates);
+  const eventSchema = parsedDates
+    ? {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        name: retreat.name,
+        description: `${retreat.tagline}. ${retreat.dates}. ${retreat.location}, ${retreat.country}.`,
+        image: ogImage,
+        startDate: parsedDates.startDate,
+        endDate: parsedDates.endDate,
+        eventStatus: "https://schema.org/EventScheduled",
+        eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+        location: {
+          "@type": "Place",
+          name: retreat.location,
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: retreat.location,
+            addressCountry: retreat.country,
+          },
+        },
+        organizer: {
+          "@type": "Organization",
+          name: "Samaveša",
+          url: SITE_URL,
+        },
+        offers: {
+          "@type": "Offer",
+          url: pageUrl,
+          price: retreat.price,
+          priceCurrency: "EUR",
+          availability: retreat.spotsLeft > 0
+            ? "https://schema.org/InStock"
+            : "https://schema.org/SoldOut",
+          validFrom: new Date().toISOString().slice(0, 10),
+        },
+      }
+    : null;
 
   return (
     <div className="min-h-screen bg-background">
@@ -58,47 +96,9 @@ const RetreatDetail = () => {
         <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:image" content={ogImage} />
         <link rel="canonical" href={pageUrl} />
-        <script type="application/ld+json">{JSON.stringify((() => {
-          const parsed = parseRetreatDates(retreat.dates);
-          const event: Record<string, unknown> = {
-            "@context": "https://schema.org",
-            "@type": "Event",
-            name: retreat.name,
-            description: `${retreat.tagline}. ${retreat.dates}. ${retreat.location}, ${retreat.country}.`,
-            image: ogImage,
-            eventStatus: "https://schema.org/EventScheduled",
-            eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-            location: {
-              "@type": "Place",
-              name: retreat.location,
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: retreat.location,
-                addressCountry: retreat.country,
-              },
-            },
-            organizer: {
-              "@type": "Organization",
-              name: "Samaveša",
-              url: SITE_URL,
-            },
-            offers: {
-              "@type": "Offer",
-              url: pageUrl,
-              price: retreat.price,
-              priceCurrency: "EUR",
-              availability: retreat.spotsLeft > 0
-                ? "https://schema.org/InStock"
-                : "https://schema.org/SoldOut",
-              validFrom: new Date().toISOString().slice(0, 10),
-            },
-          };
-          if (parsed) {
-            event.startDate = parsed.startDate;
-            event.endDate = parsed.endDate;
-          }
-          return event;
-        })())}</script>
+        {eventSchema && (
+          <script type="application/ld+json">{JSON.stringify(eventSchema)}</script>
+        )}
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
