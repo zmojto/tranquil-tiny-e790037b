@@ -19,7 +19,7 @@ const NavigationHeader = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const isRetreatPage = location.pathname.startsWith("/retreats");
+  const isRetreatPage = location.pathname.startsWith("/pobyty") || location.pathname.startsWith("/retreats");
   const isBlogPage = location.pathname.startsWith("/blog");
 
   useEffect(() => {
