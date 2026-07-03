@@ -7,7 +7,7 @@ const HeroSection = () => {
       {/* Background Image (LCP) */}
       <img
         src={heroImage}
-        alt="Jógový pobyt v prírode"
+        alt="Jogový pobyt v prírode"
         width={1920}
         height={1080}
         fetchPriority="high"

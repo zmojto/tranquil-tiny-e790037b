@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 const SITE_URL = "https://samavesa.sk";
 const TITLE = "Stránka nenájdená | Samaveša";
 const DESCRIPTION =
-  "Táto stránka neexistuje alebo bola presunutá. Vráťte sa na úvod a objavte jógové pobyty a blog Samaveša.";
+  "Táto stránka neexistuje alebo bola presunutá. Vráťte sa na úvod a objavte jogové pobyty a blog Samaveša.";
 
 const NotFound = () => {
   const location = useLocation();
@@ -22,6 +22,9 @@ const NotFound = () => {
         <meta property="og:title" content={TITLE} />
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Samaveša" />
+        <meta property="og:locale" content="sk_SK" />
+        <meta property="og:image" content="https://samavesa.sk/og-image.jpg" />
         <meta property="og:url" content={`${SITE_URL}${location.pathname}`} />
         <meta name="twitter:title" content={TITLE} />
         <meta name="twitter:description" content={DESCRIPTION} />

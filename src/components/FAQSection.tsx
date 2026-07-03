@@ -9,19 +9,19 @@ import {
 const faqs = [
   {
     question: "Aký je rozdiel medzi jednotlivými pobytmi?",
-    answer: "Zatiaľ čo všetky pobyty zahŕňajú rovnaký základný zážitok (denná jóga, meditácia, workshopy, organické jedlá), každá destinácia ponúka jedinečné kultúrne zážitky. Cyprus ponúka krásne pláže, Podpoľanie vyniká množstvom lesov a minerálnych prameňov, ale aj ľudovou kultúrou a Krpáčovo a Necpaly rozľahlými pláňami a túrami po Národnych parkoch Nízke Tatry a Veľká Fatra. Okrem prírodnych a kultúrnych inakosti sú pobyty rôzne dlhé.",
+    answer: "Zatiaľ čo všetky pobyty zahŕňajú rovnaký základný zážitok (denná joga, meditácia, workshopy, organické jedlá), každá destinácia ponúka jedinečné kultúrne zážitky. Cyprus ponúka krásne pláže, Podpoľanie vyniká množstvom lesov a minerálnych prameňov, ale aj ľudovou kultúrou a Krpáčovo a Necpaly rozľahlými pláňami a túrami po Národnych parkoch Nízke Tatry a Veľká Fatra. Okrem prírodnych a kultúrnych inakosti sú pobyty rôzne dlhé.",
   },
   {
     question: "Čo je zahrnuté v balíku pobytu?",
-    answer: "Každý pobyt zahŕňa ubytovanie, tri organické jedlá denne, jógové lekcie, workshopy, vedené meditácie, výlety do prírody, letiskové transfery. Od príchodu spomalíte a regenerujete. Pohyb, dych a ticho postupne uvoľnia napätie a vrátia vás viac k sebe - pokojnejších, pevnejších, viac v rovnováhe.",
+    answer: "Každý pobyt zahŕňa ubytovanie, tri organické jedlá denne, jogové lekcie, workshopy, vedené meditácie, výlety do prírody, letiskové transfery. Od príchodu spomalíte a regenerujete. Pohyb, dych a ticho postupne uvoľnia napätie a vrátia vás viac k sebe - pokojnejších, pevnejších, viac v rovnováhe.",
   },
   {
-    question: "Potrebujem predchádzajúce skúsenosti s jógou?",
+    question: "Potrebujem predchádzajúce skúsenosti s jogou?",
     answer: "Predchádzajúce skúsenosti nie sú potrebné. Prispôsobujeme sa všetkým úrovniam, od úplných začiatočníkov po pokročilých praktizujúcich. Každá lekcia ponúka modifikácie prispôsobené vašej osobnej praxi. Pracujeme v malých skupinách. ",
   },
   {
     question: "Čo si mám priniesť?",
-    answer: "Odporúčame pohodlné oblečenie na jógu, jógamatku, plavky, turistickú obuv, opaľovací krém a opakovane použiteľnú fľašu na vodu.",
+    answer: "Odporúčame pohodlné oblečenie na jogu, jogamatku, plavky, turistickú obuv, opaľovací krém a opakovane použiteľnú fľašu na vodu.",
   },
   {
     question: "Ako sa dostanem na miesto pobytu?",

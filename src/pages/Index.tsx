@@ -14,8 +14,8 @@ import FAQSection from "@/components/FAQSection";
 import FooterSection from "@/components/FooterSection";
 
 const SITE_URL = "https://samavesa.sk";
-const TITLE = "Samaveša – Jógové a wellness pobyty v lone prírody";
-const DESCRIPTION = "Transformačné 3 až 7-dňové jógové pobyty na inšpiratívnych miestach sveta. Maximálne 12 hostí, jóga, meditácia a vegetariánska kuchyňa.";
+const TITLE = "Samaveša – Jogové a wellness pobyty v lone prírody";
+const DESCRIPTION = "Transformačné 3 až 7-dňové jogové pobyty na inšpiratívnych miestach sveta. Maximálne 12 hostí, joga, meditácia a vegetariánska kuchyňa.";
 
 const Index = () => {
   useEffect(() => {
@@ -36,6 +36,9 @@ const Index = () => {
         <meta property="og:title" content={TITLE} />
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Samaveša" />
+        <meta property="og:locale" content="sk_SK" />
+        <meta property="og:image" content="https://samavesa.sk/og-image.jpg" />
         <meta property="og:url" content={`${SITE_URL}/`} />
         <meta name="twitter:title" content={TITLE} />
         <meta name="twitter:description" content={DESCRIPTION} />

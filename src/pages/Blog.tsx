@@ -7,11 +7,11 @@ import { Badge } from "@/components/ui/badge";
 import ArticleCard from "@/components/ArticleCard";
 import { useArticles } from "@/hooks/useArticles";
 
-const CATEGORIES = ["Všetko", "Jóga", "Meditácia", "Rovnováha", "Zdravie", "Výživa", "Cestovanie"];
+const CATEGORIES = ["Všetko", "Joga", "Meditácia", "Rovnováha", "Zdravie", "Výživa", "Cestovanie"];
 
 const SITE_URL = "https://samavesa.sk";
 const TITLE = "Medzi riadkami Sabíny Kalmárovej – Blog Samaveša";
-const DESCRIPTION = "Články o jóge, meditácii, zákonitostiach života a nastavení mysle. Sprievodca k vyváženejšiemu a vedomejšiemu životu.";
+const DESCRIPTION = "Články o joge, meditácii, zákonitostiach života a nastavení mysle. Sprievodca k vyváženejšiemu a vedomejšiemu životu.";
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState("Všetko");
@@ -30,6 +30,9 @@ const Blog = () => {
         <meta property="og:title" content={TITLE} />
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Samaveša" />
+        <meta property="og:locale" content="sk_SK" />
+        <meta property="og:image" content="https://samavesa.sk/og-image.jpg" />
         <meta property="og:url" content={`${SITE_URL}/blog`} />
         <meta name="twitter:title" content={TITLE} />
         <meta name="twitter:description" content={DESCRIPTION} />
@@ -49,7 +52,7 @@ const Blog = () => {
             Medzi riadkami Sabíny Kalmárovej
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl">
-            Objavte články o jóge, meditácii, zákonitostiach života a práci o nastavení mysle. 
+            Objavte články o joge, meditácii, zákonitostiach života a práci o nastavení mysle. 
             Budú vašim sprievodcom k vyváženejšiemu a vedomejšiemu životu.
           </p>
         </div>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Mail, MapPin, Instagram } from "lucide-react";
 
 const blogCategories = [
- { label: "Jóga", href: "/blog?category=Jóga" },
+ { label: "Joga", href: "/blog?category=Joga" },
  { label: "Meditácia", href: "/blog?category=Meditácia" },
  { label: "Rovnováha", href: "/blog?category=Rovnováha" },
  { label: "Výživa", href: "/blog?category=Výživa" },
@@ -55,7 +55,7 @@ const FooterSection = () => {
                   to={cat.href}
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
-                  Články o {cat.label.toLowerCase() === "jóga" ? "jóge" : cat.label.toLowerCase() === "meditácia" ? "meditácii" : cat.label.toLowerCase() === "výživa" ? "výžive" : cat.label.toLowerCase()}
+                  Články o {cat.label.toLowerCase() === "joga" ? "joge" : cat.label.toLowerCase() === "meditácia" ? "meditácii" : cat.label.toLowerCase() === "výživa" ? "výžive" : cat.label.toLowerCase()}
                 </Link>
               ))}
             </nav>

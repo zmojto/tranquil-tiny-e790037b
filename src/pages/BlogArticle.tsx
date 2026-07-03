@@ -91,6 +91,8 @@ const BlogArticle = () => {
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Samaveša" />
+        <meta property="og:locale" content="sk_SK" />
         <meta property="og:url" content={pageUrl} />
         {article.cover_image_url && (
           <meta property="og:image" content={article.cover_image_url} />

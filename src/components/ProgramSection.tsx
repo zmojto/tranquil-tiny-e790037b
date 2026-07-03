@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const ProgramSection = () => {
   const inclusions = [
     "Štýlové a pohodlné ubytovanie\n",
-    "Denné ranné a večerné jógové lekcie",
+    "Denné ranné a večerné jogové lekcie",
     "Vedená meditácia a dychové cvičenia",
     "Tri ajurvédské alebo rastlinné jedlá denne",
     "Wellness",
