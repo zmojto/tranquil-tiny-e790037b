@@ -35,7 +35,7 @@ const RetreatDetail = () => {
     );
   }
 
-  const pageTitle = `${retreat.name} – Jogový pobyt v destinácii ${retreat.location} | Samaveša`;
+  const pageTitle = `Jogový pobyt ${retreat.location} – ${retreat.dates} | Samaveša`;
   const baseDesc = `${retreat.tagline}. Termín ${retreat.dates}, max. 12 hostí, cena od ${retreat.price.toLocaleString("sk-SK")} €. Joga, meditácia a wellness v destinácii ${retreat.location}.`;
   const pageDescription = baseDesc.length > 160 ? baseDesc.slice(0, 157) + "..." : baseDesc;
   const pageUrl = `${SITE_URL}/retreats/${retreat.id}`;
