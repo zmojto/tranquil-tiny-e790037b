@@ -7,6 +7,7 @@ import NavigationHeader from "@/components/NavigationHeader";
 import FooterSection from "@/components/FooterSection";
 import RetreatBookingForm from "@/components/RetreatBookingForm";
 import { getRetreatById } from "@/data/retreats";
+import { parseRetreatDates } from "@/lib/retreatDates";
 
 const SITE_URL = "https://samavesa.sk";
 
