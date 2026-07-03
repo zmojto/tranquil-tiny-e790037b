@@ -79,8 +79,19 @@ const BlogArticle = () => {
     description: article.excerpt,
     author: { "@type": "Person", name: article.author_name },
     datePublished: article.published_at,
+    dateModified: article.updated_at || article.published_at,
     image: article.cover_image_url,
     publisher: { "@type": "Organization", name: "Samaveša" },
+    mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
+  };
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Domov", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
+      { "@type": "ListItem", position: 3, name: article.title, item: pageUrl },
+    ],
   };
 
   return (
