@@ -33,7 +33,7 @@ const HostsSection = () => {
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
               Sabínka sa s vami podelí o etikoterapiu a rozhovory o spokojnosti v každodennom živote.
               <br />
-              Ali vás prevedie jógovou praxou.
+              Ali vás prevedie jogovou praxou.
               <br />
               Spolu vytvárame priestor, kde má každý z vás možnosť rásť vlastným tempom.
             </p>
@@ -82,7 +82,7 @@ const HostsSection = () => {
             <p className="text-lg text-muted-foreground leading-relaxed">
               Vyštudovala Ekonomickú univerzitu v Bratislave, no jej cesta ju
               zaviedla k hlbšiemu poznaniu tela a mysle. Úspešne absolvovala
-              štúdium Jógy a jógovej terapie na Fakulte telesnej výchovy
+              štúdium Jogy a jogovej terapie na Fakulte telesnej výchovy
               a športu Univerzity Karlovej v Prahe, ako aj štúdium
               Etikoterapie v škole Advaita Mgr. Vladimíra Červenáka.
             </p>

@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 const SITE_URL = "https://samavesa.sk";
 const TITLE = "Stránka nenájdená | Samaveša";
 const DESCRIPTION =
-  "Táto stránka neexistuje alebo bola presunutá. Vráťte sa na úvod a objavte jógové pobyty a blog Samaveša.";
+  "Táto stránka neexistuje alebo bola presunutá. Vráťte sa na úvod a objavte jogové pobyty a blog Samaveša.";
 
 const NotFound = () => {
   const location = useLocation();

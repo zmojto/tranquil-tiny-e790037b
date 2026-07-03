@@ -35,8 +35,8 @@ const RetreatDetail = () => {
     );
   }
 
-  const pageTitle = `${retreat.name} – Jógový pobyt v destinácii ${retreat.location} | Samaveša`;
-  const baseDesc = `${retreat.tagline}. Termín ${retreat.dates}, max. 12 hostí, cena od ${retreat.price.toLocaleString("sk-SK")} €. Jóga, meditácia a wellness v destinácii ${retreat.location}.`;
+  const pageTitle = `${retreat.name} – Jogový pobyt v destinácii ${retreat.location} | Samaveša`;
+  const baseDesc = `${retreat.tagline}. Termín ${retreat.dates}, max. 12 hostí, cena od ${retreat.price.toLocaleString("sk-SK")} €. Joga, meditácia a wellness v destinácii ${retreat.location}.`;
   const pageDescription = baseDesc.length > 160 ? baseDesc.slice(0, 157) + "..." : baseDesc;
   const pageUrl = `${SITE_URL}/retreats/${retreat.id}`;
   const ogImage = retreat.heroImage.startsWith("http") ? retreat.heroImage : `${SITE_URL}${retreat.heroImage}`;
@@ -62,7 +62,7 @@ const RetreatDetail = () => {
           description: `${retreat.tagline}. ${retreat.dates}. ${retreat.location}, ${retreat.country}.`,
           image: ogImage,
           brand: { "@type": "Brand", name: "Samaveša" },
-          category: "Jógový a wellness pobyt",
+          category: "Jogový a wellness pobyt",
           offers: {
             "@type": "Offer",
             url: pageUrl,
@@ -148,7 +148,7 @@ const RetreatDetail = () => {
           </h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             {retreat.description.split('\n\n').map((paragraph, index) => (
-              <p key={index} className={`mb-6 ${paragraph.trim().startsWith('Tento pobyt si môžete objednať') || paragraph.trim().startsWith('Jógový pobyt') ? 'font-bold' : ''}`}>{paragraph}</p>
+              <p key={index} className={`mb-6 ${paragraph.trim().startsWith('Tento pobyt si môžete objednať') || paragraph.trim().startsWith('Jogový pobyt') ? 'font-bold' : ''}`}>{paragraph}</p>
             ))}
           </div>
         </div>

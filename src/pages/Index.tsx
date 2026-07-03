@@ -14,8 +14,8 @@ import FAQSection from "@/components/FAQSection";
 import FooterSection from "@/components/FooterSection";
 
 const SITE_URL = "https://samavesa.sk";
-const TITLE = "Samaveša – Jógové a wellness pobyty v lone prírody";
-const DESCRIPTION = "Transformačné 3 až 7-dňové jógové pobyty na inšpiratívnych miestach sveta. Maximálne 12 hostí, jóga, meditácia a vegetariánska kuchyňa.";
+const TITLE = "Samaveša – Jogové a wellness pobyty v lone prírody";
+const DESCRIPTION = "Transformačné 3 až 7-dňové jogové pobyty na inšpiratívnych miestach sveta. Maximálne 12 hostí, joga, meditácia a vegetariánska kuchyňa.";
 
 const Index = () => {
   useEffect(() => {

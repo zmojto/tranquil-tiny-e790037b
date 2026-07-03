@@ -58,23 +58,23 @@ const _retreats: Retreat[] = [
     highlights: ["Chrámové ceremónie", "Ryžové terasy", "Tradičný tanec"],
     description: `Ponorte sa do duchovného srdca Bali v Ubude, kde sa starobylé chrámy stretávajú s bujnými ryžovými terasami. Náš 7-dňový pobyt v tradičnom balíjskom rezorte vás pozýva na cestu hlbokej duchovnej premeny uprostred jedného z najkrajších miest na svete.
 
-Každý deň začína rannou meditáciou v chráme, po ktorej nasleduje jógová prax na otvorenej terase s výhľadom na ryžové terasy. Popoludnia sú venované objavovaniu balíjskej kultúry – návšteva posvätných chrámov, tradičné tanečné predstavenia a prechádzky po ikonických ryžových terasách Tegallalang.
+Každý deň začína rannou meditáciou v chráme, po ktorej nasleduje jogová prax na otvorenej terase s výhľadom na ryžové terasy. Popoludnia sú venované objavovaniu balíjskej kultúry – návšteva posvätných chrámov, tradičné tanečné predstavenia a prechádzky po ikonických ryžových terasách Tegallalang.
 
 Ubud je duchovným centrom Bali, miestom kde sa umenie, príroda a spiritualita prelínajú v dokonalej harmónii. Odídete s hlbokým pochopením balíjskej filozofie Tri Hita Karana – harmónie medzi človekom, prírodou a duchom.`,
     dailySchedule: [
       { time: "7:00", activity: "Chrámová meditácia" },
-      { time: "8:30", activity: "Hatha jóga na terase (90 min)" },
+      { time: "8:30", activity: "Hatha joga na terase (90 min)" },
       { time: "9:00", activity: "Balíjske raňajky" },
       { time: "10:30", activity: "Kultúrny workshop alebo voľný čas" },
       { time: "14:00", activity: "Organický obed" },
       { time: "16:00", activity: "Návšteva chrámu alebo ryžových terás" },
-      { time: "18:30", activity: "Yin jóga a meditácia" },
+      { time: "18:30", activity: "Yin joga a meditácia" },
       { time: "20:00", activity: "Večera a tradičný tanec (vybrané dni)" },
     ],
     inclusions: [
       "7 nocí v tradičnom balíjskom rezorte",
       "Všetky organické jedlá a občerstvenie",
-      "Denné jógové a meditačné lekcie",
+      "Denné jogové a meditačné lekcie",
       "Chrámové ceremónie s miestnym kňazom",
       "Prechádzka po ryžových terasách Tegallalang",
       "Tradičné tanečné predstavenie",
@@ -97,7 +97,7 @@ Ubud je duchovným centrom Bali, miestom kde sa umenie, príroda a spiritualita 
     highlights: ["Prax pri pláži", "Lekcie surfovania", "Dobrodružstvá v džungli"],
     description: `Objavte kúzlo tichomorského pobrežia Kostariky na našom pobyte s výhľadom na pláž. Nosara, známa ako jedna z najlepších wellness destinácií na svete, ponúka dokonalé prostredie na opätovné spojenie s prírodou a sebou samým.
 
-Prebuďte sa za zvukov revúnov a morských vĺn a potom plynule prechádzajte rannou praxou na našej jógovej platforme s výhľadom na oceán. Po hodine si vyberte medzi lekciami surfovania, túrami v džungli k skrytým vodopádom alebo jednoducho relaxujte v hojdacej sieti pod kývajúcimi sa palmami.
+Prebuďte sa za zvukov revúnov a morských vĺn a potom plynule prechádzajte rannou praxou na našej jogovej platforme s výhľadom na oceán. Po hodine si vyberte medzi lekciami surfovania, túrami v džungli k skrytým vodopádom alebo jednoducho relaxujte v hojdacej sieti pod kývajúcimi sa palmami.
 
 Náš butikový eko-lodge kladie dôraz na udržateľnosť a spojenie s prírodným svetom. Odídete osvežení, inšpirovaní a plne stelesňujúci životný štýl Pura Vida.`,
     dailySchedule: [
@@ -107,13 +107,13 @@ Náš butikový eko-lodge kladie dôraz na udržateľnosť a spojenie s prírodn
       { time: "10:30", activity: "Lekcia surfovania alebo čas na pláži" },
       { time: "14:00", activity: "Obed z farmárskych produktov" },
       { time: "16:00", activity: "Dobrodružná aktivita alebo odpočinok" },
-      { time: "18:30", activity: "Jóga pri západe slnka Yin" },
+      { time: "18:30", activity: "Joga pri západe slnka Yin" },
       { time: "20:30", activity: "Večera a pozorovanie hviezd" },
     ],
     inclusions: [
       "7 nocí v eko-lodge ubytovaní",
       "Všetky jedlá z miestnych organických produktov",
-      "Denná jóga a meditácia",
+      "Denná joga a meditácia",
       "Dve lekcie surfovania s vybavením",
       "Túra k vodopádu v džungli",
       "Návšteva rezervácie divokej zveri",
@@ -136,23 +136,23 @@ Náš butikový eko-lodge kladie dôraz na udržateľnosť a spojenie s prírodn
     highlights: ["Levanduľové polia", "Horská príroda", "Alpské jazerá"],
     description: `Objavte čaro francúzskej Provence vo vysokohorskom prostredí regiónu Haute-Alpes. 8-nočný pobyt vás zavedie do krajiny, kde sa levanduľové polia stretávajú s majestátnymi alpskými štítmi a krištáľovo čistými jazerami.
 
-Každý deň začneme rannou jógovou praxou s výhľadom na hory, po ktorej nasledujú prechádzky v prírode, meditácie pri jazerách a workshopy v atmosfére autentickej provensálskej dediny.
+Každý deň začneme rannou jogovou praxou s výhľadom na hory, po ktorej nasledujú prechádzky v prírode, meditácie pri jazerách a workshopy v atmosfére autentickej provensálskej dediny.
 
 Tento pobyt je ideálnou kombináciou hĺbkovej regenerácie, kontaktu s prírodou a francúzskeho šarmu.`,
     dailySchedule: [
       { time: "7:30", activity: "Ranná meditácia v záhrade" },
-      { time: "8:00", activity: "Hatha jóga (90 min)" },
+      { time: "8:00", activity: "Hatha joga (90 min)" },
       { time: "9:30", activity: "Provensálske raňajky" },
       { time: "11:00", activity: "Túra v Alpách alebo voľný čas" },
       { time: "13:30", activity: "Obed z miestnych produktov" },
       { time: "16:00", activity: "Workshop alebo návšteva levanduľových polí" },
-      { time: "18:30", activity: "Yin jóga a meditácia" },
+      { time: "18:30", activity: "Yin joga a meditácia" },
       { time: "20:00", activity: "Spoločná večera" },
     ],
     inclusions: [
       "8 nocí ubytovania v provensálskom dome",
       "Všetky jedlá z miestnych a sezónnych surovín",
-      "Denné jógové a meditačné lekcie",
+      "Denné jogové a meditačné lekcie",
       "Túry v alpskej prírode",
       "Návšteva levanduľových polí",
       "Workshopy a sprievodné aktivity",
@@ -172,11 +172,11 @@ Tento pobyt je ideálnou kombináciou hĺbkovej regenerácie, kontaktu s prírod
     highlights: ["Historické paláce", "Prechádzky po pobrežných útesoch", "Túry po vinárskej oblasti"],
     description: `Zažite očarujúcu krásu Sintry, miesta svetového dedičstva UNESCO zasadené v kopcoch neďaleko Lisabonu. Naša historická quinta, obklopená storočnými záhradami, poskytuje intímne prostredie pre hlbokú relaxáciu a kultúrne objavovanie.
 
-Tento pobyt kombinuje to najlepšie z portugalskej kultúry s transformačnou jógovou praxou. Ráná sú venované vašej fyzickej a duchovnej praxi, zatiaľ čo popoludnia vás pozývajú preskúmať rozprávkové paláce, dramatické pobrežné útesy a pôvabné miestne dediny.
+Tento pobyt kombinuje to najlepšie z portugalskej kultúry s transformačnou jogovou praxou. Ráná sú venované vašej fyzickej a duchovnej praxi, zatiaľ čo popoludnia vás pozývajú preskúmať rozprávkové paláce, dramatické pobrežné útesy a pôvabné miestne dediny.
 
 Večery spájajú našu skupinu pri večerách pri sviečkach s tým najlepším z portugalskej kuchyne, sprevádzané miestnymi vínami. Toto je dokonalý pobyt pre tých, ktorí chcú spojiť wellness s kultúrnym ponorením.`,
     dailySchedule: [
-      { time: "8:00", activity: "Jemná ranná jóga" },
+      { time: "8:00", activity: "Jemná ranná joga" },
       { time: "8:30", activity: "Portugalské raňajky" },
       { time: "10:00", activity: "Kultúrny výlet" },
       { time: "14:00", activity: "Obed v miestnej reštaurácii" },
@@ -188,7 +188,7 @@ Večery spájajú našu skupinu pri večerách pri sviečkach s tým najlepším
     inclusions: [
       "7 nocí v historickej quinte",
       "Všetky jedlá s portugalským vínom k večeri",
-      "Denná jóga a meditácia",
+      "Denná joga a meditácia",
       "Sprievodená návšteva paláca Pena",
       "Prechádzka po útesoch Cabo da Roca",
       "Túra a degustácia vo vinárskej oblasti",
@@ -212,23 +212,23 @@ Večery spájajú našu skupinu pri večerách pri sviečkach s tým najlepším
     highlights: ["Meditácie pri mori", "Staroveké svätyne a energetické miesta", "Ostrovné dobrodružstvá"],
     description: `Témou 7-dňového pobytu vo Villa Lucilla v pokojnom Protarase na východnom pobreží Cypru je práca s našou životnou energiou. Ponúkame vám nový pohľad – nie ako na niečo, čo „máme alebo nemáme“, ale ako na vedome riadený zdroj, ktorý dokážeme uchopiť, rozvíjať a aktívne využívať v každodennom živote.
 
-Každé ráno začína vedenou meditáciou a dychovými cvičeniami priamo na pláži, po ktorých nasleduje hatha jóga. Popoludnia sú venované objavovaniu prírodných krás okolia – od majestátneho Cape Greco cez morské jaskyne Ayia Napa Sea Caves až po kryštáľovo čistú Konnos Bay a slávnu Fig Tree Bay.
+Každé ráno začína vedenou meditáciou a dychovými cvičeniami priamo na pláži, po ktorých nasleduje hatha joga. Popoludnia sú venované objavovaniu prírodných krás okolia – od majestátneho Cape Greco cez morské jaskyne Ayia Napa Sea Caves až po kryštáľovo čistú Konnos Bay a slávnu Fig Tree Bay.
 
-Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len krátkou prechádzkou od pláže Mimosa Beach. Ubytovanie je v dvojlôžkových izbách s prístupom k bazénu. Všetky jedlá sú vegetariánske a pripravované s láskou. Večery patria workshopom a zdieľaniu.\n\n\nJógový pobyt Cyprus Awakening si môžete objednať do 20. augusta 2026.`,
+Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len krátkou prechádzkou od pláže Mimosa Beach. Ubytovanie je v dvojlôžkových izbách s prístupom k bazénu. Všetky jedlá sú vegetariánske a pripravované s láskou. Večery patria workshopom a zdieľaniu.\n\n\nJogový pobyt Cyprus Awakening si môžete objednať do 20. augusta 2026.`,
     dailySchedule: [
       { time: "7:00", activity: "Vedená meditácia a dychové cvičenia na pláži" },
-      { time: "8:00", activity: "Hatha jóga" },
+      { time: "8:00", activity: "Hatha joga" },
       { time: "9:00", activity: "Raňajky" },
       { time: "10:30", activity: "Workshop alebo voľný čas" },
       { time: "14:00", activity: "Obed" },
       { time: "16:00", activity: "Výlety v okolí (Cape Greco, Ayia Napa Sea Caves, Konnos Bay, Fig Tree Bay)" },
-      { time: "18:30", activity: "Jóga a meditácia" },
+      { time: "18:30", activity: "Joga a meditácia" },
       { time: "20:00", activity: "Večera" },
       { time: "21:00", activity: "Workshop" },
     ],
     inclusions: [
       "7 nocí v exkluzívnej Villa Lucilla s prístupom k bazénu",
-      "Denné ranné a večerné jógové lekcie (hatha, vinyasa)",
+      "Denné ranné a večerné jogové lekcie (hatha, vinyasa)",
       "Vedené meditácie a dychové cvičenia na pláži",
       "Vegetariánske jedlá a občerstvenie po celý deň",
       "Workshopy zamerané na osobný rast",
@@ -264,26 +264,26 @@ Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len kr
     highlights: ["Koliba pri jazere", "Paddleboarding", "Sauna a wellness"],
     description: `Doprajte si pokojný pobyt v srdci Nízkych Tatier, v malebnom Krpáčove. Čakajú vás štyri dni v objatí prírody, naplnené hlbokým oddychom a obnovou. Ubytovanie je v trojlôžkových a štvorlôžkových izbách v kolibe priamo pri jazere.
 
-Každé ráno začína vedenou meditáciou a dychovými cvičeniami v lone prírody, po ktorých nasleduje hatha jóga - jemná, pomalá prax s dlhším zotrvaním v pozíciách prináša hlboké uvoľnenie, regeneráciu a úľavu od napätia. Pomáha znižovať stres, uvoľniť telo a upokojiť myseľ.
+Každé ráno začína vedenou meditáciou a dychovými cvičeniami v lone prírody, po ktorých nasleduje hatha joga - jemná, pomalá prax s dlhším zotrvaním v pozíciách prináša hlboké uvoľnenie, regeneráciu a úľavu od napätia. Pomáha znižovať stres, uvoľniť telo a upokojiť myseľ.
 
 Popoludnia sú venované objavovaniu krás okolia – nenáročné prechádzky, náučné chodníky, Bystrianská jaskyňa, Farma Javor či Černohorská železnička. Na jazere si môžete vyskúšať paddleboarding a po aktívnom dni relaxovať vo fínskej saune alebo vonkajších vyhrievaných kadiach s vírivkou.
 
-Večery patria workshopom na tému Práca s pozornosťou, Mentálna odolnosť - séria inšpiratívnych prednášok z etikoterapie vám prinesie nový pohľad na váš každodenný život a vnútorné prežívanie. Spoločne sa ponoríme do témy mentálnej odolnosti a životnej spokojnosti a budeme hľadať odpovede na dôležité otázky: Do akej miery dokážem ovplyvniť svoje vlastné šťastie? A aké praktické nástroje mám k dispozícii, aby som na ňom mohla aktívne pracovať? \n\nJógový pobyt Krpáčovo Soul si môžete objednať do 20. júna 2026.`,
+Večery patria workshopom na tému Práca s pozornosťou, Mentálna odolnosť - séria inšpiratívnych prednášok z etikoterapie vám prinesie nový pohľad na váš každodenný život a vnútorné prežívanie. Spoločne sa ponoríme do témy mentálnej odolnosti a životnej spokojnosti a budeme hľadať odpovede na dôležité otázky: Do akej miery dokážem ovplyvniť svoje vlastné šťastie? A aké praktické nástroje mám k dispozícii, aby som na ňom mohla aktívne pracovať? \n\nJogový pobyt Krpáčovo Soul si môžete objednať do 20. júna 2026.`,
     dailySchedule: [
       { time: "7:00", activity: "Vedená meditácia a dychové cvičenia" },
-      { time: "8:00", activity: "Hatha jóga" },
+      { time: "8:00", activity: "Hatha joga" },
       { time: "9:00", activity: "Raňajky" },
       { time: "10:30", activity: "Workshop alebo voľný čas" },
       { time: "14:00", activity: "Obed" },
       { time: "16:00", activity: "Výlety v okolí (Bystrianská jaskyňa, Farma Javor, Černohorská železnička, prechádzky)" },
-      { time: "18:30", activity: "Jóga a meditácia" },
+      { time: "18:30", activity: "Joga a meditácia" },
       { time: "20:00", activity: "Večera" },
       { time: "21:00", activity: "Workshop" },
     ],
     inclusions: [
       "4 noci v kolibe pri jazere v trojlôžkových a štvorlôžkových izbách",
       "Vegetariánske a ajurvédske jedlá a občerstvenie",
-      "Denné ranné a večerné jógové lekcie (hatha)",
+      "Denné ranné a večerné jogové lekcie (hatha)",
       "Vedené meditácie a dychové cvičenia",
       "Workshopy na tému Práca s pozornosťou, Mentálna odolnosť",
       "Paddleboarding na jazere",
@@ -319,26 +319,26 @@ Večery patria workshopom na tému Práca s pozornosťou, Mentálna odolnosť - 
     highlights: ["Bazén a jacuzzi", "Tenisový kurt a sauna", "Výlety po okolí Zadaru"],
     description: `Zažite harmóniu tela a mysle v nádhernej kamennej Villa Quince neďaleko Zadaru na dalmatínskom pobreží. Táto luxusná vila s vyhrievaným bazénom, jacuzzi, saunou a tenisovým kurtom poskytuje ideálne prostredie pre 7-dňový transformačný pobyt uprostred stredomorskej prírody. Nachádza v pokojnej dedine Murvica, len niekoľko minút autom od mora. Ubytovanie je v elegantných izbách s výhľadom na záhradu.
 
-Každý deň začína vedenou meditáciou a dychovými cvičeniami, po ktorých nasleduje hatha jóga. Popoludnia sú venované objavovaniu krás dalmatínskeho pobrežia – Národný park Kornati, vodopády Krka, staré mesto Zadar so slávnym morským orgánom, pláž Saharun či ostrov Ugljan a tiež kúpaniu v mori, v bazéne, saunovaniu, prípadne hraniu tenisu. Program je navrhnutý s dôrazom na rovnováhu medzi spoločným časom a priestorom len pre vás.
+Každý deň začína vedenou meditáciou a dychovými cvičeniami, po ktorých nasleduje hatha joga. Popoludnia sú venované objavovaniu krás dalmatínskeho pobrežia – Národný park Kornati, vodopády Krka, staré mesto Zadar so slávnym morským orgánom, pláž Saharun či ostrov Ugljan a tiež kúpaniu v mori, v bazéne, saunovaniu, prípadne hraniu tenisu. Program je navrhnutý s dôrazom na rovnováhu medzi spoločným časom a priestorom len pre vás.
 
-Večery sú venované praktikovaniu jógy a workshopom na tému Mentálny detox. Budeme si spoločne klásť otázky a hľadať na ne odpovede.
+Večery sú venované praktikovaniu jogy a workshopom na tému Mentálny detox. Budeme si spoločne klásť otázky a hľadať na ne odpovede.
 
-Všetky jedlá sú vegetariánske alebo ajurvédske, pripravované s láskou z čerstvých miestnych surovín.\n\n\nJógový pobyt Pura Vida Energia si môžete objednať do 20. júla 2026.`,
+Všetky jedlá sú vegetariánske alebo ajurvédske, pripravované s láskou z čerstvých miestnych surovín.\n\n\nJogový pobyt Pura Vida Energia si môžete objednať do 20. júla 2026.`,
     dailySchedule: [
       { time: "7:00", activity: "Vedená meditácia a dychové cvičenia" },
-      { time: "8:00", activity: "Hatha jóga" },
+      { time: "8:00", activity: "Hatha joga" },
       { time: "9:00", activity: "Raňajky" },
       { time: "10:30", activity: "Workshop alebo voľný čas" },
       { time: "14:00", activity: "Obed" },
       { time: "16:00", activity: "Výlet v okolí" },
-      { time: "18:30", activity: "Jóga a meditácia" },
+      { time: "18:30", activity: "Joga a meditácia" },
       { time: "20:00", activity: "Večera" },
       { time: "21:00", activity: "Workshop" },
     ],
     inclusions: [
       "7 nocí v luxusnej Villa Quince s vyhrievaným bazénom",
       "Vegetariánske a ajurvédske jedlá a občerstvenie",
-      "Denné ranné a večerné jógové lekcie (hatha)",
+      "Denné ranné a večerné jogové lekcie (hatha)",
       "Vedené meditácie a dychové cvičenia",
       "Workshopy zamerané na osobný rast",
       "Prístup k saune, jacuzzi a fitness",
@@ -371,25 +371,25 @@ Všetky jedlá sú vegetariánske alebo ajurvédske, pripravované s láskou z �
     price: 3000,
     spotsLeft: 5,
     highlights: ["Thajská masáž", "Budhistické chrámy", "Ostrovný kajaking"],
-    description: `Prebuďte sa na tropickom ostrove Koh Samui, kde kokosové palmy lemujú krištáľovo čisté pláže a starobylé budhistické chrámy ponúkajú priestor na hlbokú meditáciu. Náš 7-dňový pobyt v luxusnom plážovom rezorte kombinuje thajské wellness tradície s intenzívnou jógovou praxou.
+    description: `Prebuďte sa na tropickom ostrove Koh Samui, kde kokosové palmy lemujú krištáľovo čisté pláže a starobylé budhistické chrámy ponúkajú priestor na hlbokú meditáciu. Náš 7-dňový pobyt v luxusnom plážovom rezorte kombinuje thajské wellness tradície s intenzívnou jogovou praxou.
 
-Každé ráno začína meditáciou pri východe slnka na pláži, po ktorej si môžete vybrať medzi dynamickou jógou alebo lekciou Muay Thai – thajského boxu, ktorý posilňuje telo aj myseľ. Popoludnia ponúkajú kajaking po okolitých ostrovoch, návštevy zlatých chrámov a autentickú thajskú masáž.
+Každé ráno začína meditáciou pri východe slnka na pláži, po ktorej si môžete vybrať medzi dynamickou jogou alebo lekciou Muay Thai – thajského boxu, ktorý posilňuje telo aj myseľ. Popoludnia ponúkajú kajaking po okolitých ostrovoch, návštevy zlatých chrámov a autentickú thajskú masáž.
 
 Koh Samui je ostrov kontrastov – od rušných nočných trhov po tiché meditačné záhrady. Náš pobyt vás prevedie tým najlepším z thajskej kultúry a pomôže vám nájsť vnútorný pokoj v prostredí tropického raja.`,
     dailySchedule: [
       { time: "7:00", activity: "Meditácia pri východe slnka na pláži" },
-      { time: "8:00", activity: "Vinyasa jóga alebo Muay Thai (90 min)" },
+      { time: "8:00", activity: "Vinyasa joga alebo Muay Thai (90 min)" },
       { time: "9:00", activity: "Thajské raňajky" },
       { time: "10:30", activity: "Kajaking alebo návšteva chrámu" },
       { time: "14:00", activity: "Obed z miestnej kuchyne" },
       { time: "16:00", activity: "Thajská masáž alebo voľný čas" },
-      { time: "18:30", activity: "Jóga Nidra a zvuková meditácia" },
+      { time: "18:30", activity: "Joga Nidra a zvuková meditácia" },
       { time: "20:30", activity: "Večera a kultúrny program" },
     ],
     inclusions: [
       "7 nocí v plážovom rezorte",
       "Všetky jedlá z thajskej kuchyne",
-      "Denné jógové a meditačné lekcie",
+      "Denné jogové a meditačné lekcie",
       "Dve tradičné thajské masáže",
       "Návšteva budhistického chrámu s mníchom",
       "Kajak výlet po ostrovoch Ang Thong",
@@ -414,25 +414,25 @@ Koh Samui je ostrov kontrastov – od rušných nočných trhov po tiché medita
 
 Etikoterapia - séria inšpiratívnych prednášok „Spokojnosť je voľba“ vám ponúkne nový pohľad na každodenný život aj vaše vnútorné nastavenie. V rámci nich sa pozrieme bližšie na tému našej životnej spokojnosti. Nakoľko ju mám vo svojich rukách? A aké mám možnosti pri práci s ňou? Súčasťou našej práce bude aj tréning meditačnej praxe.
 
-Jóga - jemná, pomalá prax s dlhším zotrvaním v pozíciách prináša hlboké uvoľnenie, regeneráciu a úľavu od napätia. Pomáha znižovať stres, uvoľniť telo a upokojiť myseľ.
+Joga - jemná, pomalá prax s dlhším zotrvaním v pozíciách prináša hlboké uvoľnenie, regeneráciu a úľavu od napätia. Pomáha znižovať stres, uvoľniť telo a upokojiť myseľ.
 
-Program je navrhnutý s dôrazom na rovnováhu medzi spoločným časom a priestorom len pre vás. Oddýchnite si v saune či vírivke pod hviezdami, ponorte sa do ticha s knihou v útulnej relaxačnej miestnosti alebo objavujte krásu okolitej prírody na peších prechádzkach. Každý moment je pozvaním k regenerácii, uvoľneniu a hlbokému oddychu.\n\n\nJógový pobyt Necpaly Stillness si môžete objednať do 2. septembra 2026.`,
+Program je navrhnutý s dôrazom na rovnováhu medzi spoločným časom a priestorom len pre vás. Oddýchnite si v saune či vírivke pod hviezdami, ponorte sa do ticha s knihou v útulnej relaxačnej miestnosti alebo objavujte krásu okolitej prírody na peších prechádzkach. Každý moment je pozvaním k regenerácii, uvoľneniu a hlbokému oddychu.\n\n\nJogový pobyt Necpaly Stillness si môžete objednať do 2. septembra 2026.`,
 
     dailySchedule: [
       { time: "7:00", activity: "Vedená meditácia a dychové cvičenia" },
-      { time: "8:00", activity: "Hatha jóga – menšia skupina, individuálny prístup" },
+      { time: "8:00", activity: "Hatha joga – menšia skupina, individuálny prístup" },
       { time: "9:00", activity: "Raňajky" },
       { time: "10:30", activity: "Workshop – Spokojnosť je voľba" },
       { time: "14:00", activity: "Obed" },
       { time: "16:00", activity: "Výlety v okolí (túry vo Veľkej Fatre, prírodné pamiatky)" },
-      { time: "18:30", activity: "Jóga a meditácia" },
+      { time: "18:30", activity: "Joga a meditácia" },
       { time: "20:00", activity: "Večera" },
       { time: "21:00", activity: "Wellness – sauna a vírivka pod hviezdami" },
     ],
     inclusions: [
       "3 noci v Chalet Alexandra (2–4 lôžkové izby)",
       "Vegetariánske a ajurvédske jedlá a občerstvenie",
-      "Denné ranné a večerné jógové lekcie (hatha)",
+      "Denné ranné a večerné jogové lekcie (hatha)",
       "Vedené meditácie a dychové cvičenia",
       "Etikoterapia workshopy – Spokojnosť je voľba",
       "Sauna a vírivka pod hviezdami",
@@ -472,9 +472,9 @@ Budeme pracovať s našou mysľou, s jej prepojením na telo, vôľu a naše em�
 
 Veľkou podporou pri našej práci je krásne prostredie Podpoľania. Sme v lone prírody v starostlivých rukách milých domácich, známych svojou skvelou kuchyňou. Stravu chystá pani domáca – chutné vegetariánske jedlá z ich vlastnej záhrady. V lete je k dispozícii bazén.
 
-Čaká nás cvičenie jógy, meditácie, workshopy, kúpanie v bazéne, tanec a večer pri ohni. \n\n\nJógový pobyt Blatinka Roots si môžete objednať do 30. júla 2026.`,
+Čaká nás cvičenie jogy, meditácie, workshopy, kúpanie v bazéne, tanec a večer pri ohni. \n\n\nJogový pobyt Blatinka Roots si môžete objednať do 30. júla 2026.`,
     dailySchedule: [
-      { time: "8:00", activity: "Hatha jóga" },
+      { time: "8:00", activity: "Hatha joga" },
       { time: "9:00", activity: "Raňajky" },
       { time: "10:30", activity: "Workshop – etikoterapia" },
       { time: "14:00", activity: "Obed" },
@@ -485,7 +485,7 @@ Veľkou podporou pri našej práci je krásne prostredie Podpoľania. Sme v lone
     inclusions: [
       "2 noci v útulnom ubytovaní (spoločné izby)",
       "Vegetariánske jedlá z domácej záhrady",
-      "Denné ranné jógové lekcie (hatha)",
+      "Denné ranné jogové lekcie (hatha)",
       "Vedené meditácie a dychové cvičenia",
       "Etikoterapia workshopy – Blatinka Roots",
       "Prístup k bazénu",
