@@ -49,7 +49,6 @@ const Index = () => {
           name: "Samaveša",
           url: SITE_URL,
           description: DESCRIPTION,
-          sameAs: [],
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
