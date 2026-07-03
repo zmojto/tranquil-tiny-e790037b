@@ -115,6 +115,7 @@ const BlogArticle = () => {
         )}
         <link rel="canonical" href={pageUrl} />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
       </Helmet>
       {/* Article Header */}
       <header className="bg-primary/5 py-12 md:py-16">
