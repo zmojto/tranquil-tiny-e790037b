@@ -58,23 +58,55 @@ const RetreatDetail = () => {
         <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:image" content={ogImage} />
         <link rel="canonical" href={pageUrl} />
+        <script type="application/ld+json">{JSON.stringify((() => {
+          const parsed = parseRetreatDates(retreat.dates);
+          const event: Record<string, unknown> = {
+            "@context": "https://schema.org",
+            "@type": "Event",
+            name: retreat.name,
+            description: `${retreat.tagline}. ${retreat.dates}. ${retreat.location}, ${retreat.country}.`,
+            image: ogImage,
+            eventStatus: "https://schema.org/EventScheduled",
+            eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+            location: {
+              "@type": "Place",
+              name: retreat.location,
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: retreat.location,
+                addressCountry: retreat.country,
+              },
+            },
+            organizer: {
+              "@type": "Organization",
+              name: "Samaveša",
+              url: SITE_URL,
+            },
+            offers: {
+              "@type": "Offer",
+              url: pageUrl,
+              price: retreat.price,
+              priceCurrency: "EUR",
+              availability: retreat.spotsLeft > 0
+                ? "https://schema.org/InStock"
+                : "https://schema.org/SoldOut",
+              validFrom: new Date().toISOString().slice(0, 10),
+            },
+          };
+          if (parsed) {
+            event.startDate = parsed.startDate;
+            event.endDate = parsed.endDate;
+          }
+          return event;
+        })())}</script>
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Product",
-          name: retreat.name,
-          description: `${retreat.tagline}. ${retreat.dates}. ${retreat.location}, ${retreat.country}.`,
-          image: ogImage,
-          brand: { "@type": "Brand", name: "Samaveša" },
-          category: "Jogový a wellness pobyt",
-          offers: {
-            "@type": "Offer",
-            url: pageUrl,
-            priceCurrency: "EUR",
-            price: retreat.price,
-            availability: retreat.spotsLeft > 0
-              ? "https://schema.org/InStock"
-              : "https://schema.org/SoldOut",
-          },
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Domov", item: `${SITE_URL}/` },
+            { "@type": "ListItem", position: 2, name: "Pobyty", item: `${SITE_URL}/#retreats` },
+            { "@type": "ListItem", position: 3, name: retreat.name, item: pageUrl },
+          ],
         })}</script>
       </Helmet>
       <NavigationHeader />
