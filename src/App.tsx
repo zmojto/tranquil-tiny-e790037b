@@ -29,7 +29,9 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogArticle />} />
-            <Route path="/retreats/:id" element={<RetreatDetail />} />
+            <Route path="/pobyty/:id" element={<RetreatDetail />} />
+            <Route path="/retreats/:id" element={<RetreatRedirect />} />
+            <Route path="/retreats" element={<Navigate to="/pobyty" replace />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
