@@ -3,7 +3,12 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useParams } from "react-router-dom";
+
+const RetreatRedirect = () => {
+  const { id } = useParams();
+  return <Navigate to={`/pobyty/${id}`} replace />;
+};
 
 const Index = lazy(() => import("./pages/Index"));
 const Blog = lazy(() => import("./pages/Blog"));
@@ -24,7 +29,9 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogArticle />} />
-            <Route path="/retreats/:id" element={<RetreatDetail />} />
+            <Route path="/pobyty/:id" element={<RetreatDetail />} />
+            <Route path="/retreats/:id" element={<RetreatRedirect />} />
+            <Route path="/retreats" element={<Navigate to="/pobyty" replace />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

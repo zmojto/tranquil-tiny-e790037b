@@ -6,11 +6,11 @@
 
 - [/](/): Hlavná stránka — úvod do filozofie, denný program, ponuka pobytov, referencie a často kladené otázky.
 - [/blog](/blog): Blog o vedomom živote, joge, meditácii a wellness.
-- [/retreats/krpacovo-soul](/retreats/krpacovo-soul): Pobyt Krpacovo Soul — 4-dňový jesenný retreat v Nízkych Tatrách.
-- [/retreats/blatinka-retreat](/retreats/blatinka-retreat): Pobyt Blatinka — 3-dňový jarný retreat v prírode.
-- [/retreats/croatia-harmony](/retreats/croatia-harmony): Pobyt Dalmácia Chorvatsko — 7-dňový letný retreat pri mori.
-- [/retreats/cyprus-awakening](/retreats/cyprus-awakening): Pobyt Cyprus — 7-dňový letný retreat na Cypre.
-- [/retreats/necpaly-retreat](/retreats/necpaly-retreat): Pobyt Necpaly — 4-dňový jesenný retreat v Malej Fatre.
+- [/pobyty/krpacovo-soul](/pobyty/krpacovo-soul): Pobyt Krpacovo Soul — 4-dňový jesenný retreat v Nízkych Tatrách.
+- [/pobyty/blatinka-retreat](/pobyty/blatinka-retreat): Pobyt Blatinka — 3-dňový jarný retreat v prírode.
+- [/pobyty/croatia-harmony](/pobyty/croatia-harmony): Pobyt Dalmácia Chorvatsko — 7-dňový letný retreat pri mori.
+- [/pobyty/cyprus-awakening](/pobyty/cyprus-awakening): Pobyt Cyprus — 7-dňový letný retreat na Cypre.
+- [/pobyty/necpaly-retreat](/pobyty/necpaly-retreat): Pobyt Necpaly — 4-dňový jesenný retreat v Malej Fatre.
 
 ## Blog
 
@@ -18,6 +18,6 @@
 
 ## Nepovinné
 
-- [/retreats/bali-bliss](/retreats/bali-bliss): Pripravovaný pobyt Bali.
-- [/retreats/costa-rica](/retreats/costa-rica): Pripravovaný pobyt Kostarika.
-- [/retreats/provence-haute-alpes](/retreats/provence-haute-alpes): Pripravovaný pobyt Provence Haute-Alpes, Francúzsko (júl 2027, 8 nocí).
+- [/pobyty/bali-bliss](/pobyty/bali-bliss): Pripravovaný pobyt Bali.
+- [/pobyty/costa-rica](/pobyty/costa-rica): Pripravovaný pobyt Kostarika.
+- [/pobyty/provence-haute-alpes](/pobyty/provence-haute-alpes): Pripravovaný pobyt Provence Haute-Alpes, Francúzsko (júl 2027, 8 nocí).

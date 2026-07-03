@@ -104,7 +104,7 @@ const EventsSection = () => {
                       </div>
                       {isActive ? (
                         <Button variant="hero" className="w-full" asChild>
-                          <Link to={`/retreats/${retreat.id}`}>
+                          <Link to={`/pobyty/${retreat.id}`}>
                             Preskúmaj pobyt
                           </Link>
                         </Button>
