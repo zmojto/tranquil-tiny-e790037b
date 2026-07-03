@@ -38,9 +38,9 @@ const FooterSection = () => {
           <div className="text-center">
             <h4 className="font-serif text-lg mb-4">Rýchle odkazy</h4>
             <nav className="flex flex-col gap-2">
-              <a href="#about" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">O nás</a>
-              <a href="#retreats" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Naše pobyty</a>
-              <a href="#program" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Program</a>
+              <Link to="/#about" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">O nás</Link>
+              <Link to="/#retreats" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Naše pobyty</Link>
+              <Link to="/#program" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Program</Link>
               <Link to="/blog" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Blog</Link>
             </nav>
           </div>
