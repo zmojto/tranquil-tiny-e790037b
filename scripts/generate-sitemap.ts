@@ -83,7 +83,7 @@ async function main() {
     { path: "/", lastmod: today, changefreq: "weekly", priority: "1.0" },
     { path: "/blog", lastmod: today, changefreq: "weekly", priority: "0.8" },
     ...RETREAT_IDS.map<Entry>((id) => ({
-      path: `/retreats/${id}`,
+      path: `/pobyty/${id}`,
       lastmod: today,
       changefreq: "monthly",
       priority: "0.8",
