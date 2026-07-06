@@ -1,5 +1,5 @@
-if (!Object.hasOwn) {
-  Object.hasOwn = (obj, prop) =>
+if (!("hasOwn" in Object)) {
+  (Object as any).hasOwn = (obj: any, prop: PropertyKey) =>
     Object.prototype.hasOwnProperty.call(obj, prop);
 }
 
