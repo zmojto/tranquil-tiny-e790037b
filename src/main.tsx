@@ -1,3 +1,8 @@
+if (!Object.hasOwn) {
+  Object.hasOwn = (obj, prop) =>
+    Object.prototype.hasOwnProperty.call(obj, prop);
+}
+
 import { createRoot, hydrateRoot } from "react-dom/client";
 import { HelmetProvider } from "react-helmet-async";
 import App from "./App.tsx";
