@@ -31,7 +31,7 @@ const HostsSection = () => {
               len zážitok.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              Sabínka sa s vami podelí o etikoterapiu a rozhovory o spokojnosti v každodennom živote.
+              Sabínka sa s vami podelí o svoje skúsenosti s etikoterapiou a meditačnou praxou.
               <br />
               Ali vás prevedie jogovou praxou.
               <br />
