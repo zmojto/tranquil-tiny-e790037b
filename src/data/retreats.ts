@@ -472,7 +472,7 @@ Budeme pracovať s našou mysľou, s jej prepojením na telo, vôľu a naše em�
 
 Veľkou podporou pri našej práci je krásne prostredie Podpoľania. Sme v lone prírody v starostlivých rukách milých domácich, známych svojou skvelou kuchyňou. Stravu chystá pani domáca – chutné vegetariánske jedlá z ich vlastnej záhrady. V lete je k dispozícii bazén.
 
-Čaká nás cvičenie jogy, meditácie, workshopy, kúpanie v bazéne, tanec a večer pri ohni. \n\n\nJogový pobyt Blatinka Roots si môžete objednať do 30. júla 2026.`,
+Čaká nás cvičenie jogy, meditácie, workshopy, kúpanie v bazéne, tanec a večer pri ohni. \n\n\nJogový pobyt Blatinka Roots si môžete objednať do 8. augusta 2026.`,
     dailySchedule: [
       { time: "8:00", activity: "Hatha joga" },
       { time: "9:00", activity: "Raňajky" },
