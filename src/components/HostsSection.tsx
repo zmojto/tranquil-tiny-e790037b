@@ -22,7 +22,7 @@ const HostsSection = () => {
               Vaše sprievodkyne
             </span>
             <h2 className="text-4xl md:text-5xl font-serif text-foreground mt-4 mb-6">
-              Sabínka a Ali vás povedú
+              Sabína a Ali vás povedú
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
               Tešíme sa na spoločný čas s vami. Každý pobyt pripravujeme s láskou,
