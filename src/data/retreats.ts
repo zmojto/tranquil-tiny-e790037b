@@ -323,7 +323,7 @@ Každý deň začína vedenou meditáciou a dychovými cvičeniami, po ktorých 
 
 Večery sú venované praktikovaniu jogy a workshopom na tému Mentálny detox. Budeme si spoločne klásť otázky a hľadať na ne odpovede.
 
-Všetky jedlá sú vegetariánske alebo ajurvédske, pripravované s láskou z čerstvých miestnych surovín.\n\n\nJogový pobyt Pura Vida Energia si môžete objednať do 20. júla 2026.`,
+Všetky jedlá sú vegetariánske alebo ajurvédske, pripravované s láskou z čerstvých miestnych surovín.\n\n\nJogový pobyt Pura Vida Energia pripravujeme na jún 2027. Rezervácie budú otvorené čoskoro.`,
     dailySchedule: [
       { time: "7:00", activity: "Vedená meditácia a dychové cvičenia" },
       { time: "8:00", activity: "Hatha joga" },
