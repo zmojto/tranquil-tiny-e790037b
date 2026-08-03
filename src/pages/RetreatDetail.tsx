@@ -164,13 +164,19 @@ const RetreatDetail = () => {
             <span className="text-muted-foreground">za osobu</span>
           </div>
 
-          <Button 
-            variant="hero" 
-            size="lg"
-            onClick={() => document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" })}
-          >
-            Rezervovať miesto
-          </Button>
+          {isActive ? (
+            <Button
+              variant="hero"
+              size="lg"
+              onClick={() => document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" })}
+            >
+              Rezervovať miesto
+            </Button>
+          ) : (
+            <Button variant="heroOutline" size="lg" disabled className="opacity-70">
+              Čoskoro
+            </Button>
+          )}
         </div>
       </section>
 
