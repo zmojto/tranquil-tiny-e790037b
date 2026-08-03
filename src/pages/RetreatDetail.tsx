@@ -43,6 +43,7 @@ const RetreatDetail = () => {
   const pageUrl = `${SITE_URL}/pobyty/${retreat.id}`;
   const ogImage = retreat.heroImage.startsWith("http") ? retreat.heroImage : `${SITE_URL}${retreat.heroImage}`;
   const parsedDates = parseRetreatDates(retreat.dates);
+  const isActive = activeIds.includes(retreat.id);
   const eventSchema = parsedDates
     ? {
         "@context": "https://schema.org",
