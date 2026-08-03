@@ -313,9 +313,9 @@ Večery patria workshopom na tému Práca s pozornosťou, Mentálna odolnosť - 
     tagline: "Magická Dalmácia",
     location: "Murvica, Zadar",
     country: "Chorvátsko",
-    dates: "12. – 19. septembra 2026",
+    dates: "Jún 2027",
     price: 1550,
-    spotsLeft: 0,
+    spotsLeft: 10,
     highlights: ["Bazén a jacuzzi", "Tenisový kurt a sauna", "Výlety po okolí Zadaru"],
     description: `Zažite harmóniu tela a mysle v nádhernej kamennej Villa Quince neďaleko Zadaru na dalmatínskom pobreží. Táto luxusná vila s vyhrievaným bazénom, jacuzzi, saunou a tenisovým kurtom poskytuje ideálne prostredie pre 7-dňový transformačný pobyt uprostred stredomorskej prírody. Nachádza v pokojnej dedine Murvica, len niekoľko minút autom od mora. Ubytovanie je v elegantných izbách s výhľadom na záhradu.
 

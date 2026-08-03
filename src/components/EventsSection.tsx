@@ -5,8 +5,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { retreats } from "@/data/retreats";
 
-const activeIds = ["krpacovo-soul", "blatinka-retreat", "croatia-harmony", "cyprus-awakening", "necpaly-retreat"];
-const upcomingIds = ["bali-bliss", "costa-rica", "provence-haute-alpes"];
+const activeIds = ["blatinka-retreat", "krpacovo-soul", "cyprus-awakening", "necpaly-retreat"];
+const upcomingIds = ["bali-bliss", "costa-rica", "provence-haute-alpes", "croatia-harmony"];
 
 const orderedIds = [...activeIds, ...upcomingIds];
 
