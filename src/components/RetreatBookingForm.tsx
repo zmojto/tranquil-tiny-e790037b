@@ -29,9 +29,10 @@ type BookingFormValues = z.infer<typeof bookingSchema>;
 
 interface RetreatBookingFormProps {
   retreat: Retreat;
+  isActive?: boolean;
 }
 
-const RetreatBookingForm = ({ retreat }: RetreatBookingFormProps) => {
+const RetreatBookingForm = ({ retreat, isActive = true }: RetreatBookingFormProps) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
