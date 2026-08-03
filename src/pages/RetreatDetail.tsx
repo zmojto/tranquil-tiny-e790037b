@@ -323,7 +323,7 @@ const RetreatDetail = () => {
       })()}
 
       {/* Booking Form Section */}
-      <RetreatBookingForm retreat={retreat} />
+      <RetreatBookingForm retreat={retreat} isActive={isActive} />
 
       <FooterSection />
     </div>
