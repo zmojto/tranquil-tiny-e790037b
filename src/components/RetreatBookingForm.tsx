@@ -131,80 +131,89 @@ const RetreatBookingForm = ({ retreat, isActive = true }: RetreatBookingFormProp
 
           {/* Booking Form */}
           <div className="md:col-span-3 bg-background rounded-2xl border border-primary/10 p-6 md:p-8">
-            <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
-                <FormField
-                  control={form.control}
-                  name="name"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Celé meno</FormLabel>
-                      <FormControl>
-                        <Input placeholder="Vaše celé meno" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
+            {isActive ? (
+              <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
+                  <FormField
+                    control={form.control}
+                    name="name"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Celé meno</FormLabel>
+                        <FormControl>
+                          <Input placeholder="Vaše celé meno" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
 
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>E-mail</FormLabel>
-                      <FormControl>
-                        <Input type="email" placeholder="vas@email.sk" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
+                  <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>E-mail</FormLabel>
+                        <FormControl>
+                          <Input type="email" placeholder="vas@email.sk" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
 
-                <FormField
-                  control={form.control}
-                  name="phone"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Telefónne číslo</FormLabel>
-                      <FormControl>
-                        <Input type="tel" placeholder="+421 900 000 000" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
+                  <FormField
+                    control={form.control}
+                    name="phone"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Telefónne číslo</FormLabel>
+                        <FormControl>
+                          <Input type="tel" placeholder="+421 900 000 000" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
 
-                <FormField
-                  control={form.control}
-                  name="message"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Špeciálne požiadavky (voliteľné)</FormLabel>
-                      <FormControl>
-                        <Textarea 
-                          placeholder="Stravovanie, preferencie izby, otázky..."
-                          className="resize-none"
-                          rows={4}
-                          {...field} 
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
+                  <FormField
+                    control={form.control}
+                    name="message"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Špeciálne požiadavky (voliteľné)</FormLabel>
+                        <FormControl>
+                          <Textarea 
+                            placeholder="Stravovanie, preferencie izby, otázky..."
+                            className="resize-none"
+                            rows={4}
+                            {...field} 
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
 
-                <Button
-                  type="submit"
-                  variant="hero"
-                  size="lg"
-                  className="w-full"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? "Odosiela sa..." : "Odoslať rezerváciu"}
-                </Button>
-              </form>
-            </Form>
+                  <Button
+                    type="submit"
+                    variant="hero"
+                    size="lg"
+                    className="w-full"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? "Odosiela sa..." : "Odoslať rezerváciu"}
+                  </Button>
+                </form>
+              </Form>
+            ) : (
+              <div className="h-full flex flex-col items-center justify-center text-center space-y-4">
+                <p className="font-serif text-2xl text-foreground">Pripravujeme</p>
+                <p className="text-muted-foreground">
+                  Rezervácie pre tento pobyt ešte nie sú otvorené. Termín a ďalšie informácie upresníme čoskoro.
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>
