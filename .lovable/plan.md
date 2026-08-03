@@ -1,28 +1,33 @@
+# Plán úpravy poradia a statusu pobytov
+
 ## Cieľ
-Zmeniť len meta tagy (title, description, og:*) tak, aby namiesto "wellness" bolo "mindfulness". Viditeľný text stránky sa nemení.
+Upraviť zobrazenie pobytov na homepage a v prehľade:
+- **Krpáčovo Soul** presunúť na **druhú pozíciu** v aktívnych pobytoch.
+- **Pura Vida Energia** (Chorvátsko) presunúť do sekcie **Pripravujeme** s termínom **jún 2027** a nastaviť 10 zostávajúcich miest.
 
-## 1. index.html
-- `<title>` → `Samaveša – Jogové a mindfulness pobyty v lone prírody`
-- `og:title` → rovnaký text
-- `meta description` a `og:description` → `Jogové a mindfulness pobyty v lone prírody. Joga, meditácia, zdravá strava a oddych od každodenného zhonu. Pozrite si aktuálne termíny.`
-- Ostatné tagy (canonical, og:url, og:image, twitter) ostávajú nezmenené.
+## Potvrdené detaily
+- Nové poradie aktívnych pobytov: Blatinka Roots → Krpáčovo Soul → Cyprus Awakening → Necpaly Retreat.
+- Pura Vida Energia pôjde medzi "Pripravujeme" spolu s Bali Bliss, Costa Rica Escape a Provence Beauty.
+- Termín Pura Vida Energia sa zmení na "Jún 2027".
+- Cena Pura Vida Energia zostáva aktuálna.
+- Počet miest Pura Vida Energia sa nastaví na 10.
 
-## 2. src/pages/Index.tsx (Helmet – tento prebíja index.html pre prehliadač/Googlebot)
-Aktuálne generuje vlastný title/description:
-- `TITLE` → `Samaveša – Jogové a mindfulness pobyty v lone prírody`
-- `DESCRIPTION` → `Transformačné 3 až 7-dňové jogové a mindfulness pobyty na inšpiratívnych miestach sveta. Maximálne 12 hostí, joga, meditácia a vegetariánska kuchyňa.`
-- Tieto konštanty sa používajú aj v og:title/og:description a v JSON-LD Organization popise, takže sa prepíšu konzistentne jednou zmenou.
+## Technické. kroky
+1. Upraviť `src/components/EventsSection.tsx`:
+   - Zmeniť `activeIds` na: `["blatinka-retreat", "krpacovo-soul", "cyprus-awakening", "necpaly-retreat"]`.
+   - Pridať `"croatia-harmony"` do `upcomingIds`.
 
-## 3. Kontrola
-Po zmene vypíšem finálne znenie a dĺžky:
+2. Upraviť `src/data/retreats.ts`:
+   - Nájsť objekt `id: "croatia-harmony"`.
+   - Zmeniť pole `dates` na `"Jún 2027"`.
+   - Zmeniť pole `spotsLeft` na `10`.
 
-```text
-index.html title          – "Samaveša – Jogové a mindfulness pobyty v lone prírody" (54 znakov)
-index.html description    – 143 znakov
-Index.tsx TITLE           – rovnaký ako index.html title
-Index.tsx DESCRIPTION     – ~152 znakov
-```
-Skontrolujem, či title < 60 a description < 160 znakov, a či v týchto meta tagoch nezostalo slovo "wellness".
+3. Overiť renderovanie v `src/pages/RetreatDetail.tsx`:
+   - Skontrolovať, že sa pre upcoming pobyty správne zobrazuje štítok "Pripravujeme" a tlačidlo "Čoskoro".
+   - Ubezpečiť sa, že Event JSON-LD sa negeneruje, keď `parseRetreatDates` vráti `null` (čo sa stane pri "Jún 2027").
 
-## Poznámka
-Inde na webe (nadpisy, sekcie, články, ostatné podstránky) nič nemením.
+4. Overiť `public/sitemap.xml` a `scripts/generate-sitemap.ts`:
+   - URL `/pobyty/croatia-harmony` už existuje, takže nie je potrebná zmena.
+   - Skontrolovať, že sa nezmenili ID pobytov a sitemap zostáva platný.
+
+5. Spustiť build a overiť, že sa stránka načíta bez chýb a poradie/sekcie sú správne.
