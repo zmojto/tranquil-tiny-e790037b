@@ -8,6 +8,7 @@ import FooterSection from "@/components/FooterSection";
 import RetreatBookingForm from "@/components/RetreatBookingForm";
 import { getRetreatById } from "@/data/retreats";
 import { parseRetreatDates } from "@/lib/retreatDates";
+import { activeIds } from "@/components/EventsSection";
 
 const SITE_URL = "https://samavesa.sk";
 
@@ -42,6 +43,7 @@ const RetreatDetail = () => {
   const pageUrl = `${SITE_URL}/pobyty/${retreat.id}`;
   const ogImage = retreat.heroImage.startsWith("http") ? retreat.heroImage : `${SITE_URL}${retreat.heroImage}`;
   const parsedDates = parseRetreatDates(retreat.dates);
+  const isActive = activeIds.includes(retreat.id);
   const eventSchema = parsedDates
     ? {
         "@context": "https://schema.org",
@@ -162,13 +164,19 @@ const RetreatDetail = () => {
             <span className="text-muted-foreground">za osobu</span>
           </div>
 
-          <Button 
-            variant="hero" 
-            size="lg"
-            onClick={() => document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" })}
-          >
-            Rezervovať miesto
-          </Button>
+          {isActive ? (
+            <Button
+              variant="hero"
+              size="lg"
+              onClick={() => document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" })}
+            >
+              Rezervovať miesto
+            </Button>
+          ) : (
+            <Button variant="heroOutline" size="lg" disabled className="opacity-70">
+              Čoskoro
+            </Button>
+          )}
         </div>
       </section>
 
@@ -315,7 +323,7 @@ const RetreatDetail = () => {
       })()}
 
       {/* Booking Form Section */}
-      <RetreatBookingForm retreat={retreat} />
+      <RetreatBookingForm retreat={retreat} isActive={isActive} />
 
       <FooterSection />
     </div>

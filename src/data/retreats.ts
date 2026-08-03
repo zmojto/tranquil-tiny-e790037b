@@ -313,9 +313,9 @@ Večery patria workshopom na tému Práca s pozornosťou, Mentálna odolnosť - 
     tagline: "Magická Dalmácia",
     location: "Murvica, Zadar",
     country: "Chorvátsko",
-    dates: "12. – 19. septembra 2026",
+    dates: "Jún 2027",
     price: 1550,
-    spotsLeft: 0,
+    spotsLeft: 10,
     highlights: ["Bazén a jacuzzi", "Tenisový kurt a sauna", "Výlety po okolí Zadaru"],
     description: `Zažite harmóniu tela a mysle v nádhernej kamennej Villa Quince neďaleko Zadaru na dalmatínskom pobreží. Táto luxusná vila s vyhrievaným bazénom, jacuzzi, saunou a tenisovým kurtom poskytuje ideálne prostredie pre 7-dňový transformačný pobyt uprostred stredomorskej prírody. Nachádza v pokojnej dedine Murvica, len niekoľko minút autom od mora. Ubytovanie je v elegantných izbách s výhľadom na záhradu.
 
@@ -323,7 +323,7 @@ Každý deň začína vedenou meditáciou a dychovými cvičeniami, po ktorých 
 
 Večery sú venované praktikovaniu jogy a workshopom na tému Mentálny detox. Budeme si spoločne klásť otázky a hľadať na ne odpovede.
 
-Všetky jedlá sú vegetariánske alebo ajurvédske, pripravované s láskou z čerstvých miestnych surovín.\n\n\nJogový pobyt Pura Vida Energia si môžete objednať do 20. júla 2026.`,
+Všetky jedlá sú vegetariánske alebo ajurvédske, pripravované s láskou z čerstvých miestnych surovín.\n\n\nJogový pobyt Pura Vida Energia pripravujeme na jún 2027. Rezervácie budú otvorené čoskoro.`,
     dailySchedule: [
       { time: "7:00", activity: "Vedená meditácia a dychové cvičenia" },
       { time: "8:00", activity: "Hatha joga" },
