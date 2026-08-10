@@ -1,0 +1,1 @@
+UPDATE public.articles SET cover_image_url = 'https://cmufbtkjjbqqrnkbgddi.supabase.co/storage/v1/object/public/article-images/kto-vo-vas-prave-premysla-sky.jpg' WHERE slug = 'kto-vo-vas-prave-premysla';
