@@ -214,7 +214,7 @@ Večery spájajú našu skupinu pri večerách pri sviečkach s tým najlepším
 
 Každé ráno začína vedenou meditáciou a dychovými cvičeniami priamo na pláži, po ktorých nasleduje hatha joga. Popoludnia sú venované objavovaniu prírodných krás okolia – od majestátneho Cape Greco cez morské jaskyne Ayia Napa Sea Caves až po kryštáľovo čistú Konnos Bay a slávnu Fig Tree Bay.
 
-Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len krátkou prechádzkou od pláže Mimosa Beach. Ubytovanie je v dvojlôžkových izbách s prístupom k bazénu. Všetky jedlá sú vegetariánske a pripravované s láskou. Večery patria workshopom a zdieľaniu.\n\n\nJogový pobyt Cyprus Awakening si môžete objednať do 10. augusta 2026.`,
+Villa Lucilla sa nachádza v tichej časti Protarasu (Anthorina Gardens), len krátkou prechádzkou od pláže Mimosa Beach. Ubytovanie je v dvojlôžkových izbách s prístupom k bazénu. Všetky jedlá sú vegetariánske a pripravované s láskou. Večery patria workshopom a zdieľaniu.\n\n\nJogový pobyt Cyprus Awakening si môžete objednať do 10. septembra 2026.`,
     dailySchedule: [
       { time: "7:00", activity: "Vedená meditácia a dychové cvičenia na pláži" },
       { time: "8:00", activity: "Hatha joga" },
