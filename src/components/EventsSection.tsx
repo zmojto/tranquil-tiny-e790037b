@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { retreats } from "@/data/retreats";
 
 export const activeIds = ["krpacovo-soul", "cyprus-awakening", "necpaly-retreat"];
-export const upcomingIds = ["blatinka-retreat", "bali-bliss", "costa-rica", "provence-haute-alpes", "croatia-harmony", "apulia-gargano"];
+export const upcomingIds = ["apulia-gargano", "provence-haute-alpes", "blatinka-retreat", "bali-bliss", "costa-rica", "croatia-harmony"];
 
 const orderedIds = [...activeIds, ...upcomingIds];
 
