@@ -208,7 +208,7 @@ Večery spájajú našu skupinu pri večerách pri sviečkach s tým najlepším
     dates: "28. septembra – 4. októbra 2026",
     price: 1100,
     currency: "€",
-    spotsLeft: 6,
+    spotsLeft: 5,
     highlights: ["Meditácie pri mori", "Staroveké svätyne a energetické miesta", "Ostrovné dobrodružstvá"],
     description: `Témou 7-dňového pobytu vo Villa Lucilla v pokojnom Protarase na východnom pobreží Cypru je práca s našou životnou energiou. Ponúkame vám nový pohľad – nie ako na niečo, čo „máme alebo nemáme“, ale ako na vedome riadený zdroj, ktorý dokážeme uchopiť, rozvíjať a aktívne využívať v každodennom živote.
 
