@@ -500,8 +500,8 @@ Veľkou podporou pri našej práci je krásne prostredie Podpoľania. Sme v lone
     ],
     travelInfo: {
       transportType: "individual",
-      outbound: { flight: "Individuálna doprava autom", time: "Príchod 14. augusta" },
-      returnFlight: { flight: "Individuálna doprava autom", time: "Odchod 16. augusta" },
+      outbound: { flight: "Individuálna doprava autom", time: "Príchod 13. augusta" },
+      returnFlight: { flight: "Individuálna doprava autom", time: "Odchod 15. augusta" },
       ticketPrice: "individuálne",
       note: "Doprava je individuálna – autom.",
     },
@@ -548,8 +548,8 @@ Termín pobytu sa upresní.`,
   },
 ];
 
-const activeOrder = ["blatinka-retreat", "krpacovo-soul", "cyprus-awakening", "necpaly-retreat"];
-const upcomingOrder = ["bali-bliss", "costa-rica", "provence-haute-alpes", "croatia-harmony", "apulia-gargano", "portugal-soul", "thailand-awakening"];
+const activeOrder = ["krpacovo-soul", "cyprus-awakening", "necpaly-retreat"];
+const upcomingOrder = ["blatinka-retreat", "bali-bliss", "costa-rica", "provence-haute-alpes", "croatia-harmony", "apulia-gargano", "portugal-soul", "thailand-awakening"];
 export const retreats: Retreat[] = [
   ..._retreats.filter(r => activeOrder.includes(r.id)).sort((a, b) => activeOrder.indexOf(a.id) - activeOrder.indexOf(b.id)),
   ..._retreats.filter(r => upcomingOrder.includes(r.id)).sort((a, b) => upcomingOrder.indexOf(a.id) - upcomingOrder.indexOf(b.id)),
