@@ -21,3 +21,4 @@
 - [/pobyty/bali-bliss](/pobyty/bali-bliss): Pripravovaný pobyt Bali.
 - [/pobyty/costa-rica](/pobyty/costa-rica): Pripravovaný pobyt Kostarika.
 - [/pobyty/provence-haute-alpes](/pobyty/provence-haute-alpes): Pripravovaný pobyt Provence Haute-Alpes, Francúzsko (júl 2027, 8 nocí).
+- [/pobyty/apulia-gargano](/pobyty/apulia-gargano): Pripravovaný pobyt Čarovná Apúlia, Taliansko (máj 2027, termín sa upresní).

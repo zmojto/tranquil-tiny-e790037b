@@ -506,10 +506,50 @@ Veľkou podporou pri našej práci je krásne prostredie Podpoľania. Sme v lone
       note: "Doprava je individuálna – autom.",
     },
   },
+  {
+    id: "apulia-gargano",
+    name: "Čarovná Apúlia",
+    tagline: "Po stopách archanjela Michaela",
+    location: "Monte Sant'Angelo, Gargano",
+    country: "Taliansko",
+    dates: "Máj 2027 – termín sa upresní",
+    price: 900,
+    spotsLeft: 10,
+    highlights: [
+      "Pútnické miesto pápežov a svätcov",
+      "Práca so živlom ohňa",
+      "Joga pre začiatočníkov",
+    ],
+    description: `Zažite čarovnú Apúliu na polostrove Gargano v južnom Taliansku. Naša cesta nás zavedie do Monte Sant'Angelo – starobylého pútnického miesta, ktoré po stáročia navštevovali pápeži aj svätci. Je to miesto, kde sa podľa tradície zjavil archanjel Michael.
+
+Pobyt prepojí prácu so živlom ohňa s jemnou jogovou praxou určenou aj pre úplných začiatočníkov. Spoločne budeme objavovať posvätné miesta, meditovať a vnímať silu tohto výnimočného prostredia, kde sa história, spiritualita a príroda stretávajú v jedinečnej harmónii.
+
+Termín pobytu sa upresní.`,
+    dailySchedule: [
+      { time: "7:00", activity: "Vedená meditácia a dychové cvičenia" },
+      { time: "8:00", activity: "Joga pre začiatočníkov" },
+      { time: "9:00", activity: "Raňajky" },
+      { time: "10:30", activity: "Workshop – práca so živlom ohňa" },
+      { time: "14:00", activity: "Obed" },
+      { time: "16:00", activity: "Návšteva svätyne Monte Sant'Angelo alebo prechádzka v Gargane" },
+      { time: "18:30", activity: "Joga a meditácia" },
+      { time: "20:00", activity: "Večera" },
+    ],
+    inclusions: [
+      "Ubytovanie v blízkosti Monte Sant'Angelo",
+      "Vegetariánske jedlá a občerstvenie",
+      "Denné jogové lekcie pre začiatočníkov",
+      "Vedené meditácie a dychové cvičenia",
+      "Workshopy – práca so živlom ohňa",
+      "Sprievodená návšteva pútnického miesta",
+    ],
+    heroImage: heroRetreat,
+    galleryImages: [galleryMeditation, galleryNature, galleryFood, galleryPool, gallerySpa, galleryRoom],
+  },
 ];
 
-const activeOrder = ["cyprus-awakening", "krpacovo-soul", "blatinka-retreat", "croatia-harmony", "necpaly-retreat"];
-const upcomingOrder = ["bali-bliss", "costa-rica", "provence-haute-alpes", "portugal-soul", "thailand-awakening"];
+const activeOrder = ["blatinka-retreat", "krpacovo-soul", "cyprus-awakening", "necpaly-retreat"];
+const upcomingOrder = ["bali-bliss", "costa-rica", "provence-haute-alpes", "croatia-harmony", "apulia-gargano", "portugal-soul", "thailand-awakening"];
 export const retreats: Retreat[] = [
   ..._retreats.filter(r => activeOrder.includes(r.id)).sort((a, b) => activeOrder.indexOf(a.id) - activeOrder.indexOf(b.id)),
   ..._retreats.filter(r => upcomingOrder.includes(r.id)).sort((a, b) => upcomingOrder.indexOf(a.id) - upcomingOrder.indexOf(b.id)),

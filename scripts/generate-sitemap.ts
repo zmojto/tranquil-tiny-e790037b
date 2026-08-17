@@ -18,6 +18,7 @@ const RETREAT_IDS = [
   "thailand-awakening",
   "necpaly-retreat",
   "blatinka-retreat",
+  "apulia-gargano",
 ];
 
 interface Entry {
