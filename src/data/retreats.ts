@@ -462,9 +462,9 @@ Program je navrhnutý s dôrazom na rovnováhu medzi spoločným časom a priest
     tagline: "Malebné Podpoľanie",
     location: "Blatinka, Podpoľanie",
     country: "Slovensko",
-    dates: "14. – 16. augusta 2026",
-    price: 250,
-    spotsLeft: 0,
+    dates: "13. – 15. augusta 2027",
+    price: 300,
+    spotsLeft: 10,
     highlights: ["Etikoterapia", "Bazén", "Krása Podpoľania"],
     description: `Srdečne vás pozývame na víkendové stretnutie na Blatinke. Spoločne sa pozrieme na to, ako sme spokojní so svojim životom, tak, ako ho žijeme. Zameriame sa na programy, ktoré riadia náš život a povieme si viac o tom, ako sa stať tvorcom svojho vlastného života a nakoľko ho máme vo svojich vlastných rukách.
 
@@ -472,7 +472,7 @@ Budeme pracovať s našou mysľou, s jej prepojením na telo, vôľu a naše em�
 
 Veľkou podporou pri našej práci je krásne prostredie Podpoľania. Sme v lone prírody v starostlivých rukách milých domácich, známych svojou skvelou kuchyňou. Stravu chystá pani domáca – chutné vegetariánske jedlá z ich vlastnej záhrady. V lete je k dispozícii bazén.
 
-Čaká nás cvičenie jogy, meditácie, workshopy, kúpanie v bazéne, tanec a večer pri ohni. \n\n\nJogový pobyt Blatinka Roots si môžete objednať do 8. augusta 2026.`,
+Čaká nás cvičenie jogy, meditácie, workshopy, kúpanie v bazéne, tanec a večer pri ohni.`,
     dailySchedule: [
       { time: "8:00", activity: "Hatha joga" },
       { time: "9:00", activity: "Raňajky" },
@@ -500,8 +500,8 @@ Veľkou podporou pri našej práci je krásne prostredie Podpoľania. Sme v lone
     ],
     travelInfo: {
       transportType: "individual",
-      outbound: { flight: "Individuálna doprava autom", time: "Príchod 14. augusta" },
-      returnFlight: { flight: "Individuálna doprava autom", time: "Odchod 16. augusta" },
+      outbound: { flight: "Individuálna doprava autom", time: "Príchod 13. augusta" },
+      returnFlight: { flight: "Individuálna doprava autom", time: "Odchod 15. augusta" },
       ticketPrice: "individuálne",
       note: "Doprava je individuálna – autom.",
     },
@@ -548,8 +548,8 @@ Termín pobytu sa upresní.`,
   },
 ];
 
-const activeOrder = ["blatinka-retreat", "krpacovo-soul", "cyprus-awakening", "necpaly-retreat"];
-const upcomingOrder = ["bali-bliss", "costa-rica", "provence-haute-alpes", "croatia-harmony", "apulia-gargano", "portugal-soul", "thailand-awakening"];
+const activeOrder = ["krpacovo-soul", "cyprus-awakening", "necpaly-retreat"];
+const upcomingOrder = ["blatinka-retreat", "bali-bliss", "costa-rica", "provence-haute-alpes", "croatia-harmony", "apulia-gargano", "portugal-soul", "thailand-awakening"];
 export const retreats: Retreat[] = [
   ..._retreats.filter(r => activeOrder.includes(r.id)).sort((a, b) => activeOrder.indexOf(a.id) - activeOrder.indexOf(b.id)),
   ..._retreats.filter(r => upcomingOrder.includes(r.id)).sort((a, b) => upcomingOrder.indexOf(a.id) - upcomingOrder.indexOf(b.id)),
