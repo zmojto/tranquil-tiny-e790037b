@@ -549,7 +549,7 @@ Termín pobytu sa upresní.`,
 ];
 
 const activeOrder = ["krpacovo-soul", "cyprus-awakening", "necpaly-retreat"];
-const upcomingOrder = ["blatinka-retreat", "bali-bliss", "costa-rica", "provence-haute-alpes", "croatia-harmony", "apulia-gargano", "portugal-soul", "thailand-awakening"];
+const upcomingOrder = ["apulia-gargano", "provence-haute-alpes", "blatinka-retreat", "portugal-soul", "bali-bliss", "thailand-awakening", "costa-rica", "croatia-harmony"];
 export const retreats: Retreat[] = [
   ..._retreats.filter(r => activeOrder.includes(r.id)).sort((a, b) => activeOrder.indexOf(a.id) - activeOrder.indexOf(b.id)),
   ..._retreats.filter(r => upcomingOrder.includes(r.id)).sort((a, b) => upcomingOrder.indexOf(a.id) - upcomingOrder.indexOf(b.id)),
