@@ -1,4 +1,4 @@
-import hostsPhoto from "@/assets/sabina-ali-sprievodkyne.jpeg.asset.json";
+const hostsPhoto = "/images/sabina-ali-sprievodkyne.jpeg";
 
 const HostsSection = () => {
   return (
@@ -8,7 +8,7 @@ const HostsSection = () => {
           <div className="relative">
             <div className="aspect-[4/5] overflow-hidden rounded-2xl shadow-xl">
               <img
-                src={hostsPhoto.url}
+                src={hostsPhoto}
                 alt="Sabína a Ali – sprievodkyne pobytov"
                 className="w-full h-full object-cover"
                 loading="lazy"
