@@ -8,7 +8,7 @@ const HostsSection = () => {
           <div className="relative">
             <div className="aspect-[4/5] overflow-hidden rounded-2xl shadow-xl">
               <img
-                src={hostsPhoto.url}
+                src={hostsPhoto}
                 alt="Sabína a Ali – sprievodkyne pobytov"
                 className="w-full h-full object-cover"
                 loading="lazy"
