@@ -1,4 +1,4 @@
-import hostsPhoto from "@/assets/sabina-ali-sprievodkyne.jpeg.asset.json";
+const hostsPhoto = "/images/sabina-ali-sprievodkyne.jpeg";
 
 const HostsSection = () => {
   return (
