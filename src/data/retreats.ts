@@ -1,17 +1,17 @@
 import cyprusBedroom from "@/assets/cyprus-bedroom.jpg";
 import cyprusBlueLagoon from "@/assets/cyprus-blue-lagoon.jpg";
 import cyprusHero from "@/assets/cyprus-hero.jpg";
-import cyprusKonnosBay from "@/assets/cyprus-konnos-bay.jpg";
+import cyprusKonnosBay from "@/assets/cyprus-konnos-bay.webp";
 import cyprusLivingroom from "@/assets/cyprus-livingroom.jpg";
 import cyprusMimosaBeach from "@/assets/cyprus-mimosa-beach.jpg";
-import cyprusPoolNight from "@/assets/cyprus-pool-night.jpg";
+import cyprusPoolNight from "@/assets/cyprus-pool-night.webp";
 import galleryFood from "@/assets/gallery-food.jpg";
 import galleryMeditation from "@/assets/gallery-meditation.jpg";
 import galleryNature from "@/assets/gallery-nature.jpg";
 import galleryPool from "@/assets/gallery-pool.jpg";
 import galleryRoom from "@/assets/gallery-room.jpg";
 import gallerySpa from "@/assets/gallery-spa.jpg";
-import heroRetreat from "@/assets/hero-retreat.jpg";
+import heroRetreat from "@/assets/hero-retreat.webp";
 
 export interface DailyScheduleItem {
   time: string;
@@ -439,7 +439,7 @@ Program je navrhnutý s dôrazom na rovnováhu medzi spoločným časom a priest
       "Prístup k relaxačnej miestnosti a wellness",
       "Prechádzky v Národnom parku Veľká Fatra",
     ],
-    heroImage: "/images/necpaly/main.jpg",
+    heroImage: "/images/necpaly/main.webp",
     galleryImages: [
       "/images/necpaly/vonka1.jpg",
       "/images/necpaly/vonka3.jpg",
@@ -492,8 +492,8 @@ Veľkou podporou pri našej práci je krásne prostredie Podpoľania. Sme v lone
     ],
     heroImage: "/images/blatinka/main.jpg",
     galleryImages: [
-      "/images/blatinka/group.jpg",
-      "/images/blatinka/interior.jpg",
+      "/images/blatinka/group.webp",
+      "/images/blatinka/interior.webp",
       "/images/blatinka/garden.jpg",
       "/images/blatinka/yoga.jpg",
       "/images/blatinka/main.jpg",
