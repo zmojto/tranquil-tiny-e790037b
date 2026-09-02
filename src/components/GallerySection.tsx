@@ -2,18 +2,18 @@ import { useState } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
-import cyprusPoolNight from "@/assets/cyprus-pool-night.jpg";
+import cyprusPoolNight from "@/assets/cyprus-pool-night.webp";
 
 import cyprusBlueLagoon from "@/assets/cyprus-blue-lagoon.jpg";
 import cyprusBedroom from "@/assets/cyprus-bedroom.jpg";
-import cyprusKonnosBay from "@/assets/cyprus-konnos-bay.jpg";
+import cyprusKonnosBay from "@/assets/cyprus-konnos-bay.webp";
 import cyprusMimosaBeach from "@/assets/cyprus-mimosa-beach.jpg";
 
 const images = [
   { src: cyprusPoolNight, alt: "Bazén pri západe slnka na Cypre", caption: "Cyprus – bazén" },
-  { src: "/images/blatinka/interior.jpg", alt: "Útulná spoločenská miestnosť v Blatinke", caption: "Blatinka - spoločné priestory" },
-  { src: "/images/necpaly/main.jpg", alt: "Chalet Alexandra v Necpaloch", caption: "Necpaly – Veľká Fatra" },
-  { src: "/images/blatinka/group.jpg", alt: "Skupina žien s rukami hore na pobyte Blatinka Roots", caption: "Blatinka - joga v prírode" },
+  { src: "/images/blatinka/interior.webp", alt: "Útulná spoločenská miestnosť v Blatinke", caption: "Blatinka - spoločné priestory" },
+  { src: "/images/necpaly/main-card.webp", alt: "Chalet Alexandra v Necpaloch", caption: "Necpaly – Veľká Fatra" },
+  { src: "/images/blatinka/group.webp", alt: "Skupina žien s rukami hore na pobyte Blatinka Roots", caption: "Blatinka - joga v prírode" },
   { src: cyprusKonnosBay, alt: "Záliv Konnos na Cypre", caption: "Cyprus – pobrežie" },
   { src: "https://www.zadarvillas.com/photos/villas/galleries/22082024130701_dsc-5122.jpg", alt: "Villa Quince v Chorvátsku", caption: "Chorvátsko - bazén" },
 ];

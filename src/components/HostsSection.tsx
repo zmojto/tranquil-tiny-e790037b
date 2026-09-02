@@ -1,4 +1,4 @@
-const hostsPhoto = "/images/sabina-ali-sprievodkyne.jpeg";
+const hostsPhoto = "/images/sabina-ali-sprievodkyne.webp";
 
 const HostsSection = () => {
   return (
