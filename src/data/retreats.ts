@@ -408,7 +408,7 @@ Koh Samui je ostrov kontrastov – od rušných nočných trhov po tiché medita
     country: "Slovensko",
     dates: "15. – 18. októbra 2026",
     price: 420,
-    spotsLeft: 8,
+    spotsLeft: 0,
     highlights: ["Etikoterapia", "Sauna a vírivka pod hviezdami", "Túry vo Veľkej Fatre"],
     description: `Doprajte si pár dní len pre seba v Chalet Alexandra, v srdci Národného parku Veľká Fatra. Chalet je exkluzívne útočisko ponúkajúce pokoj a mnoho možností. Tento 3-dňový retreat je pozvánkou spomaliť, stíšiť sa a znovu sa naladiť na svoje vnútro.
 
