@@ -93,7 +93,7 @@ Ubud je duchovným centrom Bali, miestom kde sa umenie, príroda a spiritualita 
     country: "Kostarika",
     dates: "December\u00a02027",
     price: 3200,
-    spotsLeft: 6,
+    spotsLeft: 8,
     highlights: ["Prax pri pláži", "Lekcie surfovania", "Dobrodružstvá v džungli"],
     description: `Objavte kúzlo tichomorského pobrežia Kostariky na našom pobyte s výhľadom na pláž. Nosara, známa ako jedna z najlepších wellness destinácií na svete, ponúka dokonalé prostredie na opätovné spojenie s prírodou a sebou samým.
 
