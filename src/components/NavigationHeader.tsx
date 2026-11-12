@@ -9,7 +9,7 @@ const navLinks = [
   { label: "Galéria", href: "#gallery" },
   { label: "Referencie", href: "#testimonials" },
   { label: "Časté otázky", href: "#faq" },
-  { label: "Blog", href: "/blog", isPage: true },
+  { label: "Z našich workshopov", href: "/blog", isPage: true },
   { label: "Kontakt", href: "#contact" },
 ];
 
