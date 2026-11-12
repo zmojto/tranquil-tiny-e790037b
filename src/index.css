@@ -144,6 +144,21 @@
     background: var(--hero-gradient);
   }
 
+  @media (max-width: 767px) {
+    .hero-overlay {
+      background: linear-gradient(
+        180deg,
+        hsl(150 20% 12% / 0.32) 0%,
+        hsl(150 20% 14% / 0.52) 45%,
+        hsl(150 20% 12% / 0.38) 100%
+      );
+    }
+  }
+
+  .hero-text-shadow {
+    text-shadow: 0 2px 18px hsl(150 20% 12% / 0.55), 0 1px 3px hsl(150 20% 12% / 0.45);
+  }
+
   .section-gradient {
     background: var(--section-gradient);
   }

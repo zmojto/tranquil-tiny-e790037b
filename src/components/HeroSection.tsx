@@ -8,18 +8,18 @@ const HeroSection = () => {
       <img
         src={heroImage}
         alt="Jogový pobyt v prírode"
-        width={1920}
-        height={1080}
+        width={1440}
+        height={960}
         fetchPriority="high"
         decoding="async"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover object-[30%_bottom]"
       />
 
       {/* Overlay */}
       <div className="absolute inset-0 hero-overlay" />
       
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto hero-text-shadow">
         <p 
           className="text-primary-foreground/80 uppercase tracking-[0.3em] text-sm mb-6 animate-fade-up font-sans"
           style={{ animationDelay: "0.1s" }}
