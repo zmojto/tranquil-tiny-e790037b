@@ -28,7 +28,7 @@ const HostsSection = () => {
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
               Tešíme sa na spoločný čas s vami. Každý pobyt pripravujeme s láskou,
               pozornosťou a otvoreným srdcom – aby ste sa pri nás cítili
-              v bezpečí, prirodzene a uvolnene.{"\u00a0"}Spolu vytvárame priestor, kde má každý z vás možnosť rásť vlastným tempom, bez potreby predchádzajúcich znalostí.{"\u00a0"}A pretože chceme, aby ste si odniesli maximum, ako bonus k nášmu pobytu, v prípade záujmu, dostane každý účastník možnosť osobnej etikoterapeutickej konzultácie v cene pobytu.
+              v bezpečí, prirodzene a uvolnene. Spolu vytvárame priestor, kde má každý z vás možnosť rásť vlastným tempom, bez potreby predchádzajúcich znalostí.{"\u00a0"}A pretože chceme, aby ste si odniesli maximum, ako bonus k nášmu pobytu, v prípade záujmu, dostane každý účastník možnosť osobnej etikoterapeutickej konzultácie v cene pobytu.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
               Sabína sa s vami podelí o svoje bohaté skúsenosti s tým ako lepšie porozumieť sebe, zvládať výzvy každodenného života a vedome narábať svojou pozornosťou. Priblíži etikoterapiu, mindfullness a ukáže ako ich využiť v bežnom živote.{"\u00a0"}
