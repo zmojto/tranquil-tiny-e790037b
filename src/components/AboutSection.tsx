@@ -23,12 +23,12 @@ const AboutSection = () => {
           <FeatureCard 
             icon={<Sun className="w-8 h-8" />}
             title="Denná prax"
-            description="Prebuďte sa so svitaním na ranné Hathajoga flow a ukončite deň regeneračnými večernými lekciami pod vedením skúsených učiteľov. Každý deň je starostlivo pripravený tak, aby prepojil aktívny pohyb a vnútorné stíšenie."
+            description="Každý deň je starostlivo pripravený tak, aby prepojil aktívny pohyb a vnútorné stíšenie. Plnohodnotný program, jogová prax, hlboké témy, priestor pre zdieľania, láskavé vedenie."
           />
           <FeatureCard 
             icon={<Heart className="w-8 h-8" />}
             title="Vedomý život"
-            description="Objavte silu rastlinnej a ajurvédskej stravy, digitálneho detoxu a každodenných rituálov. Počas pobytu ich prirodzene začleníte do tela a mysle tak, že po návrate domov v nich budete plynulo pokračovať."
+            description="Objavte silu rastlinnej a ajurvédskej stravy,"
           />
           <FeatureCard 
             icon={<Leaf className="w-8 h-8" />}
