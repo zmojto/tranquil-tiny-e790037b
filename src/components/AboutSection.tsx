@@ -13,8 +13,7 @@ const AboutSection = () => {
             Cesta do vnútra
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
-            Viac ako len pobyt. Toto je pozvánka spomaliť, hlboko sa nadýchnuť
-            a znovu objaviť harmóniu medzi telom, mysľou a dušou.
+            Toto je pozvánka spomaliť, hlboko sa nadýchnuť a znovu objaviť náš zdroj radosti.
           </p>
         </div>
         
