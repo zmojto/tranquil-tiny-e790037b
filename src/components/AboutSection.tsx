@@ -28,7 +28,7 @@ const AboutSection = () => {
           <FeatureCard 
             icon={<Heart className="w-8 h-8" />}
             title="Vedomý život"
-            description="Objavte silu rastlinnej a ajurvédskej stravy,"
+            description="Spoznávame skryté súvislosti a vzorce, ktoré formujú naše myslenie, prežívanie a životné rozhodnutia. Rozvíjame našu schopnosť vidieť veci z nového uhlu pohľadu."
           />
           <FeatureCard 
             icon={<Leaf className="w-8 h-8" />}
